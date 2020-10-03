@@ -66,32 +66,45 @@ header h1{
 	border-left: 12px solid #FBFCFC;
 	box-sizing: border-box;
 	overflow-y: scroll;
-
-
+}
+#content section{
+	border-bottom:5px solid white
 }
 #content article{
-	margin-bottom: 20px;
 	overflow: hidden;
+	/*margin order: up, right, down, left (clockwise)*/
+	margin: 20px 20px 20px 20px;
 }
 #content article img {
-	margin: 20px 20px 0px 20px;
 	float: left;
+	width: 180px;
+	margin-right: 20px;
 }
-
 #content article h2 {
+	font-size: 30px;
+	color: #db928b;
+	font-family: 'Sansita Swashed';
+	margin-bottom: 3px;
+	margin:0 auto;
+}
+#content article h3{
 	font-size: 20px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
-	margin: 20px 20px 0px 0px;
+	margin: 0 0 3px 0;	
 }
-
 #content article p {
-	/*margin order: up, right, down, left (clockwise)*/
-	margin: 0px 20px 0px 230px;
-	font-size: small;
+	font-size: 13px;
 	font-family: 'Sansita Swashed';
-}
+	margin: 0 auto;
 
+}
+#content article iframe{
+	width: 240px ;
+	height: 135px;
+	float:left;
+	margin-right: 20px;
+}
 
 .leftaside {
 	width: 25%;
