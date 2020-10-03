@@ -69,25 +69,28 @@ header h1{
 
 
 }
-#content img {
-	margin-left: 20px;
-	margin-top: 20px;
+#content article{
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+#content article img {
+	margin: 20px 20px 0px 20px;
 	float: left;
 }
 
-#content h2 {
+#content article h2 {
 	font-size: 20px;
-	margin: 20px 20px 0px 10px;
-	display: inline-block
+	color: #db928b;
+	font-family: 'Sansita Swashed';
+	margin: 20px 20px 0px 0px;
 }
 
-#content p {
+#content article p {
 	/*margin order: up, right, down, left (clockwise)*/
-	margin: 0px 20px 10px 230px;
-	display: block;
+	margin: 0px 20px 0px 230px;
 	font-size: small;
+	font-family: 'Sansita Swashed';
 }
-
 
 
 .leftaside {
