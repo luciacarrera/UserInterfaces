@@ -6,7 +6,6 @@ body {
 	background: #FBFCFC;
 }
 
-
 header {
 	position: relative; 
 	width: 100%;
@@ -32,6 +31,7 @@ header h1{
 	color: #f5c8c4;;
 	text-align: left;
 }
+
 header nav{
 	padding-right: 20px;
 	list-style: none;
@@ -43,14 +43,18 @@ header nav li{
 	display: inline-block;
 	list-style: none;
 	font-family: 'Courier New', Courier, monospace;
+	margin-top: 20px;
 }
 
 header nav li a{
 	position: relative;
 	display: block;
 	padding: 10px;
+	font-size: 30px;
+	margin-left: 30px;
 	text-decoration: none;
 }
+
 #container {
 	display: table;
 	width: 100%;
@@ -58,7 +62,6 @@ header nav li a{
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-
 
 #container li a:hover {
 	background-color: #f3dcf5;
@@ -78,19 +81,23 @@ header nav li a{
 	box-sizing: border-box;
 	overflow-y: scroll;
 }
+
 #content section{
 	border-bottom:5px solid white
 }
+
 #content article{
 	overflow: hidden;
 	/*margin order: up, right, down, left (clockwise)*/
 	margin: 20px 20px 20px 20px;
 }
+
 #content article img {
 	float: left;
 	width: 180px;
 	margin-right: 20px;
 }
+
 #content article h2 {
 	font-size: 30px;
 	color: #db928b;
@@ -98,18 +105,20 @@ header nav li a{
 	margin-bottom: 3px;
 	margin:0 auto;
 }
+
 #content article h3{
 	font-size: 20px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
 	margin: 0 0 3px 0;	
 }
+
 #content article p {
 	font-size: 13px;
 	font-family: 'Sansita Swashed';
 	margin: 0 auto;
-
 }
+
 #content article iframe{
 	width: 240px ;
 	height: 135px;
@@ -128,15 +137,26 @@ header nav li a{
 	border-right: 12px solid #FBFCFC;
 	border-left: 24px solid #FBFCFC;
 	box-sizing: border-box;
-
 }
 
 .leftaside h2 {
-	margin-top: 15px;
+	font-family: 'Sansita Swashed';
+	color: #db928b;
 	margin-left: 15px;
 	font-size: 15px;
-	text-align: left;
+}
+.chosen li {
+	list-style: none;
+	margin-bottom: 15px;
+}
 
+.chosen li a{
+	margin-top: 15px;
+	font-size: 15px;
+	font-family: 'Sansita Swashed';
+	text-align: left;
+	color: gray;
+	text-decoration: none;
 }
 
 .rightaside {
@@ -156,7 +176,16 @@ header nav li a{
 	margin-top: 15px;
 	margin-left: 15px;
 	font-size: 15px;
+	font-family: 'Sansita Swashed';
 	text-align: left;
+	color: gray;
+}
+
+.rightaside p {
+	font-size: 13px;
+	font-family: 'Sansita Swashed';
+	margin-bottom: 10px;
+	margin-left: 10px;
 }
 
 footer {
@@ -165,10 +194,23 @@ footer {
 	clear: both;
 }
 
-footer p {
-	font-size: 30px;
-	margin-left: 40%;
-	margin-top: 10px;
+footer ul {
+	margin-left: 425px;
+}
+
+footer li {
+	list-style: none;
+	margin-bottom: 15px;
+	margin-top: 40px;
+	margin-left: 50px;
+	display: inline-block;
+	float: center;
+}
+
+footer li a {
+	text-decoration: none;
+	font-family: 'Alex Brush';
+	font-size: 20px;
 }
 
 /*MEDIA QUERIES*/
@@ -188,4 +230,24 @@ and (orientation : portrait) {
 	.nav{
 		display: none;
 	}
+ }
+
+ /*Smartphone Portrait*/
+ @media only screen and (min-device-width: 600px) and (orientation : portrait) {
+ 	.leftaside{
+ 		width: 10%;
+ 	}
+
+ 	#content {
+ 		width: 90%;
+ 		height: 100%;
+ 	}
+
+ 	.rightaside {
+ 		display: none;
+ 	}
+
+ 	.nav {
+ 		display: none;
+ 	}
  }
