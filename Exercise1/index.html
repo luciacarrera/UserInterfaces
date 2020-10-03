@@ -7,6 +7,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
 		</style>
 	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alfea School for Fairies</title>
 	<link rel="shortcut icon" href="img/icon.ico" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -18,19 +19,20 @@
 			
 			<img src="img/wings.png"; width="100px"; height="100px";>
 			<h1>Alfea</h1>
+			<!--navigation menu-->
+			<nav id=menu>
+				<!--unordered list-->
+				<ul>
+					<!--list item-->
+					<li><a href="">ABOUT ALFEA</a>
+					<li><a href="">ADMISSION</a>
+					<li><a href="">STUDIES</a>
+					<li><a href="">RESEARCH</a>
+				</ul>
+			</nav>
 		</header>
 
-		<!--navigation menu-->
-		<nav>
-			<!--unordered list-->
-			<ul>
-				<!--list item-->
-				<li><a href="">ABOUT ALFEA</a>
-				<li><a href="">ADMISSION</a>
-				<li><a href="">STUDIES</a>
-				<li><a href="">RESEARCH</a>
-			</ul>
-		</nav>
+	
 
 		<!--column to the left-->
 		<aside class="leftaside">
@@ -40,34 +42,102 @@
 		</aside>
 
 		<!--section that will change content-->
-		<section id="content">	
-			<!--article?-->		
+		<section id="content">
+			<!--Topic 1: School Life-->	
+			<section>	
+				<!--Photo, Title & Short Description-->
 				<article>
-					<img src="img/Alfea.jpg"; width=200px>		
+					<img src="img/Alfea.jpg";>		
 					<h2>School Life</h2>
 					<p>As an extremely prestigious school for fairies, we pride ourselves in 
 					our excellent academia which shapes the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned
-				 political leaders, philosophers, scientists and defenders of good.</p> <br><p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-					 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-					 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-					 xxxxxxxxxxxxxxxxxxxxxxxxx
-				 </p>
+				 	political leaders, philosophers, scientists and defenders of good.</p>
+				</article>
+				<!--First Video & Description-->
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/tyn2fti18u4?start=113&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe>
+					<h3>Welcome to Alfea</h3>
+					<p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
+					</p>
+				</article>
+				<!--2nd Video-->
+				<article>
+					<iframe id="ytplayer" type="text/html"
+					src="https://www.youtube.com/embed/kOc9ek3Evvc?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe>
+					<h3>Class Moments</h3>
+					<p>If you are curious about our teaching methods, here is a compilation of various class moments through the years.</p>
+				</article>
+				<!--3rd Video-->
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe>
+					<h3>The Dormitories</h3>
+					<p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+						a fun little sneak peak of the rooms.
+					</p>
+				</article>
+			</section>
+			<!--Topic 2: Work Hard, Play Hard-->	
+			<section>
+				<article>
+					<img src="img/Party.jpg"; width=200px>
+					<h2>Work Hard, Play Hard</h2>
+					<p>Here at Alfea, we are well aware that it is impossible to just study and we make sure that our students have healthy mix of academia and fun. 
+						 In the following videos we will show you
+						some of the many activities they can enjoy on campus.
+					</p>
 				</article>
 				<article>
-				 <img src="img/Party.jpg"; width=200px>
-				<h2>Work Hard, Play Hard</h2>
-				<p>Here at Alfea, we are well aware that it is impossible to just study and assure that our students have healthy mix of academia and fun. 
-					Even though they are the brightest fairies of their generation, they also deserve to take some time off. In the following videos we will show you
-					some of the many activities they can enjoy here at Alfea.
-				</p>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/L3IIzxrS1tY?start=35&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Talent Shows</h3>
+					<p>Our alums all have various types of skills which we love to showcase in our annual Talent Show. Here you can see 
+						last years winners, The Winx Club.
+					</p>
 				</article>
 				<article>
-				<img src="img/Transformation.png"; width=200px>
-				<h2>Fairy Transformations</h2>
-				<p> Fairy forms or transformations are different levels of power that fairies can attain as an extention of their magical abilities.
-					In our school, we work with our students not only to help them become full-fledged fairies, but so that they reach higher fairy forms.
-				</p>
-			</article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/uAujeQPtkjU?start=3&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Fashion Shows</h3><p>Our school has various extracurricular clubs, one being
+						Fashion Design. Each term they host a fashion show to demonstrate their latest creations.
+					</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/xPvfAhG_IbQ?start=7&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>End of Year Party</h3>
+					<p>Once the school year is over, we celebrate it by throwing a huge party to congratulate our students for all of their hard work.</p>
+				</article>
+			</section>
+			<!--Topic 3: Fairy Transformations-->	
+			<section>
+				<article>
+					<img src="img/Transformation.png"; width=200px>
+					<h2>Fairy Transformations</h2>
+					<p> Fairy forms or transformations are different levels of power that fairies can attain as an extention of their magical abilities.
+						In our school, we work with our students not only to help them become full-fledged fairies, but so that they reach higher fairy forms.
+					</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/beH3AZUS7f0?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Winx</h3><p>This is the basic fairy form, if you have yet to unlock it, we will make sure that you do by the end of your freshmen year. </p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/gms5Krs4Qpg?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Enchantix</h3><p> Enchantix is the "Final Fairy Form" in a fairy's formal education. In our curriculum, earning Enchantix is the final exam.</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/vHhkiqdtGb4?start=7&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Higher Fairy Forms</h3><p>After Enchantix, there is an infinite number of levels a fairy can reach, which are meant for specific situations. An example of this is Butterflix.</p>
+				</article>
+			</section>
 		</section>
 
 		<!--left side column-->

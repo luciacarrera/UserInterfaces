@@ -8,53 +8,64 @@ body {
 
 
 header {
+	position: relative; 
 	width: 100%;
-	height: 90px;
+	margin: 0 auto;
+	height: 100%;
 	background: #FBFCFC;
+	vertical-align: b;
+	padding-top: 10px;
+	display: flex;
 }
 
 header img{
     margin-left: 40px;
-    float: left;
+	float: left;
+	position: relative;
 }
 
 header h1{
-	display: block;
-	margin-top: 0px;
-	margin-left: 150px;
-	margin-bottom: 0px;
+	display: inline;
+	margin:0;
 	font-family: 'Alex Brush';
 	font-size: 90px;
 	color: #f5c8c4;;
 	text-align: left;
 }
+header nav{
+	padding-right: 20px;
+	list-style: none;
+}
 
+header nav li{
+	align-items:right;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+header nav li a{
+	position: relative;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
 #container {
+	display: table;
 	width: 100%;
 	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-#container ul{
-	display: table;   /* Allow the centering to work */
-	margin: 0 0 0 0;
-}
-#container ul li {
-	display: inline;
-}
+
+
 #container li a:hover {
 	background-color: #f3dcf5;
   }
 
-#container ul li a{
-	color: gray;
-	text-decoration: none;
-	padding: 10px 10px;
-	font-size: 20px;
-	margin-bottom: 0px;
-}
-
 #content {
+	display: table-cell;
 	width: 50%;
 	height: 500px;
 	float: left;
@@ -66,34 +77,48 @@ header h1{
 	border-left: 12px solid #FBFCFC;
 	box-sizing: border-box;
 	overflow-y: scroll;
-
-
+}
+#content section{
+	border-bottom:5px solid white
 }
 #content article{
-	margin-bottom: 20px;
 	overflow: hidden;
+	/*margin order: up, right, down, left (clockwise)*/
+	margin: 20px 20px 20px 20px;
 }
 #content article img {
-	margin: 20px 20px 0px 20px;
 	float: left;
+	width: 180px;
+	margin-right: 20px;
 }
-
 #content article h2 {
+	font-size: 30px;
+	color: #db928b;
+	font-family: 'Sansita Swashed';
+	margin-bottom: 3px;
+	margin:0 auto;
+}
+#content article h3{
 	font-size: 20px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
-	margin: 20px 20px 0px 0px;
+	margin: 0 0 3px 0;	
 }
-
 #content article p {
-	/*margin order: up, right, down, left (clockwise)*/
-	margin: 0px 20px 0px 230px;
-	font-size: small;
+	font-size: 13px;
 	font-family: 'Sansita Swashed';
-}
+	margin: 0 auto;
 
+}
+#content article iframe{
+	width: 240px ;
+	height: 135px;
+	float:left;
+	margin-right: 20px;
+}
 
 .leftaside {
+	display:table-cell;
 	width: 25%;
 	height: 500px;
 	background: #FADBD8;
@@ -115,6 +140,7 @@ header h1{
 }
 
 .rightaside {
+	display: table-cell;
 	width: 25%;
 	height: 500px;
 	background: #FADBD8;
@@ -144,3 +170,22 @@ footer p {
 	margin-left: 40%;
 	margin-top: 10px;
 }
+
+/*MEDIA QUERIES*/
+/*Tablet Portrait*/
+@media only screen and (min-device-width : 768px) 
+and (orientation : portrait) { 
+	.leftaside{
+		width: 30%;
+	}
+	#content{
+		width:70%;
+		height: 100%;
+	}
+	.rightaside{
+		display: none;
+	}
+	.nav{
+		display: none;
+	}
+ }
