@@ -81,48 +81,29 @@ header nav li a{
 	overflow-y: scroll;
 }
 
-#content section{
+#content section {
 	border-bottom:5px solid white
 }
 
-#content article{
-	overflow: hidden;
-	/*margin order: up, right, down, left (clockwise)*/
-	margin: 20px 20px 20px 20px;
-}
-
-#content article img {
-	float: left;
-	width: 180px;
-	margin-right: 20px;
-}
-
-#content article h2 {
-	font-size: 30px;
-	color: #db928b;
+#content h2 {
+		margin-top: 15px;
+	margin-left: 15px;
+	font-size: 15px;
 	font-family: 'Sansita Swashed';
-	margin-bottom: 3px;
-	margin:0 auto;
+	text-align: left;
+	color: gray;
 }
 
-#content article h3{
-	font-size: 20px;
-	color: #db928b;
+#content table {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#content th, td {
 	font-family: 'Sansita Swashed';
-	margin: 0 0 3px 0;	
-}
-
-#content article p {
-	font-size: 13px;
-	font-family: 'Sansita Swashed';
-	margin: 0 auto;
-}
-
-#content article iframe{
-	width: 240px ;
-	height: 135px;
-	float:left;
-	margin-right: 20px;
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
 }
 
 .leftaside {
