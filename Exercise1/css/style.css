@@ -43,7 +43,7 @@ header nav li{
 	display: inline-block;
 	list-style: none;
 	font-family: 'Courier New', Courier, monospace;
-	margin-top: 20px;
+	margin-top: 20px;	
 }
 
 header nav li a{
@@ -53,6 +53,7 @@ header nav li a{
 	font-size: 30px;
 	margin-left: 30px;
 	text-decoration: none;
+	color: gray;
 }
 
 #container {
@@ -64,10 +65,11 @@ header nav li a{
 }
 
 #container li a:hover {
-	background-color: #f3dcf5;
+	background-color: #ffefee;
   }
 
 /*CENTRAL CONTENT STYLE*/
+/*HOME*/
 #content {
 	display: table-cell;
 	width: 50%;
@@ -99,12 +101,13 @@ header nav li a{
 	margin-right: 20px;
 }
 
-#content article h2 {
+#content article #topic {
 	font-size: 30px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
 	margin-bottom: 3px;
 	margin:0 auto;
+	text-align: left;
 }
 
 #content article h3{
@@ -128,28 +131,36 @@ header nav li a{
 }
 
 #content h2{
-	margin-top: 15px;
-	margin-left: 15px;
-	font-size: 15px;
+	margin:20px 0 10px 0;
+	text-align: center;
+	font-size: 30px;
 	font-family: 'Sansita Swashed';
-	text-align: left;
-	color: gray;
+	color:black;
 }
 
-#content .students table {
-	margin-left: 10px;
-	margin-right: 10px;
+/*STUDENTS*/
+
+#content .students
+ {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;;
+	background-color: white;
 }
 
-#content .students th, td {
+#content .students td {
+	border: solid black 3px;
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
-	padding: 5px;
+	padding: 10px;
 }
 
-#content .grades table {
-
+/*GRADES*/
+#content .grades{
+	margin: auto;
+	width: 90%;
 }
 
 #content .grades th, td {
@@ -157,8 +168,15 @@ header nav li a{
 	font-size: 15px;
 	text-align: center;
 	padding: 5px;
-	margin-left: 50px;
 }
+
+#content .grades tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+#content .grades tr:nth-child(odd){
+	background-color: #e0dddd;
+}
+
 
 /*LEFT ASIDE STYLE*/
 .leftaside {
@@ -174,11 +192,11 @@ header nav li a{
 	box-sizing: border-box;
 }
 
-.leftaside h2 {
+.leftaside h2, .rightaside h2 {
 	font-family: 'Sansita Swashed';
 	color: #db928b;
-	margin-left: 15px;
-	font-size: 15px;
+	margin: 20px 20px 5px 20px;
+	font-size: 20px;
 }
 
 .chosen li {
@@ -187,7 +205,6 @@ header nav li a{
 }
 
 .chosen li a{
-	margin-top: 15px;
 	font-size: 15px;
 	font-family: 'Sansita Swashed';
 	text-align: left;
@@ -209,20 +226,11 @@ header nav li a{
 	box-sizing: border-box;
 }
 
-.rightaside h2 {
-	margin-top: 15px;
-	margin-left: 15px;
+.rightaside p {
 	font-size: 15px;
 	font-family: 'Sansita Swashed';
-	text-align: left;
+	margin: 0 20px 10px 20px;
 	color: gray;
-}
-
-.rightaside p {
-	font-size: 13px;
-	font-family: 'Sansita Swashed';
-	margin-bottom: 10px;
-	margin-left: 10px;
 }
 
 /*FOOTER STYLE*/
@@ -242,7 +250,7 @@ footer li {
 	margin-top: 40px;
 	margin-left: 50px;
 	display: inline-block;
-	float: center;
+	text-align: center;
 }
 
 footer li a {
@@ -253,7 +261,7 @@ footer li a {
 
 /*MEDIA QUERIES*/
 /*Tablet Portrait*/
-@media only screen and (min-device-width : 768px) 
+@media only screen and (max-device-width : 768px) 
 and (orientation : portrait) {
 
 	.leftaside{
@@ -262,26 +270,25 @@ and (orientation : portrait) {
 
 	#content{
 		width:70%;
-		height: 100%;
 	}
 
 	.rightaside{
 		display: none;
 	}
 
-	.nav{
+	#menu{
 		display: none;
 	}
  }
 
  /*Smartphone Portrait*/
- @media only screen and (min-device-width: 600px) and (orientation : portrait) {
+ @media only screen and (max-device-width: 600px) and (orientation : portrait) {
  	.leftaside{
- 		width: 10%;
- 	}
+		display:none;
+	}
 
  	#content {
- 		width: 90%;
+ 		width: 100%;
  		height: 100%;
  	}
 
@@ -289,7 +296,7 @@ and (orientation : portrait) {
  		display: none;
  	}
 
- 	.nav {
+ 	#menu {
  		display: none;
  	}
  }
