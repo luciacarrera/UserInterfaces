@@ -177,6 +177,24 @@ header nav li a{
 	background-color: #e0dddd;
 }
 
+/*FORUMS*/
+#content .forums{
+	margin: 0px 40px 0 40px;
+}
+#content .forums tr{
+	height: 60px;
+}
+#content .forums td{
+	border-bottom: solid gray 2px;
+}
+#content .forums .firstrow{
+	height: 20px;
+}
+#content .forums th{
+	border-bottom: solid gray 2px;
+	font-size: 18px;
+	vertical-align: bottom;
+}
 
 /*LEFT ASIDE STYLE*/
 .leftaside {
