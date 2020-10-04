@@ -1,3 +1,4 @@
+/*HEADER AND MENU STYLE*/
 body {
 	margin: 0;
 	padding: 0;
@@ -66,6 +67,7 @@ header nav li a{
 	background-color: #f3dcf5;
   }
 
+/*CENTRAL CONTENT STYLE*/
 #content {
 	display: table-cell;
 	width: 50%;
@@ -125,6 +127,40 @@ header nav li a{
 	margin-right: 20px;
 }
 
+#content h2{
+	margin-top: 15px;
+	margin-left: 15px;
+	font-size: 15px;
+	font-family: 'Sansita Swashed';
+	text-align: left;
+	color: gray;
+}
+
+#content .students table {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#content .students th, td {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+}
+
+#content .grades table {
+
+}
+
+#content .grades th, td {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+	margin-left: 50px;
+}
+
+/*LEFT ASIDE STYLE*/
 .leftaside {
 	display:table-cell;
 	width: 25%;
@@ -144,6 +180,7 @@ header nav li a{
 	margin-left: 15px;
 	font-size: 15px;
 }
+
 .chosen li {
 	list-style: none;
 	margin-bottom: 15px;
@@ -158,6 +195,7 @@ header nav li a{
 	text-decoration: none;
 }
 
+/*RIGHT ASIDE STYLE*/
 .rightaside {
 	display: table-cell;
 	width: 25%;
@@ -187,6 +225,7 @@ header nav li a{
 	margin-left: 10px;
 }
 
+/*FOOTER STYLE*/
 footer {
 	background: #F5CDD3;
 	height: 100px;
@@ -215,17 +254,21 @@ footer li a {
 /*MEDIA QUERIES*/
 /*Tablet Portrait*/
 @media only screen and (min-device-width : 768px) 
-and (orientation : portrait) { 
+and (orientation : portrait) {
+
 	.leftaside{
 		width: 30%;
 	}
+
 	#content{
 		width:70%;
 		height: 100%;
 	}
+
 	.rightaside{
 		display: none;
 	}
+
 	.nav{
 		display: none;
 	}
