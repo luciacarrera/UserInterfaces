@@ -322,6 +322,10 @@ and (orientation : portrait) {
 		height: 88vh;
 	}
 
+	#content img {
+		width: 90px !important;
+	}
+
  	.rightaside {
  		display: none;
  	}
