@@ -141,9 +141,8 @@ header nav li a{
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;;
+	margin-bottom: 20px;
 	background-color: #ffeceb;
-	;
 	margin-top: 20px;
 }
 
@@ -154,7 +153,12 @@ header nav li a{
 	text-align: center;
 	padding: 10px;
 }
-
+.students #profile{
+	width: 100px;
+}
+#msg{
+	width: 35px;
+}
 /*GRADES*/
 #content .grades{
 	margin: auto;
@@ -271,8 +275,6 @@ footer li {
 	display: inline-block;
 	text-align: center;
 	vertical-align: middle;
-
-
 }
 
 footer li a {
@@ -327,6 +329,21 @@ and (orientation : portrait) {
 		width:70%;
 		height: 90vh;
 	}
+	#content h2{
+		margin-bottom: 15px;
+	}
+
+	#content .students{
+		margin: 0 auto;
+	}
+	#content .forums th{
+		white-space: normal !important;
+		font-size: 15px;
+	}
+	.students td{
+		white-space: normal;
+		padding: 0px !important;
+	}
 
 	.rightaside{
 		display: none;
@@ -347,10 +364,19 @@ and (orientation : portrait) {
 	.leftaside{
 		display: none;
 	}
+	.students td{
+		padding: 0px !important;
+	}
 
  	#content {
  		width: 100%;
 		height: 88vh;
+		border-right: 12px solid #FBFCFC;
+		border-left: 12px solid #FBFCFC;
+	}
+	footer{
+		border-right: 12px solid #FBFCFC;
+		border-left: 12px solid #FBFCFC;
 	}
 
 	#content img {
@@ -370,5 +396,20 @@ and (orientation : portrait) {
 	 .burger{
 		display: block;
 	}
+	#content .students{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	#content .students td {
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	.students #profile{
+		width: 70px !important;
+	}
+	.students #msg{
+		width: 15px !important;
+	}
+
 
  }
