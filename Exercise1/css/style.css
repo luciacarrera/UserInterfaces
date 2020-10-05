@@ -142,12 +142,13 @@ header nav li a{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;;
-	background-color: white;
+	background-color: #ffeceb;
+	;
 	margin-top: 20px;
 }
 
 #content .students td {
-	border: solid black 3px;
+	border: solid gray 3px;
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
