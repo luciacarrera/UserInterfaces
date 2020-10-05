@@ -396,9 +396,8 @@ and (orientation : portrait) {
 	 .burger{
 		display: block;
 	}
-	#content .students{
-		margin-left: 5px;
-		margin-right: 5px;
+	#content .students, .forums{
+		margin-left: 0 auto;
 	}
 	#content .students td {
 		padding: 0px !important;
