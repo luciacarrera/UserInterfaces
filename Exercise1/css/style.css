@@ -280,6 +280,37 @@ footer li a {
 	font-family: 'Alex Brush';
 	font-size: 20px;
 }
+/*
+.burger{
+	display: none;
+}*/
+
+.burger {
+	position: relative;
+	display: none;
+  }
+
+.burger-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	right: 0;
+  }
+  .burger-content ul{
+	list-style: none;
+  }
+  .burger-content ul li a{
+	text-decoration: none;
+	font-family: 'Sansita Swashed';
+	color: gray;
+  }
+  
+  .burger:hover .burger-content {
+	display: block;
+  }
 
 /*MEDIA QUERIES*/
 /*Tablet Portrait*/
@@ -336,5 +367,8 @@ and (orientation : portrait) {
 	 footer{
 		height: 100%;
 	 }
+	 .burger{
+		display: block;
+	}
 
  }
