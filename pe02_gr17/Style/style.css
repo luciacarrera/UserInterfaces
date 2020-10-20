@@ -67,8 +67,8 @@ header nav li a{
   }
 
 /*CENTRAL CONTENT STYLE*/
-/*HOME*/
-#content {
+/*central container configuration*/
+#home, #students, #grades, #forum {
 	display: table-cell;
 	width: 50%;
 	height: 500px;
@@ -81,23 +81,24 @@ header nav li a{
 	overflow-y: scroll;
 }
 
-#content section{
+/*home configuration*/
+#home section{
 	border-bottom:5px solid white
 }
 
-#content article{
+#home article{
 	overflow: hidden;
 	/*margin order: up, right, down, left (clockwise)*/
 	margin: 20px 20px 20px 20px;
 }
 
-#content article img {
+#home article img {
 	float: left;
 	width: 180px;
 	margin-right: 20px;
 }
 
-#content article #topic {
+#home article #topic {
 	font-size: 30px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
@@ -106,27 +107,27 @@ header nav li a{
 	text-align: left;
 }
 
-#content article h3{
+#home article h3{
 	font-size: 20px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
 	margin: 0 0 3px 0;	
 }
 
-#content article p {
+#home article p {
 	font-size: 13px;
 	font-family: 'Sansita Swashed';
 	margin: 0 auto;
 }
 
-#content article iframe{
+#home article iframe{
 	width: 240px ;
 	height: 135px;
 	float:left;
 	margin-right: 20px;
 }
 
-#content h2{
+#home h2, #students h2, #grades h2, #forum h2{
 	margin:20px 0 0px 0;
 	text-align: center;
 	font-size: 30px;
@@ -134,9 +135,9 @@ header nav li a{
 	color:#f18e85;
 }
 
-/*STUDENTS*/
+/*students configuration*/
 
-#content .students
+#students .studentsTable
  {
 	border-collapse: collapse;
 	margin-left: auto;
@@ -146,53 +147,53 @@ header nav li a{
 	margin-top: 20px;
 }
 
-#content .students td {
+#students .studentsTable td {
 	border: solid #ffbdb7 3px;
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
 	padding: 10px;
 }
-.students #profile{
+#students .studentsTable #profile{
 	width: 100px;
 }
 #msg{
 	width: 35px;
 }
 /*GRADES*/
-#content .grades{
+#grades .grades{
 	margin: auto;
 	width: 90%;
 	margin-top: 10px;
 }
 
-#content .grades th, td {
+#grades .grades th, td {
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
 	padding: 5px;
 }
 
-#content .grades tr:nth-child(even){
+#grades .grades tr:nth-child(even){
 	background-color: #f2f2f2;
 }
-#content .grades tr:nth-child(odd){
+#grades .grades tr:nth-child(odd){
 	background-color: #e0dddd;
 }
 
 /*FORUMS*/
-#content .forums{
+#forum .forums{
 	margin: 10px 40px 0 40px;
 }
 
-#content .forums tr{
+#forum .forums tr{
 	height: 60px;
 }
-#content .forums td{
+#forum .forums td{
 	border-bottom: solid black 2px;
 }
 
-#content .forums th{
+#forum .forums th{
 	border-bottom: solid black 2px;
 	font-size: 18px;
 	vertical-align: bottom;
@@ -201,10 +202,10 @@ header nav li a{
 	padding: 0 20px 20px 20px;
 }
 
-#content .forums tr:nth-child(even){
+#forum .forums tr:nth-child(even){
 	background-color: #fcc4bf;
 }
-#content .forums tr:nth-child(odd){
+#forum .forums tr:nth-child(odd){
 	background-color: #fdada6;
 }
 
@@ -292,7 +293,7 @@ footer li a {
 	display: none;
   }
 
-.burger-content {
+.burger- {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
@@ -301,10 +302,10 @@ footer li a {
 	z-index: 1;
 	right: 0;
   }
-  .burger-content ul{
+  .burger- ul{
 	list-style: none;
   }
-  .burger-content ul li a{
+  .burger- ul li a{
 	text-decoration: none;
 	font-family: 'Sansita Swashed';
 	color: gray;
