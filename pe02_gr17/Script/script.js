@@ -40,6 +40,7 @@ function centralChange(content) {
         home.style.display="block";
         grades.style.display= "none";
         forum.style.display="none";
+        homeButton.style.display="none";
     }
 
 }

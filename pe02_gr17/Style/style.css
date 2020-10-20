@@ -62,9 +62,7 @@ header nav li a{
 	margin: auto;
 }
 
-#container li a:hover {
-	background-color: #ffefee;
-  }
+
 
 /*CENTRAL CONTENT STYLE*/
 /*central container configuration*/
@@ -240,6 +238,7 @@ header nav li a{
 	text-align: left;
 	color: gray;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /*RIGHT ASIDE STYLE*/
