@@ -318,15 +318,14 @@ button {
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
-	padding: 5px;
   	background-color: #f2f2f2;
   	border: none;
   	color: black;
-  	margin-left: 240px;
-  	margin-top: 25px;
   	padding: 15px 32px;
   	text-decoration: none;
-  	display: inline-block;
+	display: grid;
+	margin: 0 auto;
+	margin-top: 25px;
 }
 
 /*MEDIA QUERIES*/
