@@ -314,6 +314,21 @@ footer li a {
 	display: block;
   }
 
+button {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+  	background-color: #f2f2f2;
+  	border: none;
+  	color: black;
+  	margin-left: 240px;
+  	margin-top: 25px;
+  	padding: 15px 32px;
+  	text-decoration: none;
+  	display: inline-block;
+}
+
 /*MEDIA QUERIES*/
 /*Tablet Portrait*/
 @media only screen and (max-device-width : 768px) 
@@ -409,6 +424,5 @@ and (orientation : portrait) {
 	.students #msg{
 		width: 15px !important;
 	}
-
 
  }
