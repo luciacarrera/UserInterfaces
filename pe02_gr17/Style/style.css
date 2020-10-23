@@ -183,16 +183,12 @@ header nav li a{
 #forum .forums{
 	margin: 10px 40px 0 40px;
 }
-
 #forum .forums tr{
 	height: 60px;
-}
-#forum .forums td{
-	border-bottom: solid black 2px;
+	border: none;
 }
 
 #forum .forums th{
-	border-bottom: solid black 2px;
 	font-size: 18px;
 	vertical-align: bottom;
 	font-family: 'Sansita Swashed';
@@ -392,6 +388,7 @@ and (orientation : portrait) {
 	#home img {
 		width: 90px !important;
 	}
+	/*DOESNT WORK*/
 	.ytplayer{
 		margin-left: auto !important;
 		margin-right: auto !important;
