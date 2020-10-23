@@ -282,17 +282,13 @@ footer li a {
 	font-family: 'Alex Brush';
 	font-size: 20px;
 }
-/*
-.burger{
-	display: none;
-}*/
 
+/*BURGER MENU POP UP*/
 .burger {
 	position: relative;
 	display: none;
   }
-
-.burger- {
+.burger-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
@@ -301,19 +297,18 @@ footer li a {
 	z-index: 1;
 	right: 0;
   }
-  .burger- ul{
+  .burger-content ul{
 	list-style: none;
   }
-  .burger- ul li a{
+  .burger-content ul li a{
 	text-decoration: none;
 	font-family: 'Sansita Swashed';
 	color: gray;
   }
-  
   .burger:hover .burger-content {
 	display: block;
   }
-
+/*DOWNLOAD GRADES BUTTON*/
 button {
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
@@ -326,6 +321,7 @@ button {
 	display: grid;
 	margin: 0 auto;
 	margin-top: 25px;
+	/*vertically centered?*/
 }
 
 /*MEDIA QUERIES*/
@@ -382,8 +378,8 @@ and (orientation : portrait) {
 		padding: 0px !important;
 	}
 
- 	#content {
- 		width: 100%;
+ 	#home, #students, #forum, #grades {
+		width: 100%;
 		height: 88vh;
 		border-right: 12px solid #FBFCFC;
 		border-left: 12px solid #FBFCFC;
@@ -393,10 +389,13 @@ and (orientation : portrait) {
 		border-left: 12px solid #FBFCFC;
 	}
 
-	#content img {
+	#home img {
 		width: 90px !important;
 	}
-
+	.ytplayer{
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
  	.rightaside {
  		display: none;
  	}
@@ -410,10 +409,10 @@ and (orientation : portrait) {
 	 .burger{
 		display: block;
 	}
-	#content .students, .forums{
+	#students .studentsTable, .forums{
 		margin-left: 0 auto;
 	}
-	#content .students td {
+	#students .studentsTable td {
 		padding: 0px !important;
 		margin: 0px !important;
 	}
