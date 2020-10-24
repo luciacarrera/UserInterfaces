@@ -16,7 +16,72 @@
 </head>
 <body onload="myfunction()">
 	<!--div allows us to make divisions-->
-	<div id="container">
+	<div id="homepage" style="display: none;">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="wings">
+				<img src="Images/wings.png">
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="E-mail" required>
+				<input type="text" class="input-field" placeholder="Password" required>
+				<button type="submit" class="submit-btn">Log In</button>
+			</form>
+
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="Username"
+	 			required>
+				<input type="text" class="input-field" placeholder="NIA" pattern = "100+[0-9]{6}"required>
+				<input type="Password" class="input-field" placeholder="Password" pattern = "[a-Z, 0-9]{}"required>
+				<input type="text" class="input-field" placeholder="Name and Surname"required>
+				<input type="email" class="input-field" placeholder="Email" required>
+				<input type="date" class="input-field" placeholder="Birthday" required>
+				<input type="text" class="input-field" placeholder="ID document" required>
+  				<input list="roles" name="role" id="role" placeholder="Role">
+  				<datalist id="roles">
+    				<option value="Administrator">
+    				<option value="Teacher">
+    				<option value="Student">
+    			</datalist>
+    			<input type="text" class="input-field" placeholder="University" value="Alfea" readonly required>
+  				<input list="languages" name="language" id="language" placeholder="Language">
+  				<datalist id="languages">
+    				<option value="Spanish">
+    				<option value="English">
+    				<option value="Italian">
+    				<option value="French">
+    			</datalist>
+    			<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+				<button type="button" class="submit-btn-register">Save</button>
+			</form>
+		</div>
+	</div>
+
+		<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register")
+		var z = document.getElementById("btn");
+
+		function register() {
+    		x.style.left = "-400px";
+   			y.style.left = "50px";
+    		z.style.left = "110px";
+    	}
+
+
+		function login() {
+   			x.style.left = "50px";
+    		y.style.left = "450px";
+    		z.style.left = "0";
+    	}
+
+		</script>
+
+	<div id="container" style="display: block;">
 		<header>
 			<img src="Images/wings.png"; ; height="100px";>
 			<h1>Alfea</h1> 
@@ -32,7 +97,6 @@
 						<li><a href="">- Next Events</a>
 					</ul>
 				</div>
-			</div>
 			<!--navigation menu-->
 			<nav id=menu>
 				<!--unordered list-->

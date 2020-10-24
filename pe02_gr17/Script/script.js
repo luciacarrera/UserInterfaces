@@ -44,7 +44,6 @@ function centralChange(content) {
     }
 
 }
-
 // Function to export student's grades as Excel file
 function exportTableToExcel(tableID, filename = ''){
     var downloadLink;
