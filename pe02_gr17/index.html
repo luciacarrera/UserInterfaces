@@ -81,7 +81,7 @@
 
 		</script>
 
-	<div id="container" style="display: block;">
+	<div id="container">
 		<header>
 			<img src="Images/wings.png"; ; height="100px";>
 			<h1>Alfea</h1> 
@@ -121,7 +121,7 @@
 			</ul>
 		</aside>
 		<!--section that will change content-->
-		<section id="home">
+		<section class="centralContainer" id="home">
 			<!--Topic 1: School Life-->	
 			<section>	
 				<!--Photo, Title & Short Description-->
@@ -218,82 +218,62 @@
 				</article>
 			</section>
 		</section>
-		<section id="students">
+		<section class="centralContainer" id="students">
 			<h2>Alfea's Students</h2>
 			<table class="studentsTable">
 				<tr>
 					<td><img id="profile" src="Images/bloom.png";></td>
-					<td>Bloom</td>
-					<td>Domino</td>
-					<td>bloom@alfea.com</td>
+					<td id="mainTableCell"><h4>Bloom Domino</h4><p>bloom@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/stella.png"></td>
-					<td>Stella</td>
-					<td>Solaria</td>
-					<td>stella@alfea.com</td>
+					<td id="mainTableCell"><h4>Stella Solaria</h4> <p>stella@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/aisha.png"></td>
-					<td>Aisha</td>
-					<td>Andros</td>
-					<td>aisha@alfea.com</td>
+					<td id="mainTableCell"><h4>Aisha Andros</h4><p>aisha@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/flora.png"></td>
-					<td>Flora</td>
-					<td>Linphea</td>
-					<td>flora@alfea.com</td>
+					<td id="mainTableCell"><h4>Flora Linphea</h4><p>flora@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/musa.png"></td>
-					<td>Musa</td>
-					<td>Melodia</td>
-					<td>musa@alfea.com</td>
+					<td id="mainTableCell"><h4>Musa Melodia</h4><p>musa@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/tecna.png"></td>
-					<td>Tecna</td>
-					<td>Zenith</td>
-					<td>tecna@alfea.com</td>
+					<td id="mainTableCell"><h4>Tecna Zenith</h4><p>tecna@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/roxy.png"></td>
-					<td>Roxy</td>
-					<td>Gardenia</td>
-					<td>roxy@alfea.com</td>
+					<td id="mainTableCell"><h4>Roxy Gardenia</h4><p>roxy@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/daphne.png"></td>
-					<td>Daphne</td>
-					<td>Domino</td>
-					<td>daphne@alfea.com</td>
+					<td id="mainTableCell"><h4>Daphne Domino</h4><p>daphne@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/layla.png"></td>
-					<td>Layla</td>
-					<td>Andros</td>
-					<td>layla@alfea.com</td>
+					<td id="mainTableCell"><h4>Layla Andros</h4><p>layla@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 				<tr>
 					<td><img id="profile" src="Images/kimmy.png"></td>
-					<td>Kimmy</td>
-					<td>Temiscira</td>
-					<td>kimmy@alfea.com</td>
+					<td id="mainTableCell"><h4>Kimmy Temiscira</h4><p>kimmy@alfea.com</p></td>
 					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
 				</tr>
 			</table>
 		</section>
-		<section id="grades">
+		<section class="centralContainer" id="grades">
 			<h2>Student's Grades</h2>
 			<table class="grades">
 				<tr>
@@ -365,11 +345,11 @@
 			</table>
 			<button onclick="exportTableToExcel('grades')">Download Grades</button>
 		</section>
-		<section id="forum">
+		<section class="centralContainer" id="forum">
 			<h2>Forums</h2>
 			<table class="forums">
 				<tr id= firstrow>
-					<th>Theme</th>
+					<th id="col1">Theme</th>
 					<th>#Messages</th>
 					<th >Last Message</th>
 				</tr>

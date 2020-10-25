@@ -181,7 +181,7 @@ header nav li a{
 
 /*CENTRAL CONTENT STYLE*/
 /*central container configuration*/
-#home, #students, #grades, #forum {
+.centralContainer {
 	display: table-cell;
 	width: 50%;
 	height: 500px;
@@ -192,6 +192,13 @@ header nav li a{
 	border-left: 24px solid #FBFCFC;
 	box-sizing: border-box;
 	overflow-y: scroll;
+}
+.centralContainer h2{
+	margin:20px 0 0px 0;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Sansita Swashed';
+	color:#f18e85;
 }
 
 /*home configuration*/
@@ -240,38 +247,37 @@ header nav li a{
 	margin-right: 20px;
 }
 
-#home h2, #students h2, #grades h2, #forum h2{
-	margin:20px 0 0px 0;
-	text-align: center;
-	font-size: 30px;
-	font-family: 'Sansita Swashed';
-	color:#f18e85;
-}
-
 /*students configuration*/
-
 #students .studentsTable
  {
 	border-collapse: collapse;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
-	background-color: #ffeceb;
 	margin-top: 20px;
+	overflow-x:auto;
+	width: 83.33%;
 }
-
 #students .studentsTable td {
-	border: solid #ffbdb7 3px;
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
 	padding: 10px;
+	width: 5%;
 }
 #students .studentsTable #profile{
-	width: 100px;
+	width: 75%;
+	border-radius: 100%;
 }
 #msg{
-	width: 35px;
+	width: 50%;
+}
+#mainTableCell{
+	line-height: 1pt;
+	text-align: left;
+}
+#mainTableCell h4, p{
+	text-align: left;
 }
 /*GRADES*/
 #grades .grades{
@@ -296,19 +302,26 @@ header nav li a{
 
 /*FORUMS*/
 #forum .forums{
-	margin: 10px 40px 0 40px;
+	margin: 10px 20px 0 20px;
+	overflow-x:auto;
 }
 #forum .forums tr{
 	height: 60px;
 	border: none;
 }
 
-#forum .forums th{
-	font-size: 18px;
+#forum .forums th, #col1{
+	column-fill: auto;
 	vertical-align: bottom;
 	font-family: 'Sansita Swashed';
-	white-space: nowrap;
+	white-space: wrap;
 	padding: 0 20px 20px 20px;
+}
+
+
+.forums td{
+	column-fill: auto;
+	white-space: wrap;
 }
 
 #forum .forums tr:nth-child(even){
@@ -447,18 +460,18 @@ and (orientation : portrait) {
 		width: 30%;
 		height: 90vh;
 	}
-	#content{
+	.centralContainer{
 		width:70%;
 		height: 90vh;
 	}
-	#content h2{
+	.centralContainer h2{
 		margin-bottom: 15px;
 	}
-
-	#content .students{
+	.centralContainer #students{
 		margin: 0 auto;
 	}
-	#content .forums th{
+	
+	.centralContainer #forums th{
 		white-space: normal !important;
 		font-size: 15px;
 	}
@@ -466,7 +479,6 @@ and (orientation : portrait) {
 		white-space: normal;
 		padding: 0px !important;
 	}
-
 	.rightaside{
 		display: none;
 	}
@@ -489,8 +501,10 @@ and (orientation : portrait) {
 	.students td{
 		padding: 0px !important;
 	}
-
- 	#home, #students, #forum, #grades {
+	.studentsTable td{
+		font-size: x-small!important;
+	}
+ 	.centralContainer {
 		width: 100%;
 		height: 88vh;
 		border-right: 12px solid #FBFCFC;
@@ -536,4 +550,8 @@ and (orientation : portrait) {
 		width: 15px !important;
 	}
 
+ }
+ /*GRID VIEW*/
+ *{
+	box-sizing: border-box;
  }
