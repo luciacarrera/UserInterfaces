@@ -310,15 +310,20 @@ header nav li a{
 	border: none;
 }
 
-#forum .forums th, #col1{
+#forum .forums th{
 	column-fill: auto;
-	vertical-align: bottom;
 	font-family: 'Sansita Swashed';
 	white-space: wrap;
-	padding: 0 20px 20px 20px;
+	padding: 10px 20px 10px 20px;
+	vertical-align: middle;
+	
 }
-
-
+#forumCol2, #forumCol3{
+	width: 29%;
+}
+#col1{
+	width: 42%;
+}
 .forums td{
 	column-fill: auto;
 	white-space: wrap;
@@ -548,6 +553,9 @@ and (orientation : portrait) {
 	}
 	.students #msg{
 		width: 15px !important;
+	}
+	#mainTableCell h4, p{
+		font-size: medium;
 	}
 
  }
