@@ -522,16 +522,28 @@ and (orientation : portrait) {
 
 	#home img {
 		width: 90px !important;
+		vertical-align: middle!important;
+
 	}
-	/*DOESNT WORK*/
-	.ytplayer{
-		margin-left: auto !important;
-		margin-right: auto !important;
+	#home h2{
+		font-size: 38px !important;
+		vertical-align: middle!important;
+		margin-bottom: 25px!important;
+
+	}
+	#home h3,p{
+		text-align:center;
+	}
+	#ytplayer{
+		margin:0 auto !important;
+		float:none !important;
+		display: block;
+		width: 100% !important;
+		margin-bottom: 15px!important;
 	}
  	.rightaside {
  		display: none;
  	}
-
  	#menu {
  		display: none;
 	 }
