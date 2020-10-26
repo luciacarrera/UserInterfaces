@@ -1,11 +1,12 @@
-/*function myfunction() {
-    document.getElementById("students").style.display = "none";
-}*/
+//Synonym to $(document).ready(function() {:
 document.addEventListener('DOMContentLoaded', function() {
+    //CENTRAL CONTAINER
     document.getElementById("students").style.display = "none";
     document.getElementById("grades").style.display = "none";
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
+    //CALENDAR
+
 }, false);
 
 //This function changes the content of the central container
@@ -75,53 +76,8 @@ function exportTableToExcel(tableID, filename = ''){
         downloadLink.click();
     }
 }
-// This function shows a calendar
-let today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
-let months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-let monthAndYear = document.getElementbyId("monthAndYear");
-
-function showCalendar(month, year) {
-    let firstDay = new Date(year, month).getDay();
-    let daysinMonth = 32 - new Date(year, month, 32).getDate();
-    let tbl = document.getElementbyId("calendar-body");
-    tbl.innerHTML = ""
-    monthAndYear.innerHTML = months[month] + " " + year
-    let date = 1;
-
-    for(let i = 0; i < 6; i++) {
-        let row = document.createElement('tr')
-        for(let j = 0; j < 7; j++) {
-            if(i === 0 && j < firstDay) {
-                let cell = document.createElement('td')
-                let cellText = document.createTextNode("");
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            else if(date > daysInMonth) {
-                break;
-            }
-            else {
-                let cell = document.createElement("td");
-                let cellText = document.createTextNode(date);
-                cell.appendChild(cellText);
-                row.appendChild(cell);
-            }
-            date++;
-        }
-        tbl.appendChild(row);
-    }
-}
-
-function previous() {
-    currentYear = (currentMonth === 0)? currentYear: currentYear - 1;
-    currentMonth = currentMonth === 0? 11: currentMonth - 1;
-    showCalendar(currentMonth, currentYear);
-}
-
-function next() {
-    currentYear = (currentMonth === 11)? currentYear + 1 : currentYear;
-    currentMonth = (currentMonth + 1) % 12;
-    showCalendar(currentMonth, currentYear);
+function showCal(){
+    $('#dd').calendar({
+        trigger:null
+    });
 }

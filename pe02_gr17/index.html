@@ -5,14 +5,17 @@
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 		@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
-		</style>
+	</style>
 	<meta charset="UFT-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alfea School for Fairies</title>
 	<link rel="shortcut icon" href="Images/icon.ico" />
 	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="stylesheet" type="text/css" href="Style/calendar.css">
+
 	<script src= "script/script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="script/calendar.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body onload="myfunction()">
 	<!--div allows us to make divisions-->
@@ -386,11 +389,12 @@
 			<p> Pixies are coming back to Alfea. Any suggestions for making their visit as remarkable as possible?
 			<p> Potionology's last topic will be covered during the lab session of this week. Do not miss it!
 			<p>Final mark of Metamorphosymbiosis is already available. Check it now.</p>
-			<h2>Next Events</h2>
+			<h2 onclick = "showCal()">Next Events</h2>
 			<p>Submission of "New power abilities progress" is due Friday, 16 October, 11:59PM</p>
 			<p>History of Magic: Final Exam 20/10</p>
 		</aside>
-
+		<div id="dd"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<!--footer section-->
 		<footer>
 			<ul>
@@ -399,5 +403,6 @@
 				<li><a href="">© 2020 Alfea Studies</a>
 		</footer>
 	</div>
+	
 </body>
 </html>
