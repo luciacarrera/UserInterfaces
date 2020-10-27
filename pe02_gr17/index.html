@@ -19,7 +19,7 @@
 </head>
 <body onload="myfunction()">
 	<!--div allows us to make divisions-->
-	<div id="homepage" style="display: none;">
+	<div id="homepage">
 		<div class="form-box">
 			<div class="button-box">
 				<div id="btn"></div>
@@ -32,7 +32,7 @@
 			<form id="login" class="input-group">
 				<input type="text" class="input-field" placeholder="E-mail" required>
 				<input type="text" class="input-field" placeholder="Password" required>
-				<button type="submit" class="submit-btn">Log In</button>
+				<button type="submit" class="submit-btn" onclick="openAlfea()">Log In</button>
 			</form>
 
 			<form id="register" class="input-group">
@@ -59,32 +59,12 @@
     				<option value="French">
     			</datalist>
     			<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-				<button type="button" class="submit-btn-register">Save</button>
+				<button type="button" class="submit-btn-register" onclick="openAlfea()">Save</button>
 			</form>
 		</div>
 	</div>
 
-		<script>
-		var x = document.getElementById("login");
-		var y = document.getElementById("register")
-		var z = document.getElementById("btn");
-
-		function register() {
-    		x.style.left = "-400px";
-   			y.style.left = "50px";
-    		z.style.left = "110px";
-    	}
-
-
-		function login() {
-   			x.style.left = "50px";
-    		y.style.left = "450px";
-    		z.style.left = "0";
-    	}
-
-		</script>
-
-	<div id="container">
+	<div id="container" style="display: none;">
 		<header>
 			<img src="Images/wings.png"; ; height="100px";>
 			<h1>Alfea</h1> 
