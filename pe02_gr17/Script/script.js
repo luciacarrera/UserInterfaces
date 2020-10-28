@@ -34,7 +34,7 @@ function centralChange(content) {
         students.style.display= "none";
         home.style.display="none";
         grades.style.display= "none";
-        forum.style.display="block";
+        forum.style.display = "block";
     }  
     else{
         students.style.display= "none";
@@ -107,4 +107,77 @@ function login() {
     x.style.left = "50px";
     y.style.left = "450px";
     z.style.left = "0";
+}
+
+// Function to send a message in the forums and reset data
+function eraseText() {
+    document.getElementById("message").value = "Write a new message...";
+}
+
+// Function to switch between forum topics
+function changeTopic(topic) {
+    var topics = document.getElementById("topics");
+    var trix = document.getElementById("trix");
+    var specialists = document.getElementById("specialists");
+    var newgirl = document.getElementById("newgirl");
+    var dark = document.getElementById("dark");
+    var guitar = document.getElementById("guitar");
+
+    if(topic == 'forums'){
+        topics.style.display = "block";
+        trix.style.display="none";
+        specialists.style.display= "none";
+        newgirl.style.display= "none";
+        dark.style.display="none";
+        guitar.style.display="none";
+    }
+    
+    else if(topic == 'trix'){
+        topics.style.display="none";
+        specialists.style.display= "none";
+        newgirl.style.display= "none";
+        dark.style.display="none";
+        guitar.style.display="none";
+        trix.style.display = "block";   
+    }
+    else if(topic == 'specialists'){
+        specialists.style.display="block";
+        newgirl.style.display= "none";
+        dark.style.display="none";
+        guitar.style.display="none";
+        topics.style.display = "none";
+        trix.style.display = "none"
+    }
+     else if(topic == 'newgirl'){
+        specialists.style.display="none";
+        newgirl.style.display= "block";
+        dark.style.display="none";
+        guitar.style.display="none";
+        topics.style.display = "none";
+        trix.style.display = "none"
+    }
+     else if(topic == 'dark'){
+        specialists.style.display="none";
+        newgirl.style.display= "none";
+        dark.style.display="block";
+        guitar.style.display="none";
+        topics.style.display = "none";
+        trix.style.display = "none"
+    }  
+     else if(topic == 'guitar'){
+        specialists.style.display="none";
+        newgirl.style.display= "none";
+        dark.style.display="none";
+        guitar.style.display="block";
+        topics.style.display = "none";
+        trix.style.display = "none"
+    }
+    else {
+        topics.style.display = "block";
+        specialists.style.display="none";
+        newgirl.style.display= "none";
+        dark.style.display="none";
+        guitar.style.display="none";
+        trix.style.display = "none"
+    }
 }

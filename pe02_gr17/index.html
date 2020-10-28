@@ -328,41 +328,206 @@
 			</table>
 			<button onclick="exportTableToExcel('grades')">Download Grades</button>
 		</section>
+
 		<section class="centralContainer" id="forum">
-			<h2>Forums</h2>
-			<table class="forums">
+			<table id="trix" style="display: none;">
 				<tr id= firstrow>
-					<th id="forumCol1">Theme</th>
-					<th id="forumCol2">#Messages</th>
-					<th id="forumCol3">Last Message</th>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
 				</tr>
-				<tr id = "intro">
-					<td id= col>The Trix are so annoying</td>
-					<td>1567</td>
-					<td>05/10/2020 01:06</td>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
 				</tr>
-				<tr id = "intro">
-					<td id= col>Are the specialists single?</td>
-					<td>302</td>
-					<td>03/11/2009 11:59</td>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/stella.png"></td>
+					<td>I can't stand being around them. Who the hell do they think they are?</td>
+					<td>26/10/2020 01:06</td>
 				</tr>
-				<tr id = "intro">
-					<td id= col>Who is the new girl Aisha?</td>
-					<td>29</td>
-					<td>28/09/2010 15:33</td>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/bloom.png"></td>
+					<td>You're absolutely right Stella. No wonder why they were expelled from Cloud Tower</td>
+					<td>27/10/2020 03:12</td>
 				</tr>
-				<tr id = "intro">
-					<td id= col>Why is Bloom suddenly so dark???</td>
-					<td>111</td>
-					<td>31/12/2013 17:11</td>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/tecna.png"></td>
+					<td>Maybe they were kicked out from there because of their old-fashioned look. Do they use mirrors?</td>
+					<td>28/10/2020 04:27</td>
 				</tr>
-				<tr id = "intro">
-					<td id= col>Musa stop playing the guitar at one in the morning</td>
-					<td>1</td>
-					<td>04/05/2016 1:05</td>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
 				</tr>
 			</table>
+
+			<table id="specialists" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/layla.png"></td>
+					<td>I've heard that Brandon has recently broken up with Stella. Should I text him now?</td>
+					<td>23/10/2020 7:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/musa.png"></td>
+					<td>Perhaps you should wait. He must be terribly sad</td>
+					<td>24/10/2020 08:33</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/flora.png"></td>
+					<td>Layla, go ahead. The Specialists do not remain single for long!</td>
+					<td>25/10/2020 06:17</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<table id="newgirl" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/daphne.png"></td>
+					<td>Have you talked to Aisha, the new student?</td>
+					<td>20/10/2020 8:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/roxy.png"></td>
+					<td>I haven't. We could meet with her this weekend to start getting to know each other. Are you in?</td>
+					<td>21/10/2020 11:53</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/stella.png"></td>
+					<td>Absolutely. Send a message with the date and place. I'm so excited</td>
+					<td>22/10/2020 12:17</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<table id="dark" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/musa.png"></td>
+					<td>I saw Bloom in the campus this morning. She seemed pretty upset. Is something wrong with her?</td>
+					<td>17/10/2020 9:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/layla.png"></td>
+					<td>Her parents are getting divorced. This could be one of the reasons</td>
+					<td>18/10/2020 7:53</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/stella.png"></td>
+					<td>Poor Bloom. She knows I'm here for anything she needs</td>
+					<td>19/10/2020 8:12</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<table id="guitar" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/bloom.png"></td>
+					<td>Musa is playing the guitar every night at 1 AM. I can't sleep! Couldn't she be more considerated with the rest of us?</td>
+					<td>14/10/2020 3:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/daphne.png"></td>
+					<td>She told me that she has an exam next week. Because of studying, it is her free slot</td>
+					<td>15/10/2020 2:51</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/tecna.png"></td>
+					<td>Well, Musa is our friend. I guess we have no other choice than let her play</td>
+					<td>16/10/2020 9:12</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<div id = "topics">
+				<h2>Forums</h2>
+				<table class="forums">
+					<tr id= firstrow>
+						<th id="forumCol1">Theme</th>
+						<th id="forumCol2">#Messages</th>
+						<th id="forumCol3">Last Message</th>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('trix')">The Trix are so annoying</td>
+						<td>1567</td>
+						<td>05/10/2020 01:06</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('specialists')">Are the specialists single?</td>
+						<td>302</td>
+						<td>03/11/2009 11:59</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('newgirl')">Who is the new girl Aisha?</td>
+						<td>29</td>
+						<td>28/09/2010 15:33</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('dark')">Why is Bloom suddenly so dark???</td>
+						<td>111</td>
+						<td>31/12/2013 17:11</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('guitar')">Musa stop playing the guitar at one in the morning</td>
+						<td>1</td>
+						<td>04/05/2016 1:05</td>
+					</tr>
+				</table>
+			</div>
 		</section>
+
 		<!--left side column-->
 		<aside class="rightaside">
 			<h2>Latest News</h2>
@@ -375,6 +540,7 @@
 		</aside>
 		<div id="dd"></div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 		<!--footer section-->
 		<footer>
 			<ul>
@@ -383,6 +549,5 @@
 				<li><a href="">© 2020 Alfea Studies</a>
 		</footer>
 	</div>
-	
 </body>
 </html>

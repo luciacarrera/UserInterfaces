@@ -265,8 +265,12 @@ header nav li a{
 	padding: 10px;
 	width: 5%;
 }
-#students .studentsTable #profile{
+#students .studentsTable #profile {
 	width: 75%;
+	border-radius: 100%;
+}
+#forumprofile {
+	width: 45%;
 	border-radius: 100%;
 }
 #msg{
