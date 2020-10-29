@@ -127,9 +127,10 @@ body {
 	margin: 10px 0;
 	border-left: 0;
 	border-right: 0;
-	border-bottom: #FBFCFC;
+	border-top: #FBFCFC;
 	outline: none;
 	background: transparent;
+	top: 30%;
 }
 
 .submit-btn {
