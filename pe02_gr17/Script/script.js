@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("grades").style.display = "none";
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
-    //CALENDAR
-
+   
 }, false);
 
 //This function changes the content of the central container
@@ -76,11 +75,7 @@ function exportTableToExcel(tableID, filename = ''){
         downloadLink.click();
     }
 }
-function showCal(){
-    $('#dd').calendar({
-        trigger:null
-    });
-}
+
 
 // Function to open Alfea's webpage
 function openAlfea() {
@@ -181,3 +176,11 @@ function changeTopic(topic) {
         trix.style.display = "none"
     }
 }
+
+//CALENDAR
+function showCal() {
+    var cal = document.getElementById("myPopup");
+    cal.style.display="block";
+ }
+
+
