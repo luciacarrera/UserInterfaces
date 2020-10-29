@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--what appears on the page's tab-->
+<head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap');
+	</style>
+	<meta charset="UFT-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Alfea School for Fairies</title>
+	<link rel="shortcut icon" href="Images/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
+	<link rel="stylesheet" type="text/css" href="Style/calendar.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src= "script/script.js"></script>
+	<script src="script/calendar.js"></script>
+</head>
+<body onload="myfunction()">
+	<!--div allows us to make divisions-->
+	<div id="homepage">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log In</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="wings">
+				<img src="Images/wings.png">
+			</div>
+			<form id="login" class="input-group">
+				<input type="text" class="input-field" placeholder="E-mail" required>
+				<input type="text" class="input-field" placeholder="Password" required>
+				<button type="submit" class="submit-btn" onclick="openAlfea()">Log In</button>
+			</form>
+
+			<form id="register" class="input-group">
+				<input type="text" class="input-field" placeholder="Username"
+	 			required>
+				<input type="text" class="input-field" placeholder="NIA" pattern = "100+[0-9]{6}"required>
+				<input type="Password" class="input-field" placeholder="Password" pattern = "[a-Z, 0-9]{}"required>
+				<input type="text" class="input-field" placeholder="Name and Surname"required>
+				<input type="email" class="input-field" placeholder="Email" required>
+				<input type="date" class="input-field" placeholder="Birthday" required>
+				<input type="text" class="input-field" placeholder="ID document" required>
+  				<input list="roles" name="role" id="role" placeholder="Role">
+  				<datalist id="roles">
+    				<option value="Administrator">
+    				<option value="Teacher">
+    				<option value="Student">
+    			</datalist>
+    			<input type="text" class="input-field" placeholder="University" value="Alfea" readonly required>
+  				<input list="languages" name="language" id="language" placeholder="Language">
+  				<datalist id="languages">
+    				<option value="Spanish">
+    				<option value="English">
+    				<option value="Italian">
+    				<option value="French">
+    			</datalist>
+    			<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+				<button type="button" class="submit-btn-register" onclick="openAlfea()">Save</button>
+			</form>
+		</div>
+	</div>
+
+	<div id="container" style="display: none;">
+		<header>
+			<img src="Images/wings.png"; ; height="100px";>
+			<h1>Alfea</h1> 
+			<div class= "burger">
+				<span>&equiv;</span>
+				<div class = "burger-content">
+					<ul>
+						<li onclick = "centralChange('students')"><a>- Students</a>
+						<li onclick = "centralChange('forum')"><a>- Forums</a>
+						<li onclick = "centralChange('grades')"><a>- Grades</a>
+						<li onclick = "centralChange('home')"><a>- Home</a>
+						<li><a href="">- Latest News</a>
+						<li><a href="">- Next Events</a>
+					</ul>
+				</div>
+			<!--navigation menu-->
+			<nav id=menu>
+				<!--unordered list-->
+				<ul>
+					<!--list item-->
+					<li><a href="">ABOUT ALFEA</a>
+					<li><a href="">ADMISSION</a>
+					<li><a href="">STUDIES</a>
+					<li><a href="">RESEARCH</a>
+				</ul>
+			</nav>
+		</header>
+
+		<!--column to the left-->
+		<aside class="leftaside">
+			<h2>Courses</h2>
+			<ul class ="chosen">
+				<li onclick = "centralChange('students')"><a>- Students</a>
+				<li onclick = "centralChange('forum')"><a>- Forums</a>
+				<li onclick= "centralChange('grades')"><a>- Grades</a>
+				<li id="homeButton" onclick= "centralChange('home')"><a>- Home</a></li>
+			</ul>
+		</aside>
+		<!--section that will change content-->
+		<section class="centralContainer" id="home">
+			<!--Topic 1: School Life-->	
+			<section>	
+				<!--Photo, Title & Short Description-->
+				<article>
+					<img src="Images/Alfea.jpg";>		
+					<h2 id= topic>School Life</h2>
+					<p>As an extremely prestigious school for fairies, we pride ourselves in 
+					our excellent academia which shapes the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned
+				 	political leaders, philosophers, scientists and warriors.</p>
+				</article>
+				<!--First Video & Description-->
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe>
+					<h3>Welcome to Alfea</h3>
+					<p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
+					</p>
+				</article>
+				<!--2nd Video-->
+				<article>
+					<iframe id="ytplayer" type="text/html"
+					src="https://www.youtube.com/embed/kOc9ek3Evvc?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe>
+					<h3>Class Moments</h3>
+					<p>If you are curious about our teaching methods, here is a compilation of various class moments through the years.</p>
+				</article>
+				<!--3rd Video-->
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe>
+					<h3>The Dormitories</h3>
+					<p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+						a fun little sneak peak of the rooms.
+					</p>
+				</article>
+			</section>
+			<!--Topic 2: Work Hard, Play Hard-->	
+			<section>
+				<article>
+					<img src="Images/Party.jpg"; width=200px>
+					<h2 id= topic>Work & Play</h2>
+					<p>Here at Alfea, we are well aware that it is impossible to just study and we make sure that our students have healthy mix of academia and fun. 
+						 In the following videos we will show you
+						some of the many activities they can enjoy on campus.
+					</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/L3IIzxrS1tY?start=35&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Talent Shows</h3>
+					<p>Our alums all have various types of skills which we love to showcase in our annual Talent Show. Here you can see 
+						last years winners, The Winx Club.
+					</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/uAujeQPtkjU?start=3&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Fashion Shows</h3><p>Our school has various extracurricular clubs, one being
+						Fashion Design. Each term they host a fashion show to demonstrate their latest creations.
+					</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/xPvfAhG_IbQ?start=7&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>End of Year Party</h3>
+					<p>Once the school year is over, we celebrate it by throwing a huge party to congratulate our students for all of their hard work.</p>
+				</article>
+			</section>
+			<!--Topic 3: Fairy Transformations-->	
+			<section>
+				<article>
+					<img src="Images/Transformation.png"; width=200px>
+					<h2 id= topic>Fairy Forms</h2>
+					<p> Fairy forms or transformations are different levels of power that fairies can attain as an extention of their magical abilities.
+						In our school, we work with our students not only to help them become full-fledged fairies, but so that they reach higher fairy forms.
+					</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/beH3AZUS7f0?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Winx</h3><p>This is the basic fairy form, if you have yet to unlock it, we will make sure that you do by the end of your freshmen year. </p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/gms5Krs4Qpg?modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Enchantix</h3><p> Enchantix is the "Final Fairy Form" in a fairy's formal education. In our curriculum, earning Enchantix is the final exam.</p>
+				</article>
+				<article>
+					<iframe id="ytplayer" type="text/html" 
+					src="https://www.youtube.com/embed/vHhkiqdtGb4?start=7&modestbranding=1&iv_load_policy=3"
+					frameborder="0" allowfullscreen></iframe><h3>Higher Fairy Forms</h3><p>After Enchantix, there is an infinite number of levels a fairy can reach, which are meant for specific situations. An example of this is Butterflix.</p>
+				</article>
+			</section>
+		</section>
+		<section class="centralContainer" id="students">
+			<h2>Alfea's Students</h2>
+			<table class="studentsTable">
+				<tr>
+					<td><img id="profile" src="Images/bloom.png";></td>
+					<td id="mainTableCell"><h4>Bloom Domino</h4><p>bloom@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/stella.png"></td>
+					<td id="mainTableCell"><h4>Stella Solaria</h4> <p>stella@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/aisha.png"></td>
+					<td id="mainTableCell"><h4>Aisha Andros</h4><p>aisha@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/flora.png"></td>
+					<td id="mainTableCell"><h4>Flora Linphea</h4><p>flora@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/musa.png"></td>
+					<td id="mainTableCell"><h4>Musa Melodia</h4><p>musa@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/tecna.png"></td>
+					<td id="mainTableCell"><h4>Tecna Zenith</h4><p>tecna@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/roxy.png"></td>
+					<td id="mainTableCell"><h4>Roxy Gardenia</h4><p>roxy@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/daphne.png"></td>
+					<td id="mainTableCell"><h4>Daphne Domino</h4><p>daphne@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/layla.png"></td>
+					<td id="mainTableCell"><h4>Layla Andros</h4><p>layla@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+				<tr>
+					<td><img id="profile" src="Images/kimmy.png"></td>
+					<td id="mainTableCell"><h4>Kimmy Temiscira</h4><p>kimmy@alfea.com</p></td>
+					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+				</tr>
+			</table>
+		</section>
+		<section class="centralContainer" id="grades">
+			<h2>Student's Grades</h2>
+			<table class="grades">
+				<tr>
+					<th>Student</th>
+					<th>Potionology</th>
+					<th>Self Defense</th>
+					<th>History of Magic</th>
+				</tr>
+				<tr>
+					<td>Bloom Domino</td>
+					<td>5.2</td>
+					<td>6.7</td>
+					<td>9.8</td>
+				</tr>
+				<tr>
+					<td>Stella Solaria</td>
+					<td>4.3</td>
+					<td>7.7</td>
+					<td>6.1</td>
+				</tr>
+				<tr>
+					<td>Aisha Andros</td>
+					<td>3.3</td>
+					<td>2.5</td>
+					<td>4.6</td>
+				</tr>
+				<tr>
+					<td>Flora Linphea</td>
+					<td>9.1</td>
+					<td>8.5</td>
+					<td>10.0</td>
+				</tr>
+				<tr>
+					<td>Musa Melodia</td>
+					<td>6.0</td>
+					<td>5.0</td>
+					<td>2.4</td>
+				</tr>
+				<tr>
+					<td>Tecna Zenith</td>
+					<td>8.3</td>
+					<td>9.0</td>
+					<td>7.7</td>
+				</tr>
+				<tr>
+					<td>Roxy Gardenia</td>
+					<td>3.9</td>
+					<td>4.4</td>
+					<td>5.0</td>
+				</tr>
+				<tr>
+					<td>Daphne Domino</td>
+					<td>10.0</td>
+					<td>10.0</td>
+					<td>10.0</td>
+				</tr>
+				<tr>
+					<td>Layla Andros</td>
+					<td>0.5</td>
+					<td>1.0</td>
+					<td>2.6</td>
+				</tr>
+				<tr>
+					<td>Kimmy Temiscira</td>
+					<td>6.1</td>
+					<td>8.5</td>
+					<td>9.9</td>
+				</tr>
+			</table>
+			<button onclick="exportTableToExcel('grades')">Download Grades</button>
+		</section>
+
+		<section class="centralContainer" id="forum">
+			<table id="trix" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/stella.png"></td>
+					<td>I can't stand being around them. Who the hell do they think they are?</td>
+					<td>26/10/2020 01:06</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/bloom.png"></td>
+					<td>You're absolutely right Stella. No wonder why they were expelled from Cloud Tower</td>
+					<td>27/10/2020 03:12</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/tecna.png"></td>
+					<td>Maybe they were kicked out from there because of their old-fashioned look. Do they use mirrors?</td>
+					<td>28/10/2020 04:27</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+
+			<table id="specialists" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/layla.png"></td>
+					<td>I've heard that Brandon has recently broken up with Stella. Should I text him now?</td>
+					<td>23/10/2020 7:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/musa.png"></td>
+					<td>Perhaps you should wait. He must be terribly sad</td>
+					<td>24/10/2020 08:33</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/flora.png"></td>
+					<td>Layla, go ahead. The Specialists do not remain single for long!</td>
+					<td>25/10/2020 06:17</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<table id="newgirl" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/daphne.png"></td>
+					<td>Have you talked to Aisha, the new student?</td>
+					<td>20/10/2020 8:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/roxy.png"></td>
+					<td>I haven't. We could meet with her this weekend to start getting to know each other. Are you in?</td>
+					<td>21/10/2020 11:53</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/stella.png"></td>
+					<td>Absolutely. Send a message with the date and place. I'm so excited</td>
+					<td>22/10/2020 12:17</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<table id="dark" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/musa.png"></td>
+					<td>I saw Bloom in the campus this morning. She seemed pretty upset. Is something wrong with her?</td>
+					<td>17/10/2020 9:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/layla.png"></td>
+					<td>Her parents are getting divorced. This could be one of the reasons</td>
+					<td>18/10/2020 7:53</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/stella.png"></td>
+					<td>Poor Bloom. She knows I'm here for anything she needs</td>
+					<td>19/10/2020 8:12</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<table id="guitar" style="display: none;">
+				<tr id= firstrow>
+					<th id="forumCol1"></th>
+					<th id="forumCol2"></th>
+					<th id="forumCol3"></th>
+				</tr>
+				<tr>
+					<td id= col></td>
+					<td><h2 onclick="changeTopic('forums')">Back to Forums</h2></td>
+					<td></td>
+				</tr>
+				<tr id = "firstmessage">
+					<td id= col><img id="forumprofile" src="Images/bloom.png"></td>
+					<td>Musa is playing the guitar every night at 1 AM. I can't sleep! Couldn't she be more considerated with the rest of us?</td>
+					<td>14/10/2020 3:01</td>
+				</tr>
+				<tr id = "secondmessage">
+					<td id= col><img id="forumprofile" src="Images/daphne.png"></td>
+					<td>She told me that she has an exam next week. Because of studying, it is her free slot</td>
+					<td>15/10/2020 2:51</td>
+				</tr>
+				<tr id = "thirdmessage">
+					<td id= col><img id="forumprofile" src="Images/tecna.png"></td>
+					<td>Well, Musa is our friend. I guess we have no other choice than let her play</td>
+					<td>16/10/2020 9:12</td>
+				</tr>
+				<tr id = "sendmessage">
+					<td id= col></td>
+					<td><textarea id="message" rows="5" cols="30">Write a new message...</textarea></td>
+					<td><button onclick="eraseText()">Send</td>
+				</tr>
+			</table>
+			<div id = "topics">
+				<h2>Forums</h2>
+				<table class="forums">
+					<tr id= firstrow>
+						<th id="forumCol1">Theme</th>
+						<th id="forumCol2">#Messages</th>
+						<th id="forumCol3">Last Message</th>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('trix')">The Trix are so annoying</td>
+						<td>1567</td>
+						<td>05/10/2020 01:06</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('specialists')">Are the specialists single?</td>
+						<td>302</td>
+						<td>03/11/2009 11:59</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('newgirl')">Who is the new girl Aisha?</td>
+						<td>29</td>
+						<td>28/09/2010 15:33</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('dark')">Why is Bloom suddenly so dark???</td>
+						<td>111</td>
+						<td>31/12/2013 17:11</td>
+					</tr>
+					<tr id = "intro">
+						<td id= col onclick="changeTopic('guitar')">Musa stop playing the guitar at one in the morning</td>
+						<td>1</td>
+						<td>04/05/2016 1:05</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+
+		<!--left side column-->
+		<aside class="rightaside">
+			<h2>Latest News</h2>
+			<p> Pixies are coming back to Alfea. Any suggestions for making their visit as remarkable as possible?
+			<p> Potionology's last topic will be covered during the lab session of this week. Do not miss it!
+			<p>Final mark of Metamorphosymbiosis is already available. Check it now.</p>
+			<h2 onclick = "showCal()">Next Events</h2>
+			<p>Submission of "New power abilities progress" is due Friday, 16 October, 11:59PM</p>
+			<p>History of Magic: Final Exam 20/10</p>
+			<div id="dd"></div>
+		</aside>
+<<<<<<< HEAD
+=======
+		<div id="dd"></div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+>>>>>>> 6780afb33ca446a6b3d9035bb37bec6131744a2c
+		<!--footer section-->
+		<footer>
+			<ul>
+				<li><a href="">Privacy Policy</a>
+				<li><a href="">Sitemap</a>
+				<li><a href="">© 2020 Alfea Studies</a>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,581 @@
+/*HEADER AND MENU STYLE*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Courier New;
+	background: #FBFCFC;
+}
+
+#homepage {
+	height: 100%;
+	width: 100%;
+	brackground-position: center;
+	background-size: cover;
+	position: absolute;
+}
+
+.form-box {
+	width: 380px;
+	height: 700px;
+	position: relative;
+	margin: 6% auto;
+	background: #fff;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.button-box {
+	width: 250px;
+	margin-top: 50px;
+	margin-left: 70px;
+	position: relative;
+	border-radius: 30px;
+}
+
+.toggle-btn {
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+	display: inline-block;
+}
+
+#btn {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100px;
+	background: #db928b;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.wings {
+	margin: 40px auto;
+	text-align: center;
+}
+
+.wings img {
+	width: 70px;
+	margin: 0 12px;
+}
+
+.input-group {
+	top: 180px;
+	margin-top: 70px;
+	position: absolute;
+	width: 300px;
+	transition: .5s;
+}
+
+.input-field {
+	width: 100%;
+	padding: 10 px 0;
+	margin: 10px 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: #FBFCFC;
+	outline: none;
+	background: transparent;
+}
+
+.submit-btn {
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #db928b;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.submit-btn-register {
+	width: 50%;
+	cursor: pointer;
+	display: block;
+	margin-top: 30px;
+	background: #db928b;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	display: inline-block;
+}
+
+span {
+	color: #777;
+	font-size: 15px;
+	font-family: 'Alex Brush';
+	bottom: 68px;
+	position: absolute;
+}
+
+#login {
+	left: 50px;
+}
+
+#register {
+	left: 450px;
+}
+
+header {
+	position: relative; 
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background: #FBFCFC;
+	vertical-align: b;
+	padding-top: 10px;
+	display: flex;
+}
+
+header img{
+    margin-left: 40px;
+	float: left;
+	position: relative;
+}
+
+header h1{
+	display: inline;
+	margin:0;
+	font-family: 'Alex Brush';
+	font-size: 90px;
+	color: #f5c8c4;;
+	text-align: left;
+}
+
+header nav{
+	padding-right: 20px;
+	list-style: none;
+}
+
+header nav li{
+	align-items:right;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 20px;	
+}
+
+header nav li a{
+	position: relative;
+	display: block;
+	padding: 10px;
+	font-size: 30px;
+	margin-left: 30px;
+	text-decoration: none;
+	color: gray;
+}
+
+#container {
+	display: table;
+	width: 100%;
+	margin: auto;
+}
+
+
+
+/*CENTRAL CONTENT STYLE*/
+/*central container configuration*/
+.centralContainer {
+	display: table-cell;
+	width: 50%;
+	height: 500px;
+	float: left;
+	background: #FADBD8;
+	/*Border Configuration*/
+	border-right: 24px solid #FBFCFC;
+	border-left: 24px solid #FBFCFC;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+.centralContainer h2{
+	margin:20px 0 0px 0;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Sansita Swashed';
+	color:#f18e85;
+}
+
+/*home configuration*/
+#home section{
+	border-bottom:5px solid white
+}
+
+#home article{
+	overflow: hidden;
+	/*margin order: up, right, down, left (clockwise)*/
+	margin: 20px 20px 20px 20px;
+}
+
+#home article img {
+	float: left;
+	width: 180px;
+	margin-right: 20px;
+}
+
+#home article #topic {
+	font-size: 30px;
+	color: #db928b;
+	font-family: 'Sansita Swashed';
+	margin-bottom: 3px;
+	margin:0 auto;
+	text-align: left;
+}
+
+#home article h3{
+	font-size: 20px;
+	color: #db928b;
+	font-family: 'Sansita Swashed';
+	margin: 0 0 3px 0;	
+}
+
+#home article p {
+	font-size: 13px;
+	font-family: 'Sansita Swashed';
+	margin: 0 auto;
+}
+
+#home article iframe{
+	width: 240px ;
+	height: 135px;
+	float:left;
+	margin-right: 20px;
+}
+
+/*students configuration*/
+#students .studentsTable
+ {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	overflow-x:auto;
+	width: 83.33%;
+}
+#students .studentsTable td {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+	padding: 10px;
+	width: 5%;
+}
+#students .studentsTable #profile {
+	width: 75%;
+	border-radius: 100%;
+}
+#forumprofile {
+	width: 45%;
+	border-radius: 100%;
+}
+#msg{
+	width: 50%;
+}
+#mainTableCell{
+	line-height: 1pt;
+	text-align: left;
+}
+#mainTableCell h4, p{
+	text-align: left;
+}
+/*GRADES*/
+#grades .grades{
+	margin: auto;
+	width: 90%;
+	margin-top: 10px;
+}
+
+#grades .grades th, td {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+}
+
+#grades .grades tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+#grades .grades tr:nth-child(odd){
+	background-color: #e0dddd;
+}
+
+/*FORUMS*/
+#forum .forums{
+	margin: 10px 20px 0 20px;
+	overflow-x:auto;
+}
+#forum .forums tr{
+	height: 60px;
+	border: none;
+}
+
+#forum .forums th{
+	column-fill: auto;
+	font-family: 'Sansita Swashed';
+	white-space: wrap;
+	padding: 10px 20px 10px 20px;
+	vertical-align: middle;
+	
+}
+#forumCol2, #forumCol3{
+	width: 29%;
+}
+#col1{
+	width: 42%;
+}
+.forums td{
+	column-fill: auto;
+	white-space: wrap;
+}
+
+#forum .forums tr:nth-child(even){
+	background-color: #fcc4bf;
+}
+#forum .forums tr:nth-child(odd){
+	background-color: #fdada6;
+}
+
+/*LEFT ASIDE STYLE*/
+.leftaside {
+	display:table-cell;
+	width: 25%;
+	height: 500px;
+	background: #FADBD8;
+	float: left;
+	/*Border Configuration*/
+	border-left: 24px solid #FBFCFC;
+	box-sizing: border-box;
+	display: block;
+}
+
+.leftaside h2, .rightaside h2 {
+	font-family: 'Sansita Swashed';
+	color: #db928b;
+	margin: 20px 20px 5px 20px;
+	font-size: 20px;
+}
+
+.chosen li {
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.chosen li a{
+	font-size: 15px;
+	font-family: 'Sansita Swashed';
+	text-align: left;
+	color: gray;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*RIGHT ASIDE STYLE*/
+.rightaside {
+	display: table-cell;
+	width: 25%;
+	height: 500px;
+	background: #FADBD8;
+	float: right;
+	/*Border Configuration*/
+	border-right: 24px solid #FBFCFC;
+	box-sizing: border-box;
+}
+
+.rightaside p {
+	font-size: 15px;
+	font-family: 'Sansita Swashed';
+	margin: 0 20px 10px 20px;
+	color: gray;
+}
+
+/*FOOTER STYLE*/
+footer {
+	background: #F5CDD3;
+	height: 100px;
+	clear: both;	
+	border: 24px solid #FBFCFC;
+	box-sizing: border-box;
+}
+
+footer li {
+	list-style: none;
+	margin-right: 20px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+footer li a {
+	text-decoration: none;
+	font-family: 'Alex Brush';
+	font-size: 20px;
+}
+
+/*BURGER MENU POP UP*/
+.burger {
+	position: relative;
+	display: none;
+  }
+.burger-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	right: 0;
+  }
+  .burger-content ul{
+	list-style: none;
+  }
+  .burger-content ul li a{
+	text-decoration: none;
+	font-family: 'Sansita Swashed';
+	color: gray;
+  }
+  .burger:hover .burger-content {
+	display: block;
+  }
+
+/*DOWNLOAD GRADES BUTTON*/
+button {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+  	background-color: #f2f2f2;
+  	border: none;
+  	color: black;
+  	padding: 15px 32px;
+  	text-decoration: none;
+	display: grid;
+	margin: 0 auto;
+	margin-top: 25px;
+	/*vertically centered?*/
+}
+
+/*MEDIA QUERIES*/
+/*Tablet Portrait*/
+@media only screen and (max-device-width : 768px) 
+and (orientation : portrait) {
+	header{
+		height: 10vh;
+	}
+	.leftaside{
+		width: 30%;
+		height: 90vh;
+	}
+	.centralContainer{
+		width:70%;
+		height: 90vh;
+	}
+	.centralContainer h2{
+		margin-bottom: 15px;
+	}
+	.centralContainer #students{
+		margin: 0 auto;
+	}
+	
+	.centralContainer #forums th{
+		white-space: normal !important;
+		font-size: 15px;
+	}
+	.students td{
+		white-space: normal;
+		padding: 0px !important;
+	}
+	.rightaside{
+		display: none;
+	}
+	#menu{
+		display: none;
+	}
+	footer{
+		display:flex;
+	}
+ }
+
+ /*Smartphone Portrait*/
+ @media only screen and (max-device-width: 600px) and (orientation : portrait) {
+	header{
+		height: 12vh;
+	} 
+	.leftaside{
+		display: none;
+	}
+	.students td{
+		padding: 0px !important;
+	}
+	.studentsTable td{
+		font-size: x-small!important;
+	}
+ 	.centralContainer {
+		width: 100%;
+		height: 88vh;
+		border-right: 12px solid #FBFCFC;
+		border-left: 12px solid #FBFCFC;
+	}
+	footer{
+		border-right: 12px solid #FBFCFC;
+		border-left: 12px solid #FBFCFC;
+	}
+
+	#home img {
+		width: 90px !important;
+		vertical-align: middle!important;
+
+	}
+	#home h2{
+		font-size: 38px !important;
+		vertical-align: middle!important;
+		margin-bottom: 25px!important;
+
+	}
+	#home h3,p{
+		text-align:center;
+	}
+	#ytplayer{
+		margin:0 auto !important;
+		float:none !important;
+		display: block;
+		width: 100% !important;
+		margin-bottom: 15px!important;
+	}
+ 	.rightaside {
+ 		display: none;
+ 	}
+ 	#menu {
+ 		display: none;
+	 }
+	 footer{
+		height: 100%;
+	 }
+	 .burger{
+		display: block;
+	}
+	#students .studentsTable, .forums{
+		margin-left: 0 auto;
+	}
+	#students .studentsTable td {
+		padding: 0px !important;
+		margin: 0px !important;
+	}
+	.students #profile{
+		width: 70px !important;
+	}
+	.students #msg{
+		width: 15px !important;
+	}
+	#mainTableCell h4, p{
+		font-size: medium;
+	}
+
+ }
+ /*GRID VIEW*/
+ *{
+	box-sizing: border-box;
+ }
