@@ -9,16 +9,27 @@
 	<meta charset="UFT-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alfea School for Fairies</title>
-	<link rel="shortcut icon" href="img/icon.ico" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" href="Images/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="Style/style.css">
 </head>
 <body>
 	<!--div allows us to make divisions-->
 	<div id="container">
 		<header>
-			
-			<img src="img/wings.png"; width="100px"; height="100px";>
-			<h1>Alfea</h1>
+			<img src="Images/wings.png"; ; height="100px";>
+			<h1>Alfea</h1> 
+			<div class= "burger">
+				<span>&equiv;</span>
+				<div class = "burger-content">
+					<ul>
+						<li><a href="students.html">- Students</a>
+						<li><a href="forum.html">- Forums</a>
+						<li><a href="grades.html">- Grades</a>
+						<li><a href="">- Latest News</a>
+						<li><a href="">- Next Events</a>
+					</ul>
+				</div>
+			</div>
 			<!--navigation menu-->
 			<nav id=menu>
 				<!--unordered list-->
@@ -32,13 +43,14 @@
 			</nav>
 		</header>
 
-	
-
 		<!--column to the left-->
 		<aside class="leftaside">
-			<h2>Students</h2>
-			<h2>Forums</h2>
-			<h2>Grades</h2>
+			<h2>Courses</h2>
+			<ul class ="chosen">
+				<li><a href="students.html">- Students</a>
+				<li><a href="forum.html">- Forums</a>
+				<li><a href="grades.html">- Grades</a>
+			</ul>
 		</aside>
 
 		<!--section that will change content-->
@@ -47,8 +59,8 @@
 			<section>	
 				<!--Photo, Title & Short Description-->
 				<article>
-					<img src="img/Alfea.jpg";>		
-					<h2>School Life</h2>
+					<img src="Images/Alfea.jpg";>		
+					<h2 id= topic>School Life</h2>
 					<p>As an extremely prestigious school for fairies, we pride ourselves in 
 					our excellent academia which shapes the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned
 				 	political leaders, philosophers, scientists and defenders of good.</p>
@@ -84,8 +96,8 @@
 			<!--Topic 2: Work Hard, Play Hard-->	
 			<section>
 				<article>
-					<img src="img/Party.jpg"; width=200px>
-					<h2>Work Hard, Play Hard</h2>
+					<img src="Images/Party.jpg"; width=200px>
+					<h2 id= topic>Work Hard, Play Hard</h2>
 					<p>Here at Alfea, we are well aware that it is impossible to just study and we make sure that our students have healthy mix of academia and fun. 
 						 In the following videos we will show you
 						some of the many activities they can enjoy on campus.
@@ -116,8 +128,8 @@
 			<!--Topic 3: Fairy Transformations-->	
 			<section>
 				<article>
-					<img src="img/Transformation.png"; width=200px>
-					<h2>Fairy Transformations</h2>
+					<img src="Images/Transformation.png"; width=200px>
+					<h2 id= topic>Fairy Forms</h2>
 					<p> Fairy forms or transformations are different levels of power that fairies can attain as an extention of their magical abilities.
 						In our school, we work with our students not only to help them become full-fledged fairies, but so that they reach higher fairy forms.
 					</p>
@@ -143,11 +155,22 @@
 		<!--left side column-->
 		<aside class="rightaside">
 			<h2>Latest News</h2>
+			<p> Pixies are coming back to Alfea. Any suggestions for making their visit as remarkable as possible?
+			<p> Potionology's last topic will be covered during the lab session of this week. Do not miss it!
+			<p>Final mark of METAMORPHOSYMBIOSIS is already available. Check it now.</p>
 			<h2>Next Events</h2>
+			<p>Submission of "New power abilities progress" is due Friday, 16 October, 11:59PM</p>
+			<p>[2020/21] HISTORY OF MAGIC: Final Exam 20/10</p>
 		</aside>
+
+		<!--footer section-->
 		<footer>
-			<p></p>
+			<ul>
+				<li><a href="">Privacy Policy</a>
+				<li><a href="">Sitemap</a>
+				<li><a href="">© 2020 Alfea Studies</a>
 		</footer>
+
 	</div>
 </body>
 </html>

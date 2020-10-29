@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>My Evo Calendar</title>
+        <link rel="stylesheet" type="text/css" href="css/evo-calendar.css"/>
+        <link rel="stylesheet" type="text/css" href="css/evo-calendar.midnight-blue.css"/>
+    </head>
+    <body>
+
+        <div id="calendar"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/evo-calendar.js"></script>
+
+        <script>
+          $('#calendar').datepicker();
+        // initialize your calendar, once the page's DOM is ready
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                settingName: settingValue
+            })
+        });
+        myEvents = [
+        {
+            id:"required-id-1",
+            name:"New Year",
+            date:"Wed Jan 01 2020 00:00:00 GMT-0800 (Pacific Standard Time)",
+            type:"holiday",
+            everyYear:true
+        },]
+        $('#evoCalendar').evoCalendar({
+            calendarEvents: myEvents
+        });
+        </script>
+
+    </body>
+</html>

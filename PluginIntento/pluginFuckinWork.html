@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+   <HEAD>
+      <!--Video tutorial: https://www.youtube.com/watch?v=c9oKDHP8Q8s -->
+      <meta charset="UFT-8">
+      <title>Plugin Fucking Work</title>
+      <!--jquery api-->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!--jquery plugin cycle-->
+      <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+     <!--jquery plugin evo calendar-->
+      <link rel="stylesheet" href="dncalendar-skin.min.css">
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script src="dncalendar.min.js"></script>
+
+      <script>
+         var my_calendar = $("#calendar").dnCalendar({
+            dataTitles: { defaultDate: 'default', today : 'Today' },
+            notes: [
+               { "<a href="https://www.jqueryscript.net/time-clock/">date</a>": "2015-12-25", "note": ["Merry Christmas 2015"] },
+               { "date": "2015-12-31", "note": ["Happy New Year 2016"] }
+               ],
+            showNotes: true,
+         });
+         my_calendar.build();
+
+         $(document).ready(function(){
+            //to check if jquery works
+            //alert("testing jquery");
+
+            /*actual plugin
+            $('.slideshow').cycle({
+               fx:'shuffle'
+            }),
+            $('#calendar').evoCalendar({
+               theme: "orange-coral"
+            })*/
+            $('#calendar').simpleCalendar();
+         });
+      </script>
+      
+   </HEAD>
+
+   <BODY>
+      <!--<div class="slideshow" style="position: relative;">
+         <img src="http://malsup.github.com/images/beach1.jpg" width="200" height="200" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 6; opacity: 0.115747; width: 200px; height: 200px;">
+         <img src="http://malsup.github.com/images/beach2.jpg" width="200" height="200" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 200px; height: 200px;">
+         <img src="http://malsup.github.com/images/beach3.jpg" width="200" height="200" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 200px; height: 200px;">
+         <img src="http://malsup.github.com/images/beach4.jpg" width="200" height="200" style="position: absolute; top: 0px; left: 0px; display: none; z-index: 5; opacity: 0; width: 200px; height: 200px;">
+         <img src="http://malsup.github.com/images/beach5.jpg" width="200" height="200" style="position: absolute; top: 0px; left: 0px; display: block; z-index: 5; opacity: 0.883247; width: 200px; height: 200px;">
+      </div>-->
+      <div id="calendar"></div>
+      <!-- Add jQuery library (required) 
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+       Add the evo-calendar.js for.. obviously, functionality!
+      <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script> -->
+   </BODY>
+</HTML>
