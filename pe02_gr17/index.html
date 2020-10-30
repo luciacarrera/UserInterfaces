@@ -17,7 +17,7 @@
 	<script src= "script/script.js"></script>
 	<script src="script/calendar.js"></script>
 
-<body onload="myfunction()">
+<body>
 	<!--div allows us to make divisions-->
 	<div id="homepage">
 		<div class="form-box">
@@ -36,9 +36,8 @@
 			</form>
 
 			<form id="register" class="input-group">
-				<input type="text" class="input-field" placeholder="Username"
-	 			required>
-				<input type="text" class="input-field" placeholder="NIA" pattern = "100+[0-9]{6}"required>
+				<input type="text" class="input-field" placeholder="Username" id="username" required>
+				<input type="text" class="input-field" placeholder="NIA" pattern = "100+[0-9]{6}"id="cnia"required>
 				<input type="Password" class="input-field" placeholder="Password" pattern = "[a-Z, 0-9]{}"required>
 				<input type="text" class="input-field" placeholder="Name and Surname"required>
 				<input type="email" class="input-field" placeholder="Email" required>
@@ -59,7 +58,7 @@
     				<option value="French">
     			</datalist>
     			<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-				<button type="button" class="submit-btn-register" onclick="openAlfea()">Save</button>
+				<button type="button" class="submit-btn-register" onclick="writeCookie()">Save</button>
 			</form>
 		</div>
 	</div>

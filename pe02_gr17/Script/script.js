@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("grades").style.display = "none";
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
-   
+
 }, false);
 
 //This function changes the content of the central container
@@ -183,4 +183,5 @@ function showCal() {
     cal.style.display="block";
  }
 
-
+ /*COOKIES*/
+ document.cookie = "comida_preferida=tripa";
