@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("grades").style.display = "none";
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
-
 }, false);
 
 //This function changes the content of the central container
@@ -184,4 +183,60 @@ function showCal() {
  }
 
  /*COOKIES*/
- document.cookie = "comida_preferida=tripa";
+ function setCookie(){
+    //expiration of cookie
+    var d = new Date();
+    d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
+    var expires = "expires="+d.toUTCString();
+
+    //cookie attributes
+    var user = document.getElementById("regUser").value;
+    var nia= document.getElementById("regNia").value;
+    var pass= document.getElementById("regPass").value;
+    var name= document.getElementById("regName").value;
+    var email= document.getElementById("regEmail").value;
+    var bday= document.getElementById("regBday").value;
+    var id= document.getElementById("regId").value;
+    var role= document.getElementById("role").value;
+
+    if(user == "" || nia == "" || pass == "" || name == "" || email==""||bday==""|| id==""||role==""){
+        alert("Please complete all the required fields.")
+    }else{
+        if(emailTaken(email)==true){
+            alert("Sorry, this email is already associated to another account.")
+        }else{
+            //actual cookie
+            var cookieString= " user"+"="+user+","+"nia"+"="+nia+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
+            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+';'+expires+ ";path=/";
+            //""+"="++","+
+            document.cookie = document.cookie + cookieString;
+            openAlfea();
+        }
+    }
+ }
+    function emailTaken(email){
+        var allcookies = document.cookie;        
+        // Get all the cookies pairs in an array
+        cookiearray = allcookies.split(';');
+        
+        // Now take key value pair out of this array
+        for(var i=0; i<cookiearray.length; i++) {
+           var emailSplit = cookiearray[i].split(',')[4];
+           var emailValue = emailSplit.split('=')[1];
+           console.log(emailSplit+"//"+emailValue +"//"+ email);
+
+           if(emailValue==email){
+               return true;
+           }
+        }
+        return false;
+    }
+
+ 
+//DELETE COOKIES
+//document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+
+//DELETE INFO
+function deleteInfo(){
+    document.getElementById("register").reset();
+}
