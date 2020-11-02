@@ -31,9 +31,9 @@
 			</div>
 			<form id="login" class="input-group">
 				<input type="text" class="input-field" placeholder="E-mail" id="logEmail" required>
-				<input type="text" class="input-field" placeholder="Password" id="logPass" required>
+				<input type="Password" class="input-field" placeholder="Password" id="logPass" required>
 				<div class="center">
-					<button type="submit" class="submit-btn" onclick="openAlfea()">Log In</button>
+					<button type="submit" class="submit-btn" onclick="lookCookie()">Log In</button>
 				</div>
 			</form>
 
@@ -84,6 +84,7 @@
 						<li><a href="">- Next Events</a>
 					</ul>
 				</div>
+			</div>
 			<!--navigation menu-->
 			<nav id=menu>
 				<!--unordered list-->
@@ -92,9 +93,13 @@
 					<li><a href="">ABOUT ALFEA</a>
 					<li><a href="">ADMISSION</a>
 					<li><a href="">STUDIES</a>
-					<li><a href="">RESEARCH</a>
 				</ul>
 			</nav>
+			<img id="userphoto" src="Images/defaultimage.png">
+			<ul id="useroptions">
+				<li><p>Teresa Onorati</p>
+				<li onclick="showConfirmation()"><p>Log Out</p>
+			</ul>
 		</header>
 
 		<!--column to the left-->
@@ -206,131 +211,182 @@
 			</section>
 		</section>
 		<section class="centralContainer" id="students">
-			<h2>Alfea's Students</h2>
-			<table class="studentsTable">
-				<tr>
-					<td><img id="profile" src="Images/bloom.png";></td>
-					<td id="mainTableCell"><h4>Bloom Domino</h4><p>bloom@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/stella.png"></td>
-					<td id="mainTableCell"><h4>Stella Solaria</h4> <p>stella@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/aisha.png"></td>
-					<td id="mainTableCell"><h4>Aisha Andros</h4><p>aisha@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/flora.png"></td>
-					<td id="mainTableCell"><h4>Flora Linphea</h4><p>flora@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/musa.png"></td>
-					<td id="mainTableCell"><h4>Musa Melodia</h4><p>musa@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/tecna.png"></td>
-					<td id="mainTableCell"><h4>Tecna Zenith</h4><p>tecna@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/roxy.png"></td>
-					<td id="mainTableCell"><h4>Roxy Gardenia</h4><p>roxy@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/daphne.png"></td>
-					<td id="mainTableCell"><h4>Daphne Domino</h4><p>daphne@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/layla.png"></td>
-					<td id="mainTableCell"><h4>Layla Andros</h4><p>layla@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-				<tr>
-					<td><img id="profile" src="Images/kimmy.png"></td>
-					<td id="mainTableCell"><h4>Kimmy Temiscira</h4><p>kimmy@alfea.com</p></td>
-					<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
-				</tr>
-			</table>
+			<div id = "allstudents">
+				<h2>Alfea's Students</h2>
+				<table class="studentsTable">
+					<tr>
+						<td><img id="profile" src="Images/bloom.png";></td>
+						<td id="mainTableCell"><h4>Bloom Domino</h4><p>bloom@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/stella.png"></td>
+						<td id="mainTableCell"><h4>Stella Solaria</h4> <p>stella@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/aisha.png"></td>
+						<td id="mainTableCell"><h4>Aisha Andros</h4><p>aisha@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/flora.png"></td>
+						<td id="mainTableCell"><h4>Flora Linphea</h4><p>flora@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/musa.png"></td>
+						<td id="mainTableCell"><h4>Musa Melodia</h4><p>musa@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/tecna.png"></td>
+						<td id="mainTableCell"><h4>Tecna Zenith</h4><p>tecna@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/roxy.png"></td>
+						<td id="mainTableCell"><h4>Roxy Gardenia</h4><p>roxy@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/daphne.png"></td>
+						<td id="mainTableCell"><h4>Daphne Domino</h4><p>daphne@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/layla.png"></td>
+						<td id="mainTableCell"><h4>Layla Andros</h4><p>layla@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+					<tr>
+						<td><img id="profile" src="Images/kimmy.png"></td>
+						<td id="mainTableCell"><h4>Kimmy Temiscira</h4><p>kimmy@alfea.com</p></td>
+						<td><a href="mailto:info@example.com"><input type="image" img id="msg" src="Images/message.png"></a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="mycourses">
+				<h2>My courses</h2>
+				<table class= "courses" style="display: block;">
+					<tr id= firstrow>
+						<th id="forumCol1"></th>
+						<th id="forumCol2"></th>
+					</tr>
+					<tr>
+						<td id= col></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td id= col>Professor Palladium</td>
+						<td>Potionology</td>
+					</tr>
+					<tr>
+						<td id= col>Professor Wizgiz</td>
+						<td>Metamorphosymbiosis</td>
+					</tr>
+					<tr>
+						<td id= col>Professor DuFour</td>
+						<td>History of Magic</td>
+					</tr>
+					<tr>
+						<td id= col>Professor Avalon</td>
+						<td>Self Defense</td>
+					</tr>
+				</table>
+			</div>
 		</section>
+
 		<section class="centralContainer" id="grades">
-			<h2>Student's Grades</h2>
-			<table class="grades">
-				<tr>
-					<th>Student</th>
-					<th>Potionology</th>
-					<th>Self Defense</th>
-					<th>History of Magic</th>
-				</tr>
-				<tr>
-					<td>Bloom Domino</td>
-					<td>5.2</td>
-					<td>6.7</td>
-					<td>9.8</td>
-				</tr>
-				<tr>
-					<td>Stella Solaria</td>
-					<td>4.3</td>
-					<td>7.7</td>
-					<td>6.1</td>
-				</tr>
-				<tr>
-					<td>Aisha Andros</td>
-					<td>3.3</td>
-					<td>2.5</td>
-					<td>4.6</td>
-				</tr>
-				<tr>
-					<td>Flora Linphea</td>
-					<td>9.1</td>
-					<td>8.5</td>
-					<td>10.0</td>
-				</tr>
-				<tr>
-					<td>Musa Melodia</td>
-					<td>6.0</td>
-					<td>5.0</td>
-					<td>2.4</td>
-				</tr>
-				<tr>
-					<td>Tecna Zenith</td>
-					<td>8.3</td>
-					<td>9.0</td>
-					<td>7.7</td>
-				</tr>
-				<tr>
-					<td>Roxy Gardenia</td>
-					<td>3.9</td>
-					<td>4.4</td>
-					<td>5.0</td>
-				</tr>
-				<tr>
-					<td>Daphne Domino</td>
-					<td>10.0</td>
-					<td>10.0</td>
-					<td>10.0</td>
-				</tr>
-				<tr>
-					<td>Layla Andros</td>
-					<td>0.5</td>
-					<td>1.0</td>
-					<td>2.6</td>
-				</tr>
-				<tr>
-					<td>Kimmy Temiscira</td>
-					<td>6.1</td>
-					<td>8.5</td>
-					<td>9.9</td>
-				</tr>
-			</table>
-			<button onclick="exportTableToExcel('grades')">Download Grades</button>
+			<div id = "allgrades">
+				<h2>Student's Grades</h2>
+				<table class="grades">
+					<tr>
+						<th>Student</th>
+						<th>Potionology</th>
+						<th>Self Defense</th>
+						<th>History of Magic</th>
+					</tr>
+					<tr>
+						<td>Bloom Domino</td>
+						<td>5.2</td>
+						<td>6.7</td>
+						<td>9.8</td>
+					</tr>
+					<tr>
+						<td>Stella Solaria</td>
+						<td>4.3</td>
+						<td>7.7</td>
+						<td>6.1</td>
+					</tr>
+					<tr>
+						<td>Aisha Andros</td>
+						<td>3.3</td>
+						<td>2.5</td>
+						<td>4.6</td>
+					</tr>
+					<tr>
+						<td>Flora Linphea</td>
+						<td>9.1</td>
+						<td>8.5</td>
+						<td>10.0</td>
+					</tr>
+					<tr>
+						<td>Musa Melodia</td>
+						<td>6.0</td>
+						<td>5.0</td>
+						<td>2.4</td>
+					</tr>
+					<tr>
+						<td>Tecna Zenith</td>
+						<td>8.3</td>
+						<td>9.0</td>
+						<td>7.7</td>
+					</tr>
+					<tr>
+						<td>Roxy Gardenia</td>
+						<td>3.9</td>
+						<td>4.4</td>
+						<td>5.0</td>
+					</tr>
+					<tr>
+						<td>Daphne Domino</td>
+						<td>10.0</td>
+						<td>10.0</td>
+						<td>10.0</td>
+					</tr>
+					<tr>
+						<td>Layla Andros</td>
+						<td>0.5</td>
+						<td>1.0</td>
+						<td>2.6</td>
+					</tr>
+					<tr>
+						<td>Kimmy Temiscira</td>
+						<td>6.1</td>
+						<td>8.5</td>
+						<td>9.9</td>
+					</tr>
+				</table>
+				<button onclick="exportTableToExcel('grades')">Download Grades</button>
+			</div>
+
+			<div id = "mygrades">
+				<h2>My Grades</h2>
+				<table class="grades">
+					<tr>
+						<th>Potionology</th>
+						<th>Self Defense</th>
+						<th>History of Magic</th>
+					</tr>
+					<tr>
+						<td>5.2</td>
+						<td>6.7</td>
+						<td>9.8</td>
+					</tr>
+				</table>
+			</div>
+
 		</section>
 		<section class="centralContainer" id="forum">
 			<table class= "msgsForum" id="trix" style="display: none;">
@@ -374,7 +430,7 @@
 				<tr>
 					<td id= col></td>
 					<td></td>
-					<td><h4 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
+					<td><h2 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
 				</tr>
 				<tr id = "firstmessage">
 					<td id= col><img id="forumprofile" src="Images/layla.png"></td>
@@ -406,7 +462,7 @@
 				<tr>
 					<td id= col></td>
 					<td></td>
-					<td><h4 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
+					<td><h2 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
 				</tr>
 				<tr id = "firstmessage">
 					<td id= col><img id="forumprofile" src="Images/daphne.png"></td>
@@ -438,7 +494,7 @@
 				<tr>
 					<td id= col></td>
 					<td></td>
-					<td><h4 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
+					<td><h2 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
 				</tr>
 				<tr id = "firstmessage">
 					<td id= col><img id="forumprofile" src="Images/musa.png"></td>
@@ -470,7 +526,7 @@
 				<tr>
 					<td id= col></td>
 					<td></td>
-					<td><h4 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
+					<td><h2 id= "close" onclick="changeTopic('forums')">&times;</h2></td>
 				</tr>
 				<tr id = "firstmessage">
 					<td id= col><img id="forumprofile" src="Images/bloom.png"></td>

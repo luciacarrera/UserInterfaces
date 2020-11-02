@@ -82,6 +82,20 @@ function openAlfea() {
     var y = document.getElementById("container").style.display = "block";
 }
 
+// Function to close Alfea's webpage
+function closeAlfea() {
+    var x = document.getElementById("container").style.display = "none";
+    var y = document.getElementById("homepage").style.display = "block";
+}
+
+// Function to confirm exit when logout
+function showConfirmation() {
+    var confirmation = confirm("Do you want to exit from Alfea?");
+    if (confirmation) {
+        closeAlfea();
+    }  
+}
+
 // Functions to switch between Login and Register
 function register() {
     var x = document.getElementById("login");
@@ -189,7 +203,7 @@ function showCal() {
     d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
     var expires = "expires="+d.toUTCString();
 
-    //cookie attributes
+    // register cookie attributes
     var user = document.getElementById("regUser").value;
     var nia= document.getElementById("regNia").value;
     var pass= document.getElementById("regPass").value;
@@ -199,21 +213,42 @@ function showCal() {
     var id= document.getElementById("regId").value;
     var role= document.getElementById("role").value;
 
-    if(user == "" || nia == "" || pass == "" || name == "" || email==""||bday==""|| id==""||role==""){
-        alert("Please complete all the required fields.")
-    }else{
-        if(emailTaken(email)==true){
-            alert("Sorry, this email is already associated to another account.")
-        }else{
+    // restrictions
+    if(document.cookie == "" || !emailTaken(email)){
             //actual cookie
             var cookieString= " user"+"="+user+","+"nia"+"="+nia+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
             "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+';'+expires+ ";path=/";
             //""+"="++","+
             document.cookie = document.cookie + cookieString;
             openAlfea();
+    } else{
+            alert("Sorry, this email is already associated to another account.")
+        }
+ }
+
+  function lookCookie() {
+    var d = new Date();
+    d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
+    var expires = "expires = "+d.toUTCString();
+
+    var mail = document.getElementById("logEmail").value;
+    var word = document.getElementbyId("logPass").value;
+
+    var allcookies = document.cookie;
+    cookiearray = allcookies.split(';');
+    for(var i=0; i<cookiearray.length; i++) {
+        var emailSplit = cookiearray[i].split(',')[4];
+        var emailValue = emailSplit.split('=')[1];
+        var passSplit = cookiearray[i].split(',')[2];
+        var passValue = passSplit.split('=')[1];
+        if(emailValue == mail && passValue == word) {
+            openAlfea();
+        }
+        else {
+            alert("Sorry! There exists no account with such information.")
         }
     }
- }
+
     function emailTaken(email){
         var allcookies = document.cookie;        
         // Get all the cookies pairs in an array
@@ -231,7 +266,6 @@ function showCal() {
         }
         return false;
     }
-
  
 //DELETE COOKIES
 //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;";

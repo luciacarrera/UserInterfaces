@@ -220,7 +220,7 @@ header h1{
 }
 
 header nav{
-	padding-right: 20px;
+	padding-right: 10px;
 	list-style: none;
 }
 
@@ -236,11 +236,28 @@ header nav li{
 header nav li a{
 	position: relative;
 	display: block;
-	padding: 10px;
+	padding: 5px;
 	font-size: 30px;
 	margin-left: 30px;
 	text-decoration: none;
 	color: gray;
+}
+
+#userphoto {
+	height: 75px;
+	width: 90px;
+	margin-top: 15px;
+	margin-left: 100px;
+}
+
+#useroptions li {
+	list-style: none;
+}
+
+#useroptions li p {
+	font-family: 'Alex Brush';
+	font-size: 18px;
+	color: purple;;
 }
 
 #container {
@@ -318,7 +335,7 @@ header nav li a{
 }
 
 /*students configuration*/
-#students .studentsTable
+#allstudents .studentsTable
  {
 	border-collapse: collapse;
 	margin-left: auto;
@@ -328,14 +345,14 @@ header nav li a{
 	overflow-x:auto;
 	width: 83.33%;
 }
-#students .studentsTable td {
+#allstudents .studentsTable td {
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
 	padding: 10px;
 	width: 5%;
 }
-#students .studentsTable #profile {
+#allstudents .studentsTable #profile {
 	width: 75%;
 	border-radius: 100%;
 }
