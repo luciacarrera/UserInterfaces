@@ -226,14 +226,16 @@ function showCal() {
         }
  }
 
-  function lookCookie() {
+function lookCookie() {
     var d = new Date();
     d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
     var expires = "expires = "+d.toUTCString();
 
     var mail = document.getElementById("logEmail").value;
-    var word = document.getElementbyId("logPass").value;
-
+    var word = document.getElementById("logPassword").value;
+    if(document.cookie == ""){
+        alert("Sorry! Your email or password are incorrect.");
+    }
     var allcookies = document.cookie;
     cookiearray = allcookies.split(';');
     for(var i=0; i<cookiearray.length; i++) {
@@ -241,14 +243,14 @@ function showCal() {
         var emailValue = emailSplit.split('=')[1];
         var passSplit = cookiearray[i].split(',')[2];
         var passValue = passSplit.split('=')[1];
+        
         if(emailValue == mail && passValue == word) {
             openAlfea();
-        }
-        else {
-            alert("Sorry! There exists no account with such information.")
+        } else {
+            alert("Sorry! Your email or password are incorrect.");
         }
     }
-
+}
     function emailTaken(email){
         var allcookies = document.cookie;        
         // Get all the cookies pairs in an array
@@ -258,7 +260,7 @@ function showCal() {
         for(var i=0; i<cookiearray.length; i++) {
            var emailSplit = cookiearray[i].split(',')[4];
            var emailValue = emailSplit.split('=')[1];
-           console.log(emailSplit+"//"+emailValue +"//"+ email);
+           //console.log(emailSplit+"//"+emailValue +"//"+ email);
 
            if(emailValue==email){
                return true;
@@ -274,3 +276,4 @@ function showCal() {
 function deleteInfo(){
     document.getElementById("register").reset();
 }
+  
