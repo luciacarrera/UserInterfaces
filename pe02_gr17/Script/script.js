@@ -14,6 +14,7 @@ function centralChange(content) {
     var grades = document.getElementById("grades");
     var forum = document.getElementById("forum");
     var homeButton = document.getElementById("homeButton");
+    var role = document.getElementById('role').value;
 
     homeButton.style.display = "block";
     if(content == 'students'){
@@ -21,12 +22,14 @@ function centralChange(content) {
         students.style.display= "block";
         grades.style.display= "none";
         forum.style.display="none";
+        changingRole(role);
     }
     else if(content == 'grades'){
         students.style.display= "none";
         home.style.display="none";
         grades.style.display= "block";
         forum.style.display="none";
+        changingRole(role);
     }
     else if(content == 'forum'){
         students.style.display= "none";
@@ -268,6 +271,19 @@ function lookCookie() {
         }
         return false;
     }
+
+function changingRole(role) {
+    var mygrades = document.getElementById('allgrades');
+    var courses = document.getElementById('mycourses');
+    var allstudents = document.getElementById('allstudents');
+    var allgrades = document.getElementById('allgrades');
+    if(role == 'Student') {
+        mygrades.style.display = "block";
+        allgrades.style.display = "none";
+        courses.style.display = "block";
+        allstudents.style.display = "none";
+    }
+}
  
 //DELETE COOKIES
 //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;";

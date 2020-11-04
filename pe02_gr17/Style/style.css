@@ -393,6 +393,27 @@ header nav li a{
 	background-color: #e0dddd;
 }
 
+/*COURSES*/
+#mycourses .courses{
+	margin: auto;
+	width: 90%;
+	margin-top: 10px;
+}
+
+#mycourses .courses th, td {
+	font-family: 'Sansita Swashed';
+	font-size: 15px;
+	text-align: center;
+	padding: 5px;
+}
+
+#mycourses .courses tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+#mycourses .courses tr:nth-child(odd){
+	background-color: #e0dddd;
+}
+
 /*FORUMS*/
 #forum .forums{
 	margin: 10px 20px 0 20px;
