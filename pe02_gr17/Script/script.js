@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("grades").style.display = "none";
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
+    deleteInfo();
+    //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 }, false);
 
 //function to send email in Students
@@ -22,21 +24,21 @@ function centralChange(content) {
     var role = document.getElementById('role').value;
 
     homeButton.style.display = "block";
-    if(content == 'students'){
+    if(content === 'students'){
         home.style.display="none";
         students.style.display= "block";
         grades.style.display= "none";
         forum.style.display="none";
         changingRole(role);
     }
-    else if(content == 'grades'){
+    else if(content === 'grades'){
         students.style.display= "none";
         home.style.display="none";
         grades.style.display= "block";
         forum.style.display="none";
         changingRole(role);
     }
-    else if(content == 'forum'){
+    else if(content === 'forum'){
         students.style.display= "none";
         home.style.display="none";
         grades.style.display= "none";
@@ -86,14 +88,14 @@ function exportTableToExcel(tableID, filename = ''){
 
 // Function to open Alfea's webpage
 function openAlfea() {
-    var x = document.getElementById("homepage").style.display = "none";
-    var y = document.getElementById("container").style.display = "block";
+    document.getElementById("homepage").style.display = "none";
+    document.getElementById("container").style.display = "block";
 }
 
 // Function to close Alfea's webpage
 function closeAlfea() {
-    var x = document.getElementById("container").style.display = "none";
-    var y = document.getElementById("homepage").style.display = "block";
+    document.getElementById("container").style.display = "none";
+    document.getElementById("homepage").style.display = "block";
 }
 
 // Function to confirm exit when logout
@@ -109,6 +111,7 @@ function register() {
     var x = document.getElementById("login");
     var y = document.getElementById("register")
     var z = document.getElementById("btn");
+    deleteInfo();
 
     x.style.left = "-400px";
     y.style.left = "50px";
@@ -139,7 +142,7 @@ function changeTopic(topic) {
     var dark = document.getElementById("dark");
     var guitar = document.getElementById("guitar");
 
-    if(topic == 'forums'){
+    if(topic === 'forums'){
         topics.style.display = "block";
         trix.style.display="none";
         specialists.style.display= "none";
@@ -148,7 +151,7 @@ function changeTopic(topic) {
         guitar.style.display="none";
     }
     
-    else if(topic == 'trix'){
+    else if(topic === 'trix'){
         topics.style.display="none";
         specialists.style.display= "none";
         newgirl.style.display= "none";
@@ -156,7 +159,7 @@ function changeTopic(topic) {
         guitar.style.display="none";
         trix.style.display = "block";   
     }
-    else if(topic == 'specialists'){
+    else if(topic === 'specialists'){
         specialists.style.display="block";
         newgirl.style.display= "none";
         dark.style.display="none";
@@ -164,7 +167,7 @@ function changeTopic(topic) {
         topics.style.display = "none";
         trix.style.display = "none"
     }
-     else if(topic == 'newgirl'){
+     else if(topic === 'newgirl'){
         specialists.style.display="none";
         newgirl.style.display= "block";
         dark.style.display="none";
@@ -172,7 +175,7 @@ function changeTopic(topic) {
         topics.style.display = "none";
         trix.style.display = "none"
     }
-     else if(topic == 'dark'){
+     else if(topic === 'dark'){
         specialists.style.display="none";
         newgirl.style.display= "none";
         dark.style.display="block";
@@ -180,7 +183,7 @@ function changeTopic(topic) {
         topics.style.display = "none";
         trix.style.display = "none"
     }  
-     else if(topic == 'guitar'){
+     else if(topic === 'guitar'){
         specialists.style.display="none";
         newgirl.style.display= "none";
         dark.style.display="none";
@@ -222,11 +225,10 @@ function showCal() {
     var role= document.getElementById("role").value;
 
     // restrictions
-    if(document.cookie == "" || !emailTaken(email)){
+    if(document.cookie === "" || emailTaken(email)===false){
             //actual cookie
             var cookieString= " user"+"="+user+","+"nia"+"="+nia+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
-            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+';'+expires+ ";path=/";
-            //""+"="++","+
+            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+"SameSite=None; Secure"+expires+ ";path=/";
             document.cookie = document.cookie + cookieString;
             openAlfea();
     } else{
@@ -237,48 +239,64 @@ function showCal() {
 function checkCookie() {
     var mail = document.getElementById("logEmail").value;
     var word = document.getElementById("logPassword").value;
-    if(document.cookie == ""){
+    if(checkEmailPass(mail,word)===true){
+        openAlfea();
+    }
+    if(document.cookie === "" || checkEmailPass(mail,word)===false || mail===""||word===""){
         alert("Sorry! Your email or password are incorrect.");
     }
+}
+
+function checkEmailPass(inputEmail, inputPass){
     var allcookies = document.cookie;
-    cookiearray = allcookies.split(';');
+    cookiearray = allcookies.split(' ');
     for(var i=0; i<cookiearray.length; i++) {
         var emailSplit = cookiearray[i].split(',')[4];
         var emailValue = emailSplit.split('=')[1];
+
         var passSplit = cookiearray[i].split(',')[2];
         var passValue = passSplit.split('=')[1];
         
-        if(emailValue == mail && passValue == word) {
-            openAlfea();
-        } else {
-            alert("Sorry! Your email or password are incorrect.");
+        //correct email & password
+        console.log(emailValue+" // "+ passValue);
+        if(emailValue === inputEmail && passValue === inputPass) {
+            return true;
+        } 
+        //correct email but wrong password
+        else if(emailValue === inputEmail && passValue != inputPass) {
+            return false;
         }
     }
+    //email not found
+    return false;
 }
-    function emailTaken(email){
-        var allcookies = document.cookie;        
-        // Get all the cookies pairs in an array
-        cookiearray = allcookies.split(';');
-        
-        // Now take key value pair out of this array
-        for(var i=0; i<cookiearray.length; i++) {
-           var emailSplit = cookiearray[i].split(',')[4];
-           var emailValue = emailSplit.split('=')[1];
-           //console.log(emailSplit+"//"+emailValue +"//"+ email);
 
-           if(emailValue==email){
-               return true;
-           }
+
+function emailTaken(email){
+    var allcookies = document.cookie;   
+
+    // Get all the cookies pairs in an array
+    cookiearray = allcookies.split(' ');
+    
+    // Now take key value pair out of this array
+    for(var i=0; i<cookiearray.length; i++) {
+        //splits cookie i into all of its attributes & saves the email attribute
+        var cookieSplit = cookiearray[i].split(',')[4]; 
+        var emailValue = cookieSplit.split('=')[1];
+
+        if(emailValue===email){
+            return true;
         }
-        return false;
     }
+    return false;
+}
 
 function changingRole(role) {
     var mygrades = document.getElementById('allgrades');
     var courses = document.getElementById('mycourses');
     var allstudents = document.getElementById('allstudents');
     var allgrades = document.getElementById('allgrades');
-    if(role == 'Student') {
+    if(role === 'Student') {
         mygrades.style.display = "block";
         allgrades.style.display = "none";
         courses.style.display = "block";
@@ -287,7 +305,7 @@ function changingRole(role) {
 }
  
 //DELETE COOKIES
-//document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+//document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 
 //DELETE INFO
 function deleteInfo(){
