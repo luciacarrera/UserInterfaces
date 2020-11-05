@@ -4,6 +4,13 @@ body {
 	padding: 0;
 	font-family: Courier New;
 }
+#logo{
+	height: 100px;
+
+}
+#userphoto{
+	height: 3vw;
+}
 /* CALENDAR*/
 .popup {
 	position: relative;
@@ -162,7 +169,7 @@ body {
 	margin-top: 30px;
 }
 
-.submit-btn-register {
+.submit-btn-Flo {
 	width: 40%;
 	cursor: pointer;
 	background: #db928b;
@@ -299,13 +306,13 @@ header nav li a{
 	margin: 20px 20px 20px 20px;
 }
 
-#home article img {
+#home img {
 	float: left;
 	width: 180px;
 	margin-right: 20px;
 }
 
-#home article #topic {
+#home h2 {
 	font-size: 30px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
@@ -314,14 +321,14 @@ header nav li a{
 	text-align: left;
 }
 
-#home article h3{
+#home h3{
 	font-size: 20px;
 	color: #db928b;
 	font-family: 'Sansita Swashed';
 	margin: 0 0 3px 0;	
 }
 
-#home article p {
+#home p {
 	font-size: 13px;
 	font-family: 'Sansita Swashed';
 	margin: 0 auto;
@@ -345,32 +352,29 @@ header nav li a{
 	overflow-x:auto;
 	width: 83.33%;
 }
-#allstudents .studentsTable td {
+.studentsTable td {
 	font-family: 'Sansita Swashed';
 	font-size: 15px;
 	text-align: center;
 	padding: 10px;
 	width: 5%;
 }
-#allstudents .studentsTable #profile {
-	width: 75%;
+.profilePic {
+	width: 5vw;
 	border-radius: 100%;
 }
-#forumprofile {
+.msg{
+	width: 5vw;
+}
+.msgsForum img{
 	width: 45%;
 	border-radius: 100%;
 }
-#msg{
-	width: 50%;
-}
-#mainTableCell{
+
+.mainTableCell{
 	line-height: 1pt;
 	text-align: left;
 }
-#mainTableCell h4, p{
-	text-align: left;
-}
-
 
 /*GRADES*/
 #grades .grades{
@@ -432,7 +436,7 @@ header nav li a{
 	vertical-align: middle;
 	
 }
-#forumCol2, #forumCol3{
+.forumCol2, .forumCol3{
 	width: 29%;
 }
 #col1{
@@ -453,7 +457,7 @@ header nav li a{
 .msgsForum table{
 	background: #ff9eb5;
 }
-#close{
+.pointer{
 	cursor: pointer;
 }
 
@@ -685,7 +689,7 @@ and (orientation : portrait) {
 	#home h3,p{
 		text-align:center;
 	}
-	#ytplayer{
+	iframe{
 		margin:0 auto !important;
 		float:none !important;
 		display: block;
@@ -714,10 +718,10 @@ and (orientation : portrait) {
 	.students #profile{
 		width: 70px !important;
 	}
-	.students #msg{
+	.students .msg{
 		width: 15px !important;
 	}
-	#mainTableCell h4, p{
+	.mainTableCell h4, p{
 		font-size: medium;
 	}
 

@@ -7,6 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("homeButton").style.display = "none";
 }, false);
 
+//function to send email in Students
+function sendMail(user){
+    var email = "mailto:"+user+"@alfea.com"
+   window.location.href = email;
+}
 //This function changes the content of the central container
 function centralChange(content) {
     var home = document.getElementById("home");
@@ -229,11 +234,7 @@ function showCal() {
         }
  }
 
-function lookCookie() {
-    var d = new Date();
-    d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
-    var expires = "expires = "+d.toUTCString();
-
+function checkCookie() {
     var mail = document.getElementById("logEmail").value;
     var word = document.getElementById("logPassword").value;
     if(document.cookie == ""){
