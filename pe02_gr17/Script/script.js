@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
     deleteInfo();
+    document.getElementById("login").reset();
     //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 }, false);
 
@@ -103,6 +104,8 @@ function showConfirmation() {
     var confirmation = confirm("Do you want to exit from Alfea?");
     if (confirmation) {
         closeAlfea();
+        //delete login info
+        document.getElementById("login").reset();
     }  
 }
 
@@ -128,9 +131,9 @@ function login() {
     z.style.left = "0";
 }
 
-// Function to send a message in the forums and reset data
-function eraseText() {
-    document.getElementById("message").value = "Write a new message...";
+// Function to send a message in the forums
+function sendMessage(){
+
 }
 
 // Function to switch between forum topics
@@ -230,10 +233,15 @@ function showCal() {
             var cookieString= " user"+"="+user+","+"nia"+"="+nia+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
             "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+"SameSite=None; Secure"+expires+ ";path=/";
             document.cookie = document.cookie + cookieString;
+            loggedInUser(name);
             openAlfea();
     } else{
             alert("Sorry, this email is already associated to another account.")
         }
+ }
+
+ function loggedInUser(name){
+    document.getElementById("loggedInUser").innerHTML=name;
  }
 
 function checkCookie() {
@@ -260,6 +268,9 @@ function checkEmailPass(inputEmail, inputPass){
         //correct email & password
         console.log(emailValue+" // "+ passValue);
         if(emailValue === inputEmail && passValue === inputPass) {
+            var nameSplit = cookiearray[i].split(',')[3];
+            var name = nameSplit.split('=')[1];
+            loggedInUser(name);
             return true;
         } 
         //correct email but wrong password

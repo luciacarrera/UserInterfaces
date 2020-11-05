@@ -15,7 +15,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src= "script/script.js"></script>
-	<!--<script src="script/calendar.js"></script>-->>
+	<!--<script src="script/calendar.js"></script>-->
 
 <body>
 	<!--div allows us to make divisions-->
@@ -95,11 +95,10 @@
 					<li><h2>STUDIES</h2>
 				</ul>
 			</nav>
+			<h4 id="loggedInUser"></h4>
+			<h4 class="pointer" onclick="showConfirmation()">Log Out</h4>
 			<img id="userphoto" alt="userphoto" src="Images/defaultimage.png">
-			<ul id="useroptions">
-				<li><p>Teresa Onorati</p>
-				<li onclick="showConfirmation()"><p>Log Out</p>
-			</ul>
+
 		</header>
 
 		<!--column to the left-->
@@ -400,7 +399,7 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><textarea rows="5" cols="30">Write a new message...</textarea></td>
+					<td><textarea rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
 					<td><button onclick="eraseText()">Send</button></td>
 				</tr>
 			</table>
@@ -432,7 +431,7 @@
 				</tr>
 				<tr>
 					<td ></td>
-					<td><textarea rows="5" cols="30">Write a new message...</textarea></td>
+					<td><textarea rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
 					<td><button onclick="eraseText()">Send</button></td>
 				</tr>
 			</table>
@@ -464,7 +463,7 @@
 				</tr>
 				<tr>
 					<td ></td>
-					<td><textarea rows="5" cols="30">Write a new message...</textarea></td>
+					<td><textarea rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
 					<td><button onclick="eraseText()">Send</button></td>
 				</tr>
 			</table>
@@ -496,7 +495,7 @@
 				</tr>
 				<tr>
 					<td ></td>
-					<td><textarea rows="5" cols="30">Write a new message...</textarea></td>
+					<td><textarea rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
 					<td><button onclick="eraseText()">Send</button></td>
 				</tr>
 			</table>
@@ -528,8 +527,8 @@
 				</tr>
 				<tr>
 					<td ></td>
-					<td><textarea rows="5" cols="30">Write a new message...</textarea></td>
-					<td><button onclick="eraseText()">Send</button></td>
+					<td><textarea rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
+					<td><button onclick="sendMessage()">Send</button></td>
 				</tr>
 			</table>
 			<div id = "topics">

@@ -6,10 +6,70 @@ body {
 }
 #logo{
 	height: 100px;
-
 }
 #userphoto{
-	height: 3vw;
+	border-radius: 100%;
+	float: left;
+	height: 4vw;
+}
+header {
+	position: relative; 
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	background: #FBFCFC;
+	vertical-align: b;
+	padding-top: 10px;
+	display: flex;
+}
+
+header h1{
+	display: inline;
+	margin:0;
+	font-family: 'Alex Brush';
+	font-size: 90px;
+	color: #f5c8c4;;
+	text-align: left;
+}
+
+header nav{
+	padding-right: 10px;
+	list-style: none;
+}
+
+header nav li{
+	align-items:right;
+	position: relative;
+	display: inline-block;
+	list-style: none;
+	font-family: 'Courier New', Courier, monospace;
+	margin-top: 20px;	
+}
+
+header nav li a{
+	position: relative;
+	display: block;
+	padding: 5px;
+	font-size: 30px;
+	margin-left: 30px;
+	text-decoration: none;
+	color: gray;
+}
+
+#useroptions li {
+	list-style: none;
+}
+
+#useroptions li p {
+	font-family: 'Alex Brush';
+	font-size: 18px;
+	color: purple;;
+}
+
+#container {
+	display: table;
+	width: 100%;
+	margin: auto;
 }
 /* CALENDAR*/
 .popup {
@@ -200,78 +260,7 @@ span {
 	left: 450px;
 }
 
-header {
-	position: relative; 
-	width: 100%;
-	margin: 0 auto;
-	height: 100%;
-	background: #FBFCFC;
-	vertical-align: b;
-	padding-top: 10px;
-	display: flex;
-}
 
-header img{
-    margin-left: 40px;
-	float: left;
-	position: relative;
-}
-
-header h1{
-	display: inline;
-	margin:0;
-	font-family: 'Alex Brush';
-	font-size: 90px;
-	color: #f5c8c4;;
-	text-align: left;
-}
-
-header nav{
-	padding-right: 10px;
-	list-style: none;
-}
-
-header nav li{
-	align-items:right;
-	position: relative;
-	display: inline-block;
-	list-style: none;
-	font-family: 'Courier New', Courier, monospace;
-	margin-top: 20px;	
-}
-
-header nav li a{
-	position: relative;
-	display: block;
-	padding: 5px;
-	font-size: 30px;
-	margin-left: 30px;
-	text-decoration: none;
-	color: gray;
-}
-
-#userphoto {
-	height: 75px;
-	width: 90px;
-	margin-top: 15px;
-	margin-left: 100px;
-}
-
-#useroptions li {
-	list-style: none;
-}
-
-#useroptions li p {
-	font-family: 'Alex Brush';
-	font-size: 18px;
-	color: purple;;
-}
-
-#container {
-	display: table;
-	width: 100%;
-	margin: auto;
-}
 
 /*CENTRAL CONTENT STYLE*/
 /*central container configuration*/
