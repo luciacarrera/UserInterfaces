@@ -167,6 +167,8 @@ function changeTopic(topic) {
     var dark = document.getElementById("dark");
     var guitar = document.getElementById("guitar");
     var unsentMessage = document.getElementById("unsentMessage");
+    var sentMessage = document.getElementById("sentMessage");
+
 
     if(topic === 'forums'){
         topics.style.display = "block";
@@ -176,6 +178,7 @@ function changeTopic(topic) {
         dark.style.display="none";
         guitar.style.display="none";
         unsentMessage.style.display="none";
+        sentMessage.style.display="none";
     }
     
     else if(topic === 'trix'){
