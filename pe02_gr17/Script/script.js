@@ -29,11 +29,12 @@ function centralChange(content) {
 
     homeButton.style.display = "block";
     if(content === 'students'){
+        changingRole(role);
         home.style.display="none";
         students.style.display= "block";
         grades.style.display= "none";
         forum.style.display="none";
-        changingRole(role);
+       
     }
     else if(content === 'grades'){
         students.style.display= "none";
@@ -315,6 +316,12 @@ function changingRole(role) {
         allgrades.style.display = "none";
         courses.style.display = "block";
         allstudents.style.display = "none";
+    }
+    if(role === 'Teacher') {
+        mygrades.style.display = "none";
+        allgrades.style.display = "block";
+        courses.style.display = "none";
+        allstudents.style.display = "block";
     }
 }
  
