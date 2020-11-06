@@ -346,19 +346,14 @@ function changingRole(role) {
         courses.style.display = "block";
         allstudents.style.display = "none";
     }
-    if(role === 'Teacher' || role === 'Administrator') {
+    if(role === 'Teacher') {
         mygrades.style.display = "none";
         allgrades.style.display = "block";
         courses.style.display = "none";
         allstudents.style.display = "block";
     }
 }
-
-
-function showStudentOptions(){
-    document.getElementById("studentOptions").style.display  = "block";
-}
-
+ 
 //DELETE COOKIES
 //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 
