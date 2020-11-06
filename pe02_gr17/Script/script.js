@@ -310,7 +310,7 @@ function emailTaken(email){
 }
 
 function changingRole(role) {
-    var mygrades = document.getElementById('allgrades');
+    var mygrades = document.getElementById('mygrades');
     var courses = document.getElementById('mycourses');
     var allstudents = document.getElementById('allstudents');
     var allgrades = document.getElementById('allgrades');
