@@ -516,8 +516,8 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><textarea rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
-					<td><button onclick="eraseText()">Send</button></td>
+					<td><textarea id="myTextarea" rows="5" cols="30" placeholder="Write a new message..."></textarea></td>
+					<td><button onclick="sendMessage()">Send</button></td>
 				</tr>
 			<table class= "msgsForum" id="sentMessage" style="display: none;">
 				<tr>
@@ -527,8 +527,8 @@
 				</tr>
 				<tr>
 					<td ><img  alt="Student"  src="Images/defaultimage.png"></td>
-					<td></td>
-					<td></td>
+					<td id="comment" ></td>
+					<td id="commentTime"></td>
 				</tr>
 			</table>
 			<div id = "topics">

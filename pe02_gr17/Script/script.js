@@ -140,6 +140,21 @@ function login() {
 
 // Function to send a message in the forums
 function sendMessage(){
+    //message sent
+    var text = document.getElementById("myTextarea").value;
+    document.getElementById("unsentMessage").style.display = "none";
+    document.getElementById("sentMessage").style.display = "block";
+    document.getElementById("comment").innerHTML = text;
+
+    //time at which comment was sent
+    var currentDate = new Date(); 
+    var mm = currentDate.getMonth() +1;
+    var dd = currentDate.getDate().toString();
+    var yyyy = currentDate.getFullYear().toString();
+    var hh = currentDate.getHours().toString();
+    var min = 9;
+    min = ('0'+min).slice(-2);
+    document.getElementById("commentTime").innerHTML = dd+"/"+mm+"/"+yyyy+" "+hh+":"+min;
 
 }
 
@@ -265,7 +280,7 @@ function checkCookie() {
     if(checkEmailPass(mail,word)===true){
         openAlfea();
     }
-    if(document.cookie === "" || checkEmailPass(mail,word)===false || mail===""||word===""){
+    else if(document.cookie === "" || checkEmailPass(mail,word)===false || mail===""||word===""){
         alert("Sorry! Your email or password are incorrect.");
     }
 }
