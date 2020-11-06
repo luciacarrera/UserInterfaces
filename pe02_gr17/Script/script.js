@@ -346,7 +346,7 @@ function changingRole(role) {
         courses.style.display = "block";
         allstudents.style.display = "none";
     }
-    if(role === 'Teacher') {
+    if(role === 'Teacher' || role === 'Administrator') {
         mygrades.style.display = "none";
         allgrades.style.display = "block";
         courses.style.display = "none";
