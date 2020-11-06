@@ -50,14 +50,25 @@
 					<option value="" disabled selected>Role</option>
 					<option value="Administrator">Administrator</option>
 					<option value="Teacher">Teacher</option>
-					<option value="Student">Student</option>
-				</select>				  
+					<option value="Student" onclick="showStudentOptions()">Student</option>
+				</select>	
+				<select class="input-field-cal" name="studentOptions" id="studentOptions" style="display: none;">
+					<option value="" disabled selected>Degree</option>
+					<option value="Bio-Healing">Bio-Healing</option>
+					<option value="Potionological Sciences">Psychology</option>
+					<option value="Student">Potionological Sciences</option>
+					<option value="Galaxy Physics">Galaxy Physics</option>
+					<option value="Political Sciences">Political Sciences</option>
+					<option value="Nano Engineering">Nano Engineering</option>
+				</select>			  
 				<select class="input-field-cal" name="language" id="language">
 					<option value="" disabled selected>Language</option>
 					<option value="Administrator">Spanish</option>
 					<option value="Teacher">Italian</option>
 					<option value="Student">French</option>
 					<option value="Student">English</option>
+				</select>
+				
 				</select>
 				<input type="text" class="input-field" placeholder="University" value="Alfea" readonly required>
 				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
