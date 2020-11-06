@@ -632,7 +632,7 @@ button {
 @media only screen and (max-device-width : 768px) 
 and (orientation : portrait) {
 	header{
-		display: none;
+		display: block;
 	}
 	.leftaside{
 		width: 30%;
@@ -671,7 +671,7 @@ and (orientation : portrait) {
  /*Smartphone Portrait*/
  @media only screen and (max-device-width: 600px) and (orientation : portrait) {
 	header{
-		display: none;
+		display: block;
 	} 
 	.leftaside{
 		display: none;
