@@ -82,8 +82,10 @@
 
 	<div id="container" style="display: none;">
 		<header>
-			<img id="logo" alt="School Logo" src="Images/wings.png">
-			<h1>Alfea</h1> 
+			<div id="alfeaEscudo">
+				<img id="logo" alt="School Logo" src="Images/wings.png">
+				<h1>Alfea</h1> 
+			</div>
 			<div class= "burger">
 				<span>&equiv;</span>
 				<div class = "burger-content">
@@ -98,21 +100,23 @@
 				</div>
 			</div>
 			<!--navigation menu-->
-			<nav id=menu>
+			<nav id= "menu">
 				<!--unordered list-->
 				<ul>
 					<!--list item-->
-					<li><h2>ABOUT ALFEA</h2>
+					<li><h2>ABOUT</h2>
 					<li><h2>ADMISSION</h2>
 					<li><h2>STUDIES</h2>
 					<li><h2>RESEARCH</h2>
 				</ul>
 			</nav>
-			<img id="userphoto" alt="userphoto" src="Images/defaultimage.png">
-			<ul id="useraspects">
-				<li><h4 id="loggedInUser"></h4>
-				<li><h4 class="pointer" onclick="showConfirmation()">Log Out</h4>
-			</ul>
+			<div id="userSpace">
+				<img id="userphoto" alt="userphoto" src="Images/defaultimage.png">
+				<ul id="useraspects">
+					<li><h4 id="loggedInUser"></h4>
+					<li><h4 class="pointer" onclick="showConfirmation()">Log Out</h4>
+				</ul>
+			</div>
 		</header>
 
 		<!--column to the left-->

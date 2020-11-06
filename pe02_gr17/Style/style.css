@@ -4,19 +4,52 @@ body {
 	padding: 0;
 	font-family: Courier New;
 }
+#alfeaEscudo{
+	width: 25%;
+	box-sizing: border-box;
+	padding-left: 24px;
+	display: flex;
+}
+#menu ul{
+	text-align: center;
+	/*! bottom: 0; */
+	/*! left: 0; */
+}
+
+#menu li {
+    position: absolute;
+    bottom: 0;
+    /*! right: 0; */
+}
+
+#menu li h2{
+	display: block;
+	font-size: 20px;
+	margin-left: 15px;
+	text-decoration: none;
+	color: gray;
+}
 
 #logo{
 	height: 100px;
-	margin-left: 30px;
+	/*! margin-left: 30px; */
 	margin-top: 30px;
 }
 
+#userSpace{
+	
+	width: 25%;
+	padding-right: 24px;
+}
 #userphoto{
 	border-radius: 100%;
 	float: left;
 	height: 4vw;
 }
 
+#useraspects{
+	display: inline-block;
+}
 header {
 	position: relative; 
 	width: 100%;
@@ -29,50 +62,50 @@ header {
 }
 
 header h1{
-	display: inline;
-	margin-top: 30px;
+	display: inline-block;
+	margin-top: 40px;
 	font-family: 'Alex Brush';
-	font-size: 90px;
+	font-size: 70px;
 	color: #f5c8c4;;
-	text-align: left;
+	/*! text-align: left; */
+	align-content: center;
+	/*! margin-bottom: 90px; */
 }
 
 header nav{
-	padding-right: 10px;
-	list-style: none;
+	/*! padding-right: 10px; */
+	/*! list-style: none; */
+	width: 50%;
+	/*! display: flex; */
 }
 
 #menu li{
-	align-items:right;
+	align-items: baseline;
 	position: relative;
 	display: inline-block;
 	list-style: none;
 	font-family: 'Courier New', Courier, monospace;
-	margin-top: 20px;	
+	/*! margin-bottom: 1%; */	
+	text-align: center;
+	/*! bottom: 0; */
+	/*! left: 0; */
+	margin: 0 auto;
+	margin-top: 10%;
 }
 
 #useraspects li{
 	align-items:right;
 	position: relative;
 	list-style: none;
+	display: inline-block;
 }
 
-#menu li h2{
-	position: relative;
-	display: block;
-	padding: 5px;
-	font-size: 20px;
-	margin-left: 15px;
-	margin-top: 30px;
-	text-decoration: none;
-	color: gray;
-}
 
 #loggedInUser {
 	font-size: 40px;
 	font-family: 'Alex Brush';
 	color: #f5c8c4;
-	margin-left: 10px;
+	/*! margin-left: 10px; */
 }
 
 .pointer {
