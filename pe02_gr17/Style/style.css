@@ -21,6 +21,7 @@ header {
 	vertical-align: b;
 	padding-top: 10px;
 	display: flex;
+	box-sizing: border-box;
 }
 
 header h1{
@@ -37,7 +38,7 @@ header nav{
 	list-style: none;
 }
 
-header nav li{
+#menu li{
 	align-items:right;
 	position: relative;
 	display: inline-block;
@@ -46,7 +47,7 @@ header nav li{
 	margin-top: 20px;	
 }
 
-header nav li a{
+#menu li h2{
 	position: relative;
 	display: block;
 	padding: 5px;
@@ -56,14 +57,31 @@ header nav li a{
 	color: gray;
 }
 
-#useroptions li {
-	list-style: none;
+#loggedInUser {
+	font-size: 40px;
+	font-family: 'Alex Brush';
+	color: #f5c8c4;
+	margin-left: 10px;
 }
 
-#useroptions li p {
+.pointer {
+	font-size: 30px;
 	font-family: 'Alex Brush';
-	font-size: 18px;
-	color: purple;;
+	color: purple;
+	margin-left: 80px;
+	margin-top: 60px;
+}
+
+#userphoto {
+	width: 95px;
+	height: 100px;
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+.pointer h4 {
+	font-family: 'Alex Brush';
+	font-size: 40px;
 }
 
 #container {
@@ -603,7 +621,7 @@ button {
 @media only screen and (max-device-width : 768px) 
 and (orientation : portrait) {
 	header{
-		height: 10vh;
+		display: none;
 	}
 	.leftaside{
 		width: 30%;
@@ -642,7 +660,7 @@ and (orientation : portrait) {
  /*Smartphone Portrait*/
  @media only screen and (max-device-width: 600px) and (orientation : portrait) {
 	header{
-		height: 12vh;
+		display: none;
 	} 
 	.leftaside{
 		display: none;
