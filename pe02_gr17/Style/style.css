@@ -127,7 +127,6 @@ header nav li a{
 #homepage {
 	height: 100%;
 	width: 100%;
-	brackground-position: center;
 	background-size: cover;
 	position: absolute;
 }
@@ -258,6 +257,7 @@ span {
 
 #register {
 	left: 450px;
+	overflow-y: visible;
 }
 
 

@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     deleteInfo();
     document.getElementById("login").reset();
     //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+    $("#login").submit(function(e){
+        return false;
+    });
 }, false);
 
 //function to send email in Students

@@ -33,7 +33,7 @@
 				<input type="text" class="input-field" placeholder="E-mail" id="logEmail" required>
 				<input type="Password" class="input-field" placeholder="Password" id="logPassword" required>
 				<div class="center">
-					<button type="button" class="submit-btn" onclick="checkCookie()">Log In</button>
+					<button type="submit" class="submit-btn" onclick="checkCookie()">Log In</button>
 				</div>
 			</form>
 
@@ -42,26 +42,26 @@
 				<input type="text" class="input-field" placeholder="NIA" pattern = "100+[0-9]{6}" id="regNia" required>
 				<input type="Password" class="input-field" placeholder="Password" pattern = "[a-Z, 0-9]{}" id="regPass" required>
 				<input type="text" class="input-field" placeholder="Name and Surname" id="regName" required>
-				<input type="email" class="input-field" placeholder="Email" id="regEmail" required>
+				<input type="email" data-constraints="@Pattern^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" class="input-field" placeholder="Email" id="regEmail" required>
 				<input type="date" class="input-field-cal" id="regBday" required>
 				<input type="text" class="input-field" placeholder="ID document" id="regId" required>
-  				<input list="roles" class="input-field-cal" name="role" id="role" placeholder="Role">
-  				<datalist id="roles">
-    				<option value="Administrator">
-    				<option value="Teacher">
-    				<option value="Student">
-    			</datalist>
-    			<input type="text" class="input-field" placeholder="University" value="Alfea" readonly required>
-  				<input list="languages" name="language" id="language" placeholder="Language">
-  				<datalist id="languages">
-    				<option value="Spanish">
-    				<option value="English">
-    				<option value="Italian">
-    				<option value="French">
-    			</datalist>
+				<select class="input-field-cal" name="Role" id="role" placeholder="choose">
+					<option value="" disabled selected>Role</option>
+					<option value="Administrator">Administrator</option>
+					<option value="Teacher">Teacher</option>
+					<option value="Student">Student</option>
+				</select>				  
+				<select class="input-field-cal" name="language" id="language">
+					<option value="" disabled selected>Language</option>
+					<option value="Administrator">Spanish</option>
+					<option value="Teacher">Italian</option>
+					<option value="Student">French</option>
+					<option value="Student">English</option>
+				</select>
+				<input type="text" class="input-field" placeholder="University" value="Alfea" readonly required>
 				<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
 				<div class="center">
-					<button type="button" class="submit-btn-register" onclick="setCookie()">Save</button>
+					<button type="submit" class="submit-btn-register" onclick="setCookie()">Save</button>
 					<button type="button" class="submit-btn-register" onclick="deleteInfo()">Delete</button>
 				</div>
 			</form>
