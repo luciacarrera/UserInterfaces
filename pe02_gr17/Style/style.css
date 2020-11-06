@@ -462,6 +462,7 @@ span {
 }
 /*FORUM: MESSAGES*/
 .msgsForum table{
+	height: 10px;
 	background: #ff9eb5;
 }
 .pointer{

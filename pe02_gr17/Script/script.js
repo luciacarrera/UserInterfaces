@@ -148,6 +148,7 @@ function changeTopic(topic) {
     var newgirl = document.getElementById("newgirl");
     var dark = document.getElementById("dark");
     var guitar = document.getElementById("guitar");
+    var unsentMessage = document.getElementById("unsentMessage");
 
     if(topic === 'forums'){
         topics.style.display = "block";
@@ -156,6 +157,7 @@ function changeTopic(topic) {
         newgirl.style.display= "none";
         dark.style.display="none";
         guitar.style.display="none";
+        unsentMessage.style.display="none";
     }
     
     else if(topic === 'trix'){
@@ -165,6 +167,7 @@ function changeTopic(topic) {
         dark.style.display="none";
         guitar.style.display="none";
         trix.style.display = "block";   
+        unsentMessage.style.display="block";
     }
     else if(topic === 'specialists'){
         specialists.style.display="block";
@@ -173,6 +176,7 @@ function changeTopic(topic) {
         guitar.style.display="none";
         topics.style.display = "none";
         trix.style.display = "none"
+        unsentMessage.style.display="block";
     }
      else if(topic === 'newgirl'){
         specialists.style.display="none";
@@ -181,6 +185,7 @@ function changeTopic(topic) {
         guitar.style.display="none";
         topics.style.display = "none";
         trix.style.display = "none"
+        unsentMessage.style.display="block";
     }
      else if(topic === 'dark'){
         specialists.style.display="none";
@@ -189,6 +194,7 @@ function changeTopic(topic) {
         guitar.style.display="none";
         topics.style.display = "none";
         trix.style.display = "none"
+        unsentMessage.style.display="block";
     }  
      else if(topic === 'guitar'){
         specialists.style.display="none";
@@ -197,11 +203,13 @@ function changeTopic(topic) {
         guitar.style.display="block";
         topics.style.display = "none";
         trix.style.display = "none"
+        unsentMessage.style.display="block";
     }
     else {
+        unsentMessage.style.display="none";
         topics.style.display = "block";
         specialists.style.display="none";
-        newgirl.style.display= "none";
+        newgirl.style.display= "block";
         dark.style.display="none";
         guitar.style.display="none";
         trix.style.display = "none"
