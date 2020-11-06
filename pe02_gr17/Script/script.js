@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     $("#login").submit(function(e){
         return false;
     });
+    $("#register").submit(function(e){
+        return false;
+    });
 }, false);
 
 //function to send email in Students
