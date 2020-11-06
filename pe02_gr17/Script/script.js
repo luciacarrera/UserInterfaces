@@ -11,6 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     $("#login").submit(function(e){
         return false;
     });
+    $("#register").submit(function(e){
+        return false;
+    });
 }, false);
 
 //function to send email in Students
@@ -315,7 +318,7 @@ function emailTaken(email){
 }
 
 function changingRole(role) {
-    var mygrades = document.getElementById('allgrades');
+    var mygrades = document.getElementById('mygrades');
     var courses = document.getElementById('mycourses');
     var allstudents = document.getElementById('allstudents');
     var allgrades = document.getElementById('allgrades');
