@@ -37,7 +37,16 @@ body {
   }
 
 /* STYLE FOR THE LEFT CONTAINER*/
-
+.sideBar{
+  font-size: 20px;
+  padding: 14px;
+  color: white;
+  display: block;
+}
+/*The color of the link when we pass the mouse over it*/
+.sideBar:hover {
+  background-color: #f796c6;
+}
 /* STYLE FOR THE MAIN CONTAINER*/
 
 /* STYLE FOR THE CENTRAL CONTAINER*/
