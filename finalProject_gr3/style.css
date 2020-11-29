@@ -23,6 +23,7 @@ body {
 }
 
 #mainContainer {
+    margin-top: 10px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #EAEBF0;
     height: 700px;
@@ -57,6 +58,8 @@ body {
     height: 400px;
     overflow-y: scroll;
     border-radius: 12%;
+
+    margin-right: 10px;
   }
 
 
@@ -90,22 +93,22 @@ body {
     .col-12 {width: 100%;}
 
     #leftContainer{
-      width: 25%;
+      width: 20%;
       float: left;
     }
     #rightAside{
-        width: 25%;
-        float: right;
-      }
+      display: none;
+    }
+
     #mainContainer{
-      width: 75%;
+      width: 80%;
       float: right;
      }
   
   }
   
   @media screen and (min-width: 987px) {
-    /*FOR TABLET */
+    /*FOR BIG SCREENS */
     .col-1{width: 8.33%;}
     .col-2{width: 16.66%;}
     .col-3 {width: 25%;}
@@ -119,22 +122,20 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   
-    /*
-    #middleColumn{
-      width: 50%;
-     }
-     #columnLeft{
-       float: left;
-     }
-     #columnRight{
-       display: block;
-       float: right;
-     }
-  
-    #myTopnav{
-      display: none;
+    #leftContainer{
+      width: 20%;
+      float: left;
     }
-    */
+    #mainContainer{
+      float: left;
+      width: 79%;
+     }
+    #rightAside{
+      display: block;
+      width: 25%;
+      float: right;
+    }
+ 
   }
   /*
    When the screen is less than 600 pixels wide, hide all links, 
@@ -155,46 +156,18 @@ body {
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
 
-    /*
-    #header{
+    #leftContainer{
       display: none;
     }
-    #linkLeft{
+    #rightAside{
       display: none;
     }
-   
-    #columnRight{
-      display: none;
-    }
-    #myMenu{
-      display: none;
-    }
-    #middleColumn{
-     width: 100%;
-     float: left;;
-    }
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
+    #mainContainer{
+      width: 100%;
+     }
+    #phoneHeader{
       display: block;
     }
-    */
 
-   /* The "responsive" class is added to the topnav with JavaScript 
-    when the user clicks on the icon. This class makes the topnav 
-    look good on small screens (display the links vertically instead of 
-    horizontally) */
-    /* 
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    */
+
   }
