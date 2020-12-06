@@ -31,23 +31,28 @@
             <p>alfea</p>
         </div>
         <div id="sideBarNotLogin" style="display: block;">
-            <a class="sideBar">About Us</a>
-            <a class="sideBar">Admissions</a>
-            <a class="sideBar">Studies</a>
-            <a class="sideBar">Research </a>
-            <a class="sideBar">Help Center</a>
+            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
+            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
+            <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</a>
+            <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
+            <a class="sideBar" onclick = "centralChange('research')">Research </a>
+            <a class="sideBar"onclick = "centralChange('helpCenter')" >Help Center</a>
         </div>
         <div id="sideBarLoginStudent" style="display: none;">
-            <a class="sideBar">My Courses</a>
-            <a class="sideBar">Grades</a>
-            <a class="sideBar">Forum</a>
+            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
+            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
+            <a class="sideBar" onclick = "centralChange('myCourses')">My Courses</a>
+            <a class="sideBar" onclick = "centralChange('myGrades')">Grades</a>
+            <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
+            <a class="sideBar"onclick = "centralChange('helpCenter')" >Help Center</a>
         </div>
         <div id="sideBarLoginTeacher" style="display: none;">
-            <a class="sideBar">About Us</a>
-            <a class="sideBar">Admissions</a>
-            <a class="sideBar">Studies</a>
-            <a class="sideBar">Research </a>
-            <a class="sideBar">Help Center</a>
+            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
+            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
+            <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
+            <a class="sideBar" onclick = "centralChange('research')">Research </a>
+            <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
+            <a class="sideBar" onclick = "centralChange('helpCenter')">Help Center</a>
         </div>
         <div id="footer">
         </div>
@@ -78,32 +83,71 @@
             </div>
             <div id="homePage" style="display: block;">
                 <p style="padding: 8px;"></p>
-                <div id="profile" class="container">
-                    <p>School Life</p>
-                </div>
-                <div id="nextEvents" class="container">
-                    <p>Work & Play</p>
-                </div>
-                <div id="latestNews" class="container">
-                    <p>Fairy Forms</p>
-                </div>
+                <div class="container">
+                    <p> 
+                        <img class="imageHomepage" src="Images/Alfea.jpg" style="float: left; width: 100px; height: 100px; padding: 8px;">
+                        <h3>School Life</h3>
+                        <p>an extremely prestigious school for fairies, we pride ourselves in 
+                        our excellent academia which shapes the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned
+                        political leaders, philosophers, scientists and warriors.</p> 
+                    </p>
+                    <p style="padding: 8px;"></p>
+                    <p> 
+                        <iframe class="imageHomepage" style="float: right; width: 250px; height: 120px padding: 8px;"  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
+                        <h3>Welcome to Alfea</h3> Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
+                        She is considered one of the most powerful fairies, she will give our students the best Education possible, helping and
+                        making the students more confortable when using their powers.
+
+                    </p>
+                    <p style="padding: 12px;"></p>
+                    <p> 
+                        <iframe class="imageHomepage" style="float: left; width: 250px; height: 120px padding: 8px;"  src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3"allowfullscreen></iframe>
+                        <h3>The Dormitories</h3>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+                         a fun little sneak peak of the rooms.
+                    </p>
+
+                    <p style="padding: 12px;"></p>
+                </div>   
+                <div class="container">
+                    <iframe  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3"
+                    allowfullscreen></iframe>
+                    <h3>Welcome to Alfea</h3>
+                    <p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.</p>
+                </div>    
+                <div class="container">
+                    <iframe  src="https://www.youtube.com/embed/kOc9ek3Evvc?modestbranding=1&iv_load_policy=3"
+                    allowfullscreen></iframe>
+                    <h3>Class Moments</h3>
+                    <p>If you are curious about our teaching methods, here is a compilation of various class moments through the years.</p>
+                </div>    
+                <div class="container">
+                    <iframe  src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3"
+                    allowfullscreen></iframe>
+                    <h3>The Dormitories</h3>
+                    <p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+                        a fun little sneak peak of the rooms.
+                    </p>
+                </div>  
             </div>
-            <div id="Admissions" style="display: none;">
+            <div id="admissions" style="display: none;">
             </div>
-            <div id="Studies" style="display: none;">
+            <div id="studies" style="display: none;">
             </div>
-            <div id="Research" style="display: none;">
+            <div id="research" style="display: none;">
             </div>
-            <div id="HelpCenter" style="display: none;">
+            <div id="helpCenter" style="display: none;">
             </div>
-            <div id="MyCourses" style="display: none;">
+            <div id="myCourses" style="display: none;">
             </div>
-            <div id="Grades" style="display: none;">
+            <div id="myGrades" style="display: none;">
             </div>
             <div id="Forum" style="display: none;">
             </div>
-            <div id="MyStudents" style="display: none;">
+            <div id="myStudents" style="display: none;">
             </div>
+
+
+            
         </div>
    
 

@@ -55,23 +55,26 @@ body {
 #centralContainer {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 20px;
-    height: 400px;
     overflow-y: scroll;
-    border-radius: 12%;
-
+    height: 700px;
     margin-right: 10px;
   }
 
 
 /* STYLE FOR THE RIGHT ASIDE CONTAINER*/
 .container{
-  padding: 20px;
+  padding: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 20px;
   background-color:white;
+}
+/* STYLE FOR THE IMAGES AT HOMEPAGE*/
+.imageHomepage{
+  padding: 2px;
+  border-radius: 20px;
 }
 
 
