@@ -7,6 +7,8 @@
   <title>FINAL PROJECT</title>
   <!-- Link to the style sheet -->
   <link href="style.css" rel="stylesheet" type="text/css">
+  <!-- Link to the script sheet -->
+  <script src= "script.js"></script>
   <!--Informacion para la web-->
   <meta name="description" content="WebPage" />
   <meta name="author1" content="Rony Michelle" />
@@ -30,13 +32,15 @@
         <div id="title" style="padding: 50px;">
             <p>alfea</p>
         </div>
-        <div id="sideBarNotLogin" style="display: block;">
-            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
-            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
-            <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</a>
-            <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
-            <a class="sideBar" onclick = "centralChange('research')">Research </a>
-            <a class="sideBar"onclick = "centralChange('helpCenter')" >Help Center</a>
+        <div d="sideBarNotLogin" style="display: block;">
+            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</button>
+            <a class="sideBar" onclick = "centralChange('homePage')">Home</button>
+            <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</button>
+            <a class="sideBar" onclick = "centralChange('studies')">Studies</button>
+            <a class="sideBar" onclick = "centralChange('research')">Research </button>
+            <a class="sideBar"onclick = "centralChange('helpCenter')" >Help Center</button>
+        </div>
+           
         </div>
         <div id="sideBarLoginStudent" style="display: none;">
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
@@ -80,6 +84,19 @@
             </div>
             <div id="title" style="padding: 25px;">
                 <p>About</p>
+            </div>
+            <div id="helpCenter" style="display: none;">
+                <div class="container">
+                    <p> 
+                        <img class="imageHomepage" src="Images/Alfea.jpg" style="float: left; width: 100px; height: 100px; padding: 8px;">
+                        <h3>Helping You !</h3>
+                        <p> leaders, philosophers, scientists and warriors.</p> 
+                    </p>
+                </div>  
+               
+            </div>
+            <div id="aboutUs" style="display: none;">
+                <p> bitches</p>
             </div>
             <div id="homePage" style="display: block;">
                 <div class="container">
@@ -126,13 +143,13 @@
             </div>
             <div id="research" style="display: none;">
             </div>
-            <div id="helpCenter" style="display: none;">
-            </div>
             <div id="myCourses" style="display: none;">
             </div>
             <div id="myGrades" style="display: none;">
             </div>
-            <div id="Forum" style="display: none;">
+            <div id="forum" style="display: none;">
+            </div>
+            <div id="grades" style="display: none;">
             </div>
             <div id="myStudents" style="display: none;">
             </div>

@@ -1,39 +1,48 @@
 
+
+//variables for central container
+var centralContainer = document.getElementById("centralContainer");
+var helpCenter = document.getElementById("helpCenter");
+var aboutUs = document.getElementById("aboutUs");
+var homePage = document.getElementById("homePage");
+var admissions = document.getElementById("admissions");
+var studies = document.getElementById("studies");
+var research = document.getElementById("research");
+var myCourses = document.getElementById("myCourses");
+var myGrades = document.getElementById("myGrades");
+var forum = document.getElementById("forum");
+var grades = document.getElementById("grades");
+var myStudents = document.getElementById("myStudents");
+ 
+
+
 //This function changes the content of the central container
-function centralChange(content) {
-    var home = document.getElementById("home");
-    var students = document.getElementById("students");
-    var grades = document.getElementById("grades");
-    var forum = document.getElementById("forum");
-    var role = document.getElementById('role').value;
-
-    if(content === 'students'){
-        changingRole(role);
-        home.style.display="none";
-        students.style.display= "block";
-        grades.style.display= "none";
-        forum.style.display="none";
-       
-    }
-    else if(content === 'grades'){
-        students.style.display= "none";
-        home.style.display="none";
-        grades.style.display= "block";
-        forum.style.display="none";
-        changingRole(role);
-    }
-    else if(content === 'forum'){
-        students.style.display= "none";
-        home.style.display="none";
-        grades.style.display= "none";
-        forum.style.display = "block";
-    }  
-    else{
-        students.style.display= "none";
-        home.style.display="block";
-        grades.style.display= "none";
-        forum.style.display="none";
-        homeButton.style.display="none";
-    }
-
+function centralChangehomePage() {
+    helpCenter.style.display = "none";
+    aboutUs.style.display = "none";
+    homePage.style.display = "block";
+    admissions.style.display = "none";
+    studies.style.display = "none";
+    research.style.display = "none";
+    myCourses.style.display = "none";
+    myGrades.style.display = "none";
+    forum.style.display = "none";
+    grades.style.display = "none";
+    myStudents.style.display = "none";
 }
+//This function changes the content of the central container
+function centralChangeaboutUs() {
+    helpCenter.style.display = "none";
+    aboutUs.style.display = "block";
+    homePage.style.display = "none";
+    admissions.style.display = "none";
+    studies.style.display = "none";
+    research.style.display = "none";
+    myCourses.style.display = "none";
+    myGrades.style.display = "none";
+    forum.style.display = "none";
+    grades.style.display = "none";
+    myStudents.style.display = "none";
+}
+
+    
