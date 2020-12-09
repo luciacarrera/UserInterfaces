@@ -58,9 +58,19 @@ body {
     height: 800px;
     margin-right: 10px;
   }
+
+
+/* STYLE FOR THE MYCOURSES PAGE CONTAINER*/
+.buttonOpenClass{
+  background-color: rgb(155, 209, 224);
+  color:rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
 /* STYLE FOR THE MYGRADES PAGE CONTAINER*/
-/* Style for the table*/
-/* Style for the titles*/
 
 .gradesTitle{
   margin-left: -4px;

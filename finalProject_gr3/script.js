@@ -14,6 +14,10 @@ function centralChange(content) {
     var forum = document.getElementById("forum");
     var grades = document.getElementById("grades");
     var myStudents = document.getElementById("myStudents");
+    var metamor = document.getElementById("metamor");
+    var potionology = document.getElementById("potionology");
+    var selfDefence = document.getElementById("selfDefence");
+    var historyOfMagic = document.getElementById("historyOfMagic");
 
     homePage.style.display ="none";
     aboutUs.style.display = "none";
@@ -26,6 +30,11 @@ function centralChange(content) {
     forum.style.display = "none";
     grades.style.display = "none";
     myStudents.style.display = "none";
+    metamor.style.display = "none";
+    potionology.style.display = "none";
+    selfDefence.style.display = "none";
+    historyOfMagic.style.display = "none";
+
 
     if (content == "homePage"){
         homePage.style.display ="block";
@@ -59,6 +68,18 @@ function centralChange(content) {
     }
     if (content == "myStudents"){
         myStudents.style.display = "block";
+    }
+    if (content == "metamor"){
+        metamor.style.display = "block";
+    }
+    if (content == "potionology"){
+        potionology.style.display = "block";
+    }
+    if (content == "selfDefence"){
+        selfDefence.style.display = "block";
+    }
+    if (content == "historyOfMagic"){
+        historyOfMagic.style.display = "block";
     }
 }
 //This function for the humburger (phone)

@@ -115,7 +115,7 @@
             </div>
             <div id="aboutUs" style="display: none;">
                 <div class="container">
-                    <p> bitches</p>
+                    <p> Alfea is an ancient school for fairies, and apparently the only one dedicated to fairy education only. The Alfea students are mostly in training ages 16-18 (unless they have been held back a grade like Stella, so in her case, 19). Fairies here learn how to control their power, fight evil, learn new spells as well as be guardians of their planets, or in many cases, learn how to be their realms' queens.</p>
                 </div>
             </div>
             <div id="homePage" style="display: block;">
@@ -177,7 +177,32 @@
             </div>
             <div id="myCourses" style="display: none;">
                 <div class="container">
-                    <p> Info about myCourses</p>
+                    <img class="imageHomepage" src="Images/portadaMetamor.png" style="float: left; width: 150px; height: 110px; padding: 8px;"> 
+                    <p style="display: inline;"> METAMORPHOSYMBIOSIS</p>
+                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('metamor')"> OPEN COURSE</button>
+                    <p>It is a type of magic which allows the user to
+                    transform into another living being and to 
+                    transform other things/people into another living being. There are different 
+                    types of Metamorphosymbiosis.</p>
+                </div>
+                <div class="container">
+                    <img class="imageHomepage" src="Images/portadaPotions.png" style="float: left; width: 150px; height: 100px; padding: 8px;"> 
+                    <p style="display: inline;"> POTIONOLOGY</p>
+                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('potionology')">OPEN COURSE</button>
+                    <p>his exciting one and a half hour workshop will see apprentices develop their Potion making skills, engage their imaginations and use talk, reasoning and role play to explore ways to help our character out of his tricky situation. Each apprentice will concoct and take home their own potion in a special, muggle-proof bottle.</p>
+                </div>
+                <div class="container">
+                    <img class="imageHomepage" src="Images/portadaSelfDefence.png" style="float: left; width: 150px; height: 110px; padding: 8px;"> 
+                    <p>SELF DEFENCE</p>
+                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('selfDefence')">OPEN COURSE</button>
+                    <p>As the teacher of self defense, Griselda is well-versed in defense magic.
+                        As a fairy she may also know first-level spells all fairies can learn such as, telekinesis, transmuting objects, and fixing minor messes. </p>
+                </div>
+                <div class="container">
+                    <img class="imageHomepage" src="Images/portadaHistoryMagic.png" style="float: left; width: 150px; height: 110px; padding: 8px;"> 
+                    <p style="display: inline;"> HYSTORY OF MAGIC</p>
+                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('historyOfMagic')">OPEN COURSE</button>
+                    <p>History of Magic is a core class and subject taught at Hogwarts School of Witchcraft and Wizardry. This class is a study of magical history. This is one of the subjects where the use of magic practically is not necessary. </p>
                 </div>
             </div>
             <div id="myGrades" style="display: none;">
@@ -305,6 +330,106 @@
             <div id="myStudents" style="display: none;">
                 <div class="container">
                     <p> my students</p>
+                </div>
+            </div>
+
+             <div id="metamor" style="display: none;">
+                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
+                <p></p>
+                <p> MY COURSES - METAMORPHOSYMBIOSIS</p>
+                <div class="container">
+                    <p> Teacher</p>
+                </div>
+                <p> Chapter 1</p>
+                <div class="container">
+                    <p> Info</p>
+                    <!--To upload Your work webPage-->
+                    <!--Luego lo ponemos bonito jejej-->
+                    <form action="upload.php" method="post" enctype="multipart/form-data">
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload Image" name="submit">
+                    </form>
+                </div>
+                <p> Chapter 2</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 3</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 4</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+            </div>
+            <div id="potionology" style="display: none;">
+                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
+                <p> MY COURSES - POTIONOLOGY</p>
+                <div class="container">
+                    <p>Teacher</p>
+                </div>
+                <p> Chapter 1</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 2</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 3</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 4</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+            </div>
+            <div id="selfDefence" style="display: none;">
+                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
+                <p> MY COURSES - SELF DEFENCE</p>
+                <div class="container">
+                    <p> Teacher</p>
+                </div>
+                <p> Chapter 1</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 2</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 3</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 4</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+            </div>
+            <div id="historyOfMagic" style="display: none;">
+                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
+                <p> MY COURSES - HISTORY OF MAGIC</p>
+                <div class="container">
+                    <p> Teacher</p>
+                </div>
+                <p> Chapter 1</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 2</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 3</p>
+                <div class="container">
+                    <p> Info</p>
+                </div>
+                <p> Chapter 4</p>
+                <div class="container">
+                    <p> Info</p>
                 </div>
             </div>
 
