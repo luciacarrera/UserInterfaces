@@ -80,7 +80,7 @@ body {
 /*FOR THE PHONE / CLICK UNCLIK*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #FDABD4;
 }
 
 .topnav a {
@@ -99,7 +99,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #d1acf3;
+  background-color: #FDABD4;
   color: white;
 }
 
@@ -137,10 +137,7 @@ body {
       width: 80%;
       float: right;
      }
-     #myTopnav{
-      display: none;
-    }
-    .topnav{
+     #myTopnav.topnav{
       display: none;
     }
   }
@@ -173,10 +170,7 @@ body {
       width: 25%;
       float: right;
     }
-    .topnav{
-      display: none;
-    }
-    #myTopnav{
+    #myTopnav.topnav{
       display: none;
     }
  
