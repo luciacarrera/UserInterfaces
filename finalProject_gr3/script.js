@@ -18,6 +18,13 @@ function centralChange(content) {
     var potionology = document.getElementById("potionology");
     var selfDefence = document.getElementById("selfDefence");
     var historyOfMagic = document.getElementById("historyOfMagic");
+    var openForumMessages = document.getElementById("openForumMessages");
+    var openForumMessages1 = document.getElementById("openForumMessages1");
+    var openForumMessages2 = document.getElementById("openForumMessages2");
+    var openForumMessages3 = document.getElementById("openForumMessages3");
+    var openForumMessages4 = document.getElementById("openForumMessages4");
+    var openForumMessages5 = document.getElementById("openForumMessages5");
+    var openForumMessages6 = document.getElementById("openForumMessages6");
 
     homePage.style.display ="none";
     aboutUs.style.display = "none";
@@ -34,6 +41,7 @@ function centralChange(content) {
     potionology.style.display = "none";
     selfDefence.style.display = "none";
     historyOfMagic.style.display = "none";
+    openForumMessages.style.display = "none";
 
 
     if (content == "homePage"){
@@ -81,6 +89,30 @@ function centralChange(content) {
     if (content == "historyOfMagic"){
         historyOfMagic.style.display = "block";
     }
+    if (content == "openForumMessages1"){
+        openForumMessages.style.display = "block";
+        openForumMessages1.style.display = "block";
+    }
+    if (content == "openForumMessages2"){
+        openForumMessages.style.display = "block";
+        openForumMessages2.style.display = "block";
+    }
+    if (content == "openForumMessages3"){
+        openForumMessages.style.display = "block";
+        openForumMessages3.style.display = "block";
+    }
+    if (content == "openForumMessages4"){
+        openForumMessages.style.display = "block";
+        openForumMessages4.style.display = "block";
+    }
+    if (content == "openForumMessages5"){
+        openForumMessages.style.display = "block";
+        openForumMessages5.style.display = "block";
+    }
+    if (content == "openForumMessages6"){
+        openForumMessages.style.display = "block";
+        openForumMessages6.style.display = "block";
+    }
 }
 //This function for the humburger (phone)
 function myFunction() {
@@ -91,3 +123,40 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
+
+
+  function sendMessage1(){
+    txt = document.getElementById("msg1Send").value;
+    document.getElementById("msg1").innerHTML = txt;
+    document.getElementById("showingMessage1").style.display ="block";
+    forumMessagesPage.style.display = "block";
+    forumPage.style.display = "none";
+  }
+  function sendMessage2(){
+    txt = document.getElementById("msg2Send").value;
+    document.getElementById("msg2").innerHTML = txt;
+    document.getElementById("showingMessage2").style.display ="block";
+  }
+  function sendMessage3(){
+    txt = document.getElementById("msg3Send").value;
+    document.getElementById("msg3").innerHTML = txt;
+    document.getElementById("showingMessage3").style.display ="block";
+  }
+  function sendMessage4(){
+    txt = document.getElementById("msg4Send").value;
+    document.getElementById("msg4").innerHTML = txt;
+    document.getElementById("showingMessage4").style.display ="block";
+  }
+  function sendMessage5(){
+    txt = document.getElementById("msg5Send").value;
+    document.getElementById("msg5").innerHTML = txt;
+    document.getElementById("showingMessage5").style.display ="block";
+  }
+  function sendMessage6(){
+    txt = document.getElementById("msg6Send").value;
+    document.getElementById("msg6").innerHTML = txt;
+    document.getElementById("showingMessage6").style.display ="block";
+  }
+  
+  
