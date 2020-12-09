@@ -48,7 +48,6 @@ body {
 .sideBar:hover {
   background-color: #f796c6;
 }
-/* STYLE FOR THE MAIN CONTAINER*/
 
 /* STYLE FOR THE CENTRAL CONTAINER*/
 
@@ -59,8 +58,39 @@ body {
     height: 800px;
     margin-right: 10px;
   }
+/* STYLE FOR THE MYGRADES PAGE CONTAINER*/
+/* Style for the table*/
+/* Style for the titles*/
 
-
+.gradesTitle{
+  margin-left: -4px;
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 17px;
+}
+.gradesDate{
+  color:rgba(51, 50, 50, 0.808);
+  font-size: 12px;
+}
+.gradesData{
+  color:rgba(51, 50, 50, 0.808);
+  font-size: 15px;
+}
+.numberGrade{
+  color:rgba(51, 50, 50, 0.808);
+  font-size: 30px;
+}
+.buttonGradesPass{
+  background-color: rgb(135, 214, 135);
+  color:rgb(250, 248, 248);
+  border-radius: 10px;
+  font-size: 30px;
+}
+.buttonGradesFail{
+  background-color: rgb(214, 135, 152);
+  color:rgb(250, 248, 248);
+  border-radius: 10px;
+  font-size: 30px;
+}
 /* STYLE FOR THE RIGHT ASIDE CONTAINER*/
 .container{
   padding: 35px;

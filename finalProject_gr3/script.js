@@ -1,21 +1,4 @@
 
-
-//variables for central container
-var centralContainer = document.getElementById("centralContainer");
-var helpCenter = document.getElementById("helpCenter");
-var aboutUs = document.getElementById("aboutUs");
-var homePage = document.getElementById("homePage");
-var admissions = document.getElementById("admissions");
-var studies = document.getElementById("studies");
-var research = document.getElementById("research");
-var myCourses = document.getElementById("myCourses");
-var myGrades = document.getElementById("myGrades");
-var forum = document.getElementById("forum");
-var grades = document.getElementById("grades");
-var myStudents = document.getElementById("myStudents");
- 
-
-
 //This function changes the content of the central container
 function centralChange(content) {
 

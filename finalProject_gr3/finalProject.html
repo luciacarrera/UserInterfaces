@@ -31,6 +31,7 @@
     <div class="col-12 col-t-12">
         <nav class="topnav" id="myTopnav"  >
             <a class="sideBar active" onclick = "centralChange('homePage')">Home</a>
+            <a class="sideBar" onclick = "centralChange('profile')">Profile</a> 
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>   
             <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</a>
             <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
@@ -45,12 +46,18 @@
             <p>alfea</p>
         </div>
 
+         <!--Voy a poner todas las posibilidades juntas (aunque no vaya a ser asi
+        para la version final (por que todavia no tenemos las cookies)-->
         <div id="sideBarNotLogin" style="display: block;">
             <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
             <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</a>
             <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
             <a class="sideBar" onclick = "centralChange('research')">Research </a>
+            <a class="sideBar" onclick = "centralChange('myCourses')">My Courses</a>
+            <a class="sideBar" onclick = "centralChange('myGrades')">My Grades</a>
+            <a class="sideBar" onclick = "centralChange('grades')">Grades</a>
+            <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
             <a class="sideBar" onclick = "centralChange('helpCenter')" >Help Center</a>
         </div>
            
@@ -58,8 +65,8 @@
         <div id="sideBarLoginStudent" style="display: none;">
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
             <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
-            <a class="sideBar" onclick = "centralChange('myCourses')">My Courses</a>
-            <a class="sideBar" onclick = "centralChange('myGrades')">Grades</a>
+            <a class="sideBar" onclick = "centralChange('myCourses')"> My Courses</a>
+            <a class="sideBar" onclick = "centralChange('myGrades')"> My Grades</a>
             <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
             <a class="sideBar" onclick = "centralChange('helpCenter')" >Help Center</a>
         </div>
@@ -69,6 +76,7 @@
             <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
             <a class="sideBar" onclick = "centralChange('research')">Research </a>
             <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
+            <a class="sideBar" onclick = "centralChange('grades')">Grades</a>
             <a class="sideBar" onclick = "centralChange('helpCenter')">Help Center</a>
         </div>
         <div id="footer">
@@ -174,7 +182,114 @@
             </div>
             <div id="myGrades" style="display: none;">
                 <div class="container">
-                    <p> Info about myGrades</p>
+                    <table style="width:100%">
+                        <tr>
+                          <td class="gradesTitle">METAMORPHOSYMBIOSIS</td>
+                          <td></td> 
+                          <td class="gradesDate" style="padding: 5px;">Today 10:45pm</td>
+                          <td class="gradesData">Grade</td>
+                        </tr>
+                        <tr>
+                            <td></td>              
+                            <td></td>
+                            <td></td> 
+                            <td class="numberGrade">9.6</td>
+                        </tr>
+                        <tr>
+                            <td></td> 
+                            <td></td>    
+                            <td></td>          
+                            <td class="buttonGradesPass">PASS</td>
+                        </tr>
+                        <tr>
+                            <td></td> 
+                            <td></td>              
+                            <td class="gradesDate" style="display: right;">Details</td>
+
+                        </tr>
+                    </table>
+                </div>
+                <div class="container">
+                    <table style="width:100%">
+                        <tr>
+                          <td class="gradesTitle" style="margin-right: 30px;">POTIONOLOGY</td>
+                          <!--Here we will have relleno for them to be at same distance-->
+                          <td style="color: white;">RELLii</td> 
+                          <td class="gradesDate" style="padding: 5px;" >Today 17:45pm</td>
+                          <td class="gradesData">Grade</td>
+                        </tr>
+                        <tr>
+                            <td></td>              
+                            <td></td>
+                            <td></td> 
+                            <td class="numberGrade">4.6</td>
+                        </tr>
+                        <tr>
+                            <td></td> 
+                            <td></td>    
+                            <td></td>          
+                            <td class="buttonGradesFail">FAIL</td>
+                        </tr>
+                        <tr>
+                            <td></td> 
+                            <td></td>            
+                            <td class="gradesDate" style="display: right;">Details</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container">
+                    <table style="width:100%">
+                        <tr>
+                          <td class="gradesTitle">SELF DEFENSE</td>
+                          <td style="color: white;">RELLii</td>
+                          <td class="gradesDate">Today 19:45pm</td>
+                          <td class="gradesData">Grade</td>
+                        </tr>
+                        <tr>
+                            <td></td>              
+                            <td></td>
+                            <td></td> 
+                            <td class="numberGrade">4.9</td>
+                        </tr>
+                        <tr>
+                            <td></td> 
+                            <td></td>    
+                            <td></td>          
+                            <td class="buttonGradesFail">FAIL</td>
+                        </tr>
+                        <tr>
+                            <td></td>  
+                            <td></td>            
+                            <td class="gradesDate" style="display: right;">Details</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container">
+                    <table style="width:100%">
+                        <tr>
+                          <td class="gradesTitle">HYSTORY OF MAGIC</td>
+                          <td style="color: white;"></td>
+                          <td class="gradesDate" >Today 17:00    </td>
+                          <td class="gradesData">Grade</td>
+                        </tr>
+                        <tr>
+                            <td></td>              
+                            <td></td>
+                            <td></td> 
+                            <td class="numberGrade">6.9</td>
+                        </tr>
+                        <tr>
+                            <td></td> 
+                            <td></td>    
+                            <td></td>          
+                            <td class="buttonGradesPass">PASS</td>
+                        </tr>
+                        <tr>
+                            <td></td>   
+                            <td></td>            
+                            <td class="gradesDate" style="display: right;">Details</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
             <div id="forum" style="display: none;">
