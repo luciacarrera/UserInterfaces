@@ -19,9 +19,9 @@ body {
 
 #alfea p {
   font-family: "Alex Brush";
-  font-size: 90px;
+  font-size: 50px;
   color: white;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .logo {
@@ -93,7 +93,7 @@ body {
   padding: 10px;
   color: white;
   display: block;
-  margin-left: 85px;
+  margin-left: 5px;
   font-family: "Sansita Swashed";
 }
 /*The color of the link when we pass the mouse over it*/
