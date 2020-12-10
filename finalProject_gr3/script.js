@@ -42,7 +42,13 @@ function centralChange(content) {
     selfDefence.style.display = "none";
     historyOfMagic.style.display = "none";
     openForumMessages.style.display = "none";
-
+    openForumMessages1.style.display = "none";
+    openForumMessages2.style.display = "none";
+    openForumMessages3.style.display = "none";
+    openForumMessages4.style.display = "none";
+    openForumMessages4.style.display = "none";
+    openForumMessages5.style.display = "none";
+    openForumMessages6.style.display = "none";
 
     if (content == "homePage"){
         homePage.style.display ="block";

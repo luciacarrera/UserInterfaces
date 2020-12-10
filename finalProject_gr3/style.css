@@ -93,7 +93,11 @@ body {
   border-radius: 10px;
 }
 
-
+.placeHolderText{
+  background-color:rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+}
 
 /* STYLE FOR THE MYGRADES PAGE CONTAINER*/
 
