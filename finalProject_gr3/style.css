@@ -110,9 +110,34 @@ body {
     height: 800px;
     margin-right: 10px;
   }
-
-
-/* STYLE FOR THE MYCOURSES PAGE CONTAINER*/
+.bigTitle{
+  color:rgba(36, 34, 34, 0.808);
+  
+  font-size: 30px;
+}
+.mediumTitle{
+  color:rgba(43, 41, 41, 0.808);
+  font-size: 25px;
+}
+.smallTitle{
+  color:rgba(51, 50, 50, 0.808);
+  font-size: 20px;
+}
+.extraInfoParagraph{
+  color:rgba(51, 50, 50, 0.808);
+  font-size: 12px;
+}
+.infoParagraph{
+  color:rgba(51, 50, 50, 0.808);
+  font-size: 17px;
+  padding-top: 20px;
+}
+.extraContainer{
+  background-color: rgb(172, 238, 172);
+  color:rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+}
 .buttonOpenClass{
   background-color: rgb(155, 209, 224);
   color:rgb(250, 248, 248);
