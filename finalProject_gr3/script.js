@@ -130,7 +130,10 @@ function myFunction() {
     }
   }
 
-
+function sendMail(contact){
+    var email = "mailto:"+contact+"@alfea.com"
+   window.location.href = email;
+}
 
   function sendMessage1(){
     txt = document.getElementById("msg1Send").value;

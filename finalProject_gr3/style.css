@@ -292,6 +292,10 @@ body {
   font-family: "Sansita Swashed";
 }
 
+#helpCenter .container p {
+  padding: 10px;
+}
+
 /* STYLE FOR THE MYGRADES PAGE CONTAINER*/
 
 .gradesTitle{
