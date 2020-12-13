@@ -75,6 +75,7 @@ body {
   /*! margin-left: 5px; */
   font-family: "Sansita Swashed";
 }
+
 /*The color of the link when we pass the mouse over it*/
 .sideBar:hover {
   background-color: #f796c6;
@@ -114,7 +115,7 @@ body {
   .container p{
     font-family: 'Poppins', sans-serif;;
     color: #2E4765;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 300;
   }
   .container table{
