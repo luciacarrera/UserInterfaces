@@ -1,3 +1,4 @@
+
 //This function changes the content of the central container
 function centralChange(content) {
 
@@ -25,7 +26,7 @@ function centralChange(content) {
     var openForumMessages5 = document.getElementById("openForumMessages5");
     var openForumMessages6 = document.getElementById("openForumMessages6");
 
-    homePage.style.display = "none";
+    homePage.style.display ="none";
     aboutUs.style.display = "none";
     helpCenter.style.display = "none";
     admissions.style.display = "none";
@@ -49,72 +50,72 @@ function centralChange(content) {
     openForumMessages5.style.display = "none";
     openForumMessages6.style.display = "none";
 
-    if (content == "homePage") {
-        homePage.style.display = "block";
+    if (content == "homePage"){
+        homePage.style.display ="block";
     }
-    if (content == "aboutUs") {
+    if (content == "aboutUs"){
         aboutUs.style.display = "block";
     }
-    if (content == "helpCenter") {
+    if (content == "helpCenter"){
         helpCenter.style.display = "block";
     }
-    if (content == "admissions") {
+    if (content == "admissions"){
         admissions.style.display = "block";
     }
-    if (content == "studies") {
+    if (content == "studies"){
         studies.style.display = "block";
     }
-    if (content == "research") {
+    if (content == "research"){
         research.style.display = "block";
     }
-    if (content == "myCourses") {
+    if (content == "myCourses"){
         myCourses.style.display = "block";
     }
-    if (content == "myGrades") {
+    if (content == "myGrades"){
         myGrades.style.display = "block";
     }
-    if (content == "forum") {
+    if (content == "forum"){
         forum.style.display = "block";
     }
-    if (content == "grades") {
+    if (content == "grades"){
         grades.style.display = "block";
     }
-    if (content == "myStudents") {
+    if (content == "myStudents"){
         myStudents.style.display = "block";
     }
-    if (content == "metamor") {
+    if (content == "metamor"){
         metamor.style.display = "block";
     }
-    if (content == "potionology") {
+    if (content == "potionology"){
         potionology.style.display = "block";
     }
-    if (content == "selfDefence") {
+    if (content == "selfDefence"){
         selfDefence.style.display = "block";
     }
-    if (content == "historyOfMagic") {
+    if (content == "historyOfMagic"){
         historyOfMagic.style.display = "block";
     }
-    if (content == "openForumMessages1") {
+    if (content == "openForumMessages1"){
         openForumMessages.style.display = "block";
         openForumMessages1.style.display = "block";
     }
-    if (content == "openForumMessages2") {
+    if (content == "openForumMessages2"){
         openForumMessages.style.display = "block";
         openForumMessages2.style.display = "block";
     }
-    if (content == "openForumMessages3") {
+    if (content == "openForumMessages3"){
         openForumMessages.style.display = "block";
         openForumMessages3.style.display = "block";
     }
-    if (content == "openForumMessages4") {
+    if (content == "openForumMessages4"){
         openForumMessages.style.display = "block";
         openForumMessages4.style.display = "block";
     }
-    if (content == "openForumMessages5") {
+    if (content == "openForumMessages5"){
         openForumMessages.style.display = "block";
         openForumMessages5.style.display = "block";
     }
-    if (content == "openForumMessages6") {
+    if (content == "openForumMessages6"){
         openForumMessages.style.display = "block";
         openForumMessages6.style.display = "block";
     }
@@ -123,51 +124,48 @@ function centralChange(content) {
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
-        x.className += " responsive";
+      x.className += " responsive";
     } else {
-        x.className = "topnav";
+      x.className = "topnav";
     }
+  }
+
+function sendMail(contact){
+    var email = "mailto:"+contact+"@alfea.com"
+   window.location.href = email;
 }
 
-function sendMail(contact) {
-    var email = "mailto:" + contact + "@alfea.com"
-    window.location.href = email;
-}
-
-function sendMessage1() {
+  function sendMessage1(){
     txt = document.getElementById("msg1Send").value;
     document.getElementById("msg1").innerHTML = txt;
-    document.getElementById("showingMessage1").style.display = "block";
+    document.getElementById("showingMessage1").style.display ="block";
     forumMessagesPage.style.display = "block";
     forumPage.style.display = "none";
-}
-
-function sendMessage2() {
+  }
+  function sendMessage2(){
     txt = document.getElementById("msg2Send").value;
     document.getElementById("msg2").innerHTML = txt;
-    document.getElementById("showingMessage2").style.display = "block";
-}
-
-function sendMessage3() {
+    document.getElementById("showingMessage2").style.display ="block";
+  }
+  function sendMessage3(){
     txt = document.getElementById("msg3Send").value;
     document.getElementById("msg3").innerHTML = txt;
-    document.getElementById("showingMessage3").style.display = "block";
-}
-
-function sendMessage4() {
+    document.getElementById("showingMessage3").style.display ="block";
+  }
+  function sendMessage4(){
     txt = document.getElementById("msg4Send").value;
     document.getElementById("msg4").innerHTML = txt;
-    document.getElementById("showingMessage4").style.display = "block";
-}
-
-function sendMessage5() {
+    document.getElementById("showingMessage4").style.display ="block";
+  }
+  function sendMessage5(){
     txt = document.getElementById("msg5Send").value;
     document.getElementById("msg5").innerHTML = txt;
-    document.getElementById("showingMessage5").style.display = "block";
-}
-
-function sendMessage6() {
+    document.getElementById("showingMessage5").style.display ="block";
+  }
+  function sendMessage6(){
     txt = document.getElementById("msg6Send").value;
     document.getElementById("msg6").innerHTML = txt;
-    document.getElementById("showingMessage6").style.display = "block";
-}
+    document.getElementById("showingMessage6").style.display ="block";
+  }
+  
+  
