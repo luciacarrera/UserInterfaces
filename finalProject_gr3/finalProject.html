@@ -29,7 +29,7 @@
 <body>
     <!--Here we will have the humburger  for the phone-->
     <div class="col-12 col-t-12">
-        <nav class="topnav" id="myTopnav"  >
+        <nav class="topnav" id="myTopNav"  >
             <a class="sideBar active" onclick = "centralChange('homePage')">Home</a>
             <a class="sideBar" onclick = "centralChange('profile')">Profile</a> 
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>   
@@ -40,30 +40,60 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
         </nav>
     </div>
-    </div>
+    <!--LEFT CONTAINER-->
     <div class="col-3 col-t-3" id="leftContainer">
-        <div id="alfea" >
-        	<img class="logo" src="Images/wings.png" style="float: left; margin-left: 10px;">
-            <p>ALFEA</p>
+        <div class="topDiv" id="alfea" >
+        	<img src="Images/wings.png" alt="logo">
+            <p>Alfea</p>
         </div>
 
          <!--Voy a poner todas las posibilidades juntas (aunque no vaya a ser asi
         para la version final (por que todavia no tenemos las cookies)-->
         <div id="sideBarNotLogin" style="display: block;">
-            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
-            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
-            <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</a>
-            <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
-            <a class="sideBar" onclick = "centralChange('research')">Research </a>
-            <a class="sideBar" onclick = "centralChange('myCourses')">My Courses</a>
-            <a class="sideBar" onclick = "centralChange('myGrades')">My Grades</a>
-            <a class="sideBar" onclick = "centralChange('grades')">Grades</a>
-            <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
-            <a class="sideBar" onclick = "centralChange('helpCenter')" >Help Center</a>
+            <section class="sideBar" onclick = "centralChange('homePage')">
+              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
+              <p>About</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('aboutUs')">
+              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
+              <p>About Us</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('admissions')" >
+              <img class="sideBarIcon" src="Images/Icons/columns.png" alt=""> 
+              <p>Admissions</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('studies')">
+              <img class="sideBarIcon" src="Images/Icons/notebook.png" alt=""> 
+              <p>Studies</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('research')">
+              <img class="sideBarIcon" src="Images/Icons/bookmark.png" alt=""> 
+              <p>Research </p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('myCourses')">
+              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
+              <p>My Courses</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('myGrades')">
+              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
+              <p>My Grades</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('myStudents')">
+              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
+              <p>My Students</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('forum')">
+              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
+              <p>Forum</p>
+            </section>
+            <section class="sideBar" onclick = "centralChange('helpCenter')" >
+              <img class="sideBarIcon" src="Images/Icons/message.png" alt=""> 
+              <p>Help Center</p>
+            </section>
         </div>
            
         </div>
-        <div id="sideBarLoginStudent" style="display: none;">
+        <div id="sideBarLoginStudent">
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
             <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
             <a class="sideBar" onclick = "centralChange('myCourses')"> My Courses</a>
@@ -71,7 +101,7 @@
             <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
             <a class="sideBar" onclick = "centralChange('helpCenter')" >Help Center</a>
         </div>
-        <div id="sideBarLoginTeacher" style="display: none;">
+        <div id="sideBarLoginTeacher">
             <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
             <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
             <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
@@ -82,18 +112,17 @@
         </div>
         <div id="footer">
         </div>
-    </div>
 
      <!--Here we will have the main container for the webPage-->
     <div class="col-6 col-t-9" id="mainContainer">
         <div class="col-3 col-t-12" id="rightAside">
-            <p style="padding: 7px;"></p>
-            <div id="profile" class="container">
-                <p>Profile</p>
+            <div class="topDiv">
+              <div id="profile" class="container">
+                  <h3>Log In</h3>
+              </div>
             </div>
-            <p style="padding: 3px;"></p>
             <div id="nextEvents" class="container">
-                <h1>Next Events</h1>
+                <h1>NEXT EVENTS</h1>
                 <p>Sunday, 23 November 11:55PM: Potionology - Third Lab Assignment Submission</p>
                 <p>Thursday, 3 December 11:00AM: History of Magic - Final Exam in room A1.2.3</p>
                 <p>Friday, 16 December 11:59PM: Metamorphosymbiosis - Submission of "New power abilities progress"</p>
@@ -101,7 +130,7 @@
                 <p>Wednesday, 23 December 2:30PM: General - End of Semester Christmas Party!</p>
             </div>
             <div id="latestNews" class="container">
-                <h1>Latest News</h1>
+                <h1>LATEST NEWS</h1>
                 <p>Pixies are coming back to Alfea. Any suggestions for making their visit as remarkable as possible?</p>
                 <p>Potionology's last topic will be covered during the lab session of this week. Do not miss it!</p>
                 <p>Final mark of Metamorphosymbiosis is already available. Check it now.</p>
@@ -116,11 +145,9 @@
             </div>
             <div id="helpCenter" style="display: none;">
                 <div class="container">
-                    <p> 
-                        <img class="imageHomepage" src="Images/Alfea.jpg" style="float: left; width: 100px; height: 100px; padding: 8px;">
-                        <h3>Helping You !</h3>
-                        <p> leaders, philosophers, scientists and warriors.</p> 
-                    </p>
+                  <img  src="Images/Alfea.jpg" alt="Alfea">
+                  <h3>Helping You !</h3>
+                  <p> leaders, philosophers, scientists and warriors.</p> 
                 </div>  
                
             </div>
@@ -130,43 +157,51 @@
                 </div>
             </div>
             <div id="homePage" style="display: block;">
-                <div id="title" style="padding: 25px;">
+                <div class="topDiv" id="title">
                     <p>About</p>
                 </div>
                 <div class="container">
-                    <p> 
-                        <img class="imageHomepage" src="Images/Alfea.jpg" style="float: left; width: 100px; height: 100px; padding: 8px;">
+                    <section class="firstSection"> 
+                        <img alt="" src="Images/Alfea.jpg" >
                         <h3>School Life</h3>
                         <p>As an extremely prestigious school for fairies, we pride ourselves in our excellent academia which shapes the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned political leaders, philosophers, scientists and warriors.</p> 
-                    </p>
-                    <p style="padding: 8px;"></p>
-                    <p> 
-                        <iframe class="imageHomepage" style="float: right; width: 250px; height: 120px padding: 8px;"  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
-                        <h3>Welcome to Alfea</h3> Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
-                        She is considered one of the most powerful fairies, she will give our students the best education possible, helping and
-                        making the students more comfortable when using their powers.
-
-                    </p>
-                    <p style="padding: 12px;"></p>
-                </div>  
+                    </section>
+                    <section class="leftSection"> 
+                        <iframe  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
+                        <h3>Welcome to Alfea</h3> 
+                        <p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
+                        </p>
+                    </section>
+                    <section class="rightSection">
+                        <iframe src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
+                        <h3>The Dormitories</h3> 
+                        <p>
+                          As a boarding school, we offer the best accomodation for our students. In the following video, we give you a fun little sneak peak of the rooms
+                        </p>
+                    </section>
+               
+              </div>
                 <div class="container">
-                    <p> 
-                        <iframe class="imageHomepage" src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" style="float: left; width: 250px; height: 120px; padding:8px"  allowfullscreen></iframe>
-                        <h3>Class Moments</h3>If you are curious about our teaching methods, here is a compilation of various class moments through the years.
-                    </p>
-
-                    <p style="padding: 25px;"></p>
-                    <p> 
-                        <iframe class="imageHomepage"src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" style="float: right; width: 250px; height: 120px; padding:8px"  allowfullscreen></iframe>
-                        <h3>The Dormitories</h3>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+                    <section class= "leftSection"> 
+                        <iframe  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3"   allowfullscreen></iframe>
+                        <h3>Class Moments</h3>
+                        <p>If you are curious about our teaching methods, here is a compilation of various class moments through the years.</p>
+                    </section>
+                    <section class="rightSection"> 
+                        <iframe src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
+                        <h3>The Dormitories</h3>
+                        <p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
                          a fun little sneak peak of the rooms.
-                    </p>
+                    </section>
                 </div>  
                 <div class="container">
-                    <iframe class="imageHomepage"  src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3" style="float: right; width: 250px; height: 120px; padding:8px"  allowfullscreen></iframe>
-                    <h3>More About Us</h3>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+                  <section>
+                    <iframe   src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
+                    <h3>More About Us</h3>
+                    <p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
                      a fun little sneak peak of the rooms.s
                     </p>
+                  </section>
                 </div>  
             </div>
             <div id="admissions" style="display: none;">
@@ -186,47 +221,47 @@
             </div>
             <div id="myCourses" style="display: none;">
                 <div class="container">
-                    <img class="imageHomepage" src="Images/portadaMetamor.png" style="float: left; width: 150px; height: 110px; padding: 8px;"> 
-                    <p style="display: inline;"> METAMORPHOSYMBIOSIS</p>
-                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('metamor')"> OPEN COURSE</button>
+                    <img alt=""  src="Images/portadaMetamor.png" > 
+                    <p> METAMORPHOSYMBIOSIS</p>
+                    <button class="buttonOpenClass" onclick="centralChange('metamor')"> OPEN COURSE</button>
                     <p>It is a type of magic which allows the user to
                     transform into another living being adnd to 
                     transform other things/people into another living being. There are different 
                     types of Metamorphosymbiosis.</p>
                 </div>
                 <div class="container">
-                    <img class="imageHomepage" src="Images/portadaPotions.png" style="float: left; width: 150px; height: 100px; padding: 8px;"> 
-                    <p style="display: inline;"> POTIONOLOGY</p>
-                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('potionology')">OPEN COURSE</button>
+                    <img alt=""  src="Images/portadaPotions.png" > 
+                    <p> POTIONOLOGY</p>
+                    <button class="buttonOpenClass" onclick="centralChange('potionology')">OPEN COURSE</button>
                     <p>his exciting one and a half hour workshop will see apprentices develop their Potion making skills, engage their imaginations and use talk, reasoning and role play to explore ways to help our character out of his tricky situation. Each apprentice will concoct and take home their own potion in a special, muggle-proof bottle.</p>
                 </div>
                 <div class="container">
-                    <img class="imageHomepage" src="Images/portadaSelfDefence.png" style="float: left; width: 150px; height: 110px; padding: 8px;"> 
+                    <img alt=""  src="Images/portadaSelfDefence.png" > 
                     <p>SELF DEFENCE</p>
-                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('selfDefence')">OPEN COURSE</button>
+                    <button class="buttonOpenClass" onclick="centralChange('selfDefence')">OPEN COURSE</button>
                     <p>As the teacher of self defense, Griselda is well-versed in defense magic.
                         As a fairy she may also know first-level spells all fairies can learn such as, telekinesis, transmuting objects, and fixing minor messes. </p>
                 </div>
                 <div class="container">
-                    <img class="imageHomepage" src="Images/portadaHistoryMagic.png" style="float: left; width: 150px; height: 110px; padding: 8px;"> 
-                    <p style="display: inline;"> HYSTORY OF MAGIC</p>
-                    <button class="buttonOpenClass" style="float: right;" onclick="centralChange('historyOfMagic')">OPEN COURSE</button>
+                    <img alt=""  src="Images/portadaHistoryMagic.png" > 
+                    <p> HYSTORY OF MAGIC</p>
+                    <button class="buttonOpenClass" onclick="centralChange('historyOfMagic')">OPEN COURSE</button>
                     <p>History of Magic is a core class and subject taught at Hogwarts School of Witchcraft and Wizardry. This class is a study of magical history. This is one of the subjects where the use of magic practically is not necessary. </p>
                 </div>
             </div>
             <div id="myGrades" style="display: none;">
                 <div class="container">
-                    <table style="width:100%">
+                    <table >
                         <tr>
                             <th></th>
                             <th></th>
                             <th></th>
                             <th></th>
-                          </tr>
+                        </tr>
                         <tr>
                           <td class="gradesTitle">METAMORPHOSYMBIOSIS</td>
                           <td></td> 
-                          <td class="gradesDate" style="padding: 5px;">Today 10:45pm</td>
+                          <td class="gradesDate">Today 10:45pm</td>
                           <td class="gradesData">Grade</td>
                         </tr>
                         <tr>
@@ -244,18 +279,18 @@
                         <tr>
                             <td></td> 
                             <td></td>              
-                            <td class="gradesDate" style="display: right;">Details</td>
+                            <td class="gradesDate">Details</td>
 
                         </tr>
                     </table>
                 </div>
                 <div class="container">
-                    <table style="width:100%">
+                    <table >
                         <tr>
-                          <td class="gradesTitle" style="margin-right: 30px;">POTIONOLOGY</td>
+                          <td class="gradesTitle">POTIONOLOGY</td>
                           <!--Here we will have relleno for them to be at same distance-->
                           <td style="color: white;">RELLii</td> 
-                          <td class="gradesDate" style="padding: 5px;" >Today 17:45pm</td>
+                          <td class="gradesDate" >Today 17:45pm</td>
                           <td class="gradesData">Grade</td>
                         </tr>
                         <tr>
@@ -273,12 +308,12 @@
                         <tr>
                             <td></td> 
                             <td></td>            
-                            <td class="gradesDate" style="display: right;">Details</td>
+                            <td class="gradesDate" >Details</td>
                         </tr>
                     </table>
                 </div>
                 <div class="container">
-                    <table style="width:100%">
+                    <table >
                         <tr>
                           <td class="gradesTitle">SELF DEFENSE</td>
                           <td style="color: white;">RELLii</td>
@@ -300,12 +335,12 @@
                         <tr>
                             <td></td>  
                             <td></td>            
-                            <td class="gradesDate" style="display: right;">Details</td>
+                            <td class="gradesDate" >Details</td>
                         </tr>
                     </table>
                 </div>
                 <div class="container">
-                    <table style="width:100%">
+                    <table >
                         <tr>
                           <td class="gradesTitle">HYSTORY OF MAGIC</td>
                           <td style="color: white;"></td>
@@ -327,7 +362,7 @@
                         <tr>
                             <td></td>   
                             <td></td>            
-                            <td class="gradesDate" style="display: right;">Details</td>
+                            <td class="gradesDate" >Details</td>
                         </tr>
                     </table>
                 </div>
@@ -336,7 +371,7 @@
                 <p class="bigTitle">COURSE FORUM</p>
 
                 <div class="container">
-                <table style="width:100%" class="infoParagraph">
+                <table  class="infoParagraph">
                   <tr>
                     <th></th>
                     <th></th>
@@ -391,37 +426,37 @@
                   <p>Chat Messages</p>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/tecna.png" alt="" height="20" width="20">
-                      <p style="display: inline;">TECNA</p>
+                      <img alt="" class="student" src="images/tecna.png">
+                      <p>TECNA</p>
                     </div>
-                    <p style="padding: 5px;">Hello. How are we suppose to know the time of the exams</p>
+                    <p>Hello. How are we suppose to know the time of the exams</p>
                     <span class="time-right">11:00</span>
                   </div>
     
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/stella.png" alt="" height="20" width="20">
-                      <p style="display: inline;">STELLA</p>
+                      <img alt="" class="student" src="images/stella.png">
+                      <p>STELLA</p>
                     </div>
-                    <p style="padding: 5px;">Hey! it isnt setteled yet!!</p>
+                    <p>Hey! it isnt setteled yet!!</p>
                     <span class="time-right">12:00</span>
                   </div>
     
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/tecna.png" alt="" height="20" width="20">
-                      <p style="display: inline;">TECNA</p>
+                      <img alt="" class="student" src="images/tecna.png">
+                      <p>TECNA</p>
                     </div>
-                    <p style="padding: 5px;">Sweet! Thank you so much!</p>
+                    <p>Sweet! Thank you so much!</p>
                     <span class="time-right">16:17</span>
                   </div>
     
                   <div class="container" id="showingMessage1" style="display: none;">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/defaultimage.png" alt="" height="20" width="20">
-                      <p style="display: inline;" id="userSendMessage1"></p>
+                      <img alt="" class="student" src="images/defaultimage.png">
+                      <p id="userSendMessage1"></p>
                     </div>
-                    <p id="msg1" style="padding: 5px;"></p>
+                    <p id="msg1"></p>
                     <span id="time1" class="time-right">12:00</span>
                   </div>
     
@@ -439,44 +474,44 @@
                   <p>Chat Messages</p>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/kimmy.png" alt="" height="20" width="20">
-                      <p style="display: inline;">KIMMY </p>
+                      <img alt="" class="student" src="images/kimmy.png">
+                      <p>KIMMY </p>
                     </div>
-                    <p style="padding: 5px;">Hello. I think so ! you could look at the about us web page!</p>
+                    <p>Hello. I think so ! you could look at the about us web page!</p>
                     <span class="time-right">14:19</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/layla.png" alt="" height="20" width="20">
-                      <p style="display: inline;">LAYLA</p>
+                      <img alt="" class="student" src="images/layla.png">
+                      <p>LAYLA</p>
                     </div>
-                    <p style="padding: 5px;">Hey! i have already looked there but there is no information about it :/</p>
+                    <p>Hey! i have already looked there but there is no information about it :/</p>
                     <span class="time-right">19:53</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/kimmy.png" alt="" height="20" width="20">
-                      <p style="display: inline;">KIMMY </p>
+                      <img alt="" class="student" src="images/kimmy.png">
+                      <p>KIMMY </p>
                     </div>
-                    <p style="padding: 5px;">Oh! my bad, maybe you should call the school</p>
+                    <p>Oh! my bad, maybe you should call the school</p>
                     <span class="time-right">22:21</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/flora.png" alt="" height="20" width="20">
-                      <p style="display: inline;">FLORA </p>
+                      <img alt="" class="student" src="images/flora.png">
+                      <p>FLORA </p>
                     </div>
-                    <p style="padding: 5px;">Hey! it isnt setteled yet!!</p>
+                    <p>Hey! it isnt setteled yet!!</p>
                     <span class="time-right">12:21</span>
                   </div>
     
     
                   <div class="container" id="showingMessage2" style="display: none;">
                     <div style="background-color: white; padding: 5px;">
-                      <img id="img1" class="student" src="images/defaultimage.png" alt="" height="20" width="20">
-                      <p style="display: inline;" id="userSendMessage2"></p>
+                      <img alt=""  class="student" src="images/defaultimage.png">
+                      <p id="userSendMessage2"></p>
                     </div>
-                    <p id="msg2" style="padding: 5px;"></p>
+                    <p id="msg2"></p>
                     <span id="time2" class="time-right">12:00</span>
                   </div>
     
@@ -494,36 +529,36 @@
                   <p>Chat Messages</p>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/musa.png" alt="" height="20" width="20">
-                      <p style="display: inline;">MUSA </p>
+                      <img alt="" class="student" src="images/musa.png">
+                      <p>MUSA </p>
                     </div>
-                    <p style="padding: 5px;">Hello. How are we suppose to feel safe with everything going on? Whate are the
+                    <p>Hello. How are we suppose to feel safe with everything going on? Whate are the
                       measures the school has considered?</p>
                     <span class="time-right">14:19</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/roxy.png" alt="" height="20" width="20">
-                      <p style="display: inline;">ROXY</p>
+                      <img alt="" class="student" src="images/roxy.png">
+                      <p>ROXY</p>
                     </div>
-                    <p style="padding: 5px;">Hey! the school has already sent an email to inform us about it/</p>
+                    <p>Hey! the school has already sent an email to inform us about it/</p>
                     <span class="time-right">19:53</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/musa.png" alt="" height="20" width="20">
-                      <p style="display: inline;">MUSA</p>
+                      <img alt="" class="student" src="images/musa.png">
+                      <p>MUSA</p>
                     </div>
-                    <p style="padding: 5px;">Sweet! Thank you so much!</p>
+                    <p>Sweet! Thank you so much!</p>
                     <span class="time-right">22:21</span>
                   </div>
     
                   <div class="container" id="showingMessage3" style="display: none;">
                     <div style="background-color: white; padding: 5px;">
-                      <img  class="student" src="images/defaultimage.png" alt="" height="20" width="20">
-                      <p style="display: inline;" id="userSendMessage3"></p>
+                      <img alt=""  class="student" src="images/defaultimage.png">
+                      <p id="userSendMessage3"></p>
                     </div>
-                    <p id="msg3" style="padding: 5px;"></p>
+                    <p id="msg3"></p>
                     <span id="time3" class="time-right">12:00</span>
                   </div>
     
@@ -541,35 +576,35 @@
                   <p>Chat Messages</p>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/daphne.png" alt="" height="20" width="20">
-                      <p style="display: inline;">DAPHNE </p>
+                      <img alt="" class="student" src="images/daphne.png">
+                      <p>DAPHNE </p>
                     </div>
-                    <p style="padding: 5px;">Hello. I Dont think so, due to the pandemi</p>
+                    <p>Hello. I Dont think so, due to the pandemi</p>
                     <span class="time-right">14:19</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/aisha.png" alt="" height="20" width="20">
-                      <p style="display: inline;">AISHA</p>
+                      <img alt="" class="student" src="images/aisha.png">
+                      <p>AISHA</p>
                     </div>
-                    <p style="padding: 5px;">Hey! it isnt oppened yet!! and i dont believe they are going to open it</p>
+                    <p>Hey! it isnt oppened yet!! and i dont believe they are going to open it</p>
                     <span class="time-right">19:53</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/bloom.png" alt="" height="20" width="20">
-                      <p style="display: inline;">BLOOM</p>
+                      <img alt="" class="student" src="images/bloom.png">
+                      <p>BLOOM</p>
                     </div>
-                    <p style="padding: 5px;">I dont think they will ever open it again :(</p>
+                    <p>I dont think they will ever open it again :(</p>
                     <span class="time-right">22:21</span>
                   </div>
     
                   <div class="container" id="showingMessage4" style="display: none;">
                     <div style="background-color: white; padding: 5px;">
-                      <img  class="student" src="images/defaultimage.png" alt="" height="20" width="20">
-                      <p style="display: inline;" id="userSendMessage4"></p>
+                      <img alt=""  class="student" src="images/defaultimage.png">
+                      <p id="userSendMessage4"></p>
                     </div>
-                    <p id="msg4" style="padding: 5px;"></p>
+                    <p id="msg4"></p>
                     <span id="time4" class="time-right">12:00</span>
                   </div>
     
@@ -588,35 +623,35 @@
                   <p>Chat Messages</p>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/layla.png" alt="" height="20" width="20">
-                      <p style="display: inline;">LAYLA </p>
+                      <img alt="" class="student" src="images/layla.png">
+                      <p>LAYLA </p>
                     </div>
-                    <p style="padding: 5px;">Hello. How are we suppose to create an account for the blackboard?</p>
+                    <p>Hello. How are we suppose to create an account for the blackboard?</p>
                     <span class="time-right">14:19</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/bloom.png" alt="" height="20" width="20">
-                      <p style="display: inline;">BLOOM</p>
+                      <img alt="" class="student" src="images/bloom.png">
+                      <p>BLOOM</p>
                     </div>
-                    <p style="padding: 5px;">You just have to use the username of the school, hope it helped</p>
+                    <p>You just have to use the username of the school, hope it helped</p>
                     <span class="time-right">19:53</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/layla.png" alt="" height="20" width="20">
-                      <p style="display: inline;">LAYLA</p>
+                      <img alt="" class="student" src="images/layla.png">
+                      <p>LAYLA</p>
                     </div>
-                    <p style="padding: 5px;">YES! Thank you so much!!!</p>
+                    <p>YES! Thank you so much!!!</p>
                     <span class="time-right">22:21</span>
                   </div>
     
                   <div class="container" id="showingMessage5" style="display: none;">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/defaultimage.png" alt="" height="20" width="20">
-                      <p style="display: inline;" id="userSendMessage5"></p>
+                      <img alt="" class="student" src="images/defaultimage.png">
+                      <p id="userSendMessage5"></p>
                     </div>
-                    <p id="msg5" style="padding: 5px;"></p>
+                    <p id="msg5"></p>
                     <span id="time5" class="time-right">12:00</span>
                   </div>
     
@@ -634,35 +669,35 @@
                   <p>Chat Messages</p>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/kimmy.png" alt="" height="20" width="20">
-                      <p style="display: inline;">KIMMY </p>
+                      <img alt="" class="student" src="images/kimmy.png">
+                      <p>KIMMY </p>
                     </div>
-                    <p style="padding: 5px;">Hello. How are we suppose to know the time of the exams??</p>
+                    <p>Hello. How are we suppose to know the time of the exams??</p>
                     <span class="time-right">14:19</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/tecna.png" alt="" height="20" width="20">
-                      <p style="display: inline;">TECNA</p>
+                      <img alt="" class="student" src="images/tecna.png">
+                      <p>TECNA</p>
                     </div>
-                    <p style="padding: 5px;">Hey! it isnt setteled yet!!</p>
+                    <p>Hey! it isnt setteled yet!!</p>
                     <span class="time-right">19:53</span>
                   </div>
                   <div class="container">
                     <div style="background-color: white; padding: 5px;">
-                      <img class="student" src="images/tecna.png" alt="" height="20" width="20">
-                      <p style="display: inline;">TECNA</p>
+                      <img alt="" class="student" src="images/tecna.png">
+                      <p>TECNA</p>
                     </div>
-                    <p style="padding: 5px;">Sweet! Thank you so much!</p>
+                    <p>Sweet! Thank you so much!</p>
                     <span class="time-right">22:21</span>
                   </div>
     
                   <div class="container" id="showingMessage6" style="display: none;">
                     <div style="background-color: white; padding: 5px;">
-                      <img  class="student" src="images/defaultimage.png" alt="" height="20" width="20">
-                      <p style="display: inline;" id="userSendMessage6"></p>
+                      <img alt=""  class="student" src="images/defaultimage.png">
+                      <p id="userSendMessage6"></p>
                     </div>
-                    <p id="msg6" style="padding: 5px;"></p>
+                    <p id="msg6"></p>
                     <span id="time6" class="time-right">12:00</span>
                   </div>
                   <form style="border:1px solid #ccc">
@@ -675,14 +710,119 @@
                 </div>
               </div>
             <div id="grades" style="display: none;">
-                <div class="container">
-                    <p> the grades</p>
-                </div>
             </div>
             <div id="myStudents" style="display: none;">
-                <div class="container">
-                    <p> my students</p>
-                </div>
+              <p class="bigTitle">MY STUDENTS </p>
+              <div class="container">
+                <p class="mediumTitle">BLOOM</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/bloom.png" ></td> 
+                    <td class="infoParagraph">bloom@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesBloom')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">TECNA</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/tecna.png" ></td> 
+                    <td class="infoParagraph">tecna@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesTecna')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">STELLA</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/stella.png" ></td> 
+                    <td class="infoParagraph">stella@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesTecna')">GRADES</button></td>
+                  </tr>
+                </table >
+              </div>
+              <div class="container">
+                <p class="mediumTitle">KIMMY</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/kimmy.png" ></td> 
+                    <td class="infoParagraph">kimmy@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesKimmy')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">LAYLA</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/layla.png" ></td> 
+                    <td class="infoParagraph">layla@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesLayla')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">FLORA</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/flora.png" ></td> 
+                    <td class="infoParagraph">flora@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesFlora')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">MUSA</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/musa.png" ></td> 
+                    <td class="infoParagraph">musa@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesMusa')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">ROXY</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/roxy.png" ></td> 
+                    <td class="infoParagraph">roxy@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesRoxy')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">DAPHNE</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/daphne.png" ></td> 
+                    <td class="infoParagraph">daphne@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesDaphne')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="container">
+                <p class="mediumTitle">AISHA</p>
+                <table >
+                  <tr>
+                    <td><img alt=""  src="Images/aisha.png" ></td> 
+                    <td class="infoParagraph">aisha@gmail.com</td>
+                    <td><img alt=""  src="Images/message.png" ></td> 
+                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesAisha')">GRADES</button></td>
+                  </tr>
+                </table>
+              </div>
             </div>
             <div id="metamor" style="display: none;">
                 <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
@@ -690,119 +830,119 @@
                 <p class="bigTitle"> MY COURSES - METAMORPHOSYMBIOSIS</p>
                 <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mr Mott </p>
                 <div class="container">
-                        <p class="infoParagraph" style="margin-bottom: 20px;">
-                            <img class="imageHomepage" src="Images/portadaMetamor.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
-                            Welcome to Metamorphosymbiosis.
-                            This is the first branch of Transfiguration that students will learn at Alfea School 
-                            of Witchcraft and Wizardry, beginning with Match to needle in first year and progressing from there. 
-                        </p>
-                    </p>
+                  <section class="infoParagraph" style="margin-bottom: 20px;">
+                      <img alt=""  src="Images/portadaMetamor.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+                      Welcome to Metamorphosymbiosis.
+                      This is the first branch of Transfiguration that students will learn at Alfea School 
+                      of Witchcraft and Wizardry, beginning with Match to needle in first year and progressing from there. 
+                  </section>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 1</p>
+                <p class="mediumTitle"> Chapter 1</p>
                 <div class="container">
-                    <p class="infoParagraph">
-                        <img class="imageHomepage" src="Images/metamorCh1.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
-                        In this Chapter we will show you the darkest and difficult practices 
-                        of Metamorphosymbiosis as stated by Wizgiz. 
-                        It turns a living creature into the most aggressive being. A beautiful plant can 
-                        be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature. 
-                        It allows the user to take 
-                        the appearance and powers of the fairy animal </p>
-                    </p>
-                    <p class="infoParagraph"> Wild Magic: </p>
+                    <section class="infoParagraph">
+                      <img alt=""  src="Images/metamorCh1.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+                      <p>In this Chapter we will show you the darkest and difficult practices 
+                      of Metamorphosymbiosis as stated by Wizgiz. 
+                      It turns a living creature into the most aggressive being. A beautiful plant can 
+                      be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature. 
+                      It allows the user to take 
+                      the appearance and powers of the fairy animal </p>
+                    </section>
+                    <section class="infoParagraph"> Wild Magic: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                    <section class="extraInfoParagraph">Basic information &tricks</section>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
-                    <p class="infoParagraph"> What to do: </p>
+                    <section class="infoParagraph"> What to do: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                    <section class="extraInfoParagraph">Rules to follow(important)</section>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                    <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                    <button class="buttonOpenClass">DOWNLOAD</button>
+                    
+                    <section class="infoParagraph"> Upload Pdf: </section>
                     <!--To upload Your work webPage-->
                     <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                         <input type="file" name="fileToUpload" id="fileToUpload">
                         <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                     </form>
 
-                    <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                    <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </section>
                 
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 2</p>
+                <p class="mediumTitle" > Chapter 2</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/metamorCh2.png" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/metamorCh2.png" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             This is the first branch of Transfiguration that will show students how to control their powers !! You 
                             must be careful, because you could change your life forever if something goes wrong!
-                        </p>
-                        <p class="infoParagraph"> Control Your Power: </p>
+                      </section>
+                        <section class="infoParagraph"> Control Your Power: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
+                      </section>
                        
                         
                     </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 3</p>
+                <p class="mediumTitle" > Chapter 3</p>
                     <div class="container">
-                        <p class="infoParagraph">
+                        <section class="infoParagraph">
                             This is the first branch of Transfiguration that will show students how to transform themselves into plants & Insects !! You 
                             must be careful, because you could change your life forever if something goes wrong!
-                        </p>
-                        <p class="infoParagraph"> Transformation into Insects & Plants: </p>
+                          </section>
+                        <section class="infoParagraph"> Transformation into Insects & Plants: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
 
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
                     </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 4</p>
+                <p class="mediumTitle" > Chapter 4</p>
                     <div class="container">
-                        <p class="infoParagraph"> Transformation into Mammals: </p>
+                        <section class="infoParagraph"> Transformation into Mammals: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> 
-                            <img class="imageHomepage" src="Images/metamorCh4.png" style="float: left; width: 160px; height: 130px; padding-right: 8px;">
+                        <section class="infoParagraph"> 
+                            <img alt=""  src="Images/metamorCh4.png" style="float: left; width: 160px; height: 130px; padding-right: 8px;">
                             Examples in other schools. Transformation into wolf. 
                         </p>
                         
                         
                     
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
 
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
                     </div>
             </div>
             <div id="potionology" style="display: none;">
@@ -811,145 +951,145 @@
                 <p class="bigTitle"> MY COURSES - POTIONOLOGY</p>
                 <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
                 <div class="container">
-                    <p class="infoParagraph" style="margin-bottom: 20px;">
-                        <img class="imageHomepage" src="Images/teacherPalladium.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+                    <section class="infoParagraph" style="margin-bottom: 20px;">
+                        <img alt=""  src="Images/teacherPalladium.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
                         Welcome to Potionology, I will be your teacher for this course! I will try to teach you 
                         as much as I can ! I love potions and I hope I help you understand & master them .</p>
                     </p>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 1</p>
+                <p class="mediumTitle" > Chapter 1</p>
                 <div class="container">
-                    <p class="infoParagraph">
-                        <img class="imageHomepage" src="Images/portadaPotions.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+                    <section class="infoParagraph">
+                        <img alt=""  src="Images/portadaPotions.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
                         In this Chapter we will show you the basic information about Self Defence.
                         The kind of enchantments will help you survive in a magic world, 
                         in which not all the people are ass good as you think. 
                     </p>
-                    <p class="infoParagraph"> Basic Information About Potions: </p>
+                    <section class="infoParagraph"> Basic Information About Potions: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                    <section class="extraInfoParagraph">Basic information &tricks</section>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
 
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 2</p>
+                <p class="mediumTitle" > Chapter 2</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/potionCh2.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/potionCh2.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             Amortentia is a love potion that does not create actual love, but gives the drinker a powerful obsession and infatuation with the giver of 
                             the potion. It is usually either forced upon someone or covertly given. As a rule of thumb the longer a love potion awaits consumption, the stronger the effects will be
                         </p>
-                        <p class="infoParagraph"> Amortentia.: </p>
+                        <section class="infoParagraph"> Amortentia.: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
     
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>    
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>    
                         
                     </div>
 
-                    <p class="mediumTitle" style="margin-left: 9px;"> Chapter 3</p>
+                    <p class="mediumTitle" > Chapter 3</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/potionCh3.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/potionCh3.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             Skele-Gro is a medicinal potion that can regrow missing or removed bones,[7] though it tastes terrible and the process is very slow and extremely painful.
                         </p>
             
-                        <p class="infoParagraph"> Skele-Gro: </p>
+                        <section class="infoParagraph"> Skele-Gro: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> 
-                            <img class="imageHomepage" src="Images/metamorCh4.png" style="float: left; width: 160px; height: 130px; padding-right: 8px;">
+                        <section class="infoParagraph"> 
+                            <img alt=""  src="Images/metamorCh4.png" style="float: left; width: 160px; height: 130px; padding-right: 8px;">
                             Examples in other schools. Transformation into wolf. 
                         </p>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
 
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
                     </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 4</p>
+                <p class="mediumTitle" > Chapter 4</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/potionCh4.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/potionCh4.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             Felix Felicis, more commonly known as Liquid Luck, grants whoever drinks it unusually 
                             good luck.The time span of this luck depends on the amount imbibed. Liquid Luck is one of the hardest potions to make, as noted by Horace Slughorn; "It has to be cooked for 6 months on an extremely complicated formula, and if you make a tiniest mistake, the consequences are severe"
                         </p>
-                        <p class="infoParagraph"> Felix Felicis/Liquid Luck: </p>
+                        <section class="infoParagraph"> Felix Felicis/Liquid Luck: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
 
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
                     </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 5</p>
+                <p class="mediumTitle" > Chapter 5</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/potionCh5.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/potionCh5.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             The Draught of Peace provides personal comfort, calms anxiety and soothes agitation.                     
                         </p>
                         
-                        <p class="infoParagraph"> Draught of Peace: </p>
+                        <section class="infoParagraph"> Draught of Peace: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
 
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
                     </div>
                     
                 
@@ -960,84 +1100,84 @@
                 <p class="bigTitle"> MY COURSES - SELF DEFENCE</p>
                 <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
                 <div class="container">
-                        <p class="infoParagraph" style="margin-bottom: 20px;">
-                            <img class="imageHomepage" src="Images/teacherGriselda.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+                        <section class="infoParagraph" style="margin-bottom: 20px;">
+                            <img alt=""  src="Images/teacherGriselda.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
                             Welcome to Self Defence, I will be your teacher for this course! I am theassistant headmistress 
                             and head of discipline at Alfea; I will be very gruff and strict towards students.</p>
                     </p>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 1</p>
+                <p class="mediumTitle" > Chapter 1</p>
                 <div class="container">
-                    <p class="infoParagraph">
-                        <img class="imageHomepage" src="Images/selfDefenceCh1.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+                    <section class="infoParagraph">
+                        <img alt=""  src="Images/selfDefenceCh1.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
                         In this Chapter we will show you the basic information about Self Defence.
                         We will show you what is it, and how to use it properly
                     </p>
-                    <p class="infoParagraph"> Basic Information About Self Defence: </p>
+                    <section class="infoParagraph"> Basic Information About Self Defence: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                    <section class="extraInfoParagraph">Basic information &tricks</section>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
 
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 2</p>
+                <p class="mediumTitle" > Chapter 2</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/selfDefenceCh2.jpeg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/selfDefenceCh2.jpeg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             How to defend your own school from trolls and other fairys is one 
                             of the most important aspects of self-defence!
                         </p>
-                        <p class="infoParagraph"> Protecting Our School.: </p>
+                        <section class="infoParagraph"> Protecting Our School.: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
     
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>    
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>    
                         
                     </div>
 
-                    <p class="mediumTitle" style="margin-left: 9px;"> Chapter 3</p>
+                    <p class="mediumTitle" > Chapter 3</p>
                     <div class="container">
-                        <p class="infoParagraph">
-                            <img class="imageHomepage" src="Images/portadaSelfDefence.png" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                        <section class="infoParagraph">
+                            <img alt=""  src="Images/portadaSelfDefence.png" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
                             In this chapter you will learn how to protect yourself using different spells !! Stay tunned.
                         </p>
             
-                        <p class="infoParagraph"> How to: </p>
+                        <section class="infoParagraph"> How to: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Basic information &tricks</p>
+                        <section class="extraInfoParagraph">Basic information &tricks</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph"> What to do: </p>
+                        <section class="infoParagraph"> What to do: </section>
                         <!--To download work from webPage-->
-                        <p class="extraInfoParagraph" style="display: inline;">Rules to follow(important)</p>
+                        <section class="extraInfoParagraph">Rules to follow(important)</section>
                         <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                             <button class="buttonOpenClass">DOWNLOAD</button>
                         </a>
-                        <p class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </p>
+                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
                         <!--To upload Your work webPage-->
                         <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
                         </form>
 
-                        <p class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
                     </div>
             </div>
             <div id="historyOfMagic" style="display: none;">
@@ -1046,62 +1186,62 @@
                 <p class="bigTitle"> MY COURSES - HISTORY OF MAGIC</p>
                 <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
                 <div class="container">
-                        <p class="infoParagraph" style="margin-bottom: 50px;">
-                            <img class="imageHomepage" src="Images/teacherHistory.png" style="float: left; width: 150px; height: 160px; padding-right: 8px;">
+                        <section class="infoParagraph" style="margin-bottom: 50px;">
+                            <img alt=""  src="Images/teacherHistory.png" style="float: left; width: 150px; height: 160px; padding-right: 8px;">
                             Welcome to History of Magic, I will be your teacher for this course! I am headmistress 
                             I will be teach you all you need to know about the history of magic!!.</p>
                     </p>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 1</p>
+                <p class="mediumTitle" > Chapter 1</p>
                 <div class="container">
-                    <p class="infoParagraph"> First Years: </p>
+                    <section class="infoParagraph"> First Years: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information</p>
+                    <section class="extraInfoParagraph">Basic information</p>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 2</p>
+                <p class="mediumTitle" > Chapter 2</p>
                 <div class="container">
-                    <p class="infoParagraph"> Worst enemies: </p>
+                    <section class="infoParagraph"> Worst enemies: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information</p>
+                    <section class="extraInfoParagraph">Basic information</p>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 3</p>
+                <p class="mediumTitle" > Chapter 3</p>
                 <div class="container">
-                    <p class="infoParagraph"> Most important Discoveries: </p>
+                    <section class="infoParagraph"> Most important Discoveries: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information</p>
+                    <section class="extraInfoParagraph">Basic information</p>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 4</p>
+                <p class="mediumTitle" > Chapter 4</p>
                 <div class="container">
-                    <p class="infoParagraph"> Magic Animals: </p>
+                    <section class="infoParagraph"> Magic Animals: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information</p>
+                    <section class="extraInfoParagraph">Basic information</p>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 5</p>
+                <p class="mediumTitle" > Chapter 5</p>
                 <div class="container">
-                    <p class="infoParagraph"> Humans & Magic: </p>
+                    <section class="infoParagraph"> Humans & Magic: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information</p>
+                    <section class="extraInfoParagraph" >Basic information</p>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
                 </div>
-                <p class="mediumTitle" style="margin-left: 9px;"> Chapter 6</p>
+                <p class="mediumTitle" > Chapter 6</p>
                 <div class="container">
-                    <p class="infoParagraph"> Nowadays: </p>
+                    <section class="infoParagraph"> Nowadays: </section>
                     <!--To download work from webPage-->
-                    <p class="extraInfoParagraph" style="display: inline;">Basic information</p>
+                    <section class="extraInfoParagraph">Basic information</p>
                     <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
                         <button class="buttonOpenClass">DOWNLOAD</button>
                     </a>
