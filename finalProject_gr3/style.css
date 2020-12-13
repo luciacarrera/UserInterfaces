@@ -138,8 +138,7 @@ body {
     display: inline;
   }
   .firstSection{
-
-  margin-bottom: 15px;
+    margin-bottom: 15px;
   }
   .leftSection{
     width: 50%;
@@ -147,7 +146,6 @@ body {
     float: left;
   }
   .leftSection iframe{
-
   }
   .rightSection{
     width: 50%;
@@ -155,8 +153,8 @@ body {
     float:right;
   }
   .rightSection iframe{
-
   }
+
 /*STYLE FOR RIGHT CONTAINER*/
 #rightAside {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -251,6 +249,47 @@ body {
   background-color:rgb(250, 248, 248);
   padding: 10px;
   border-radius: 10px;
+}
+
+#aboutUs .container p {
+  padding: 10px;
+}
+#admissions .container p {
+  padding: 10px;
+}
+
+#studies .container p {
+  padding: 10px;
+}
+
+#studiesoptions ul {
+  list-style: none;
+}
+
+#studiesoptions {
+  list-style: none;
+}
+
+#studiesoptions h1 {
+  font-size: 15px;
+  font-family: "Sansita Swashed";
+}
+
+#research .container p {
+  padding: 10px;
+}
+
+#researchoptions ul {
+  list-style: none;
+}
+
+#researchoptions {
+  list-style: none;
+}
+
+#researchoptions h1 {
+  font-size: 15px;
+  font-family: "Sansita Swashed";
 }
 
 /* STYLE FOR THE MYGRADES PAGE CONTAINER*/
