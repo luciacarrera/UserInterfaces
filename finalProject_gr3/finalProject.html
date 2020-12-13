@@ -41,6 +41,28 @@
             <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
         </nav>
     </div>
+
+    <!--Form box for signing up and logging in-->
+    <div class="form-box">
+      <div class="rightinfo">
+          <h4>Alfea</h4>
+          <p>school for fairies</p>
+          <img id="loginlogo" src="Images/wings.png">
+      </div>
+
+      <form id="login" class="input-group">
+        <h2>Log In</h2>
+        <p>Username</p>
+        <input type="text" class="input-field" placeholder="Enter Username" id="logEmail" required>
+        <p>Password</p>
+        <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
+         <p>Forgot Password?</p>
+        <div class="center">
+          <button type="submit" class="submit-btn" onclick="checkCookie()">Validate</button>
+        </div>
+      </form>
+    </div>
+
     <!--LEFT CONTAINER-->
     <div class="col-3 col-t-3" id="leftContainer">
         <div class="topDiv" id="alfea" >
