@@ -31,6 +31,7 @@
   <!--Here we will have the humburger  for the phone-->
   <div class="col-12 col-t-12">
     <nav class="topnav" id="myTopNav">
+
       <a class="sideBar active" onclick="centralChange('homePage')">Home</a>
       <a class="sideBar" onclick="centralChange('profile')">Profile</a>
       <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
@@ -39,7 +40,8 @@
       <a class="sideBar" onclick="centralChange('research')">Research </a>
       <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
       <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+      <a href="javascript:void(0);" class="icon" onclick="openHamburger()"> <i class="fa fa-bars"></i> </a>
+      
     </nav>
   </div>
 
@@ -423,7 +425,7 @@
       </div>
       <div id="myGrades" style="display: none;">
         <div class="container">
-          <table>
+          <table class= "tableGrades">
             <tr>
               <th></th>
               <th></th>

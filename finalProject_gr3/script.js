@@ -121,14 +121,14 @@ function centralChange(content) {
     }
 }
 //This function for the humburger (phone)
-function myFunction() {
-    var x = document.getElementById("myTopnav");
+function openHamburger() {
+    var x = document.getElementById("myTopNav");
     if (x.className === "topnav") {
-      x.className += " responsive";
+      x.className += "responsive";
     } else {
       x.className = "topnav";
     }
-  }
+}
 
 function sendMail(contact){
     var email = "mailto:"+contact+"@alfea.com"
