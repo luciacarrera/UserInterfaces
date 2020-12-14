@@ -25,6 +25,7 @@ function centralChange(content) {
     var openForumMessages4 = document.getElementById("openForumMessages4");
     var openForumMessages5 = document.getElementById("openForumMessages5");
     var openForumMessages6 = document.getElementById("openForumMessages6");
+    var gradesBloom = document.getElementById("gradesBloom");
 
     homePage.style.display ="none";
     aboutUs.style.display = "none";
@@ -49,6 +50,8 @@ function centralChange(content) {
     openForumMessages4.style.display = "none";
     openForumMessages5.style.display = "none";
     openForumMessages6.style.display = "none";
+
+    gradesBloom.style.display = "none";
 
     if (content == "homePage"){
         homePage.style.display ="block";
@@ -95,6 +98,11 @@ function centralChange(content) {
     if (content == "historyOfMagic"){
         historyOfMagic.style.display = "block";
     }
+
+    if (content == "gradesBloom"){
+        gradesBloom.style.display = "block";
+    }
+
     if (content == "openForumMessages1"){
         openForumMessages.style.display = "block";
         openForumMessages1.style.display = "block";
@@ -119,6 +127,7 @@ function centralChange(content) {
         openForumMessages.style.display = "block";
         openForumMessages6.style.display = "block";
     }
+
 }
 //This function for the humburger (phone)
 function openHamburger() {

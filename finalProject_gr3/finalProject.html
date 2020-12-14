@@ -120,27 +120,27 @@
         <p>Site Map</p>
       </section>
     </div>
-  <div id="sideBarLoginStudent">
-    <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
-    <a class="sideBar" onclick="centralChange('homePage')">Home</a>
-    <a class="sideBar" onclick="centralChange('myCourses')"> My Courses</a>
-    <a class="sideBar" onclick="centralChange('myGrades')"> My Grades</a>
-    <a class="sideBar" onclick="centralChange('forum')">Forum</a>
-    <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
-    <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
-  </div>
-  <div id="sideBarLoginTeacher">
-    <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
-    <a class="sideBar" onclick="centralChange('homePage')">Home</a>
-    <a class="sideBar" onclick="centralChange('studies')">Studies</a>
-    <a class="sideBar" onclick="centralChange('research')">Research </a>
-    <a class="sideBar" onclick="centralChange('forum')">Forum</a>
-    <a class="sideBar" onclick="centralChange('grades')">Grades</a>
-    <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
-    <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
-  </div>
-  <div id="footer">
-  </div>
+    <div id="sideBarLoginStudent">
+      <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
+      <a class="sideBar" onclick="centralChange('homePage')">Home</a>
+      <a class="sideBar" onclick="centralChange('myCourses')"> My Courses</a>
+      <a class="sideBar" onclick="centralChange('myGrades')"> My Grades</a>
+      <a class="sideBar" onclick="centralChange('forum')">Forum</a>
+      <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
+      <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
+    </div>
+    <div id="sideBarLoginTeacher">
+      <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
+      <a class="sideBar" onclick="centralChange('homePage')">Home</a>
+      <a class="sideBar" onclick="centralChange('studies')">Studies</a>
+      <a class="sideBar" onclick="centralChange('research')">Research </a>
+      <a class="sideBar" onclick="centralChange('forum')">Forum</a>
+      <a class="sideBar" onclick="centralChange('grades')">Grades</a>
+      <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
+      <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
+    </div>
+    <div id="footer">
+    </div>
   </div>
   <!--Here we will have the main container for the webPage-->
   <div class="col-6 col-t-9" id="mainContainer">
@@ -185,6 +185,7 @@
         <p>phoneHeader</p>
       </div>
       <div id="helpCenter" style="display: none;">
+        <p class="bigTitle">HELP CENTER</p>
         <div class="container">
           <img src="Images/message.png">
           <h3>Helping You!</h3>
@@ -195,6 +196,7 @@
 
       </div>
       <div id="aboutUs" style="display: none;">
+        <p class="bigTitle" >ABOUT US</p>
         <div class="container">
           <p> Alfea is an ancient school for fairies, and apparently the only one dedicated to fairy education only. The
             Alfea students are mostly in training ages 16-18 (unless they have been held back a grade like Stella, so in
@@ -203,8 +205,8 @@
         </div>
       </div>
       <div id="homePage" style="display: block;">
-        <div class="topDiv" id="title">
-          <p>About</p>
+        <div class="bigTitle" id="title">
+          <p class="bigTitle">ABOUT</p>
         </div>
         <div class="container">
           <section class="bookmarkSection">
@@ -309,6 +311,7 @@
         </div>
       </div>
       <div id="admissions" style="display: none;">
+        <p class="bigTitle">ADMISSIONS</p>
         <div class="container">
           <p>Alfea counts with a huge academic offer. In this school you can study degrees, masters and even doctorates.
             If you are an incoming student willing to join us, do it now!</p>
@@ -317,6 +320,7 @@
         </div>
       </div>
       <div id="studies" style="display: none;">
+        <p class="bigTitle">STUDIES</p>
         <div class="container">
           <ul id="studiesoptions">
             <li>
@@ -352,6 +356,7 @@
         </div>
       </div>
       <div id="research" style="display: none;">
+       <p class="bigTitle"> Research</p>
         <div class="container">
           <ul id="researchoptions">
             <li>
@@ -388,6 +393,7 @@
         </div>
       </div>
       <div id="myCourses" style="display: none;">
+        <p class="bigTitle"> MY COURSES</p>
         <div class="container">
           <img alt="" src="Images/portadaMetamor.png">
           <h3>Metamorphosymbiosis</h3>
@@ -424,8 +430,9 @@
         </div>
       </div>
       <div id="myGrades" style="display: none;">
+        <p class="bigTitle" >MY GRADES</p>
         <div class="container">
-          <table class= "tableGrades">
+          <table>
             <tr>
               <th></th>
               <th></th>
@@ -595,9 +602,9 @@
       </div>
       <div id="openForumMessages" style="display: none;">
         <div id="openForumMessages1" style="display: none;">
-          <p class="title">COURSE FORUM</p>
-          <h2 class="paragraph">Doubts about the course schedule</h2>
-          <p>Chat Messages</p>
+          <p class="bigTitle">COURSE FORUM</p>
+          <p class="mediumTitle">Doubts about the course schedule</p>
+          <p class="smallTitle">Chat Messages</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
               <img alt="" class="student" src="images/tecna.png">
@@ -644,9 +651,8 @@
           </form>
         </div>
         <div id="openForumMessages2" style="display: none;">
-          <p class="title">COURSE FORUM</p>
-          <h2 class="paragraph">There are after school hours for our kids?</h2>
-          <p>Chat Messages</p>
+          <p class="bigTitle">COURSE FORUM</p>
+          <p class="smallTitle">There are after school hours for our kids?</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
               <img alt="" class="student" src="images/kimmy.png">
@@ -700,9 +706,8 @@
           </form>
         </div>
         <div id="openForumMessages3" style="display: none;">
-          <p class="title">COURSE FORUM</p>
-          <h2 class="paragraph">I would like to know how the pandemi affects the school</h2>
-          <p>Chat Messages</p>
+          <p class="bigTitle">COURSE FORUM</p>
+          <p class="smallTitle">I would like to know how the pandemi affects the school</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
               <img alt="" class="student" src="images/musa.png">
@@ -748,9 +753,8 @@
           </form>
         </div>
         <div id="openForumMessages4" style="display: none;">
-          <p class="title">COURSE FORUM</p>
-          <h2 class="paragraph">Is the school canteen still open?</h2>
-          <p>Chat Messages</p>
+          <p class="bigTitle">COURSE FORUM</p>
+          <p class="smallTitle">Is the school canteen still open?</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
               <img alt="" class="student" src="images/daphne.png">
@@ -795,10 +799,8 @@
           </form>
         </div>
         <div id="openForumMessages5" style="display: none;">
-          <p class="title">COURSE FORUM</p>
-          <h2 class="paragraph">About online homework and classes</h2>
-
-          <p>Chat Messages</p>
+          <p class="bigTitle">COURSE FORUM</p>
+          <p class="smallTitle">About online homework and classes</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
               <img alt="" class="student" src="images/layla.png">
@@ -843,9 +845,8 @@
           </form>
         </div>
         <div id="openForumMessages6" style="display: none;">
-          <p class="title">COURSE FORUM</p>
-          <h2 class="paragraph">Winter School trips!!</h2>
-          <p>Chat Messages</p>
+          <p class="bigTitle">COURSE FORUM</p>
+          <p class="smallTitle">Winter School trips!!</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
               <img alt="" class="student" src="images/kimmy.png">
@@ -899,8 +900,8 @@
             <tr>
               <td><img alt="" src="Images/bloom.png"></td>
               <td class="infoParagraph">bloom@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesBloom')">GRADES</button></td>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -910,9 +911,9 @@
             <tr>
               <td><img alt="" src="Images/tecna.png"></td>
               <td class="infoParagraph">tecna@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesTecna')">GRADES</button></td>
-            </tr>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
+              </tr>
           </table>
         </div>
         <div class="container">
@@ -921,8 +922,8 @@
             <tr>
               <td><img alt="" src="Images/stella.png"></td>
               <td class="infoParagraph">stella@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesTecna')">GRADES</button></td>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -932,8 +933,8 @@
             <tr>
               <td><img alt="" src="Images/kimmy.png"></td>
               <td class="infoParagraph">kimmy@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesKimmy')">GRADES</button></td>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -943,8 +944,8 @@
             <tr>
               <td><img alt="" src="Images/layla.png"></td>
               <td class="infoParagraph">layla@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesLayla')">GRADES</button></td>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -954,8 +955,8 @@
             <tr>
               <td><img alt="" src="Images/flora.png"></td>
               <td class="infoParagraph">flora@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesFlora')">GRADES</button></td>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -965,8 +966,8 @@
             <tr>
               <td><img alt="" src="Images/musa.png"></td>
               <td class="infoParagraph">musa@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesMusa')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesMusa')">GRADES</button></td> 
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -976,8 +977,8 @@
             <tr>
               <td><img alt="" src="Images/roxy.png"></td>
               <td class="infoParagraph">roxy@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesRoxy')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesRoxy')">GRADES</button></td>           
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -987,9 +988,9 @@
             <tr>
               <td><img alt="" src="Images/daphne.png"></td>
               <td class="infoParagraph">daphne@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
               <td><button class="buttonOpenClass" onclick="centralChange('gradesDaphne')">GRADES</button></td>
-            </tr>
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
+              </tr>
           </table>
         </div>
         <div class="container">
@@ -998,8 +999,8 @@
             <tr>
               <td><img alt="" src="Images/aisha.png"></td>
               <td class="infoParagraph">aisha@gmail.com</td>
-              <td><img alt="" src="Images/message.png"></td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesAisha')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesAisha')">GRADES</button></td>           
+              <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
@@ -1465,6 +1466,132 @@
               <button class="buttonOpenClass">DOWNLOAD</button>
             </a>
         </div>
+      </div>
+      <div id="gradesBloom" style="display: none;">
+        <div>
+          <p class="bigTitle" >MY STUDENTS - BLOOM GRADES </p>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">METAMORPHOSYMBIOSIS</td>
+              <td></td>
+              <td class="gradesDate">Today 10:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">9.6</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="gradesTitle">POTIONOLOGY</td>
+              <!--Here we will have relleno for them to be at same distance-->
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 17:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">8.6</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="gradesTitle">SELF DEFENSE</td>
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 19:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">7.9</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="gradesTitle">HYSTORY OF MAGIC</td>
+              <td style="color: white;"></td>
+              <td class="gradesDate">Today 17:00 </td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">8.1</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
+
+
+
       </div>
     </div>
 
