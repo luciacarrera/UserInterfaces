@@ -9,7 +9,7 @@
   <!-- Link to the style sheet -->
   <link href="style.css" rel="stylesheet" type="text/css">
   <!-- Link to the script sheet -->
-  <script src= "script.js"></script>
+  <script src="script.js"></script>
   <!--Informacion para la web-->
   <meta name="description" content="WebPage" />
   <meta name="author1" content="Rony Michelle" />
@@ -21,1301 +21,1454 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--For the codification of characters-->
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
-    <!--Here we will have the left container for the webPage-->
-   
+<!--Here we will have the left container for the webPage-->
+
 <body>
-    <!--Here we will have the humburger  for the phone-->
-    <div class="col-12 col-t-12">
-        <nav class="topnav" id="myTopNav"  >
-            <a class="sideBar active" onclick = "centralChange('homePage')">Home</a>
-            <a class="sideBar" onclick = "centralChange('profile')">Profile</a> 
-            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>   
-            <a class="sideBar" onclick = "centralChange('admissions')" >Admissions</a>
-            <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
-            <a class="sideBar" onclick = "centralChange('research')">Research </a>
-            <a class="sideBar" onclick = "centralChange('helpCenter')" >Help Center</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
-        </nav>
+  <!--Here we will have the humburger  for the phone-->
+  <div class="col-12 col-t-12">
+    <nav class="topnav" id="myTopNav">
+      <a class="sideBar active" onclick="centralChange('homePage')">Home</a>
+      <a class="sideBar" onclick="centralChange('profile')">Profile</a>
+      <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
+      <a class="sideBar" onclick="centralChange('admissions')">Admissions</a>
+      <a class="sideBar" onclick="centralChange('studies')">Studies</a>
+      <a class="sideBar" onclick="centralChange('research')">Research </a>
+      <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
+      <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a>
+    </nav>
+  </div>
+
+  <!--Form box for signing up and logging in-->
+  <div class="form-box">
+    <div class="rightinfo">
+      <h4>Alfea</h4>
+      <p>school for fairies</p>
+      <img id="loginlogo" src="Images/wings.png">
     </div>
 
-    <!--Form box for signing up and logging in-->
-    <div class="form-box">
-      <div class="rightinfo">
-          <h4>Alfea</h4>
-          <p>school for fairies</p>
-          <img id="loginlogo" src="Images/wings.png">
+    <form id="login" class="input-group">
+      <h2>Log In</h2>
+      <p>Username</p>
+      <input type="text" class="input-field" placeholder="Enter Username" id="logEmail" required>
+      <p>Password</p>
+      <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
+      <p>Forgot Password?</p>
+      <div class="center">
+        <button type="submit" class="submit-btn" onclick="checkCookie()">Validate</button>
+      </div>
+    </form>
+  </div>
+
+  <!--LEFT CONTAINER-->
+  <div class="col-3 col-t-3" id="leftContainer">
+    <div class="topDiv" id="alfea">
+      <img src="Images/wings.png" alt="logo">
+      <p>Alfea</p>
+    </div>
+    <!--Voy a poner todas las posibilidades juntas (aunque no vaya a ser asi
+        para la version final (por que todavia no tenemos las cookies)-->
+    <div id="sideBarNotLogin" style="display: block;">
+      <section class="sideBar" onclick="centralChange('homePage')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>About</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('aboutUs')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>About Us</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('admissions')">
+        <img class="sideBarIcon" src="Images/Icons/columns.png" alt="">
+        <p>Admissions</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('studies')">
+        <img class="sideBarIcon" src="Images/Icons/notebook.png" alt="">
+        <p>Studies</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('research')">
+        <img class="sideBarIcon" src="Images/Icons/bookmark.png" alt="">
+        <p>Research </p>
+      </section>
+      <section class="sideBar" onclick="centralChange('myCourses')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>My Courses</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('myGrades')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>My Grades</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('myStudents')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>My Students</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('forum')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>Forum</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('helpCenter')">
+        <img class="sideBarIcon" src="Images/Icons/message.png" alt="">
+        <p>Help Center</p>
+      </section>
+      <section class="sideBar" onclick="centralChange('sitemap')">
+        <img class="sideBarIcon" src="Images/Icons/map.png" alt="">
+        <p>Site Map</p>
+      </section>
+    </div>
+  <div id="sideBarLoginStudent">
+    <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
+    <a class="sideBar" onclick="centralChange('homePage')">Home</a>
+    <a class="sideBar" onclick="centralChange('myCourses')"> My Courses</a>
+    <a class="sideBar" onclick="centralChange('myGrades')"> My Grades</a>
+    <a class="sideBar" onclick="centralChange('forum')">Forum</a>
+    <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
+    <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
+  </div>
+  <div id="sideBarLoginTeacher">
+    <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
+    <a class="sideBar" onclick="centralChange('homePage')">Home</a>
+    <a class="sideBar" onclick="centralChange('studies')">Studies</a>
+    <a class="sideBar" onclick="centralChange('research')">Research </a>
+    <a class="sideBar" onclick="centralChange('forum')">Forum</a>
+    <a class="sideBar" onclick="centralChange('grades')">Grades</a>
+    <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
+    <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
+  </div>
+  <div id="footer">
+  </div>
+  </div>
+  <!--Here we will have the main container for the webPage-->
+  <div class="col-6 col-t-9" id="mainContainer">
+    <div class="col-3 col-t-12" id="rightAside">
+      <div class="topDiv">
+        <div id="profile" class="container">
+          <img id="userphoto" alt="userphoto" src="Images/profilePic.png">
+          <ul id="useraspects"></ul>
+            <li><h3 class="pointer" onclick="showConfirmation()">Log In</h3>
+          </ul>
+        </div>
+      </div>
+      <div id="nextEvents" class="container">
+        <h1>NEXT EVENTS</h1>
+        <p>Sunday, 23 November 11:55PM: Potionology - Third Lab Assignment Submission</p>
+        <p>Thursday, 3 December 11:00AM: History of Magic - Final Exam in room A1.2.3</p>
+        <p>Friday, 16 December 11:59PM: Metamorphosymbiosis - Submission of "New power abilities progress"</p>
+        <p>Monday, 21 December 9AM: Self Defense - Krav Maga Green Belt Exam</p>
+        <p>Wednesday, 23 December 2:30PM: General - End of Semester Christmas Party!</p>
+        <ul id="detailsPart"></ul>
+          <li><p>More Events</p></li>
+        </ul>
+        <img id="details" alt="" src="Images/icons/flecha.png">
       </div>
 
-      <form id="login" class="input-group">
-        <h2>Log In</h2>
-        <p>Username</p>
-        <input type="text" class="input-field" placeholder="Enter Username" id="logEmail" required>
-        <p>Password</p>
-        <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
-         <p>Forgot Password?</p>
-        <div class="center">
-          <button type="submit" class="submit-btn" onclick="checkCookie()">Validate</button>
+      <div id="latestNews" class="container">
+        <h1>LATEST NEWS</h1>
+        <p>Pixies are coming back to Alfea. Any suggestions for making their visit as remarkable as possible?</p>
+        <p>Potionology's last topic will be covered during the lab session of this week. Do not miss it!</p>
+        <p>Final mark of Metamorphosymbiosis is already available. Check it now.</p>
+        <p>Want to be a part of a club? Become a member of the feminist club, music club, art club, board games club,
+          etc.</p>
+        <ul id="detailsPart"></ul>
+          <li><p>More News</p></li>
+        </ul>
+        <img id="details" alt="" src="Images/icons/flecha.png">
+      </div>
+    </div>
+    <!--Here we will have the central container for the webPage-->
+    <div id="centralContainer">
+      <div id="phoneHeader" style="display: none;">
+        <p>phoneHeader</p>
+      </div>
+      <div id="helpCenter" style="display: none;">
+        <div class="container">
+          <img src="Images/message.png">
+          <h3>Helping You!</h3>
+          <p>If you have any doubt regarding the use of the website, enrolling prices, school uniforms or even the
+            schedules, do not hesitate to contact us.</p>
+          <h3 alt="email" onclick="sendMail('help')">help@alfea.com</h3>
         </div>
-      </form>
+
+      </div>
+      <div id="aboutUs" style="display: none;">
+        <div class="container">
+          <p> Alfea is an ancient school for fairies, and apparently the only one dedicated to fairy education only. The
+            Alfea students are mostly in training ages 16-18 (unless they have been held back a grade like Stella, so in
+            her case, 19). Fairies here learn how to control their power, fight evil, learn new spells as well as be
+            guardians of their planets, or in many cases, learn how to be their realms' queens.</p>
+        </div>
+      </div>
+      <div id="homePage" style="display: block;">
+        <div class="topDiv" id="title">
+          <p>About</p>
+        </div>
+        <div class="container">
+          <section class="bookmarkSection">
+            <img id="bookmarkPic" alt="" src="Images/icons/etiqueta.png">
+          </section>
+          <section class="firstSection">
+            <img alt="" src="Images/Alfea.jpg">
+            <h3>School Life</h3>
+            <p>As an extremely prestigious school for fairies, we pride ourselves in our excellent academia which shapes
+              the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned political
+              leaders, philosophers, scientists and warriors.</p>
+          </section>
+          <section class="leftSection">
+            <iframe src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3"
+              allowfullscreen></iframe>
+            <h3>Welcome to Alfea</h3>
+            <p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
+            </p>
+          </section>
+          <section class="rightSection">
+            <iframe src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3"
+              allowfullscreen></iframe>
+            <h3>The Dormitories</h3>
+            <p>
+              As a boarding school, we offer the best accomodation for our students. In the following video, we give you
+              a fun little sneak peak of the rooms
+            </p>
+          </section>
+          <div class="container" id="detailsPop">
+            <ul id="detailsPart"></ul>
+              <li><p>Details  </p></li>
+            </ul>
+            <img id="details" alt="" src="Images/icons/flecha.png">
+          </div>
+        </div>
+        <div class="container">
+            <section class="bookmarkSection">
+              <img id="bookmarkPic" alt="" src="Images/icons/etiqueta.png">
+            </section>
+            <section class="firstSection">
+              <img alt="" src="Images/Party.jpg">
+              <h3>Work & Play</h3>
+              <p>Here at Alfea, we are well aware that it is impossible to just study and we make sure that our students
+                have healthy mix of academia and fun.
+                In the following videos we will show you
+                some of the many activities they can enjoy on campus.</p>
+            </section>
+            <section class="leftSection">
+              <iframe src="https://www.youtube.com/embed/L3IIzxrS1tY?start=35&modestbranding=1&iv_load_policy=3"
+                allowfullscreen></iframe>
+              <h3>Talent Shows</h3>
+              <p>Our alums all have various types of skills which we love to showcase in our annual Talent Show. Here you
+                can see
+                last years winners, The Winx Club.</p>
+            </section>
+            <section class="rightSection">
+              <iframe src="https://www.youtube.com/embed/uAujeQPtkjU?start=3&modestbranding=1&iv_load_policy=3"
+                allowfullscreen></iframe>
+              <h3>Fashion Shows</h3>
+              <p>Our school has various extracurricular clubs, one being
+                Fashion Design. Each term they host a fashion show to demonstrate their latest creations.</p>
+            </section>
+          <div class="container" id="detailsPop">
+          <ul id="detailsPart"></ul>
+            <li><p>Details  </p></li>
+          </ul>
+          <img id="details" alt="" src="Images/icons/flecha.png">
+          </div>
+        </div>
+        <div class="container">
+          <section class="bookmarkSection">
+            <img id="bookmarkPic" alt="" src="Images/icons/etiqueta.png">
+          </section>
+          <section class="firstSection">
+            <img alt="" src="Images/Transformation.png">
+            <h3>Fairy Forms</h3>
+            <p>Fairy forms or transformations are different levels of power that fairies can attain as an extention of
+              their magical abilities.
+              In our school, we work with our students not only to help them become full-fledged fairies, but so that
+              they reach higher fairy forms.</p>
+          </section>
+          <section class="leftSection">
+            <iframe src="https://www.youtube.com/embed/beH3AZUS7f0?modestbranding=1&iv_load_policy=3"
+              allowfullscreen></iframe>
+            <h3>Winx</h3>
+            <p>This is the basic fairy form, if you have yet to unlock it, we will make sure that you do by the end of
+              your freshmen year.</p>
+          </section>
+          <section class="rightSection">
+            <iframe src="https://www.youtube.com/embed/gms5Krs4Qpg?modestbranding=1&iv_load_policy=3"
+              allowfullscreen></iframe>
+            <h3>Enchantix</h3>
+            <p>Enchantix is the "Final Fairy Form" in a fairy's formal education. In our curriculum, earning Enchantix
+              is the final exam.</p>
+          </section>
+        <div class="container" id="detailsPop">
+          <ul id="detailsPart"></ul>
+            <li><p>Details  </p></li>
+          </ul>
+          <img id="details" alt="" src="Images/icons/flecha.png">
+        </div>
+        </div>
+      </div>
+      <div id="admissions" style="display: none;">
+        <div class="container">
+          <p>Alfea counts with a huge academic offer. In this school you can study degrees, masters and even doctorates.
+            If you are an incoming student willing to join us, do it now!</p>
+          <p>Call 915-334-221 if you want to find information about access tests, cut-off marks, enrollment procedures
+            and scholarships. </p>
+        </div>
+      </div>
+      <div id="studies" style="display: none;">
+        <div class="container">
+          <ul id="studiesoptions">
+            <li>
+              <h1>Degrees</h1>
+              <ul>
+                <li>
+                  <p>Magic Winx</p>
+                <li>
+                  <p>Charmix</p>
+                <li>
+                  <p>Enchantix</p>
+              </ul>
+            <li>
+              <h1>Masters</h1>
+              <ul>
+                <li>
+                  <p>Harmonix</p>
+                <li>
+                  <p>Sirenix</p>
+                <li>
+                  <p>Butterflix</p>
+              </ul>
+            <li>
+              <h1>Doctorates</h1>
+              <ul>
+                <li>
+                  <p>Major Fairies</p>
+                <li>
+                  <p>Dark Fairies</p>
+              </ul>
+          </ul>
+
+        </div>
+      </div>
+      <div id="research" style="display: none;">
+        <div class="container">
+          <ul id="researchoptions">
+            <li>
+              <h1>Our Investigation</h1>
+              <ul>
+                <li>
+                  <p>Alfea's Research Portal</p>
+                <li>
+                  <p>Potionology Laboratories</p>
+              </ul>
+            <li>
+              <h1>Indicators</h1>
+              <ul>
+                <li>
+                  <p>Magic Production</p>
+                <li>
+                  <p>Researching Projects</p>
+              </ul>
+            <li>
+              <h1>Programs and convocatories</h1>
+              <ul>
+                <li>
+                  <p>Cloud Tower 2020</p>
+                <li>
+                  <p>Fairies's support</p>
+              </ul>
+            <li>
+              <h1>Alfea's Library</h1>
+              <p>It is one of the biggest libraries of the whole Magic Dimension. There are hundreds of books available
+                for all thematic lines.</p>
+              <p>Students can also study and work in groups here.</p>
+
+          </ul>
+        </div>
+      </div>
+      <div id="myCourses" style="display: none;">
+        <div class="container">
+          <img alt="" src="Images/portadaMetamor.png">
+          <h3>Metamorphosymbiosis</h3>
+          <button class="buttonOpenClass" onclick="centralChange('metamor')"> OPEN COURSE</button>
+          <p>It is a type of magic which allows the user to
+            transform into another living being and to
+            transform other things/people into another living being. There are different
+            types of Metamorphosymbiosis.</p>
+        </div>
+        <div class="container">
+          <img alt="" src="Images/portadaPotions.png">
+          <h3>Potionology</h3>
+          <button class="buttonOpenClass" onclick="centralChange('potionology')">OPEN COURSE</button>
+          <p>His exciting one and a half hour workshop will see apprentices develop their Potion making skills, engage
+            their imaginations and use talk, reasoning and role play to explore ways to help our character out of his
+            tricky situation. Each apprentice will concoct and take home their own potion in a special, muggle-proof
+            bottle.</p>
+        </div>
+        <div class="container">
+          <img alt="" src="Images/portadaSelfDefence.png">
+          <h3>Self Defense</h3>
+          <button class="buttonOpenClass" onclick="centralChange('selfDefence')">OPEN COURSE</button>
+          <p>As teacher of self defense, Griselda is well-versed in defense magic.
+            As a fairy she may also know first-level spells all fairies can learn such as, telekinesis, transmuting
+            objects, and fixing minor messes. </p>
+        </div>
+        <div class="container">
+          <img alt="" src="Images/portadaHistoryMagic.png">
+          <h3>History of Magic</h3>
+          <button class="buttonOpenClass" onclick="centralChange('historyOfMagic')">OPEN COURSE</button>
+          <p>History of Magic is a core class and subject taught at Hogwarts School of Witchcraft and Wizardry. This
+            class is a study of magical history. This is one of the subjects where the use of magic practically is not
+            necessary. </p>
+        </div>
+      </div>
+      <div id="myGrades" style="display: none;">
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">METAMORPHOSYMBIOSIS</td>
+              <td></td>
+              <td class="gradesDate">Today 10:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">9.6</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="gradesTitle">POTIONOLOGY</td>
+              <!--Here we will have relleno for them to be at same distance-->
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 17:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">4.6</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesFail">FAIL</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="gradesTitle">SELF DEFENSE</td>
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 19:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">4.9</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesFail">FAIL</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <table>
+            <tr>
+              <td class="gradesTitle">HYSTORY OF MAGIC</td>
+              <td style="color: white;"></td>
+              <td class="gradesDate">Today 17:00 </td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="numberGrade">6.9</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td class="gradesDate">Details</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="forum" style="display: none;">
+        <p class="bigTitle">COURSE FORUM</p>
+
+        <div class="container">
+          <table class="infoParagraph">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+
+            <tr>
+              <td>Doubts about the course schedule</td>
+              <td>3</td>
+              <td>Fri, 18 Sep 2020, 3:16 PM</td>
+              <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages1')">Send Msg</button></td>
+            </tr>
+            <tr>
+              <td> There are after school hours for our kids?</td>
+              <td>3</td>
+              <td>Wed, 22 Sep 2020, 9:05 AM</td>
+              <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages2')">Send Msg</button></td>
+            </tr>
+            <tr>
+              <td> <a onclick="hideAndShow()">I would like to know how the pandemi affects the school</a></td>
+              <td>3</td>
+              <td>Thu, 23 Sep 2020, 12:33 AM</td>
+              <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages3')">Send Msg</button></td>
+            </tr>
+            <tr>
+              <td> <a onclick="hideAndShow()">Is the school canteen still open? </a></td>
+              <td>3</td>
+              <td>Tue, 27 Sep 2020, 08:45 PM</td>
+              <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages4')">Send Msg</button></td>
+            </tr>
+            <tr>
+              <td><a onclick="hideAndShow()">About online homework and classes</a></td>
+              <td>3</td>
+              <td>Mon, 1 Oct 2020, 2:15 PM</td>
+              <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages5')">Send Msg</button></td>
+            </tr>
+            <tr>
+              <td><a onclick="hideAndShow()">Winter School trips!!</a></td>
+              <td>3</td>
+              <td>Wed, 4 Oct 2020, 11:00 AM</td>
+              <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages6')">Send Msg</button></td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+      <div id="openForumMessages" style="display: none;">
+        <div id="openForumMessages1" style="display: none;">
+          <p class="title">COURSE FORUM</p>
+          <h2 class="paragraph">Doubts about the course schedule</h2>
+          <p>Chat Messages</p>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/tecna.png">
+              <p>TECNA</p>
+            </div>
+            <p>Hello. How are we suppose to know the time of the exams</p>
+            <span class="time-right">11:00</span>
+          </div>
+
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/stella.png">
+              <p>STELLA</p>
+            </div>
+            <p>Hey! it isnt setteled yet!!</p>
+            <span class="time-right">12:00</span>
+          </div>
+
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/tecna.png">
+              <p>TECNA</p>
+            </div>
+            <p>Sweet! Thank you so much!</p>
+            <span class="time-right">16:17</span>
+          </div>
+
+          <div class="container" id="showingMessage1" style="display: none;">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage1"></p>
+            </div>
+            <p id="msg1"></p>
+            <span id="time1" class="time-right">12:00</span>
+          </div>
+
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg1Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage1()">Send</a>
+            </div>
+          </form>
+        </div>
+        <div id="openForumMessages2" style="display: none;">
+          <p class="title">COURSE FORUM</p>
+          <h2 class="paragraph">There are after school hours for our kids?</h2>
+          <p>Chat Messages</p>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/kimmy.png">
+              <p>KIMMY </p>
+            </div>
+            <p>Hello. I think so ! you could look at the about us web page!</p>
+            <span class="time-right">14:19</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/layla.png">
+              <p>LAYLA</p>
+            </div>
+            <p>Hey! i have already looked there but there is no information about it :/</p>
+            <span class="time-right">19:53</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/kimmy.png">
+              <p>KIMMY </p>
+            </div>
+            <p>Oh! my bad, maybe you should call the school</p>
+            <span class="time-right">22:21</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/flora.png">
+              <p>FLORA </p>
+            </div>
+            <p>Hey! it isnt setteled yet!!</p>
+            <span class="time-right">12:21</span>
+          </div>
+
+
+          <div class="container" id="showingMessage2" style="display: none;">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage2"></p>
+            </div>
+            <p id="msg2"></p>
+            <span id="time2" class="time-right">12:00</span>
+          </div>
+
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer2">
+              <input class="placeHolderText" id="msg2Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage2()">Send</a>
+            </div>
+          </form>
+        </div>
+        <div id="openForumMessages3" style="display: none;">
+          <p class="title">COURSE FORUM</p>
+          <h2 class="paragraph">I would like to know how the pandemi affects the school</h2>
+          <p>Chat Messages</p>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/musa.png">
+              <p>MUSA </p>
+            </div>
+            <p>Hello. How are we suppose to feel safe with everything going on? Whate are the
+              measures the school has considered?</p>
+            <span class="time-right">14:19</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/roxy.png">
+              <p>ROXY</p>
+            </div>
+            <p>Hey! the school has already sent an email to inform us about it/</p>
+            <span class="time-right">19:53</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/musa.png">
+              <p>MUSA</p>
+            </div>
+            <p>Sweet! Thank you so much!</p>
+            <span class="time-right">22:21</span>
+          </div>
+
+          <div class="container" id="showingMessage3" style="display: none;">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage3"></p>
+            </div>
+            <p id="msg3"></p>
+            <span id="time3" class="time-right">12:00</span>
+          </div>
+
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer3">
+              <input class="placeHolderText" id="msg3Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage3()">Send</a>
+            </div>
+          </form>
+        </div>
+        <div id="openForumMessages4" style="display: none;">
+          <p class="title">COURSE FORUM</p>
+          <h2 class="paragraph">Is the school canteen still open?</h2>
+          <p>Chat Messages</p>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/daphne.png">
+              <p>DAPHNE </p>
+            </div>
+            <p>Hello. I Dont think so, due to the pandemi</p>
+            <span class="time-right">14:19</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/aisha.png">
+              <p>AISHA</p>
+            </div>
+            <p>Hey! it isnt oppened yet!! and i dont believe they are going to open it</p>
+            <span class="time-right">19:53</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/bloom.png">
+              <p>BLOOM</p>
+            </div>
+            <p>I dont think they will ever open it again :(</p>
+            <span class="time-right">22:21</span>
+          </div>
+
+          <div class="container" id="showingMessage4" style="display: none;">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage4"></p>
+            </div>
+            <p id="msg4"></p>
+            <span id="time4" class="time-right">12:00</span>
+          </div>
+
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer4">
+              <input class="placeHolderText" id="msg4Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage4()">Send</a>
+            </div>
+          </form>
+        </div>
+        <div id="openForumMessages5" style="display: none;">
+          <p class="title">COURSE FORUM</p>
+          <h2 class="paragraph">About online homework and classes</h2>
+
+          <p>Chat Messages</p>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/layla.png">
+              <p>LAYLA </p>
+            </div>
+            <p>Hello. How are we suppose to create an account for the blackboard?</p>
+            <span class="time-right">14:19</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/bloom.png">
+              <p>BLOOM</p>
+            </div>
+            <p>You just have to use the username of the school, hope it helped</p>
+            <span class="time-right">19:53</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/layla.png">
+              <p>LAYLA</p>
+            </div>
+            <p>YES! Thank you so much!!!</p>
+            <span class="time-right">22:21</span>
+          </div>
+
+          <div class="container" id="showingMessage5" style="display: none;">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage5"></p>
+            </div>
+            <p id="msg5"></p>
+            <span id="time5" class="time-right">12:00</span>
+          </div>
+
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg5Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage5()">Send</a>
+            </div>
+          </form>
+        </div>
+        <div id="openForumMessages6" style="display: none;">
+          <p class="title">COURSE FORUM</p>
+          <h2 class="paragraph">Winter School trips!!</h2>
+          <p>Chat Messages</p>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/kimmy.png">
+              <p>KIMMY </p>
+            </div>
+            <p>Hello. How are we suppose to know the time of the exams??</p>
+            <span class="time-right">14:19</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/tecna.png">
+              <p>TECNA</p>
+            </div>
+            <p>Hey! it isnt setteled yet!!</p>
+            <span class="time-right">19:53</span>
+          </div>
+          <div class="container">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/tecna.png">
+              <p>TECNA</p>
+            </div>
+            <p>Sweet! Thank you so much!</p>
+            <span class="time-right">22:21</span>
+          </div>
+
+          <div class="container" id="showingMessage6" style="display: none;">
+            <div style="background-color: white; padding: 5px;">
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage6"></p>
+            </div>
+            <p id="msg6"></p>
+            <span id="time6" class="time-right">12:00</span>
+          </div>
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer6">
+              <input class="placeHolderText" id="msg6Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage6()">Send</a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="grades" style="display: none;">
+      </div>
+      <div id="myStudents" style="display: none;">
+        <p class="bigTitle">MY STUDENTS </p>
+        <div class="container">
+          <p class="mediumTitle">BLOOM</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/bloom.png"></td>
+              <td class="infoParagraph">bloom@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesBloom')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">TECNA</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/tecna.png"></td>
+              <td class="infoParagraph">tecna@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesTecna')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">STELLA</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/stella.png"></td>
+              <td class="infoParagraph">stella@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesTecna')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">KIMMY</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/kimmy.png"></td>
+              <td class="infoParagraph">kimmy@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesKimmy')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">LAYLA</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/layla.png"></td>
+              <td class="infoParagraph">layla@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesLayla')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">FLORA</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/flora.png"></td>
+              <td class="infoParagraph">flora@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesFlora')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">MUSA</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/musa.png"></td>
+              <td class="infoParagraph">musa@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesMusa')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">ROXY</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/roxy.png"></td>
+              <td class="infoParagraph">roxy@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesRoxy')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">DAPHNE</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/daphne.png"></td>
+              <td class="infoParagraph">daphne@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesDaphne')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+        <div class="container">
+          <p class="mediumTitle">AISHA</p>
+          <table>
+            <tr>
+              <td><img alt="" src="Images/aisha.png"></td>
+              <td class="infoParagraph">aisha@gmail.com</td>
+              <td><img alt="" src="Images/message.png"></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesAisha')">GRADES</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="metamor" style="display: none;">
+        <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')">GO BACK</button>
+        <p></p>
+        <p class="bigTitle"> MY COURSES - METAMORPHOSYMBIOSIS</p>
+        <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mr Mott </p>
+        <div class="container">
+          <section class="infoParagraph" style="margin-bottom: 20px;">
+            <img alt="" src="Images/portadaMetamor.png"
+              style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+            Welcome to Metamorphosymbiosis.
+            This is the first branch of Transfiguration that students will learn at Alfea School
+            of Witchcraft and Wizardry, beginning with Match to needle in first year and progressing from there.
+          </section>
+        </div>
+        <p class="mediumTitle"> Chapter 1</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/metamorCh1.png"
+              style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+            <p>In this Chapter we will show you the darkest and difficult practices
+              of Metamorphosymbiosis as stated by Wizgiz.
+              It turns a living creature into the most aggressive being. A beautiful plant can
+              be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature.
+              It allows the user to take
+              the appearance and powers of the fairy animal </p>
+          </section>
+          <section class="infoParagraph"> Wild Magic: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+            <button class="buttonOpenClass">DOWNLOAD</button>
+          </a>
+          <section class="infoParagraph"> What to do: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Rules to follow(important)</section>
+          <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+            <button class="buttonOpenClass">DOWNLOAD</button>
+
+            <section class="infoParagraph"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+            </section>
+
+        </div>
+        <p class="mediumTitle"> Chapter 2</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/metamorCh2.png"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            This is the first branch of Transfiguration that will show students how to control their powers !! You
+            must be careful, because you could change your life forever if something goes wrong!
+          </section>
+          <section class="infoParagraph"> Control Your Power: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+            <button class="buttonOpenClass">DOWNLOAD</button>
+          </a>
+          </section>
+
+
+        </div>
+        <p class="mediumTitle"> Chapter 3</p>
+        <div class="container">
+          <section class="infoParagraph">
+            This is the first branch of Transfiguration that will show students how to transform themselves into plants
+            & Insects !! You
+            must be careful, because you could change your life forever if something goes wrong!
+          </section>
+          <section class="infoParagraph"> Transformation into Insects & Plants: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+            <button class="buttonOpenClass">DOWNLOAD</button>
+          </a>
+          <section class="infoParagraph"> What to do: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Rules to follow(important)</section>
+          <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+            <button class="buttonOpenClass">DOWNLOAD</button>
+          </a>
+          <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+          <!--To upload Your work webPage-->
+          <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+            style="float: left;">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+          </form>
+
+          <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
+        </div>
+        <p class="mediumTitle"> Chapter 4</p>
+        <div class="container">
+          <section class="infoParagraph"> Transformation into Mammals: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+            <button class="buttonOpenClass">DOWNLOAD</button>
+          </a>
+          <section class="infoParagraph">
+            <img alt="" src="Images/metamorCh4.png"
+              style="float: left; width: 160px; height: 130px; padding-right: 8px;">
+            Examples in other schools. Transformation into wolf.
+            </p>
+
+
+
+            <section class="infoParagraph"> What to do: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+              </p>
+        </div>
+      </div>
+      <div id="potionology" style="display: none;">
+        <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')">GO BACK</button>
+        <p></p>
+        <p class="bigTitle"> MY COURSES - POTIONOLOGY</p>
+        <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
+        <div class="container">
+          <section class="infoParagraph" style="margin-bottom: 20px;">
+            <img alt="" src="Images/teacherPalladium.png"
+              style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+            Welcome to Potionology, I will be your teacher for this course! I will try to teach you
+            as much as I can ! I love potions and I hope I help you understand & master them .</p>
+            </p>
+        </div>
+        <p class="mediumTitle"> Chapter 1</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/portadaPotions.png"
+              style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+            In this Chapter we will show you the basic information about Self Defence.
+            The kind of enchantments will help you survive in a magic world,
+            in which not all the people are ass good as you think.
+            </p>
+            <section class="infoParagraph"> Basic Information About Potions: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+
+        </div>
+        <p class="mediumTitle"> Chapter 2</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/potionCh2.jpg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            Amortentia is a love potion that does not create actual love, but gives the drinker a powerful obsession and
+            infatuation with the giver of
+            the potion. It is usually either forced upon someone or covertly given. As a rule of thumb the longer a love
+            potion awaits consumption, the stronger the effects will be
+            </p>
+            <section class="infoParagraph"> Amortentia.: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph"> What to do: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+              </p>
+
+        </div>
+
+        <p class="mediumTitle"> Chapter 3</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/potionCh3.jpg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            Skele-Gro is a medicinal potion that can regrow missing or removed bones,[7] though it tastes terrible and
+            the process is very slow and extremely painful.
+            </p>
+
+            <section class="infoParagraph"> Skele-Gro: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph">
+              <img alt="" src="Images/metamorCh4.png"
+                style="float: left; width: 160px; height: 130px; padding-right: 8px;">
+              Examples in other schools. Transformation into wolf.
+              </p>
+              <section class="infoParagraph"> What to do: </section>
+              <!--To download work from webPage-->
+              <section class="extraInfoParagraph">Rules to follow(important)</section>
+              <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+                <button class="buttonOpenClass">DOWNLOAD</button>
+              </a>
+              <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+              <!--To upload Your work webPage-->
+              <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+                style="float: left;">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+              </form>
+
+              <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+                </p>
+        </div>
+        <p class="mediumTitle"> Chapter 4</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/potionCh4.jpg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            Felix Felicis, more commonly known as Liquid Luck, grants whoever drinks it unusually
+            good luck.The time span of this luck depends on the amount imbibed. Liquid Luck is one of the hardest
+            potions to make, as noted by Horace Slughorn; "It has to be cooked for 6 months on an extremely complicated
+            formula, and if you make a tiniest mistake, the consequences are severe"
+            </p>
+            <section class="infoParagraph"> Felix Felicis/Liquid Luck: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph"> What to do: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+              </p>
+        </div>
+        <p class="mediumTitle"> Chapter 5</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/potionCh5.jpg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            The Draught of Peace provides personal comfort, calms anxiety and soothes agitation.
+            </p>
+
+            <section class="infoParagraph"> Draught of Peace: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph"> What to do: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+              </p>
+        </div>
+
+
+      </div>
+      <div id="selfDefence" style="display: none;">
+        <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')">GO BACK</button>
+        <p></p>
+        <p class="bigTitle"> MY COURSES - SELF DEFENCE</p>
+        <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
+        <div class="container">
+          <section class="infoParagraph" style="margin-bottom: 20px;">
+            <img alt="" src="Images/teacherGriselda.png"
+              style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+            Welcome to Self Defence, I will be your teacher for this course! I am theassistant headmistress
+            and head of discipline at Alfea; I will be very gruff and strict towards students.</p>
+            </p>
+        </div>
+        <p class="mediumTitle"> Chapter 1</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/selfDefenceCh1.png"
+              style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+            In this Chapter we will show you the basic information about Self Defence.
+            We will show you what is it, and how to use it properly
+            </p>
+            <section class="infoParagraph"> Basic Information About Self Defence: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+
+        </div>
+        <p class="mediumTitle"> Chapter 2</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/selfDefenceCh2.jpeg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            How to defend your own school from trolls and other fairys is one
+            of the most important aspects of self-defence!
+            </p>
+            <section class="infoParagraph"> Protecting Our School.: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph"> What to do: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+              </p>
+
+        </div>
+
+        <p class="mediumTitle"> Chapter 3</p>
+        <div class="container">
+          <section class="infoParagraph">
+            <img alt="" src="Images/portadaSelfDefence.png"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            In this chapter you will learn how to protect yourself using different spells !! Stay tunned.
+            </p>
+
+            <section class="infoParagraph"> How to: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph"> What to do: </section>
+            <!--To download work from webPage-->
+            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+            <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021
+              </p>
+        </div>
+      </div>
+      <div id="historyOfMagic" style="display: none;">
+        <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')">GO BACK</button>
+        <p></p>
+        <p class="bigTitle"> MY COURSES - HISTORY OF MAGIC</p>
+        <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
+        <div class="container">
+          <section class="infoParagraph" style="margin-bottom: 50px;">
+            <img alt="" src="Images/teacherHistory.png"
+              style="float: left; width: 150px; height: 160px; padding-right: 8px;">
+            Welcome to History of Magic, I will be your teacher for this course! I am headmistress
+            I will be teach you all you need to know about the history of magic!!.</p>
+            </p>
+        </div>
+        <p class="mediumTitle"> Chapter 1</p>
+        <div class="container">
+          <section class="infoParagraph"> First Years: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+        </div>
+        <p class="mediumTitle"> Chapter 2</p>
+        <div class="container">
+          <section class="infoParagraph"> Worst enemies: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+        </div>
+        <p class="mediumTitle"> Chapter 3</p>
+        <div class="container">
+          <section class="infoParagraph"> Most important Discoveries: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+        </div>
+        <p class="mediumTitle"> Chapter 4</p>
+        <div class="container">
+          <section class="infoParagraph"> Magic Animals: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+        </div>
+        <p class="mediumTitle"> Chapter 5</p>
+        <div class="container">
+          <section class="infoParagraph"> Humans & Magic: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+        </div>
+        <p class="mediumTitle"> Chapter 6</p>
+        <div class="container">
+          <section class="infoParagraph"> Nowadays: </section>
+          <!--To download work from webPage-->
+          <section class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
+              <button class="buttonOpenClass">DOWNLOAD</button>
+            </a>
+        </div>
+      </div>
     </div>
 
-    <!--LEFT CONTAINER-->
-    <div class="col-3 col-t-3" id="leftContainer">
-        <div class="topDiv" id="alfea" >
-        	<img src="Images/wings.png" alt="logo">
-            <p>Alfea</p>
-        </div>
-
-         <!--Voy a poner todas las posibilidades juntas (aunque no vaya a ser asi
-        para la version final (por que todavia no tenemos las cookies)-->
-        <div id="sideBarNotLogin" style="display: block;">
-            <section class="sideBar" onclick = "centralChange('homePage')">
-              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
-              <p>About</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('aboutUs')">
-              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
-              <p>About Us</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('admissions')" >
-              <img class="sideBarIcon" src="Images/Icons/columns.png" alt=""> 
-              <p>Admissions</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('studies')">
-              <img class="sideBarIcon" src="Images/Icons/notebook.png" alt=""> 
-              <p>Studies</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('research')">
-              <img class="sideBarIcon" src="Images/Icons/bookmark.png" alt=""> 
-              <p>Research </p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('myCourses')">
-              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
-              <p>My Courses</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('myGrades')">
-              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
-              <p>My Grades</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('myStudents')">
-              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
-              <p>My Students</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('forum')">
-              <img class="sideBarIcon" src="Images/Icons/home.png" alt=""> 
-              <p>Forum</p>
-            </section>
-            <section class="sideBar" onclick = "centralChange('helpCenter')" >
-              <img class="sideBarIcon" src="Images/Icons/message.png" alt=""> 
-              <p>Help Center</p>
-            </section>
-        </div>
-           
-        </div>
-        <div id="sideBarLoginStudent">
-            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
-            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
-            <a class="sideBar" onclick = "centralChange('myCourses')"> My Courses</a>
-            <a class="sideBar" onclick = "centralChange('myGrades')"> My Grades</a>
-            <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
-            <a class="sideBar" onclick = "centralChange('helpCenter')" >Help Center</a>
-        </div>
-        <div id="sideBarLoginTeacher">
-            <a class="sideBar" onclick = "centralChange('aboutUs')">About Us</a>
-            <a class="sideBar" onclick = "centralChange('homePage')">Home</a>
-            <a class="sideBar" onclick = "centralChange('studies')">Studies</a>
-            <a class="sideBar" onclick = "centralChange('research')">Research </a>
-            <a class="sideBar" onclick = "centralChange('forum')">Forum</a>
-            <a class="sideBar" onclick = "centralChange('grades')">Grades</a>
-            <a class="sideBar" onclick = "centralChange('helpCenter')">Help Center</a>
-        </div>
-        <div id="footer">
-        </div>
-
-     <!--Here we will have the main container for the webPage-->
-    <div class="col-6 col-t-9" id="mainContainer">
-        <div class="col-3 col-t-12" id="rightAside">
-            <div class="topDiv">
-              <div id="profile" class="container">
-                  <h3>Log In</h3>
-              </div>
-            </div>
-            <div id="nextEvents" class="container">
-                <h1>NEXT EVENTS</h1>
-                <p>Sunday, 23 November 11:55PM: Potionology - Third Lab Assignment Submission</p>
-                <p>Thursday, 3 December 11:00AM: History of Magic - Final Exam in room A1.2.3</p>
-                <p>Friday, 16 December 11:59PM: Metamorphosymbiosis - Submission of "New power abilities progress"</p>
-                <p>Monday, 21 December 9AM: Self Defense - Krav Maga Green Belt Exam</p>
-                <p>Wednesday, 23 December 2:30PM: General - End of Semester Christmas Party!</p>
-            </div>
-            <div id="latestNews" class="container">
-                <h1>LATEST NEWS</h1>
-                <p>Pixies are coming back to Alfea. Any suggestions for making their visit as remarkable as possible?</p>
-                <p>Potionology's last topic will be covered during the lab session of this week. Do not miss it!</p>
-                <p>Final mark of Metamorphosymbiosis is already available. Check it now.</p>
-                <p>Want to be a part of a club? Become a member of the feminist club, music club, art club, board games club, etc.</p>
-            </div>
-        </div>
-
-        <!--Here we will have the central container for the webPage-->
-        <div id="centralContainer">
-            <div id="phoneHeader" style="display: none;">
-                <p>phoneHeader</p>
-            </div>
-            <div id="helpCenter" style="display: none;">
-                <div class="container">
-                  <img  src="Images/message.png">
-                  <h3>Helping You!</h3>
-                  <p>If you have any doubt regarding the use of the website, enrolling prices, school uniforms or even the schedules, do not hesitate to contact us.</p>
-                  <h3 alt="email" onclick= "sendMail('help')">help@alfea.com</h3>
-                </div>  
-               
-            </div>
-            <div id="aboutUs" style="display: none;">
-                <div class="container">
-                    <p> Alfea is an ancient school for fairies, and apparently the only one dedicated to fairy education only. The Alfea students are mostly in training ages 16-18 (unless they have been held back a grade like Stella, so in her case, 19). Fairies here learn how to control their power, fight evil, learn new spells as well as be guardians of their planets, or in many cases, learn how to be their realms' queens.</p>
-                </div>
-            </div>
-            <div id="homePage" style="display: block;">
-                <div class="topDiv" id="title">
-                    <p>About</p>
-                </div>
-                <div class="container">
-                    <section class="firstSection"> 
-                        <img alt="" src="Images/Alfea.jpg" >
-                        <h3>School Life</h3>
-                        <p>As an extremely prestigious school for fairies, we pride ourselves in our excellent academia which shapes the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned political leaders, philosophers, scientists and warriors.</p> 
-                    </section>
-                    <section class="leftSection"> 
-                        <iframe  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
-                        <h3>Welcome to Alfea</h3> 
-                        <p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
-                        </p>
-                    </section>
-                    <section class="rightSection">
-                        <iframe src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
-                        <h3>The Dormitories</h3> 
-                        <p>
-                          As a boarding school, we offer the best accomodation for our students. In the following video, we give you a fun little sneak peak of the rooms
-                        </p>
-                    </section>
-               
-              </div>
-                <div class="container">
-                    <section class= "leftSection"> 
-                        <iframe  src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3"   allowfullscreen></iframe>
-                        <h3>Class Moments</h3>
-                        <p>If you are curious about our teaching methods, here is a compilation of various class moments through the years.</p>
-                    </section>
-                    <section class="rightSection"> 
-                        <iframe src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
-                        <h3>The Dormitories</h3>
-                        <p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
-                         a fun little sneak peak of the rooms.
-                    </section>
-                </div>  
-                <div class="container">
-                  <section>
-                    <iframe   src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3" allowfullscreen></iframe>
-                    <h3>More About Us</h3>
-                    <p>As a boarding school, we offer the best accomodation for our students. In the following video, we give you
-                     a fun little sneak peak of the rooms.s
-                    </p>
-                  </section>
-                </div>  
-            </div>
-            <div id="admissions" style="display: none;">
-                <div class="container">
-                    <p>Alfea counts with a huge academic offer. In this school you can study degrees, masters and even doctorates. If you are an incoming student willing to join us, do it now!</p>
-                    <p>Call 915-334-221 if you want to find information about access tests, cut-off marks, enrollment procedures and scholarships. </p>
-                </div>
-            </div>
-            <div id="studies" style="display: none;">
-                <div class="container">
-                    <ul id="studiesoptions">
-						<li><h1>Degrees</h1>
-							<ul>
-								<li><p>Magic Winx</p>
-								<li><p>Charmix</p>
-								<li><p>Enchantix</p>
-							</ul>
-						<li><h1>Masters</h1>
-							<ul>
-								<li><p>Harmonix</p>
-								<li><p>Sirenix</p>
-								<li><p>Butterflix</p>
-							</ul>
-						<li><h1>Doctorates</h1>
-							<ul>
-								<li><p>Major Fairies</p>
-								<li><p>Dark Fairies</p>
-							</ul>
-					</ul>
-	
-                </div>
-            </div>
-            <div id="research" style="display: none;">
-                <div class="container">
-                    <ul id="researchoptions">
-						<li><h1>Our Investigation</h1>
-							<ul>
-								<li><p>Alfea's Research Portal</p>
-								<li><p>Potionology Laboratories</p>
-							</ul>
-						<li><h1>Indicators</h1>
-							<ul>
-								<li><p>Magic Production</p>
-								<li><p>Researching Projects</p>
-							</ul>
-						<li><h1>Programs and convocatories</h1>
-							<ul>
-								<li><p>Cloud Tower 2020</p>
-								<li><p>Fairies's support</p>
-							</ul>
-						<li><h1>Alfea's Library</h1>
-							<p>It is one of the biggest libraries of the whole Magic Dimension. There are hundreds of books available for all thematic lines.</p>
-							<p>Students can also study and work in groups here.</p>
-
-					</ul>
-                </div>
-            </div>
-            <div id="myCourses" style="display: none;">
-                <div class="container">
-                    <img alt=""  src="Images/portadaMetamor.png" > 
-                    <h3>Metamorphosymbiosis</h3>
-                    <button class="buttonOpenClass" onclick="centralChange('metamor')"> OPEN COURSE</button>
-                    <p>It is a type of magic which allows the user to
-                    transform into another living being and to 
-                    transform other things/people into another living being. There are different 
-                    types of Metamorphosymbiosis.</p>
-                </div>
-                <div class="container">
-                    <img alt=""  src="Images/portadaPotions.png" > 
-                    <h3>Potionology</h3>
-                    <button class="buttonOpenClass" onclick="centralChange('potionology')">OPEN COURSE</button>
-                    <p>His exciting one and a half hour workshop will see apprentices develop their Potion making skills, engage their imaginations and use talk, reasoning and role play to explore ways to help our character out of his tricky situation. Each apprentice will concoct and take home their own potion in a special, muggle-proof bottle.</p>
-                </div>
-                <div class="container">
-                    <img alt=""  src="Images/portadaSelfDefence.png" > 
-                    <h3>Self Defense</h3>
-                    <button class="buttonOpenClass" onclick="centralChange('selfDefence')">OPEN COURSE</button>
-                    <p>As teacher of self defense, Griselda is well-versed in defense magic.
-                        As a fairy she may also know first-level spells all fairies can learn such as, telekinesis, transmuting objects, and fixing minor messes. </p>
-                </div>
-                <div class="container">
-                    <img alt=""  src="Images/portadaHistoryMagic.png" > 
-                    <h3>History of Magic</h3>
-                    <button class="buttonOpenClass" onclick="centralChange('historyOfMagic')">OPEN COURSE</button>
-                    <p>History of Magic is a core class and subject taught at Hogwarts School of Witchcraft and Wizardry. This class is a study of magical history. This is one of the subjects where the use of magic practically is not necessary. </p>
-                </div>
-            </div>
-            <div id="myGrades" style="display: none;">
-                <div class="container">
-                    <table >
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                          <td class="gradesTitle">METAMORPHOSYMBIOSIS</td>
-                          <td></td> 
-                          <td class="gradesDate">Today 10:45pm</td>
-                          <td class="gradesData">Grade</td>
-                        </tr>
-                        <tr>
-                            <td></td>              
-                            <td></td>
-                            <td></td> 
-                            <td class="numberGrade">9.6</td>
-                        </tr>
-                        <tr>
-                            <td></td> 
-                            <td></td>    
-                            <td></td>          
-                            <td class="buttonGradesPass">PASS</td>
-                        </tr>
-                        <tr>
-                            <td></td> 
-                            <td></td>              
-                            <td class="gradesDate">Details</td>
-
-                        </tr>
-                    </table>
-                </div>
-                <div class="container">
-                    <table >
-                        <tr>
-                          <td class="gradesTitle">POTIONOLOGY</td>
-                          <!--Here we will have relleno for them to be at same distance-->
-                          <td style="color: white;">RELLii</td> 
-                          <td class="gradesDate" >Today 17:45pm</td>
-                          <td class="gradesData">Grade</td>
-                        </tr>
-                        <tr>
-                            <td></td>              
-                            <td></td>
-                            <td></td> 
-                            <td class="numberGrade">4.6</td>
-                        </tr>
-                        <tr>
-                            <td></td> 
-                            <td></td>    
-                            <td></td>          
-                            <td class="buttonGradesFail">FAIL</td>
-                        </tr>
-                        <tr>
-                            <td></td> 
-                            <td></td>            
-                            <td class="gradesDate" >Details</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="container">
-                    <table >
-                        <tr>
-                          <td class="gradesTitle">SELF DEFENSE</td>
-                          <td style="color: white;">RELLii</td>
-                          <td class="gradesDate">Today 19:45pm</td>
-                          <td class="gradesData">Grade</td>
-                        </tr>
-                        <tr>
-                            <td></td>              
-                            <td></td>
-                            <td></td> 
-                            <td class="numberGrade">4.9</td>
-                        </tr>
-                        <tr>
-                            <td></td> 
-                            <td></td>    
-                            <td></td>          
-                            <td class="buttonGradesFail">FAIL</td>
-                        </tr>
-                        <tr>
-                            <td></td>  
-                            <td></td>            
-                            <td class="gradesDate" >Details</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="container">
-                    <table >
-                        <tr>
-                          <td class="gradesTitle">HYSTORY OF MAGIC</td>
-                          <td style="color: white;"></td>
-                          <td class="gradesDate" >Today 17:00    </td>
-                          <td class="gradesData">Grade</td>
-                        </tr>
-                        <tr>
-                            <td></td>              
-                            <td></td>
-                            <td></td> 
-                            <td class="numberGrade">6.9</td>
-                        </tr>
-                        <tr>
-                            <td></td> 
-                            <td></td>    
-                            <td></td>          
-                            <td class="buttonGradesPass">PASS</td>
-                        </tr>
-                        <tr>
-                            <td></td>   
-                            <td></td>            
-                            <td class="gradesDate" >Details</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div id="forum" style="display: none;">
-                <p class="bigTitle">COURSE FORUM</p>
-
-                <div class="container">
-                <table  class="infoParagraph">
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                  
-                  <tr>
-                    <td>Doubts about the course schedule</td>
-                    <td>3</td>
-                    <td>Fri, 18 Sep 2020, 3:16 PM</td>
-                    <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages1')">Send Msg</button></td>
-                  </tr>
-                  <tr>
-                    <td> There are after school hours for our kids?</td>
-                    <td>3</td>
-                    <td>Wed, 22 Sep 2020, 9:05 AM</td>
-                    <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages2')">Send Msg</button></td>
-                  </tr>
-                  <tr>
-                    <td> <a onclick="hideAndShow()">I would like to know how the pandemi affects the school</a></td>
-                    <td>3</td>
-                    <td>Thu, 23 Sep 2020, 12:33 AM</td>
-                    <td><button  class="buttonOpenClass" onclick="centralChange('openForumMessages3')">Send Msg</button></td>
-                  </tr>
-                  <tr>
-                    <td> <a onclick="hideAndShow()">Is the school canteen still open? </a></td>
-                    <td>3</td>
-                    <td>Tue, 27 Sep 2020, 08:45 PM</td>
-                    <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages4')">Send Msg</button></td>
-                  </tr>
-                  <tr>
-                    <td><a onclick="hideAndShow()">About online homework and classes</a></td>
-                    <td>3</td>
-                    <td>Mon, 1 Oct 2020, 2:15 PM</td>
-                    <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages5')">Send Msg</button></td>
-                  </tr>
-                  <tr>
-                    <td><a onclick="hideAndShow()">Winter School trips!!</a></td>
-                    <td>3</td>
-                    <td>Wed, 4 Oct 2020, 11:00 AM</td>
-                    <td><button class="buttonOpenClass" onclick="centralChange('openForumMessages6')">Send Msg</button></td>
-                  </tr>
-    
-                </table>
-                </div>
-            </div>
-            <div id="openForumMessages" style="display: none;">
-                <div id="openForumMessages1" style="display: none;">
-                  <p class="title">COURSE FORUM</p>
-                  <h2 class="paragraph">Doubts about the course schedule</h2>
-                  <p>Chat Messages</p>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/tecna.png">
-                      <p>TECNA</p>
-                    </div>
-                    <p>Hello. How are we suppose to know the time of the exams</p>
-                    <span class="time-right">11:00</span>
-                  </div>
-    
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/stella.png">
-                      <p>STELLA</p>
-                    </div>
-                    <p>Hey! it isnt setteled yet!!</p>
-                    <span class="time-right">12:00</span>
-                  </div>
-    
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/tecna.png">
-                      <p>TECNA</p>
-                    </div>
-                    <p>Sweet! Thank you so much!</p>
-                    <span class="time-right">16:17</span>
-                  </div>
-    
-                  <div class="container" id="showingMessage1" style="display: none;">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/defaultimage.png">
-                      <p id="userSendMessage1"></p>
-                    </div>
-                    <p id="msg1"></p>
-                    <span id="time1" class="time-right">12:00</span>
-                  </div>
-    
-                  <form style="border:1px solid #ccc">
-                    <div class="sendMessageContainer">
-                      <input class="placeHolderText" id="msg1Send" type="text" style="display: block;" placeholder="Write Your Respone" required>
-                      <a style="float: left " class="buttonOpenClass" onclick = "centralChange('forum')">Go back</a>
-                      <a  class="buttonOpenClass" style="float: right " onclick="sendMessage1()">Send</a>
-                    </div>
-                  </form>
-                </div>
-                <div id="openForumMessages2" style="display: none;">
-                  <p class="title">COURSE FORUM</p>
-                  <h2 class="paragraph">There are after school hours for our kids?</h2>
-                  <p>Chat Messages</p>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/kimmy.png">
-                      <p>KIMMY </p>
-                    </div>
-                    <p>Hello. I think so ! you could look at the about us web page!</p>
-                    <span class="time-right">14:19</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/layla.png">
-                      <p>LAYLA</p>
-                    </div>
-                    <p>Hey! i have already looked there but there is no information about it :/</p>
-                    <span class="time-right">19:53</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/kimmy.png">
-                      <p>KIMMY </p>
-                    </div>
-                    <p>Oh! my bad, maybe you should call the school</p>
-                    <span class="time-right">22:21</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/flora.png">
-                      <p>FLORA </p>
-                    </div>
-                    <p>Hey! it isnt setteled yet!!</p>
-                    <span class="time-right">12:21</span>
-                  </div>
-    
-    
-                  <div class="container" id="showingMessage2" style="display: none;">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt=""  class="student" src="images/defaultimage.png">
-                      <p id="userSendMessage2"></p>
-                    </div>
-                    <p id="msg2"></p>
-                    <span id="time2" class="time-right">12:00</span>
-                  </div>
-    
-                  <form style="border:1px solid #ccc">
-                    <div class="sendMessageContainer2">
-                      <input class="placeHolderText" id="msg2Send" type="text" style="display: block;" placeholder="Write Your Respone" required>
-                      <a style="float: left " class="buttonOpenClass" onclick = "centralChange('forum')">Go back</a>
-                      <a  class="buttonOpenClass" style="float: right " onclick="sendMessage2()">Send</a>
-                    </div>
-                  </form>
-                </div>
-                <div id="openForumMessages3" style="display: none;">
-                  <p class="title">COURSE FORUM</p>
-                  <h2 class="paragraph">I would like to know how the pandemi affects the school</h2>
-                  <p>Chat Messages</p>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/musa.png">
-                      <p>MUSA </p>
-                    </div>
-                    <p>Hello. How are we suppose to feel safe with everything going on? Whate are the
-                      measures the school has considered?</p>
-                    <span class="time-right">14:19</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/roxy.png">
-                      <p>ROXY</p>
-                    </div>
-                    <p>Hey! the school has already sent an email to inform us about it/</p>
-                    <span class="time-right">19:53</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/musa.png">
-                      <p>MUSA</p>
-                    </div>
-                    <p>Sweet! Thank you so much!</p>
-                    <span class="time-right">22:21</span>
-                  </div>
-    
-                  <div class="container" id="showingMessage3" style="display: none;">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt=""  class="student" src="images/defaultimage.png">
-                      <p id="userSendMessage3"></p>
-                    </div>
-                    <p id="msg3"></p>
-                    <span id="time3" class="time-right">12:00</span>
-                  </div>
-    
-                  <form style="border:1px solid #ccc">
-                    <div class="sendMessageContainer3">
-                      <input class="placeHolderText" id="msg3Send" type="text" style="display: block;" placeholder="Write Your Respone" required>
-                      <a style="float: left " class="buttonOpenClass" onclick = "centralChange('forum')">Go back</a>
-                      <a  class="buttonOpenClass" style="float: right " onclick="sendMessage3()">Send</a>
-                    </div>
-                  </form>
-                </div>
-                <div id="openForumMessages4" style="display: none;">
-                  <p class="title">COURSE FORUM</p>
-                  <h2 class="paragraph">Is the school canteen still open?</h2>
-                  <p>Chat Messages</p>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/daphne.png">
-                      <p>DAPHNE </p>
-                    </div>
-                    <p>Hello. I Dont think so, due to the pandemi</p>
-                    <span class="time-right">14:19</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/aisha.png">
-                      <p>AISHA</p>
-                    </div>
-                    <p>Hey! it isnt oppened yet!! and i dont believe they are going to open it</p>
-                    <span class="time-right">19:53</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/bloom.png">
-                      <p>BLOOM</p>
-                    </div>
-                    <p>I dont think they will ever open it again :(</p>
-                    <span class="time-right">22:21</span>
-                  </div>
-    
-                  <div class="container" id="showingMessage4" style="display: none;">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt=""  class="student" src="images/defaultimage.png">
-                      <p id="userSendMessage4"></p>
-                    </div>
-                    <p id="msg4"></p>
-                    <span id="time4" class="time-right">12:00</span>
-                  </div>
-    
-                  <form style="border:1px solid #ccc">
-                    <div class="sendMessageContainer4">
-                      <input class="placeHolderText" id="msg4Send" type="text" style="display: block;" placeholder="Write Your Respone" required>
-                      <a style="float: left " class="buttonOpenClass" onclick = "centralChange('forum')">Go back</a>
-                      <a class="buttonOpenClass" style="float: right " onclick="sendMessage4()">Send</a>
-                    </div>
-                  </form>
-                </div>
-                <div id="openForumMessages5" style="display: none;">
-                  <p class="title">COURSE FORUM</p>
-                  <h2 class="paragraph">About online homework and classes</h2>
-    
-                  <p>Chat Messages</p>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/layla.png">
-                      <p>LAYLA </p>
-                    </div>
-                    <p>Hello. How are we suppose to create an account for the blackboard?</p>
-                    <span class="time-right">14:19</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/bloom.png">
-                      <p>BLOOM</p>
-                    </div>
-                    <p>You just have to use the username of the school, hope it helped</p>
-                    <span class="time-right">19:53</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/layla.png">
-                      <p>LAYLA</p>
-                    </div>
-                    <p>YES! Thank you so much!!!</p>
-                    <span class="time-right">22:21</span>
-                  </div>
-    
-                  <div class="container" id="showingMessage5" style="display: none;">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/defaultimage.png">
-                      <p id="userSendMessage5"></p>
-                    </div>
-                    <p id="msg5"></p>
-                    <span id="time5" class="time-right">12:00</span>
-                  </div>
-    
-                  <form style="border:1px solid #ccc">
-                    <div class="sendMessageContainer">
-                      <input class="placeHolderText" id="msg5Send" type="text" style="display: block;" placeholder="Write Your Respone" required>
-                      <a style="float: left " class="buttonOpenClass" onclick = "centralChange('forum')">Go back</a>
-                      <a  class="buttonOpenClass" style="float: right " onclick="sendMessage5()">Send</a>
-                    </div>
-                  </form>
-                </div>
-                <div id="openForumMessages6" style="display: none;">
-                  <p class="title">COURSE FORUM</p>
-                  <h2 class="paragraph">Winter School trips!!</h2>
-                  <p>Chat Messages</p>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/kimmy.png">
-                      <p>KIMMY </p>
-                    </div>
-                    <p>Hello. How are we suppose to know the time of the exams??</p>
-                    <span class="time-right">14:19</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/tecna.png">
-                      <p>TECNA</p>
-                    </div>
-                    <p>Hey! it isnt setteled yet!!</p>
-                    <span class="time-right">19:53</span>
-                  </div>
-                  <div class="container">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt="" class="student" src="images/tecna.png">
-                      <p>TECNA</p>
-                    </div>
-                    <p>Sweet! Thank you so much!</p>
-                    <span class="time-right">22:21</span>
-                  </div>
-    
-                  <div class="container" id="showingMessage6" style="display: none;">
-                    <div style="background-color: white; padding: 5px;">
-                      <img alt=""  class="student" src="images/defaultimage.png">
-                      <p id="userSendMessage6"></p>
-                    </div>
-                    <p id="msg6"></p>
-                    <span id="time6" class="time-right">12:00</span>
-                  </div>
-                  <form style="border:1px solid #ccc">
-                    <div class="sendMessageContainer6">
-                      <input class="placeHolderText" id="msg6Send" type="text" style="display: block;" placeholder="Write Your Respone" required>
-                      <a style="float: left " class="buttonOpenClass" onclick = "centralChange('forum')">Go back</a>
-                      <a class="buttonOpenClass" style="float: right " onclick="sendMessage6()">Send</a>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            <div id="grades" style="display: none;">
-            </div>
-            <div id="myStudents" style="display: none;">
-              <p class="bigTitle">MY STUDENTS </p>
-              <div class="container">
-                <p class="mediumTitle">BLOOM</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/bloom.png" ></td> 
-                    <td class="infoParagraph">bloom@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesBloom')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">TECNA</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/tecna.png" ></td> 
-                    <td class="infoParagraph">tecna@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesTecna')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">STELLA</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/stella.png" ></td> 
-                    <td class="infoParagraph">stella@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesTecna')">GRADES</button></td>
-                  </tr>
-                </table >
-              </div>
-              <div class="container">
-                <p class="mediumTitle">KIMMY</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/kimmy.png" ></td> 
-                    <td class="infoParagraph">kimmy@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesKimmy')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">LAYLA</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/layla.png" ></td> 
-                    <td class="infoParagraph">layla@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesLayla')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">FLORA</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/flora.png" ></td> 
-                    <td class="infoParagraph">flora@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesFlora')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">MUSA</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/musa.png" ></td> 
-                    <td class="infoParagraph">musa@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesMusa')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">ROXY</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/roxy.png" ></td> 
-                    <td class="infoParagraph">roxy@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesRoxy')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">DAPHNE</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/daphne.png" ></td> 
-                    <td class="infoParagraph">daphne@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesDaphne')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-              <div class="container">
-                <p class="mediumTitle">AISHA</p>
-                <table >
-                  <tr>
-                    <td><img alt=""  src="Images/aisha.png" ></td> 
-                    <td class="infoParagraph">aisha@gmail.com</td>
-                    <td><img alt=""  src="Images/message.png" ></td> 
-                    <td><button class="buttonOpenClass"  onclick ="centralChange('gradesAisha')">GRADES</button></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-            <div id="metamor" style="display: none;">
-                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
-                <p></p>
-                <p class="bigTitle"> MY COURSES - METAMORPHOSYMBIOSIS</p>
-                <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mr Mott </p>
-                <div class="container">
-                  <section class="infoParagraph" style="margin-bottom: 20px;">
-                      <img alt=""  src="Images/portadaMetamor.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
-                      Welcome to Metamorphosymbiosis.
-                      This is the first branch of Transfiguration that students will learn at Alfea School 
-                      of Witchcraft and Wizardry, beginning with Match to needle in first year and progressing from there. 
-                  </section>
-                </div>
-                <p class="mediumTitle"> Chapter 1</p>
-                <div class="container">
-                    <section class="infoParagraph">
-                      <img alt=""  src="Images/metamorCh1.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
-                      <p>In this Chapter we will show you the darkest and difficult practices 
-                      of Metamorphosymbiosis as stated by Wizgiz. 
-                      It turns a living creature into the most aggressive being. A beautiful plant can 
-                      be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature. 
-                      It allows the user to take 
-                      the appearance and powers of the fairy animal </p>
-                    </section>
-                    <section class="infoParagraph"> Wild Magic: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information &tricks</section>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                    <section class="infoParagraph"> What to do: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Rules to follow(important)</section>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                    <button class="buttonOpenClass">DOWNLOAD</button>
-                    
-                    <section class="infoParagraph"> Upload Pdf: </section>
-                    <!--To upload Your work webPage-->
-                    <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                        <input type="file" name="fileToUpload" id="fileToUpload">
-                        <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                    </form>
-
-                    <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </section>
-                
-                </div>
-                <p class="mediumTitle" > Chapter 2</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/metamorCh2.png" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            This is the first branch of Transfiguration that will show students how to control their powers !! You 
-                            must be careful, because you could change your life forever if something goes wrong!
-                      </section>
-                        <section class="infoParagraph"> Control Your Power: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                      </section>
-                       
-                        
-                    </div>
-                <p class="mediumTitle" > Chapter 3</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            This is the first branch of Transfiguration that will show students how to transform themselves into plants & Insects !! You 
-                            must be careful, because you could change your life forever if something goes wrong!
-                          </section>
-                        <section class="infoParagraph"> Transformation into Insects & Plants: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
-                    </div>
-                <p class="mediumTitle" > Chapter 4</p>
-                    <div class="container">
-                        <section class="infoParagraph"> Transformation into Mammals: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> 
-                            <img alt=""  src="Images/metamorCh4.png" style="float: left; width: 160px; height: 130px; padding-right: 8px;">
-                            Examples in other schools. Transformation into wolf. 
-                        </p>
-                        
-                        
-                    
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
-                    </div>
-            </div>
-            <div id="potionology" style="display: none;">
-                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
-                <p></p>
-                <p class="bigTitle"> MY COURSES - POTIONOLOGY</p>
-                <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
-                <div class="container">
-                    <section class="infoParagraph" style="margin-bottom: 20px;">
-                        <img alt=""  src="Images/teacherPalladium.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
-                        Welcome to Potionology, I will be your teacher for this course! I will try to teach you 
-                        as much as I can ! I love potions and I hope I help you understand & master them .</p>
-                    </p>
-                </div>
-                <p class="mediumTitle" > Chapter 1</p>
-                <div class="container">
-                    <section class="infoParagraph">
-                        <img alt=""  src="Images/portadaPotions.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
-                        In this Chapter we will show you the basic information about Self Defence.
-                        The kind of enchantments will help you survive in a magic world, 
-                        in which not all the people are ass good as you think. 
-                    </p>
-                    <section class="infoParagraph"> Basic Information About Potions: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information &tricks</section>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-
-                </div>
-                <p class="mediumTitle" > Chapter 2</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/potionCh2.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            Amortentia is a love potion that does not create actual love, but gives the drinker a powerful obsession and infatuation with the giver of 
-                            the potion. It is usually either forced upon someone or covertly given. As a rule of thumb the longer a love potion awaits consumption, the stronger the effects will be
-                        </p>
-                        <section class="infoParagraph"> Amortentia.: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-    
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>    
-                        
-                    </div>
-
-                    <p class="mediumTitle" > Chapter 3</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/potionCh3.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            Skele-Gro is a medicinal potion that can regrow missing or removed bones,[7] though it tastes terrible and the process is very slow and extremely painful.
-                        </p>
-            
-                        <section class="infoParagraph"> Skele-Gro: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> 
-                            <img alt=""  src="Images/metamorCh4.png" style="float: left; width: 160px; height: 130px; padding-right: 8px;">
-                            Examples in other schools. Transformation into wolf. 
-                        </p>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
-                    </div>
-                <p class="mediumTitle" > Chapter 4</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/potionCh4.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            Felix Felicis, more commonly known as Liquid Luck, grants whoever drinks it unusually 
-                            good luck.The time span of this luck depends on the amount imbibed. Liquid Luck is one of the hardest potions to make, as noted by Horace Slughorn; "It has to be cooked for 6 months on an extremely complicated formula, and if you make a tiniest mistake, the consequences are severe"
-                        </p>
-                        <section class="infoParagraph"> Felix Felicis/Liquid Luck: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
-                    </div>
-                <p class="mediumTitle" > Chapter 5</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/potionCh5.jpg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            The Draught of Peace provides personal comfort, calms anxiety and soothes agitation.                     
-                        </p>
-                        
-                        <section class="infoParagraph"> Draught of Peace: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
-                    </div>
-                    
-                
-            </div>
-            <div id="selfDefence" style="display: none;">
-                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
-                <p></p>
-                <p class="bigTitle"> MY COURSES - SELF DEFENCE</p>
-                <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
-                <div class="container">
-                        <section class="infoParagraph" style="margin-bottom: 20px;">
-                            <img alt=""  src="Images/teacherGriselda.png" style="float: left; width: 150px; height: 120px; padding-right: 8px;">
-                            Welcome to Self Defence, I will be your teacher for this course! I am theassistant headmistress 
-                            and head of discipline at Alfea; I will be very gruff and strict towards students.</p>
-                    </p>
-                </div>
-                <p class="mediumTitle" > Chapter 1</p>
-                <div class="container">
-                    <section class="infoParagraph">
-                        <img alt=""  src="Images/selfDefenceCh1.png" style="float: right; width: 180px; height: 130px; padding-right: 8px;">
-                        In this Chapter we will show you the basic information about Self Defence.
-                        We will show you what is it, and how to use it properly
-                    </p>
-                    <section class="infoParagraph"> Basic Information About Self Defence: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information &tricks</section>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-
-                </div>
-                <p class="mediumTitle" > Chapter 2</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/selfDefenceCh2.jpeg" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            How to defend your own school from trolls and other fairys is one 
-                            of the most important aspects of self-defence!
-                        </p>
-                        <section class="infoParagraph"> Protecting Our School.: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-    
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>    
-                        
-                    </div>
-
-                    <p class="mediumTitle" > Chapter 3</p>
-                    <div class="container">
-                        <section class="infoParagraph">
-                            <img alt=""  src="Images/portadaSelfDefence.png" style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-                            In this chapter you will learn how to protect yourself using different spells !! Stay tunned.
-                        </p>
-            
-                        <section class="infoParagraph"> How to: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Basic information &tricks</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph"> What to do: </section>
-                        <!--To download work from webPage-->
-                        <section class="extraInfoParagraph">Rules to follow(important)</section>
-                        <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                            <button class="buttonOpenClass">DOWNLOAD</button>
-                        </a>
-                        <section class="infoParagraph" style="margin-bottom: 20px;"> Upload Pdf: </section>
-                        <!--To upload Your work webPage-->
-                        <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data" style="float: left;" >
-                            <input type="file" name="fileToUpload" id="fileToUpload">
-                            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-                        </form>
-
-                        <section class="extraInfoParagraph" style="margin-top: 70px; margin-left: 90px;"> Upload Until 12/03/2021 </p>
-                    </div>
-            </div>
-            <div id="historyOfMagic" style="display: none;">
-                <button class="buttonOpenClass" style="display: block;" onclick="centralChange('myCourses')" >GO BACK</button>
-                <p></p>
-                <p class="bigTitle"> MY COURSES - HISTORY OF MAGIC</p>
-                <p class="mediumTitle" style="margin-top: 10px; margin-left: 9px;"> Teacher - Mrs Griselda </p>
-                <div class="container">
-                        <section class="infoParagraph" style="margin-bottom: 50px;">
-                            <img alt=""  src="Images/teacherHistory.png" style="float: left; width: 150px; height: 160px; padding-right: 8px;">
-                            Welcome to History of Magic, I will be your teacher for this course! I am headmistress 
-                            I will be teach you all you need to know about the history of magic!!.</p>
-                    </p>
-                </div>
-                <p class="mediumTitle" > Chapter 1</p>
-                <div class="container">
-                    <section class="infoParagraph"> First Years: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information</p>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                </div>
-                <p class="mediumTitle" > Chapter 2</p>
-                <div class="container">
-                    <section class="infoParagraph"> Worst enemies: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information</p>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                </div>
-                <p class="mediumTitle" > Chapter 3</p>
-                <div class="container">
-                    <section class="infoParagraph"> Most important Discoveries: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information</p>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                </div>
-                <p class="mediumTitle" > Chapter 4</p>
-                <div class="container">
-                    <section class="infoParagraph"> Magic Animals: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information</p>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                </div>
-                <p class="mediumTitle" > Chapter 5</p>
-                <div class="container">
-                    <section class="infoParagraph"> Humans & Magic: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph" >Basic information</p>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                </div>
-                <p class="mediumTitle" > Chapter 6</p>
-                <div class="container">
-                    <section class="infoParagraph"> Nowadays: </section>
-                    <!--To download work from webPage-->
-                    <section class="extraInfoParagraph">Basic information</p>
-                    <a href="docs/WILD MAGIC.pdf" download="WILD MAGIC">
-                        <button class="buttonOpenClass">DOWNLOAD</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-   
 
 
-    </div>
+  </div>
 
 
 </body>
