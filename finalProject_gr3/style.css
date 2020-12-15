@@ -437,7 +437,13 @@ body {
   border-radius: 10px;
   float: right;
 }
-
+.buttonEditGrades{
+  background-color: rgb(224, 155, 155);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+}
 .placeHolderText {
   background-color: rgb(250, 248, 248);
   padding: 10px;

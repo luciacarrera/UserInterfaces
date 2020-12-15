@@ -894,6 +894,7 @@
       </div>
       <div id="myStudents" style="display: none;">
         <p class="bigTitle">MY STUDENTS </p>
+        <!--BLOOM-->
         <div class="container">
           <p class="mediumTitle">BLOOM</p>
           <table>
@@ -905,6 +906,7 @@
             </tr>
           </table>
         </div>
+        <!--TECNA-->
         <div class="container">
           <p class="mediumTitle">TECNA</p>
           <table>
@@ -916,17 +918,19 @@
               </tr>
           </table>
         </div>
+        <!--STELLA-->
         <div class="container">
           <p class="mediumTitle">STELLA</p>
           <table>
             <tr>
               <td><img alt="" src="Images/stella.png"></td>
               <td class="infoParagraph">stella@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesTecna')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="centralChange('gradesStella')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
+        <!--KIMMY-->
         <div class="container">
           <p class="mediumTitle">KIMMY</p>
           <table>
@@ -1467,9 +1471,10 @@
             </a>
         </div>
       </div>
+      <!--BLOOM GRADES-->
       <div id="gradesBloom" style="display: none;">
         <div>
-          <p class="bigTitle" >MY STUDENTS - BLOOM GRADES </p>
+          <p class="bigTitle" >MY STUDENTS - BLOOM'S GRADES </p>
         </div>
         <div class="container">
           <table>
@@ -1480,7 +1485,7 @@
               <th></th>
             </tr>
             <tr>
-              <td class="gradesTitle">METAMORPHOSYMBIOSIS</td>
+              <td class="gradesTitle">ACTIVITY 1</td>
               <td></td>
               <td class="gradesDate">Today 10:45pm</td>
               <td class="gradesData">Grade</td>
@@ -1489,26 +1494,35 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="numberGrade">9.6</td>
+              <td>
+                <p id="numberGradeNoChangesAct1Bloom" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct1Bloom" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct1Bloom" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Bloom')">Change</a>
+                  </form>
+              </div>
+              </td>
             </tr>
             <tr>
-              <td></td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act1Bloom')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td class="gradesDate">Details</td>
-
             </tr>
           </table>
         </div>
         <div class="container">
           <table>
             <tr>
-              <td class="gradesTitle">POTIONOLOGY</td>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 2</td>
               <!--Here we will have relleno for them to be at same distance-->
               <td style="color: white;">RELLii</td>
               <td class="gradesDate">Today 17:45pm</td>
@@ -1518,25 +1532,35 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="numberGrade">8.6</td>
+              <td>
+                <p id="numberGradeNoChangesAct2Bloom" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct2Bloom" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct2Bloom" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Bloom')">Change</a>
+                  </form>
+              </div>
+              </td>
             </tr>
             <tr>
-              <td></td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act2Bloom')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td class="gradesDate">Details</td>
             </tr>
           </table>
         </div>
         <div class="container">
           <table>
             <tr>
-              <td class="gradesTitle">SELF DEFENSE</td>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 3</td>
               <td style="color: white;">RELLii</td>
               <td class="gradesDate">Today 19:45pm</td>
               <td class="gradesData">Grade</td>
@@ -1545,25 +1569,35 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="numberGrade">7.9</td>
+              <td>
+                <p id="numberGradeNoChangesAct3Bloom" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct3Bloom" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct3Bloom" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Bloom')">Change</a>
+                  </form>
+              </div>
+              </td>
             </tr>
             <tr>
-              <td></td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act3Bloom')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td class="gradesDate">Details</td>
             </tr>
           </table>
         </div>
         <div class="container">
           <table>
             <tr>
-              <td class="gradesTitle">HYSTORY OF MAGIC</td>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 4</td>
               <td style="color: white;"></td>
               <td class="gradesDate">Today 17:00 </td>
               <td class="gradesData">Grade</td>
@@ -1572,22 +1606,345 @@
               <td></td>
               <td></td>
               <td></td>
-              <td class="numberGrade">8.1</td>
+              <td>
+                <p id="numberGradeNoChangesAct4Bloom" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct4Bloom" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct4Bloom" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Bloom')">Change</a>
+                  </form>
+              </div>
+              </td>
             </tr>
             <tr>
-              <td></td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act4Bloom')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
             </tr>
+          </table>
+        </div>
+      </div>
+      <!--TECNA GRADES-->
+      <div id="gradesTecna" style="display: none;">
+        <div>
+          <p class="bigTitle" >MY STUDENTS - TECNA'S GRADES </p>
+        </div>
+        <!--ACTIVITY 1-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 1</td>
+              <td></td>
+              <td class="gradesDate">Today 10:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
             <tr>
               <td></td>
               <td></td>
-              <td class="gradesDate">Details</td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct1Tecna" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct1Tecna" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct1Tecna" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Tecna')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act1Tecna')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 2-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 2</td>
+              <!--Here we will have relleno for them to be at same distance-->
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 17:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct2Tecna" class="numberGrade">4.2</p>
+                <div id="numberGradeChangesAct2Tecna" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct2Tecna" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Tecna')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act2Tecna')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesFail">FAIL</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 3-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 3</td>
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 19:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct3Tecna" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct3Tecna" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct3Tecna" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Tecna')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act3Tecna')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 4-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 4</td>
+              <td style="color: white;"></td>
+              <td class="gradesDate">Today 17:00 </td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct4Tecna" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct4Tecna" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct4Tecna" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Tecna')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act4Tecna')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
             </tr>
           </table>
         </div>
       </div>
+      <!--STELLA GRADES-->
+      <div id="gradesTecna" style="display: none;">
+        <div>
+          <p class="bigTitle" >MY STUDENTS - STELLA'S GRADES </p>
+        </div>
+        <!--ACTIVITY 1-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 1</td>
+              <td></td>
+              <td class="gradesDate">Today 10:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct1Stella" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct1Stella" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct1Stella" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Stella')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act1Stella')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 2-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 2</td>
+              <!--Here we will have relleno for them to be at same distance-->
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 17:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct2Stella" class="numberGrade">4.2</p>
+                <div id="numberGradeChangesAct2Stella" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct2Stella" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Stella')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act2Ttella')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesFail">FAIL</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 3-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 3</td>
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 19:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct3Stella" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct3Stella" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct3Stella" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Stella')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act3Stella')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 4-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 4</td>
+              <td style="color: white;"></td>
+              <td class="gradesDate">Today 17:00 </td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct4Stella" class="numberGrade">9.6</p>
+                <div id="numberGradeChangesAct4Stella" style="display: none;">
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct4Stella" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Stella')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act4Stella')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      
       
 
 

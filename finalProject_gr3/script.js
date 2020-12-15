@@ -26,6 +26,8 @@ function centralChange(content) {
     var openForumMessages5 = document.getElementById("openForumMessages5");
     var openForumMessages6 = document.getElementById("openForumMessages6");
     var gradesBloom = document.getElementById("gradesBloom");
+    var gradesTecna = document.getElementById("gradesTecna");
+    var gradesStella = document.getElementById("gradesTecna");
 
     homePage.style.display ="none";
     aboutUs.style.display = "none";
@@ -52,6 +54,8 @@ function centralChange(content) {
     openForumMessages6.style.display = "none";
 
     gradesBloom.style.display = "none";
+    gradesTecna.style.display = "none";
+    gradesStella.style.display = "none";
 
     if (content == "homePage"){
         homePage.style.display ="block";
@@ -101,6 +105,12 @@ function centralChange(content) {
 
     if (content == "gradesBloom"){
         gradesBloom.style.display = "block";
+    }
+    if (content == "gradesTecna"){
+        gradesTecna.style.display = "block";
+    }
+    if (content == "gradesStella"){
+        gradesStella.style.display = "block";
     }
 
     if (content == "openForumMessages1"){
@@ -176,5 +186,145 @@ function sendMail(contact){
     document.getElementById("msg6").innerHTML = txt;
     document.getElementById("showingMessage6").style.display ="block";
   }
-  
+
+  function changeGrade(context){
+    if (context == "Act1Bloom"){
+        var changeGrade = document.getElementById("numberGradeChangesAct1Bloom");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act2Bloom"){
+        var changeGrade = document.getElementById("numberGradeChangesAct2Bloom");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act3Bloom"){
+        var changeGrade = document.getElementById("numberGradeChangesAct3Bloom");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act4Bloom"){
+        var changeGrade = document.getElementById("numberGradeChangesAct4Bloom");
+        changeGrade.style.display = "block";
+    }
+
+    if (context == "Act1Tecna"){
+        var changeGrade = document.getElementById("numberGradeChangesAct1Tecna");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act2Tecna"){
+        var changeGrade = document.getElementById("numberGradeChangesAct2Tecna");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act3Tecna"){
+        var changeGrade = document.getElementById("numberGradeChangesAct3Tecna");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act4Tecna"){
+        var changeGrade = document.getElementById("numberGradeChangesAct4Tecna");
+        changeGrade.style.display = "block";
+    }
+    
+
+    if (context == "Act1Stella"){
+        var changeGrade = document.getElementById("numberGradeChangesAct1Stella");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act2Stella"){
+        var changeGrade = document.getElementById("numberGradeChangesAct2Stella");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act3Stella"){
+        var changeGrade = document.getElementById("numberGradeChangesAct3Stella");
+        changeGrade.style.display = "block";
+    }
+    if (context == "Act4Stella"){
+        var changeGrade = document.getElementById("numberGradeChangesAct4Stella");
+        changeGrade.style.display = "block";
+    }
+
+    
+  }
+
+ function finishEditingGrade(context){ 
+
+    if (context == "Act1Bloom"){
+        txt = document.getElementById("gradesAct1Bloom").value;
+        document.getElementById("numberGradeNoChangesAct1Bloom").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct1Bloom");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act2Bloom"){
+        txt = document.getElementById("gradesAct2Bloom").value;
+        document.getElementById("numberGradeNoChangesAct2Bloom").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct2Bloom");
+        changeGrade.style.display = "none"
+    }
+    if (context == "Act3Bloom"){
+        txt = document.getElementById("gradesAct3Bloom").value;
+        document.getElementById("numberGradeNoChangesAct3Bloom").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct3Bloom");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act4Bloom"){
+        txt = document.getElementById("gradesAct4Bloom").value;
+        document.getElementById("numberGradeNoChangesAct4Bloom").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct4Bloom");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act1Tecna"){
+        txt = document.getElementById("gradesAct1Tecna").value;
+        document.getElementById("numberGradeNoChangesAct1Tecna").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct1Tecna");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act2Tecna"){
+        txt = document.getElementById("gradesAct2Tecna").value;
+        document.getElementById("numberGradeNoChangesAct2Tecna").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct2Tecna");
+        changeGrade.style.display = "none"
+    }
+    if (context == "Act3Tecna"){
+        txt = document.getElementById("gradesAct3Tecna").value;
+        document.getElementById("numberGradeNoChangesAct3Tecna").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct3Tecna");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act4Tecna"){
+        txt = document.getElementById("gradesAct4Tecna").value;
+        document.getElementById("numberGradeNoChangesAct4Tecna").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct4Tecna");
+        changeGrade.style.display = "none"
+    }
+
+    
+    if (context == "Act1Stella"){
+        txt = document.getElementById("gradesAct1Stella").value;
+        document.getElementById("numberGradeNoChangesAct1Stella").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct1Stella");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act2Stella"){
+        txt = document.getElementById("gradesAct2Stella").value;
+        document.getElementById("numberGradeNoChangesAct2Tecna").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct2Tecna");
+        changeGrade.style.display = "none"
+    }
+    if (context == "Act3Stella"){
+        txt = document.getElementById("gradesAct3Stella").value;
+        document.getElementById("numberGradeNoChangesAct3Stella").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct3Stella");
+        changeGrade.style.display = "none"
+    }
+
+    if (context == "Act4Stella"){
+        txt = document.getElementById("gradesAct4Stella").value;
+        document.getElementById("numberGradeNoChangesAct4Stella").innerHTML = txt;
+        var changeGrade = document.getElementById("numberGradeChangesAct4Stella");
+        changeGrade.style.display = "none"
+    }
+ }
   
