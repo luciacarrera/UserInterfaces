@@ -12,6 +12,10 @@ function centralChange(option) {
     var myGrades = document.getElementById("myGrades");
     var myStudents = document.getElementById("myStudents");
 
+    //Can disturb disturb
+    var openForum = document.getElementById("openForum");
+    openForum.style.display="none";
+
     //array of the variables and posible options (THE ORDER IS IMPORTANT)
     var arrayVars = [helpCenter,aboutUs, homePage,admissions,studies,research,forum,myCourses,myStudents,myGrades]
     var arrayOptions = ['helpCenter','aboutUs', 'homePage','admissions','studies','research','forum', 'myCourses', 'myStudents','myGrades']

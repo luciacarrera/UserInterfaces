@@ -192,9 +192,7 @@
       <div class="topDiv">
         <div id="profile" class="container">
           <img id="userphoto" alt="userphoto" src="Images/profilePic.png">
-          <ul id="useraspects">
-            <li><h3 class="pointer" onclick="showConfirmation()">Log In</h3>
-          </ul>
+          <h3 id="useraspects" onclick="showConfirmation()">Log In</h3>
         </div>
       </div>
 
@@ -206,10 +204,6 @@
         <p>Friday, 16 December 11:59PM: Metamorphosymbiosis - Submission of "New power abilities progress"</p>
         <p>Monday, 21 December 9AM: Self Defense - Krav Maga Green Belt Exam</p>
         <p>Wednesday, 23 December 2:30PM: General - End of Semester Christmas Party!</p>
-        <ul class="detailsPart">
-          <li><p>More Events</p></li>
-        </ul>
-        <img class="details" alt="" src="Images/icons/flecha.png">
       </div>
 
       <!--LATEST EVENTS-->
@@ -220,10 +214,6 @@
         <p>Final mark of Metamorphosymbiosis is already available. Check it now.</p>
         <p>Want to be a part of a club? Become a member of the feminist club, music club, art club, board games club,
           etc.</p>
-        <ul class="detailsPart">
-          <li><p>More News</p></li>
-        </ul>
-        <img class="details" alt="" src="Images/icons/flecha.png">
       </div>
     </div>
 
@@ -231,7 +221,8 @@
     <div id="centralContainer">
       <!--HELP CENTER-->
       <div id="helpCenter" >
-        <p class="bigTitle">HELP CENTER</p>
+        <div class="topDiv"><p class="bigTitle">HELP CENTER</p></div>
+        
         <div class="container">
           <img alt="message" src="Images/message.png">
           <h3>Contact</h3>
@@ -243,7 +234,7 @@
 
       <!--ABOUT US -->
       <div id="aboutUs" >
-        <p class="bigTitle" >ABOUT US</p>
+        <div class="topDiv"><p class="bigTitle">ABOUT US</p></div>
         <div class="container">
           <p> Alfea is an ancient school for fairies, and apparently the only one dedicated to fairy education only. The
             Alfea students are mostly in training ages 16-18 (unless they have been held back a grade like Stella, so in
@@ -254,8 +245,8 @@
 
       <!--HOME PAGE-->
       <div id="homePage">
-        <div class="bigTitle" id="title">
-          <p class="bigTitle">ABOUT</p>
+        <div class="topDiv">
+          <p class="bigTitle">HOME</p>
         </div>
         <div class="container">
           <section class="firstSection">
@@ -356,7 +347,9 @@
 
       <!--ADMISSIONS-->
       <div id="admissions" >
-        <p class="bigTitle">ADMISSIONS</p>
+        <div class="topDiv">
+          <p class="bigTitle">ADMISSIONS</p>
+        </div>
         <div class="container">
           <p>Alfea counts with a huge academic offer. In this school you can study degrees, masters and even doctorates.
             If you are an incoming student willing to join us, do it now!</p>
@@ -367,7 +360,9 @@
 
       <!---->
       <div id="studies" >
-        <p class="bigTitle">STUDIES</p>
+        <div class="topDiv">
+          <p class="bigTitle">STUDIES</p>
+        </div>
         <div class="container">
           <ul id="studiesoptions">
             <li>
@@ -405,7 +400,9 @@
 
       <!--RESEARCH-->
       <div id="research" >
-       <p class="bigTitle"> Research</p>
+        <div class="topDiv">
+          <p class="bigTitle">RESEARCH</p>
+        </div>
         <div class="container">
           <ul id="researchoptions">
             <li>
@@ -444,7 +441,9 @@
 
       <!--MY COURSES-->
       <div id="myCourses" >
-        <p class="bigTitle"> MY COURSES</p>
+        <div class="topDiv">
+          <p class="bigTitle">MY COURSES</p>
+        </div>        
         <div class="container">
           <img alt="" src="Images/portadaMetamor.png">
           <h3>Metamorphosymbiosis</h3>
@@ -483,7 +482,9 @@
 
       <!--MY GRADES-->
       <div id="myGrades" >
-        <p class="bigTitle" >MY GRADES</p>
+        <div class="topDiv">
+          <p class="bigTitle">MY GRADES</p>
+        </div>
         <div class="container">
           <table>
             <tr>
@@ -576,7 +577,7 @@
         <div class="container">
           <table>
             <tr>
-              <td class="gradesTitle">HYSTORY OF MAGIC</td>
+              <td class="gradesTitle">HISTORY OF MAGIC</td>
               <td style="color: white;"></td>
               <td class="gradesDate">Today 17:00 </td>
               <td class="gradesData">Grade</td>
@@ -604,7 +605,9 @@
 
       <!-- FORUM -->
       <div id="forum" >
-        <p class="bigTitle">COURSE FORUM</p>
+        <div class="topDiv">
+          <p class="bigTitle">FORUM</p>
+        </div>
         <div class="container">
           <table class="infoParagraph">
             <tr>
@@ -656,8 +659,10 @@
 
       <!--OPEN FORUM MESSAGES-->
       <div id="openForum" >
-          <p class="bigTitle">COURSE FORUM</p>
+        <div class="topDiv">
+          <p class="bigTitle">FORUM</p>
           <h1 onclick="forumChange('forum')"> Back</h1>
+        </div>
 
         <!--Forum 1-->
         <div id="forum1" >
@@ -904,7 +909,9 @@
 
       <!--MY STUDENTS-->
       <div id="myStudents" >
-        <p class="bigTitle">MY STUDENTS </p>
+        <div class="topDiv">
+          <p class="bigTitle">MY STUDENTS</p>
+        </div>
         <!--BLOOM-->
         <div class="container">
           <p class="mediumTitle">BLOOM</p>
@@ -1025,7 +1032,9 @@
       <div id="metamor" >
         <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
         <p></p>
-        <p class="bigTitle"> MY COURSES - METAMORPHOSYMBIOSIS</p>
+        <div class="topDiv">
+          <p class="bigTitle">MY COURSES - METAMORPHOSYMBIOSIS</p>
+        </div>
         <p class="mediumTitle" > Teacher - Mr Mott </p>
         <div class="container">
           <section class="infoParagraph" >
@@ -1034,7 +1043,7 @@
             Welcome to Metamorphosymbiosis.
             This is the first branch of Transfiguration that students will learn at Alfea School
             of Witchcraft and Wizardry, beginning with Match to needle in first year and progressing from there.
-          </section>
+          </p>
         </div>
         <p class="mediumTitle"> Chapter 1</p>
         <div class="container">
@@ -1047,19 +1056,19 @@
               be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature.
               It allows the user to take
               the appearance and powers of the fairy animal </p>
-          </section>
-          <section class="infoParagraph"> Wild Magic: </section>
+          </p>
+          <section class="infoParagraph"> Wild Magic: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
           
-          <section class="infoParagraph"> What to do: </section>
+          <section class="infoParagraph"> What to do: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Rules to follow(important)</section>
+          <p class="extraInfoParagraph">Rules to follow(important)</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
 
-            <section class="infoParagraph"> Upload Pdf: </section>
+            <section class="infoParagraph"> Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1067,8 +1076,8 @@
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
 
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021
-            </section>
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
+            </p>
 
         </div>
         <p class="mediumTitle"> Chapter 2</p>
@@ -1078,10 +1087,10 @@
               style="float: right; width: 130px; height: 110px; padding-right: 8px;">
             This is the first branch of Transfiguration that will show students how to control their powers !! You
             must be careful, because you could change your life forever if something goes wrong!
-          </section>
-          <section class="infoParagraph"> Control Your Power: </section>
+          </p>
+          <section class="infoParagraph"> Control Your Power: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
         </div>
@@ -1091,18 +1100,18 @@
             This is the first branch of Transfiguration that will show students how to transform themselves into plants
             & Insects !! You
             must be careful, because you could change your life forever if something goes wrong!
-          </section>
-          <section class="infoParagraph"> Transformation into Insects & Plants: </section>
+          </p>
+          <section class="infoParagraph"> Transformation into Insects & Plants: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
-          <section class="infoParagraph"> What to do: </section>
+          <section class="infoParagraph"> What to do: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Rules to follow(important)</section>
+          <p class="extraInfoParagraph">Rules to follow(important)</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
-          <section class="infoParagraph" > Upload Pdf: </section>
+          <section class="infoParagraph" > Upload Pdf: </p>
           <!--To upload Your work webPage-->
           <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
             style="float: left;">
@@ -1110,44 +1119,43 @@
             <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
           </form>
 
-        <section class="extraInfoParagraph"> Upload Until 12/03/2021 </section>
+        <p class="extraInfoParagraph"> Upload Until 12/03/2021 </p>
         </div>
         <p class="mediumTitle"> Chapter 4</p>
         <div class="container">
-          <section class="infoParagraph"> Transformation into Mammals: </section>
+          <section class="infoParagraph"> Transformation into Mammals: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information &tricks</section>
+          <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-          <section class="infoParagraph">
-            <img alt="" src="Images/metamorCh4.png"
-              style="float: left; width: 160px; height: 130px; padding-right: 8px;">
-            <p>Examples in other schools. Transformation into wolf.</p>
-          </section>
-            <section class="infoParagraph"> What to do: </section>
+          <section class="infoParagraph">Examples in other schools. Transformation into wolf.</p>
+          <img alt="" src="Images/metamorCh4.png">
+           <section class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Rules to follow(important)</section>
+            <p class="extraInfoParagraph">Rules to follow(important)</section>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph" > Upload Pdf: </section>
+            <section class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
               <input type="file" name="fileToUpload" class="fileToUpload">
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021</section>
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021</section>
           </div>
 
       <div id="potionology" >
         <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
         <p></p>
-        <p class="bigTitle"> MY COURSES - POTIONOLOGY</p>
+        <div class="topDiv">
+          <p class="bigTitle">MY COURSES - POTIONOLOGY</p>
+        </div>
         <p class="mediumTitle" > Teacher - Mrs Griselda </p>
         <div class="container">
           <section class="infoParagraph" >
             <img alt="" src="Images/teacherPalladium.png"
               style="float: left; width: 150px; height: 120px; padding-right: 8px;">
             <p>Welcome to Potionology, I will be your teacher for this course! I will try to teach you
-            as much as I can ! I love potions and I hope I help you understand & master them .</p>
+            as much as I can ! I love potions and I hope I help you understand & master them .
             </p>
           </section>
         </div>
@@ -1160,13 +1168,13 @@
             The kind of enchantments will help you survive in a magic world,
             in which not all the people are ass good as you think.
             </p>
-            <section class="infoParagraph"> Basic Information About Potions: </section>
+            <section class="infoParagraph"> Basic Information About Potions: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-
-
+          </section>
         </div>
+
         <p class="mediumTitle"> Chapter 2</p>
         <div class="container">
           <section class="infoParagraph">
@@ -1177,19 +1185,15 @@
             the potion. It is usually either forced upon someone or covertly given. As a rule of thumb the longer a love
             potion awaits consumption, the stronger the effects will be
             </p>
-            <section class="infoParagraph"> Amortentia.: </section>
+            <section class="infoParagraph"> Amortentia.: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph"> What to do: </section>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph" > Upload Pdf: </section>
+            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1197,7 +1201,7 @@
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
 
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
               </p>
 
         </div>
@@ -1211,24 +1215,20 @@
             the process is very slow and extremely painful.
             </p>
 
-            <section class="infoParagraph"> Skele-Gro: </section>
+            <section class="infoParagraph"> Skele-Gro: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
             <section class="infoParagraph">
               <img alt="" src="Images/metamorCh4.png"
-                style="float: left; width: 160px; height: 130px; padding-right: 8px;">
+                >
               Examples in other schools. Transformation into wolf.
               </p>
-              <section class="infoParagraph"> What to do: </section>
+              <section class="infoParagraph"> What to do: </p>
               <!--To download work from webPage-->
-              <section class="extraInfoParagraph">Rules to follow(important)</section>
-              <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-                <button class="buttonOpenClass">DOWNLOAD</button>
-              </a>
-              <section class="infoParagraph" > Upload Pdf: </section>
+              <p class="extraInfoParagraph">Rules to follow(important)</section>
+              <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+              <section class="infoParagraph" > Upload Pdf: </p>
               <!--To upload Your work webPage-->
               <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
                 style="float: left;">
@@ -1236,7 +1236,7 @@
                 <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
               </form>
 
-              <section class="extraInfoParagraph"> Upload Until 12/03/2021
+              <p class="extraInfoParagraph"> Upload Until 12/03/2021
                 </p>
         </div>
         <p class="mediumTitle"> Chapter 4</p>
@@ -1249,19 +1249,15 @@
             potions to make, as noted by Horace Slughorn; "It has to be cooked for 6 months on an extremely complicated
             formula, and if you make a tiniest mistake, the consequences are severe"
             </p>
-            <section class="infoParagraph"> Felix Felicis/Liquid Luck: </section>
+            <section class="infoParagraph"> Felix Felicis/Liquid Luck: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph"> What to do: </section>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph" > Upload Pdf: </section>
+            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1269,7 +1265,7 @@
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
 
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
               </p>
         </div>
         <p class="mediumTitle"> Chapter 5</p>
@@ -1280,19 +1276,15 @@
             The Draught of Peace provides personal comfort, calms anxiety and soothes agitation.
             </p>
 
-            <section class="infoParagraph"> Draught of Peace: </section>
+            <section class="infoParagraph"> Draught of Peace: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph"> What to do: </section>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph" > Upload Pdf: </section>
+            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1300,7 +1292,7 @@
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
 
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
               </p>
         </div>
 
@@ -1309,8 +1301,10 @@
       <div id="selfDefence" >
         <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
         <p></p>
-        <p class="bigTitle"> MY COURSES - SELF DEFENCE</p>
-        <p class="mediumTitle" > Teacher - Mrs Griselda </p>
+        <div class="topDiv">
+          <p class="bigTitle">MY COURSES - SELF DEFENCE</p>
+        </div>
+         <p class="mediumTitle" > Teacher - Mrs Griselda </p>
         <div class="container">
           <section class="infoParagraph" >
             <img alt="" src="Images/teacherGriselda.png"
@@ -1327,12 +1321,10 @@
             In this Chapter we will show you the basic information about Self Defence.
             We will show you what is it, and how to use it properly
             </p>
-            <section class="infoParagraph"> Basic Information About Self Defence: </section>
+            <section class="infoParagraph"> Basic Information About Self Defence: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
         </div>
         <p class="mediumTitle"> Chapter 2</p>
@@ -1343,19 +1335,17 @@
             How to defend your own school from trolls and other fairys is one
             of the most important aspects of self-defence!
             </p>
-            <section class="infoParagraph"> Protecting Our School.: </section>
+            <section class="infoParagraph"> Protecting Our School.: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph"> What to do: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Rules to follow(important)</section>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
               <button class="buttonOpenClass">DOWNLOAD</button>
             </a>
-            <section class="infoParagraph"> What to do: </section>
-            <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph" > Upload Pdf: </section>
+            <section class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1363,7 +1353,7 @@
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
 
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
               </p>
 
         </div>
@@ -1376,19 +1366,15 @@
             In this chapter you will learn how to protect yourself using different spells !! Stay tunned.
             </p>
 
-            <section class="infoParagraph"> How to: </section>
+            <section class="infoParagraph"> How to: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph"> What to do: </section>
+            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <section class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph" > Upload Pdf: </section>
+            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <section class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1396,73 +1382,67 @@
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
 
-            <section class="extraInfoParagraph"> Upload Until 12/03/2021
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
               </p>
         </div>
       </div>
       <div id="historyOfMagic" >
         <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
-        <p></p>
-        <p class="bigTitle"> MY COURSES - HISTORY OF MAGIC</p>
+        <div class="topDiv">
+          <p class="bigTitle">MY COURSES - HISTORY OF MAGIC</p>
+        </div>>
         <p class="mediumTitle" > Teacher - Mrs Griselda </p>
         <div class="container">
-          <section class="infoParagraph" style="margin-bottom: 50px;">
-            <img alt="" src="Images/teacherHistory.png"
-              style="float: left; width: 150px; height: 160px; padding-right: 8px;">
+          <img alt="" src="Images/teacherHistory.png">
+          <section class="infoParagraph">
             Welcome to History of Magic, I will be your teacher for this course! I am headmistress
-            I will be teach you all you need to know about the history of magic!!.</p>
+            I will be teach you all you need to know about the history of magic!!.
             </p>
         </div>
         <p class="mediumTitle"> Chapter 1</p>
         <div class="container">
-          <section class="infoParagraph"> First Years: </section>
+          <section class="infoParagraph"> First Years: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information</p>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
+          <p class="extraInfoParagraph">Basic information</section>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
         </div>
         <p class="mediumTitle"> Chapter 2</p>
         <div class="container">
-          <section class="infoParagraph"> Worst enemies: </section>
+          <section class="infoParagraph"> Worst enemies: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information</p>
+          <p class="extraInfoParagraph">Basic information</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
               <button class="buttonOpenClass">DOWNLOAD</button>
             </a>
         </div>
         <p class="mediumTitle"> Chapter 3</p>
         <div class="container">
-          <section class="infoParagraph"> Most important Discoveries: </section>
+          <section class="infoParagraph"> Most important Discoveries: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information</p>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
+          <p class="extraInfoParagraph">Basic information</p>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+
         </div>
         <p class="mediumTitle"> Chapter 4</p>
         <div class="container">
-          <section class="infoParagraph"> Magic Animals: </section>
+          <section class="infoParagraph"> Magic Animals: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information</p>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
+          <p class="extraInfoParagraph">Basic information</p>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
         </div>
         <p class="mediumTitle"> Chapter 5</p>
         <div class="container">
-          <section class="infoParagraph"> Humans & Magic: </section>
+          <section class="infoParagraph"> Humans & Magic: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information</p>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
+          <p class="extraInfoParagraph">Basic information</p>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+
         </div>
         <p class="mediumTitle"> Chapter 6</p>
         <div class="container">
-          <section class="infoParagraph"> Nowadays: </section>
+          <section class="infoParagraph"> Nowadays: </p>
           <!--To download work from webPage-->
-          <section class="extraInfoParagraph">Basic information</p>
+          <p class="extraInfoParagraph">Basic information</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
               <button class="buttonOpenClass">DOWNLOAD</button>
             </a>
@@ -1470,7 +1450,7 @@
       </div>
       <!--BLOOM GRADES-->
       <div id="gradesBloom" >
-        <div>
+        <div class = "topDiv">
           <p class="bigTitle" >MY STUDENTS - BLOOM'S GRADES </p>
         </div>
         <div class="container">
@@ -1625,7 +1605,7 @@
       </div>
       <!--TECNA GRADES-->
       <div id="gradesTecna" >
-        <div>
+        <div class="topDiv">
           <p class="bigTitle" >MY STUDENTS - TECNA'S GRADES </p>
         </div>
         <!--ACTIVITY 1-->
@@ -1784,7 +1764,7 @@
       </div>
       <!--STELLA GRADES-->
       <div id="gradesTecna" >
-        <div>
+        <div class="topDiv">
           <p class="bigTitle" >MY STUDENTS - STELLA'S GRADES </p>
         </div>
         <!--ACTIVITY 1-->
@@ -1944,7 +1924,7 @@
 
       <!--KIMMY GRADES-->
       <div id="gradesKimmy" >
-        <div>
+        <div class="topDiv">
           <p class="bigTitle" >MY STUDENTS - KIMMY'S GRADES </p>
         </div>
         <!--ACTIVITY 1-->
@@ -2103,7 +2083,7 @@
       </div>
       <!--LAYLA GRADES-->
       <div id="gradesLayla" >
-        <div>
+        <div class="topDiv">
           <p class="bigTitle" >MY STUDENTS - LAYLA'S GRADES </p>
         </div>
         <!--ACTIVITY 1-->
@@ -2262,7 +2242,7 @@
       </div>
       <!--FLORA GRADES-->
       <div id="gradesFlora" >
-        <div>
+        <div class="topDiv">
           <p class="bigTitle" >MY STUDENTS - FLORA'S GRADES </p>
         </div>
         <!--ACTIVITY 1-->
