@@ -154,6 +154,20 @@ function centralChange(content) {
     }
 
 }
+
+function choose(mode) {
+    var login = document.getElementById("login");
+    var register = document.getElementById("register");
+    if (mode === "login") {
+        login.style.display = "block";
+        register.style.display = "none";
+    }
+    if (mode === "register") {
+        register.style.display = "block";
+        login.style.display = "none";
+    }
+}
+
 //This function for the humburger (phone)
 function openHamburger() {
     var x = document.getElementById("myTopNav");

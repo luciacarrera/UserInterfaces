@@ -24,9 +24,9 @@ body {
 }
 
 /*STYLE FOR FORM-BOX*/
-.form-box {
+#form-box {
   width: 50%;
-  height: 600px;
+  height: 725px;
   position: relative;
   margin: 6% auto;
   background: #fff;
@@ -35,32 +35,34 @@ body {
   border-radius: 30px;
 }
 
-.form-box .rightinfo #loginlogo {
+#form-box .rightinfo #loginlogo {
   width: 200px;
   height: 200px;
   margin-left: 400px;
   margin-top: 100px;
 }
 
-.form-box .rightinfo h4 {
+#form-box .rightinfo h4 {
   margin-left: 400px;
   font-family: "Alex Brush";
+  color: gray;
   font-size: 50px;
 }
 
-.form-box .rightinfo p {
+#form-box .rightinfo p {
   margin-left: 475px;
   font-family: "Sansita Swashed";
   font-size: 15px;
+  color: gray;
 }
 
-#login h2 {
+#login h2, #register h2 {
   color: #FDABD4;
   font-family: "Sansita Swashed";
   font-size: 35px;
 }
 
-#login p {
+#login p, #register p {
   color: #D0D3D4;
   font-family: "Sansita Swashed";
   font-size: 15px;
@@ -86,12 +88,13 @@ body {
   top: 30%;
 }
 
-.submit-btn {
+.submit-btn, .submit-btn-register {
   width: 100%;
   padding: 10px 30px;
   cursor: pointer;
   display: block;
   margin: auto;
+  margin-right: 5px;
   background: #FDABD4;
   border: 0;
   outline: none;
@@ -101,13 +104,29 @@ body {
   margin-top: 30px;
 }
 
+.btn-log, .btn-reg {
+  width: 20%;
+  padding: 20px 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  margin-left: 20px;
+  background: #D7D7D7;
+  border: 0;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Sansita Swashed";
+  color: white;
+  margin-top: 100px;
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#login {
+#login, #register {
   left: 50px;
 }
 

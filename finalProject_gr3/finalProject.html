@@ -46,7 +46,9 @@
   </div>
 
   <!--Form box for signing up and logging in-->
-  <div class="form-box">
+  <div id="form-box">
+  	<button type="button" class="btn-log" onclick="choose('login')">Log In</button>
+  	<button type="button" class="btn-reg" onclick="choose('register')">Sign Up</button>
     <div class="rightinfo">
       <h4>Alfea</h4>
       <p>school for fairies</p>
@@ -61,8 +63,47 @@
       <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
       <p>Forgot Password?</p>
       <div class="center">
-        <button type="submit" class="submit-btn" onclick="checkCookie()">Validate</button>
+        <button type="button" class="submit-btn">Validate</button>
       </div>
+    </form>
+
+    <form id="register" class="input-group" style="display: none">
+    	<h2>Sign Up</h2>
+    	<p>Username</p>
+      	<input type="text" class="input-field" placeholder="Username" id="regUser" required>
+		<p>Password<p>
+		<input type="Password" class="input-field" placeholder="Password" pattern = "[a-Z, 0-9]{}" id="regPass" required>
+		<p>Email</p>
+		<input type="email" data-constraints="@Pattern^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" class="input-field" placeholder="Email" id="regEmail" required>
+		<p>Birthday</p>
+		<input type="date" class="input-field-cal" id="regBday" required>
+		<p>ID document</p>
+		<input type="text" class="input-field" placeholder="ID document" id="regId" required>
+		<p>Role</p>
+		<select class="input-field-cal" name="Role" id="role" placeholder="choose">
+			<option value="Administrator">Administrator</option>
+			<option value="Teacher">Teacher</option>
+			<option value="Student" onclick="showStudentOptions()">Student</option>
+		</select>
+		<p style="display: none">Degree</p>	
+		<select class="input-field-cal" name="studentOptions" id="studentOptions" style="display: none;">
+			<option value="Bio-Healing">Bio-Healing</option>
+			<option value="Psychology">Psychology</option>
+			<option value="Potionological Sciences">Potionological Sciences</option>
+		</select>
+		<p>Language</p>			  
+		<select class="input-field-cal" name="language" id="language">
+			<option value="" disabled selected>Language</option>
+			<option value="Spanish">Spanish</option>
+			<option value="Italian">Italian</option>
+			<option value="French">French</option>
+			<option value="English">English</option>
+		</select>
+		<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+		<div class="center">
+			<button type="submit" class="submit-btn-register">Save</button>
+			<button type="button" class="submit-btn-register">Delete</button>
+		</div>
     </form>
   </div>
 
