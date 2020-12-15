@@ -6,6 +6,12 @@
   box-sizing: border-box;
   list-style:none
 }
+ #aboutUs, #helpCenter, #admissions , #studies , #research , #myCourses,#myGrades, #forum , #grades , 
+#metamor , #potionology , #selfDefence , #historyOfMagic , #openForum , #forum1 , #forum2 , 
+#forum3 , #forum4 , #forum5 , #forum6 , #gradesBloom , #gradesTecna , #gradesStella , 
+#gradesKimmy , #gradesLayla , #gradesFlora , #login , #register{
+  display: none;
+}
 
 /*BACKGROUND & COMMON CSS*/
 body {
@@ -16,70 +22,96 @@ body {
 .topDiv {
   margin-top: 8px;
   height: 11%;
-  /*! display: table-cell; */
-  /*! vertical-align: middle; */
   display: block;
-  /*! padding: 5px; */
   width: 100%;
 }
 
 /*STYLE FOR FORM-BOX*/
 #form-box {
   width: 50%;
-  height: 725px;
-  position: relative;
-  margin: 6% auto;
+  height: 70%;
+  position: fixed;
+  /*! margin: 6% auto; */
   background: #fff;
-  padding: 5px;
+  /*! padding: 5px; */
   overflow: hidden;
   border-radius: 30px;
+  display: none;
+  right: 25%;
+  top: 15%;
 }
-
-#form-box .rightinfo #loginlogo {
-  width: 200px;
+#rightinfo{
+  padding: 20px;
+  width: 50%;
+  float: right;
+  background: #FDABD4;
+  height: 100%;
+}
+#rightinfo #loginlogo {
   height: 200px;
-  margin-left: 400px;
-  margin-top: 100px;
+  position: 50%;
+  margin: auto;
+  display: block;
 }
 
-#form-box .rightinfo h4 {
-  margin-left: 400px;
+#rightinfo h4 {
+  /*! margin-left: 400px; */
   font-family: "Alex Brush";
-  color: gray;
+  color: white;
   font-size: 50px;
+  text-align: center;
+  margin-top: 15%;
+  /*! background: #FDABD4; */
 }
-
-#form-box .rightinfo p {
-  margin-left: 475px;
+#exitLogin{
+  float: right;
+  cursor: pointer
+}
+#loginHeader{
+  margin-top: 30%;
+}
+.input-group span{
+  margin-top: 20px;
+}
+#rightinfo p {
+  /*! margin-left: 475px; */
   font-family: "Sansita Swashed";
   font-size: 15px;
-  color: gray;
+  color: white;
+  text-align: center;
 }
 
 #login h2, #register h2 {
   color: #FDABD4;
   font-family: "Sansita Swashed";
   font-size: 35px;
+  margin-bottom: 20px;
+  /*! margin-top: 10px; */
 }
 
 #login p, #register p {
   color: #D0D3D4;
   font-family: "Sansita Swashed";
   font-size: 15px;
+  display: inline-block;
+  /*! margin-right: 10px; */
+  margin-bottom: 10px;
+  width: 35%;
+  margin-right: 10px;
 }
 
 .input-group {
-  top: 180px;
-  margin-top: 70px;
+  /*! top: 180px; */
+  /*! margin-top: 70px; */
   position: absolute;
   width: 300px;
   transition: .5s;
 }
 
 .input-field {
-  width: 100%;
+  width: 50%;
   padding: 10 px 0;
-  margin: 10px 0;
+  /*! margin: 10px 0; */
   border-left: 0;
   border-right: 0;
   border-top: #FBFCFC;
@@ -105,29 +137,44 @@ body {
 }
 
 .btn-log, .btn-reg {
-  width: 20%;
-  padding: 20px 30px;
+  /*! width: 20%; */
+  padding: 10px;
   cursor: pointer;
   display: inline-block;
   margin: auto;
-  margin-left: 20px;
-  background: #D7D7D7;
+  /*! margin-left: 0%; */
+  background: #fff;
   border: 0;
   outline: none;
   border-radius: 50px;
   font-family: "Sansita Swashed";
-  color: white;
-  margin-top: 100px;
+  /*! color: white; */
+  /*! margin-top: 100px; */
+  float: right;
+  color: gray;
 }
 
+.input-field-cal{
+  width:50%;
+  margin-right: 10px;
+  color: gray;
+}
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
+#checkbox{
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
 #login, #register {
-  left: 50px;
+  padding: 20px 20px 20px 30px;
+  width: 50%;
+  float: left;
+  margin: auto;
+  /*! vertical-align: middle; */
+  /*! top: 10%; */
 }
 
 /*STYLE FOR LEFT CONTAINER*/
@@ -196,6 +243,7 @@ body {
 /*The color of the link when we pass the mouse over it*/
 .sideBar:hover {
   background-color: #f796c6;
+  cursor: pointer;
 }
 
 #title p {
@@ -228,13 +276,14 @@ body {
 
 .container h3 {
   font-family: 'Sansita Swashed';
+  display: inline-block;
 }
 
 .container p {
   font-family: 'Poppins', sans-serif;
   ;
   color: #2E4765;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 300;
 }
 
@@ -264,10 +313,12 @@ body {
   width: 20%;
 }
 
-#bookmarkPic {
-  width: 8%;
-  height: 8%;
+.container .bookmarkPic {
+  width: 2%;
+  /*! height: 8%; */
   border-radius: 0%;
+  float: right;
+  display: inline-block;
 }
 
 .firstSection {
@@ -287,18 +338,18 @@ body {
   display: inline-block;
   float: right;
 }
-#details {
+.container .details {
   width: 10%;
   height: 10%;
 }
 .rightSection iframe {}
 
-#detailsPop{
+.detailsPop{
 	width: 25%;
 	padding-right: 24px;
 	display: flex;
 }
-#detailsPart{
+.detailsPart{
 	display: inline-block;
 	float: right;
 	align-items: left;
@@ -337,7 +388,7 @@ body {
 #loggedInUser {
   font-size: 20px;
   font-family: 'Alex Brush';
-  color: #black;
+  color: black;
   /*! margin-left: 10px; */
   color: #B3B3B3;
 }
@@ -455,6 +506,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   float: right;
+  cursor: pointer;
 }
 .buttonEditGrades{
   background-color: rgb(224, 155, 155);

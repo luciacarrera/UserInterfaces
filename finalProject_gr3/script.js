@@ -1,161 +1,41 @@
 
 //This function changes the content of the central container
-function centralChange(content) {
-
-    var centralContainer = document.getElementById("centralContainer");
+function centralChange(option) {
     var helpCenter = document.getElementById("helpCenter");
     var aboutUs = document.getElementById("aboutUs");
     var homePage = document.getElementById("homePage");
     var admissions = document.getElementById("admissions");
     var studies = document.getElementById("studies");
     var research = document.getElementById("research");
+    var forum = document.getElementById("forum");
     var myCourses = document.getElementById("myCourses");
     var myGrades = document.getElementById("myGrades");
-    var forum = document.getElementById("forum");
-    var grades = document.getElementById("grades");
     var myStudents = document.getElementById("myStudents");
-    var metamor = document.getElementById("metamor");
-    var potionology = document.getElementById("potionology");
-    var selfDefence = document.getElementById("selfDefence");
-    var historyOfMagic = document.getElementById("historyOfMagic");
-    var openForumMessages = document.getElementById("openForumMessages");
-    var openForumMessages1 = document.getElementById("openForumMessages1");
-    var openForumMessages2 = document.getElementById("openForumMessages2");
-    var openForumMessages3 = document.getElementById("openForumMessages3");
-    var openForumMessages4 = document.getElementById("openForumMessages4");
-    var openForumMessages5 = document.getElementById("openForumMessages5");
-    var openForumMessages6 = document.getElementById("openForumMessages6");
-    var gradesBloom = document.getElementById("gradesBloom");
-    var gradesTecna = document.getElementById("gradesTecna");
-    var gradesStella = document.getElementById("gradesTecna");
-    var gradesKimmy = document.getElementById("gradesKimmy");
-    var gradesLayla = document.getElementById("gradesLayla");
-    var gradesFlora = document.getElementById("gradesFlora");
 
-    homePage.style.display ="none";
-    aboutUs.style.display = "none";
-    helpCenter.style.display = "none";
-    admissions.style.display = "none";
-    studies.style.display = "none";
-    research.style.display = "none";
-    myCourses.style.display = "none";
-    myGrades.style.display = "none";
-    forum.style.display = "none";
-    grades.style.display = "none";
-    myStudents.style.display = "none";
-    metamor.style.display = "none";
-    potionology.style.display = "none";
-    selfDefence.style.display = "none";
-    historyOfMagic.style.display = "none";
-    openForumMessages.style.display = "none";
-    openForumMessages1.style.display = "none";
-    openForumMessages2.style.display = "none";
-    openForumMessages3.style.display = "none";
-    openForumMessages4.style.display = "none";
-    openForumMessages4.style.display = "none";
-    openForumMessages5.style.display = "none";
-    openForumMessages6.style.display = "none";
+    //array of the variables and posible options (THE ORDER IS IMPORTANT)
+    var arrayVars = [helpCenter,aboutUs, homePage,admissions,studies,research,forum,myCourses,myStudents,myGrades]
+    var arrayOptions = ['helpCenter','aboutUs', 'homePage','admissions','studies','research','forum', 'myCourses', 'myStudents','myGrades']
 
-    gradesBloom.style.display = "none";
-    gradesTecna.style.display = "none";
-    gradesStella.style.display = "none";
-    gradesKimmy.style.display = "none";
-    gradesLayla.style.display = "none";
-    gradesFlora.style.display = "none";
-
-    if (content == "homePage"){
-        homePage.style.display ="block";
+    for (i=0; i<arrayOptions.length;i++){
+        if(option==arrayOptions[i]){
+            arrayVars[i].style.display="block";
+        }else{
+            arrayVars[i].style.display="none";
+        }
     }
-    if (content == "aboutUs"){
-        aboutUs.style.display = "block";
-    }
-    if (content == "helpCenter"){
-        helpCenter.style.display = "block";
-    }
-    if (content == "admissions"){
-        admissions.style.display = "block";
-    }
-    if (content == "studies"){
-        studies.style.display = "block";
-    }
-    if (content == "research"){
-        research.style.display = "block";
-    }
-    if (content == "myCourses"){
-        myCourses.style.display = "block";
-    }
-    if (content == "myGrades"){
-        myGrades.style.display = "block";
-    }
-    if (content == "forum"){
-        forum.style.display = "block";
-    }
-    if (content == "grades"){
-        grades.style.display = "block";
-    }
-    if (content == "myStudents"){
-        myStudents.style.display = "block";
-    }
-    if (content == "metamor"){
-        metamor.style.display = "block";
-    }
-    if (content == "potionology"){
-        potionology.style.display = "block";
-    }
-    if (content == "selfDefence"){
-        selfDefence.style.display = "block";
-    }
-    if (content == "historyOfMagic"){
-        historyOfMagic.style.display = "block";
-    }
-
-    if (content == "gradesBloom"){
-        gradesBloom.style.display = "block";
-    }
-    if (content == "gradesTecna"){
-        gradesTecna.style.display = "block";
-    }
-    if (content == "gradesStella"){
-        gradesStella.style.display = "block";
-    }
-    if (content == "gradesKimmy"){
-        gradesKimmy.style.display = "block";
-    }
-    if (content == "gradesLayla"){
-        gradesLayla.style.display = "block";
-    }
-    if (content == "gradesFlora"){
-        gradesFlora.style.display = "block";
-    }
-
-    if (content == "openForumMessages1"){
-        openForumMessages.style.display = "block";
-        openForumMessages1.style.display = "block";
-    }
-    if (content == "openForumMessages2"){
-        openForumMessages.style.display = "block";
-        openForumMessages2.style.display = "block";
-    }
-    if (content == "openForumMessages3"){
-        openForumMessages.style.display = "block";
-        openForumMessages3.style.display = "block";
-    }
-    if (content == "openForumMessages4"){
-        openForumMessages.style.display = "block";
-        openForumMessages4.style.display = "block";
-    }
-    if (content == "openForumMessages5"){
-        openForumMessages.style.display = "block";
-        openForumMessages5.style.display = "block";
-    }
-    if (content == "openForumMessages6"){
-        openForumMessages.style.display = "block";
-        openForumMessages6.style.display = "block";
-    }
-
 }
 
+//LOGIN & REGISTER FUNCTIONTS
+function showConfirmation(){
+    var login = document.getElementById("login");
+    var formBox = document.getElementById("form-box");
+    
+    formBox.style.display = "block";
+    login.style.display = "block";
+ }
+
 function choose(mode) {
+    var centralContainer = document.getElementById("centralContainer");
     var login = document.getElementById("login");
     var register = document.getElementById("register");
     if (mode === "login") {
@@ -168,7 +48,76 @@ function choose(mode) {
     }
 }
 
-//This function for the humburger (phone)
+function exitLogin(){
+    var formBox = document.getElementById("form-box");
+    var login = document.getElementById("login");
+    var register = document.getElementById("register");
+    login.style.display = "none"
+    register.style.display = "none"
+    formBox.style.display = "none"
+}
+
+//My Courses Change
+function myCoursesChange(option){
+    var myCourses = document.getElementById("myCourses");
+    var selfDefence = document.getElementById("selfDefence");
+    var metamor = document.getElementById("metamor");
+    var potionology = document.getElementById("potionology");
+    var historyOfMagic = document.getElementById("historyOfMagic");
+
+    var arrayOptions = ['selfDefence', 'metamor', 'potionology', 'historyOfMagic']
+    var arrayVars = [selfDefence, metamor, potionology, historyOfMagic]
+    
+    if(option == 'myCourses'){
+        myCourses.style.display="block"
+        for (i=0; i<arrayVars.length;i++){
+            arrayVars[i].style.display="none";
+        }
+        
+    }else{
+        myCourses.style.display="none"
+        for (i=0; i<arrayOptions.length;i++){
+            if(option==arrayOptions[i]){
+                arrayVars[i].style.display="block";
+            }
+        }
+    }
+}
+
+//My Forums Change
+function forumChange(option){
+    var forum = document.getElementById("forum");
+    var openForum = document.getElementById("openForum");
+    var forum1 = document.getElementById("forum1");
+    var forum2 = document.getElementById("forum2");
+    var forum3 = document.getElementById("forum3");
+    var forum4 = document.getElementById("forum4");
+    var forum5 = document.getElementById("forum5");
+    var forum6 = document.getElementById("forum6");
+
+    var arrayOptions = ['forum1', 'forum2', 'forum3', 'forum4', 'forum5', 'forum6']
+    var arrayVars = [forum1, forum2, forum3, forum4, forum5, forum6]
+    
+    if(option == 'forum'){
+        forum.style.display="block";
+        openForum.style.display="none";
+        for (i=0; i<arrayOptions.length;i++){
+            if(option==arrayOptions[i]){
+                arrayVars[i].style.display="none";
+            }
+        }
+        
+    }else{
+        forum.style.display="none";
+        openForum.style.display="block";
+        for (i=0; i<arrayOptions.length;i++){
+            if(option==arrayOptions[i]){
+                arrayVars[i].style.display="block";
+            }
+        }
+    }
+}
+//This function for the hamburger (phone)
 function openHamburger() {
     var x = document.getElementById("myTopNav");
     if (x.className === "topnav") {
@@ -356,4 +305,6 @@ function sendMail(contact){
         changeGrade.style.display = "none"
     }
  }
+
+ 
   
