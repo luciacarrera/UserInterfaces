@@ -28,6 +28,9 @@ function centralChange(content) {
     var gradesBloom = document.getElementById("gradesBloom");
     var gradesTecna = document.getElementById("gradesTecna");
     var gradesStella = document.getElementById("gradesTecna");
+    var gradesKimmy = document.getElementById("gradesKimmy");
+    var gradesLayla = document.getElementById("gradesLayla");
+    var gradesFlora = document.getElementById("gradesFlora");
 
     homePage.style.display ="none";
     aboutUs.style.display = "none";
@@ -56,6 +59,9 @@ function centralChange(content) {
     gradesBloom.style.display = "none";
     gradesTecna.style.display = "none";
     gradesStella.style.display = "none";
+    gradesKimmy.style.display = "none";
+    gradesLayla.style.display = "none";
+    gradesFlora.style.display = "none";
 
     if (content == "homePage"){
         homePage.style.display ="block";
@@ -111,6 +117,15 @@ function centralChange(content) {
     }
     if (content == "gradesStella"){
         gradesStella.style.display = "block";
+    }
+    if (content == "gradesKimmy"){
+        gradesKimmy.style.display = "block";
+    }
+    if (content == "gradesLayla"){
+        gradesLayla.style.display = "block";
+    }
+    if (content == "gradesFlora"){
+        gradesFlora.style.display = "block";
     }
 
     if (content == "openForumMessages1"){
