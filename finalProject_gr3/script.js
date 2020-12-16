@@ -29,7 +29,9 @@ function centralChange(option) {
     var metamor = document.getElementById("metamor");
     var potionology = document.getElementById("potionology");
     var historyOfMagic = document.getElementById("historyOfMagic");
-   
+    var siteMap= document.getElementById("siteMap");
+    
+
     var gradesBloom = document.getElementById("gradesBloom");
     var gradesTecna = document.getElementById("gradesTecna");
     var gradesStella = document.getElementById("gradesStella");
@@ -54,8 +56,8 @@ function centralChange(option) {
     var openForum = document.getElementById("openForum");
     openForum.style.display="none";
     //array of the variables and posible options (THE ORDER IS IMPORTANT)
-    var arrayVars = [helpCenter,aboutUs, homePage,admissions,studies,research,forum,myCourses,myStudents,myGrades,teacherCourse];
-    var arrayOptions = ['helpCenter','aboutUs', 'homePage','admissions','studies','research','forum', 'myCourses', 'myStudents','myGrades','teacherCourse'];
+    var arrayVars = [helpCenter,aboutUs, homePage,admissions,studies,research,forum,myCourses,myStudents,myGrades,teacherCourse, siteMap];
+    var arrayOptions = ['helpCenter','aboutUs', 'homePage','admissions','studies','research','forum', 'myCourses', 'myStudents','myGrades','teacherCourse', 'siteMap'];
 
     for (i=0; i<arrayOptions.length;i++){
         if(option==arrayOptions[i]){
