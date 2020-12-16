@@ -1,15 +1,16 @@
 //Synonym to $(document).ready(function() {:
 document.addEventListener('DOMContentLoaded', function() {
     //CENTRAL CONTAINER
+    var formLogin = document.getElementById("login");
+    var formRegister = document.getElementById("register");
+    function handleForm(event) { event.preventDefault(); } 
+    formLogin.addEventListener('submit', handleForm);
+    formRegister.addEventListener('submit', handleForm);
+
     deleteInfo();
     document.getElementById("login").reset();
     //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
-    $("#login").submit(function(e){
-        return false;
-    });
-    $("#register").submit(function(e){
-        return false;
-    });
+    
 }, false);
 //This function changes the content of the central container
 function centralChange(option) {
@@ -612,156 +613,156 @@ function sendMail(contact){
         txt = document.getElementById("gradesAct1Bloom").value;
         document.getElementById("numberGradeNoChangesAct1Bloom").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Bloom");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act2Bloom"){
         txt = document.getElementById("gradesAct2Bloom").value;
         document.getElementById("numberGradeNoChangesAct2Bloom").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Bloom");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Bloom"){
         txt = document.getElementById("gradesAct3Bloom").value;
         document.getElementById("numberGradeNoChangesAct3Bloom").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Bloom");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act4Bloom"){
         txt = document.getElementById("gradesAct4Bloom").value;
         document.getElementById("numberGradeNoChangesAct4Bloom").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Bloom");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act1Tecna"){
         txt = document.getElementById("gradesAct1Tecna").value;
         document.getElementById("numberGradeNoChangesAct1Tecna").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Tecna");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act2Tecna"){
         txt = document.getElementById("gradesAct2Tecna").value;
         document.getElementById("numberGradeNoChangesAct2Tecna").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Tecna");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Tecna"){
         txt = document.getElementById("gradesAct3Tecna").value;
         document.getElementById("numberGradeNoChangesAct3Tecna").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Tecna");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act4Tecna"){
         txt = document.getElementById("gradesAct4Tecna").value;
         document.getElementById("numberGradeNoChangesAct4Tecna").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Tecna");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act1Stella"){
         txt = document.getElementById("gradesAct1Stella").value;
         document.getElementById("numberGradeNoChangesAct1Stella").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Stella");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act2Stella"){
         txt = document.getElementById("gradesAct2Stella").value;
         document.getElementById("numberGradeNoChangesAct2Stella").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Stella");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Stella"){
         txt = document.getElementById("gradesAct3Stella").value;
         document.getElementById("numberGradeNoChangesAct3Stella").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Stella");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act4Stella"){
         txt = document.getElementById("gradesAct4Stella").value;
         document.getElementById("numberGradeNoChangesAct4Stella").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Stella");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act1Musa"){
         txt = document.getElementById("gradesAct1Musa").value;
         document.getElementById("numberGradeNoChangesAct1Musa").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Musa");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act2Musa"){
         txt = document.getElementById("gradesAct2Musa").value;
         document.getElementById("numberGradeNoChangesAct2Musa").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Musa");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Musa"){
         txt = document.getElementById("gradesAct3Musa").value;
         document.getElementById("numberGradeNoChangesAct3Musa").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Musa");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act4Musa"){
         txt = document.getElementById("gradesAct4Musa").value;
         document.getElementById("numberGradeNoChangesAct4Musa").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Musa");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act1Roxy"){
         txt = document.getElementById("gradesAct1Roxy").value;
         document.getElementById("numberGradeNoChangesAct1Roxy").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Roxy");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act2Roxy"){
         txt = document.getElementById("gradesAct2Roxy").value;
         document.getElementById("numberGradeNoChangesAct2Roxy").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Roxy");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Roxy"){
         txt = document.getElementById("gradesAct3Roxy").value;
         document.getElementById("numberGradeNoChangesAct3Roxy").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Roxy");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act4Roxy"){
         txt = document.getElementById("gradesAct4Roxy").value;
         document.getElementById("numberGradeNoChangesAct4Roxy").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Roxy");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
     if (context == "Act1Daphne"){
         txt = document.getElementById("gradesAct1Daphne").value;
         document.getElementById("numberGradeNoChangesAct1Daphne").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Daphne");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act2Daphne"){
         txt = document.getElementById("gradesAct2Daphne").value;
         document.getElementById("numberGradeNoChangesAct2Daphne").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Daphne");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Daphne"){
         txt = document.getElementById("gradesAct3Daphne").value;
         document.getElementById("numberGradeNoChangesAct3Daphne").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Daphne");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act4Daphne"){
         txt = document.getElementById("gradesAct4Daphne").value;
         document.getElementById("numberGradeNoChangesAct4Daphne").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Daphne");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
 
@@ -769,25 +770,25 @@ function sendMail(contact){
         txt = document.getElementById("gradesAct1Aisha").value;
         document.getElementById("numberGradeNoChangesAct1Aisha").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct1Aisha");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act2Aisha"){
         txt = document.getElementById("gradesAct2Aisha").value;
         document.getElementById("numberGradeNoChangesAct2Aisha").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct2Aisha");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act3Aisha"){
         txt = document.getElementById("gradesAct3Aisha").value;
         document.getElementById("numberGradeNoChangesAct3Aisha").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct3Aisha");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
     if (context == "Act4Aisha"){
         txt = document.getElementById("gradesAct4Aisha").value;
         document.getElementById("numberGradeNoChangesAct4Aisha").innerHTML = txt;
         var changeGrade = document.getElementById("numberGradeChangesAct4Aisha");
-        changeGrade.style.display = "none"
+        changeGrade.style.display = "none";
     }
 
  }
@@ -810,10 +811,11 @@ function setCookie(){
     // restrictions
     if(document.cookie == "" || emailTaken(email)==false){
             //actual cookie
-            var cookieString= " user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
-            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+"SameSite=None; Secure"+expires+ ";path=/";
+            var cookieString= "user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
+            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None; Secure"+expires+ ";path=/";
             document.cookie = document.cookie + cookieString;
             loggedInUser(name);
+            exitLogin();
     } else{
             alert("Sorry, this email is already associated to another account.")
         }
@@ -822,38 +824,42 @@ function setCookie(){
     document.getElementById("loggedInUser").innerHTML=name;
  }
 function checkCookie() {
-    var mail = document.getElementById("logEmail").value;
+    var mail = document.getElementById("logUser").value;
     var word = document.getElementById("logPassword").value;
-    if(checkEmailPass(mail,word)===true){
-    }
-    else if(document.cookie === "" || checkEmailPass(mail,word)===false || mail===""||word===""){
-        alert("Sorry! Your email or password are incorrect.");
+    
+    if(document.cookie === "" || checkUserPass(mail,word)===false || mail===""||word===""){
+        alert("Sorry! Your username or password are incorrect.");
+        deleteInfo();
+    }else{
+        exitLogin();
     }
 }
-function checkEmailPass(inputEmail, inputPass){
+
+function checkUserPass(inputUser, inputPass){
     var allcookies = document.cookie;
+
     cookiearray = allcookies.split(' ');
     for(var i=0; i<cookiearray.length; i++) {
-        var emailSplit = cookiearray[i].split(',')[4];
-        var emailValue = emailSplit.split('=')[1];
+        var userSplit = cookiearray[i].split(',')[0];
+        var userValue = userSplit.split('=')[1];
 
-        var passSplit = cookiearray[i].split(',')[2];
+        var passSplit = cookiearray[i].split(',')[1];
         var passValue = passSplit.split('=')[1];
         
-        //correct email & password
-        console.log(emailValue+" // "+ passValue);
-        if(emailValue === inputEmail && passValue === inputPass) {
-            var nameSplit = cookiearray[i].split(',')[3];
+        //correct username & password
+        console.log(userValue+" // "+ passValue);
+        if(userValue === inputUser && passValue === inputPass) {
+            var nameSplit = cookiearray[i].split(',')[2];
             var name = nameSplit.split('=')[1];
             loggedInUser(name);
             return true;
         } 
-        //correct email but wrong password
-        else if(emailValue === inputEmail && passValue != inputPass) {
+        //correct username but wrong password
+        else if(userValue === inputUser && passValue != inputPass) {
             return false;
         }
     }
-    //email not found
+    //user not found
     return false;
 }
 function emailTaken(email){
@@ -899,6 +905,11 @@ function roleOptions(role){
         document.getElementById("studentOptions").style.display  = "none";
         document.getElementById("degree").style.display  = "none";
     }
+}
+//DELETE INFO
+function deleteInfo(){
+    document.getElementById("register").reset();
+    document.getElementById("login").reset();
 }
 //DELETE COOKIES
 //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";

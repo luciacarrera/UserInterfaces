@@ -60,11 +60,11 @@
       <button type="button" class="btn-reg" onclick="choose('register')">Register</button>
       <h2 id="loginHeader">Log In</h2>
       <p>Username</p>
-      <input type="text" class="input-field" placeholder="Enter Username" id="logEmail" required>
+      <input type="text" class="input-field" placeholder="Enter Username" id="logUser" required>
       <p>Password</p>
       <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
       <div class="center">
-        <button type="submit" class="submit-btn">Validate</button>
+        <button id="logSubmit" type="submit" class="submit-btn" onclick="checkCookie()">Validate</button>
       </div>
     </form>
     
@@ -106,7 +106,7 @@
       </select>
       <input type="checkbox" id="checkbox"><span>I agree to the terms & conditions</span>
       <div class="center">
-        <button type="submit" class="submit-btn-register" onclick="setCookie()">Save</button>
+        <button id="regSubmit" type="submit" class="submit-btn-register" onclick="setCookie()">Save</button>
         <button type="submit" class="submit-btn-register" onclick="deleteInfo()">Delete</button>
       </div>
     </form>
