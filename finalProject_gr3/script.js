@@ -228,7 +228,7 @@ function openHamburger() {
 
 function sendMail(contact){
     var email = "mailto:"+contact+"@alfea.com"
-   window.location.href = email;
+    window.location.href = email;
 }
 
   function sendMessage1(){
