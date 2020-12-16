@@ -55,8 +55,9 @@
       <img id="loginlogo" alt="logo" src="Images/wings.png">
     </div>
 
+    <!--log in-->
     <form id="login" class="input-group">
-      <button type="button" class="btn-reg" onclick="choose('register')">Sign Up</button>
+      <button type="button" class="btn-reg" onclick="choose('register')">Register</button>
       <h2 id="loginHeader">Log In</h2>
       <p>Username</p>
       <input type="text" class="input-field" placeholder="Enter Username" id="logEmail" required>
@@ -64,13 +65,16 @@
       <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
       <span>Forgot Password?</span>
       <div class="center">
-        <button type="button" class="submit-btn">Validate</button>
+        <button type="submit" class="submit-btn">Validate</button>
       </div>
     </form>
-
+    
+    <!--register-->
     <form id="register" class="input-group" style="display: none">
       <button type="button" class="btn-log" onclick="choose('login')">Log In</button>
-      <h2 id="signupHeader">Sign Up</h2>
+      <h2 id="signupHeader">Register</h2>
+      <p>Name</p>
+      	<input type="text" class="input-field" placeholder="Name" id="regName" required>
     	<p>Username</p>
       	<input type="text" class="input-field" placeholder="Username" id="regUser" required>
       <p>Password</p>
@@ -83,12 +87,12 @@
       <input type="text" class="input-field" placeholder="ID document" id="regId" required>
       <p>Role</p>
       <select class="input-field-cal" name="Role" id="role">
-        <option value="Administrator">Administrator</option>
-        <option value="Teacher">Teacher</option>
-        <option value="Student" onclick="showStudentOptions()">Student</option>
+        <option value="Administrator" onclick="roleOptions('admin')">Administrator</option>
+        <option value="Teacher" onclick="roleOptions('teacher')">Teacher</option>
+        <option value="Student" onclick="roleOptions('student')">Student</option>
       </select>
-      <p style="display: none">Degree</p>	
-      <select class="input-field-cal" name="studentOptions" id="studentOptions" >
+      <p style="display: none" id = "degree">Degree</p>	
+      <select style="display: none" class="input-field-cal" name="studentOptions" id="studentOptions" >
         <option value="Bio-Healing">Bio-Healing</option>
         <option value="Psychology">Psychology</option>
         <option value="Potionological Sciences">Potionological Sciences</option>
@@ -103,8 +107,8 @@
       </select>
       <input type="checkbox" id="checkbox"><span>I agree to the terms & conditions</span>
       <div class="center">
-        <button type="submit" class="submit-btn-register">Save</button>
-        <button type="button" class="submit-btn-register">Delete</button>
+        <button type="submit" class="submit-btn-register" onclick="setCookie()">Save</button>
+        <button type="submit" class="submit-btn-register" onclick="deleteInfo()">Delete</button>
       </div>
     </form>
   </div>
@@ -178,7 +182,7 @@
       <a class="sideBar" onclick="centralChange('studies')">Studies</a>
       <a class="sideBar" onclick="centralChange('research')">Research </a>
       <a class="sideBar" onclick="centralChange('forum')">Forum</a>
-      <a class="sideBar" onclick="centralChange('grades')">Grades</a>
+      <a class="sideBar" onclick="centralChange('allGrades')">Grades</a>
       <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
       <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
     </div>
@@ -192,6 +196,7 @@
       <div class="topDiv">
         <div id="profile" class="container">
           <img id="userphoto" alt="userphoto" src="Images/profilePic.png">
+          <p id="loggedInUser"></p>
           <h3 id="useraspects" onclick="showConfirmation()">Log In</h3>
         </div>
       </div>

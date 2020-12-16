@@ -1,4 +1,16 @@
-
+//Synonym to $(document).ready(function() {:
+document.addEventListener('DOMContentLoaded', function() {
+    //CENTRAL CONTAINER
+    deleteInfo();
+    document.getElementById("login").reset();
+    //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+    $("#login").submit(function(e){
+        return false;
+    });
+    $("#register").submit(function(e){
+        return false;
+    });
+}, false);
 //This function changes the content of the central container
 function centralChange(option) {
     var helpCenter = document.getElementById("helpCenter");
@@ -309,6 +321,116 @@ function sendMail(contact){
         changeGrade.style.display = "none"
     }
  }
+/*COOKIES*/
+function setCookie(){
+    //expiration of cookie
+    var d = new Date();
+    d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 10000));
+    var expires = "expires="+d.toUTCString();
+
+    // register cookie attributes
+    var user = document.getElementById("regUser").value;
+    var pass= document.getElementById("regPass").value;
+    var name= document.getElementById("regName").value;
+    var email= document.getElementById("regEmail").value;
+    var bday= document.getElementById("regBday").value;
+    var id= document.getElementById("regId").value;
+    var role= document.getElementById("role").value;
+
+    // restrictions
+    if(document.cookie == "" || emailTaken(email)==false){
+            //actual cookie
+            var cookieString= " user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
+            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+"SameSite=None; Secure"+expires+ ";path=/";
+            document.cookie = document.cookie + cookieString;
+            loggedInUser(name);
+    } else{
+            alert("Sorry, this email is already associated to another account.")
+        }
+ }
+ function loggedInUser(name){
+    document.getElementById("loggedInUser").innerHTML=name;
+ }
+function checkCookie() {
+    var mail = document.getElementById("logEmail").value;
+    var word = document.getElementById("logPassword").value;
+    if(checkEmailPass(mail,word)===true){
+    }
+    else if(document.cookie === "" || checkEmailPass(mail,word)===false || mail===""||word===""){
+        alert("Sorry! Your email or password are incorrect.");
+    }
+}
+function checkEmailPass(inputEmail, inputPass){
+    var allcookies = document.cookie;
+    cookiearray = allcookies.split(' ');
+    for(var i=0; i<cookiearray.length; i++) {
+        var emailSplit = cookiearray[i].split(',')[4];
+        var emailValue = emailSplit.split('=')[1];
+
+        var passSplit = cookiearray[i].split(',')[2];
+        var passValue = passSplit.split('=')[1];
+        
+        //correct email & password
+        console.log(emailValue+" // "+ passValue);
+        if(emailValue === inputEmail && passValue === inputPass) {
+            var nameSplit = cookiearray[i].split(',')[3];
+            var name = nameSplit.split('=')[1];
+            loggedInUser(name);
+            return true;
+        } 
+        //correct email but wrong password
+        else if(emailValue === inputEmail && passValue != inputPass) {
+            return false;
+        }
+    }
+    //email not found
+    return false;
+}
+function emailTaken(email){
+    var allcookies = document.cookie;   
+
+    // Get all the cookies pairs in an array
+    cookiearray = allcookies.split(' ');
+    
+    // Now take key value pair out of this array
+    for(var i=0; i<cookiearray.length; i++) {
+        //splits cookie i into all of its attributes & saves the email attribute
+        var cookieSplit = cookiearray[i].split(',')[4]; 
+        var emailValue = cookieSplit.split('=')[1];
+
+        if(emailValue===email){
+            return true;
+        }
+    }
+    return false;
+}
+function changingRole(role) {
+    var mygrades = document.getElementById('mygrades');
+    var myCourses = document.getElementById('myCourses');
+    var myStudents = document.getElementById('myStudents');
+
+    if(role === 'Student') {
+        mygrades.style.display = "block";
+        myCourses.style.display = "block";
+        myStudents.style.display = "none";
+    }
+    if(role === 'Teacher' || role === 'Administrator') {
+        mygrades.style.display = "none";
+        myCourses.style.display = "none";
+        myStudents.style.display = "block";
+    }
+}
+function roleOptions(role){
+    if(role == 'student'){
+        document.getElementById("studentOptions").style.display  = "block";
+        document.getElementById("degree").style.display  = "block";
+    }else{
+        document.getElementById("studentOptions").style.display  = "none";
+        document.getElementById("degree").style.display  = "none";
+    }
+}
+//DELETE COOKIES
+//document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
 
  
   

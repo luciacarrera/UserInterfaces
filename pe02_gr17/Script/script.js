@@ -353,10 +353,10 @@ function changingRole(role) {
         allstudents.style.display = "block";
     }
 }
-
-
 function showStudentOptions(){
     document.getElementById("studentOptions").style.display  = "block";
+    document.getElementById("degree").style.display  = "block";
+
 }
 
 //DELETE COOKIES
