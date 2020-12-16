@@ -885,19 +885,38 @@ function emailTaken(email){
     return false;
 }
 function changingRole(role) {
-    var sideBarNotLogin = document.getElementById("sideBarNotLogin");
-    var sideBarStudent = document.getElementById("sideBarLoginStudent");
-    var sideBarTeacher = document.getElementById("sideBarLoginTeacher");
+    //not all sidebar options are here because some are always present no matter the role.
+    var admissionsBtn = document.getElementById("admissionsBtn");
+    var studiesBtn = document.getElementById("studiesBtn");
+    var researchBtn = document.getElementById("researchBtn");
+    var myCoursesBtn = document.getElementById("myCoursesBtn");
+    var myGradesBtn = document.getElementById("myGradesBtn");
+    var myStudentsBtn = document.getElementById("myStudentsBtn");
+    var gradesBtn = document.getElementById("gradesBtn");
+    
+    var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,admissionsBtn,studiesBtn,researchBtn];
+    var studentVars = [myCoursesBtn,myGradesBtn];
+    var teacherVars = [myStudentsBtn,gradesBtn];
+    var otherVars = [admissionsBtn,studiesBtn,researchBtn]
 
-    if(role === 'Student') {
-        sideBarStudent.style.display = "block";
-        sideBarTeacher.style.display = "none";
-        sideBarNotLogin.style.display = "none";
+    for(i=0;i<nongeneralVars.length;i++){
+        nongeneralVars[i].style.display="none";
     }
-    if(role === 'Teacher' || role === 'Administrator') {
-        sideBarStudent.style.display = "none";
-        sideBarTeacher.style.display = "block";
-        sideBarNotLogin.style.display = "none";
+    //Admin has ALL the options
+    if(role === 'Student'|| role=== 'Administrator') {
+        for(i=0;i<studentVars.length;i++){
+            studentVars[i].style.display="block";
+        }
+    }
+    if(role === 'Teacher'|| role=== 'Administrator') {
+        for(i=0;i<studentVars.length;i++){
+            teacherVars[i].style.display="block";
+        }
+    }
+    if(role=== 'Administrator'){
+        for(i=0;i<otherVars.length;i++){
+            otherVars[i].style.display="block";
+        }
     }
 }
 
