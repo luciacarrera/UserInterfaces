@@ -792,6 +792,44 @@ function sendMail(contact){
     }
 
  }
+
+ function openDetails(context){
+        
+     if(context == "Meta"){
+        var studentActivitiesMeta = document.getElementById("studentActivitiesMeta");
+        studentActivitiesMeta.style.display ="block";
+     }
+     if(context == "Potion"){
+        var studentActivitiesPotion = document.getElementById("studentActivitiesPotion");
+        studentActivitiesPotion.style.display ="block";
+    }
+    if(context == "Defense"){
+        var studentActivitiesDefense = document.getElementById("studentActivitiesDefense");
+        studentActivitiesDefense.style.display ="block";
+    }
+    if(context == "History"){
+        var studentActivitiesHistory = document.getElementById("studentActivitiesHistory");
+        studentActivitiesHistory.style.display ="block";
+    }
+ }
+ function closeDetails(context){
+    if(context == "Meta"){
+        var studentActivitiesMeta = document.getElementById("studentActivitiesMeta");
+        studentActivitiesMeta.style.display ="none";
+     }
+     if(context == "Potion"){
+        var studentActivitiesPotion = document.getElementById("studentActivitiesPotion");
+        studentActivitiesPotion.style.display ="none";
+    }
+    if(context == "Defense"){
+        var studentActivitiesDefense = document.getElementById("studentActivitiesDefense");
+        studentActivitiesDefense.style.display ="none";
+    }
+    if(context == "History"){
+        var studentActivitiesHistory = document.getElementById("studentActivitiesHistory");
+        studentActivitiesHistory.style.display ="none";
+    }
+}
 /*COOKIES*/
 function setCookie(){
     //expiration of cookie
