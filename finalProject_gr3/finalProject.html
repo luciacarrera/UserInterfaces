@@ -41,6 +41,7 @@
       <a class="sideBar" onclick="centralChange('research')">Research </a>
       <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
       <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
+      <a class="sideBar" onclick="centralChange('teacherCourse')">Site Map</a>
       <a href="javascript:void(0);" class="icon" onclick="openHamburger()"> <i class="fa fa-bars"></i> </a>
       
     </nav>
@@ -141,6 +142,10 @@
       <div id="myCoursesBtn" class="sideBar" onclick="centralChange('myCourses')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>My Courses</p>
+      </div>
+      <div id="myCoursesTeacherBtn" class="sideBar" onclick="centralChange('teacherCourse')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>My Course</p>
       </div>
       <div id="myGradesBtn" class="sideBar" onclick="centralChange('myGrades')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
@@ -604,17 +609,17 @@
             <tr>
               <th>ACTIVITY 1</th>
               <td></td>
-              <td>5.9</td>
+              <td>3.9</td>
             </tr>
             <tr>
               <th>ACTIVITY 2</th>
               <td></td>
-              <td>6.9</td>
+              <td>4.2</td>
             </tr>
             <tr>
               <th>ACTIVITY 3</th>
               <td></td>
-              <td>7.9</td>
+              <td>5.0</td>
             </tr>
             <tr>
               <th></th>
@@ -649,7 +654,7 @@
               <td><button class = "buttonOpenDetails" onclick="openDetails('History')"> o Details</button></td>
               <td></td>
               <td></td>
-              <td class="buttonGradesFail">PASS</td>
+              <td class="buttonGradesPass">PASS</td>
             </tr>
           </table>
           <table id="studentActivitiesHistory">
@@ -961,8 +966,36 @@
             </div>
           </form>
         </div>
-        
 
+    <!--TEACHERE COURSE-->
+      <div id="teacherCourse" >
+        <p></p>
+        <div class="topDiv">
+          <p class="bigTitle">MY COURSES - ENCHANTIX</p>
+        </div>
+        <p class="mediumTitle" > Teacher -  </p>
+        <div class="container">
+          <div id ="editTeacher1p" class="infoParagraph" >
+            <img alt="" src="Images/portadaMetamor.png"
+              style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+            Welcome to ENCHANTIX.
+            Here we will learn about everything you need to know about this special type of magic
+          </div>
+        </div>
+        <p class="mediumTitle" id ="editTeacher1h"> Chapter 1</p>
+        <div class="container">
+          <div class="infoParagraph" id="editTeacher2p">
+            <img alt="" src="Images/metamorCh1.png"
+              style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+            <p>In this Chapter we will show you the darkest and difficult practices
+              of Metamorphosymbiosis as stated by Wizgiz.
+              It turns a living creature into the most aggressive being. A beautiful plant can
+              be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature.
+              It allows the user to take
+              the appearance and powers of the fairy animal </p>
+            </div>
+        </div>" 
+      </div>
     <!--MY STUDENTS-->
       <div id="myStudents" >
         <div class="topDiv">
@@ -3165,15 +3198,10 @@
                 </table>
               </div>
       </div>
-      
-
-
-      </div>
     </div>
-
-
-
   </div>
+
+</div>
 
 
 </body>

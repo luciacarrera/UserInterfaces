@@ -24,12 +24,12 @@ function centralChange(option) {
     var myCourses = document.getElementById("myCourses");
     var myGrades = document.getElementById("myGrades");
     var myStudents = document.getElementById("myStudents");
-
+    var teacherCourse = document.getElementById("teacherCourse");
     var selfDefence = document.getElementById("selfDefence");
     var metamor = document.getElementById("metamor");
     var potionology = document.getElementById("potionology");
     var historyOfMagic = document.getElementById("historyOfMagic");
-
+   
     var gradesBloom = document.getElementById("gradesBloom");
     var gradesTecna = document.getElementById("gradesTecna");
     var gradesStella = document.getElementById("gradesStella");
@@ -54,8 +54,8 @@ function centralChange(option) {
     var openForum = document.getElementById("openForum");
     openForum.style.display="none";
     //array of the variables and posible options (THE ORDER IS IMPORTANT)
-    var arrayVars = [helpCenter,aboutUs, homePage,admissions,studies,research,forum,myCourses,myStudents,myGrades];
-    var arrayOptions = ['helpCenter','aboutUs', 'homePage','admissions','studies','research','forum', 'myCourses', 'myStudents','myGrades'];
+    var arrayVars = [helpCenter,aboutUs, homePage,admissions,studies,research,forum,myCourses,myStudents,myGrades,teacherCourse];
+    var arrayOptions = ['helpCenter','aboutUs', 'homePage','admissions','studies','research','forum', 'myCourses', 'myStudents','myGrades','teacherCourse'];
 
     for (i=0; i<arrayOptions.length;i++){
         if(option==arrayOptions[i]){
@@ -792,7 +792,6 @@ function sendMail(contact){
     }
 
  }
-
  function openDetails(context){
         
      if(context == "Meta"){
@@ -927,6 +926,7 @@ function changingRole(role) {
     var admissionsBtn = document.getElementById("admissionsBtn");
     var studiesBtn = document.getElementById("studiesBtn");
     var researchBtn = document.getElementById("researchBtn");
+    var myCoursesTeacherBtn = document.getElementById("myCoursesTeacherBtn");
     var myCoursesBtn = document.getElementById("myCoursesBtn");
     var myGradesBtn = document.getElementById("myGradesBtn");
     var myStudentsBtn = document.getElementById("myStudentsBtn");
@@ -934,7 +934,7 @@ function changingRole(role) {
     
     var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,admissionsBtn,studiesBtn,researchBtn];
     var studentVars = [myCoursesBtn,myGradesBtn];
-    var teacherVars = [myStudentsBtn,gradesBtn];
+    var teacherVars = [myStudentsBtn,gradesBtn,myCoursesTeacherBtn];
     var otherVars = [admissionsBtn,studiesBtn,researchBtn]
 
     for(i=0;i<nongeneralVars.length;i++){
