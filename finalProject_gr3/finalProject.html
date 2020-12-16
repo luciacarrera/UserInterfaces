@@ -63,7 +63,6 @@
       <input type="text" class="input-field" placeholder="Enter Username" id="logEmail" required>
       <p>Password</p>
       <input type="Password" class="input-field" placeholder="Enter Password" id="logPassword" required>
-      <span>Forgot Password?</span>
       <div class="center">
         <button type="submit" class="submit-btn">Validate</button>
       </div>
@@ -121,7 +120,7 @@
     </div>
     <!--Voy a poner todas las posibilidades juntas (aunque no vaya a ser asi
         para la version final (por que todavia no tenemos las cookies)-->
-    <div id="sideBarNotLogin" style="display: block;">
+    <div id="sideBarNotLogin">
       <div class="sideBar" onclick="centralChange('homePage')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>About</p>
@@ -167,7 +166,7 @@
         <p>Site Map</p>
       </div>
     </div>
-    <div id="sideBarLoginStudent">
+    <div id="sideBarLoginStudent"  style="display: none;">
       <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
       <a class="sideBar" onclick="centralChange('homePage')">Home</a>
       <a class="sideBar" onclick="centralChange('myCourses')"> My Courses</a>
@@ -176,7 +175,7 @@
       <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
       <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
     </div>
-    <div id="sideBarLoginTeacher">
+    <div id="sideBarLoginTeacher"  style="display: none;">
       <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
       <a class="sideBar" onclick="centralChange('homePage')">Home</a>
       <a class="sideBar" onclick="centralChange('studies')">Studies</a>
@@ -186,8 +185,6 @@
       <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
       <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
     </div>
-    <div id="footer">
-    </div>
   </div>
 
 <!--MAIN CONTAINER-->
@@ -196,8 +193,8 @@
       <div class="topDiv">
         <div id="profile" class="container">
           <img id="userphoto" alt="userphoto" src="Images/profilePic.png">
-          <p id="loggedInUser"></p>
-          <h3 id="useraspects" onclick="showConfirmation()">Log In</h3>
+          <p id="loggedInUser">User</p>
+          <h3 id="mode" onclick="openForm()">Log In</h3>
         </div>
       </div>
 
@@ -491,7 +488,7 @@
           <p class="bigTitle">MY GRADES</p>
         </div>
         <div class="container">
-          <table>
+          <table id="studentgrades">
             <tr>
               <th></th>
               <th></th>

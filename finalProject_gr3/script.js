@@ -105,7 +105,7 @@ function centralChange(option) {
 }
 
 //LOGIN & REGISTER FUNCTIONTS
-function showConfirmation(){
+function openForm(){
     var login = document.getElementById("login");
     var formBox = document.getElementById("form-box");
     
@@ -167,6 +167,7 @@ function myStudentsChangeGrade(option){
         }
     }
 }
+
 //My students Grades Change
 function myCoursesChange(option){
     var myCourses = document.getElementById("myCourses");
@@ -884,21 +885,22 @@ function emailTaken(email){
     return false;
 }
 function changingRole(role) {
-    var mygrades = document.getElementById('mygrades');
-    var myCourses = document.getElementById('myCourses');
-    var myStudents = document.getElementById('myStudents');
+    var sideBarNotLogin = document.getElementById("sideBarNotLogin");
+    var sideBarStudent = document.getElementById("sideBarLoginStudent");
+    var sideBarTeacher = document.getElementById("sideBarLoginTeacher");
 
     if(role === 'Student') {
-        mygrades.style.display = "block";
-        myCourses.style.display = "block";
-        myStudents.style.display = "none";
+        sideBarStudent.style.display = "block";
+        sideBarTeacher.style.display = "none";
+        sideBarNotLogin.style.display = "none";
     }
     if(role === 'Teacher' || role === 'Administrator') {
-        mygrades.style.display = "none";
-        myCourses.style.display = "none";
-        myStudents.style.display = "block";
+        sideBarStudent.style.display = "none";
+        sideBarTeacher.style.display = "block";
+        sideBarNotLogin.style.display = "none";
     }
 }
+
 function roleOptions(role){
     if(role == 'student'){
         document.getElementById("studentOptions").style.display  = "block";
