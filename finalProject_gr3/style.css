@@ -21,7 +21,8 @@
 #gradesAisha, #gradesFlora , 
 #studentActivitiesHistory,#studentActivitiesMeta,
 #studentActivitiesPotion, #studentActivitiesDefense,
-#login , #register
+#login , #register,
+#cancelEditTeacher,#cancelEditTeacherP1,#cancelEditTeacherP2
 {
   display: none;
 }

@@ -125,6 +125,68 @@ function exitLogin(){
     formBox.style.display = "none"
 }
 
+//My Course Teacher
+function editTeacherCourse(option){
+    if(option =="edit"){
+        var cancelEditTeacher = document.getElementById("cancelEditTeacher");
+        cancelEditTeacher.style.display ="block";
+        var cancelEditTeacherP1 = document.getElementById("cancelEditTeacherP1");
+        cancelEditTeacherP1.style.display ="block";    
+        var cancelEditTeacherP2 = document.getElementById("cancelEditTeacherP2");
+        cancelEditTeacherP2.style.display ="block";
+        var cancelEditTeacherP3 = document.getElementById("cancelEditTeacherP3");
+        cancelEditTeacherP3.style.display ="block";    
+        var cancelEditTeacherP4 = document.getElementById("cancelEditTeacherP4");
+        cancelEditTeacherP4.style.display ="block";
+        var cancelEditTeacherP5 = document.getElementById("cancelEditTeacherP5");
+        cancelEditTeacherP5.style.display ="block";
+    }
+    if(option =="cancel"){
+        var cancelEditTeacher = document.getElementById("cancelEditTeacher");
+        cancelEditTeacher.style.display ="none";
+        var cancelEditTeacherP1 = document.getElementById("cancelEditTeacherP1");
+        cancelEditTeacherP1.style.display ="none";    
+        var cancelEditTeacherP2 = document.getElementById("cancelEditTeacherP2");
+        cancelEditTeacherP2.style.display ="none";
+        var cancelEditTeacherP3 = document.getElementById("cancelEditTeacherP3");
+        cancelEditTeacherP3.style.display ="none";    
+        var cancelEditTeacherP4 = document.getElementById("cancelEditTeacherP4");
+        cancelEditTeacherP4.style.display ="none";
+        var cancelEditTeacherP5 = document.getElementById("cancelEditTeacherP5");
+        cancelEditTeacherP5.style.display ="none";
+    }
+    if(option =="delateP1"){
+        var editTeacher1p = document.getElementById("editTeacher1p");
+        editTeacher1p.style.display ="none";
+        var cancelEditTeacherP1 = document.getElementById("cancelEditTeacherP1");
+        cancelEditTeacherP1.style.display ="none";
+    }
+    if(option =="delateP2"){
+        var editTeacher2p = document.getElementById("editTeacher2p");
+        editTeacher2p.style.display ="none";
+        var cancelEditTeacherP2 = document.getElementById("cancelEditTeacherP2");
+        cancelEditTeacherP2.style.display ="none";
+    }
+    if(option =="delateP3"){
+        var editTeacher3p = document.getElementById("editTeacher3p");
+        editTeacher3p.style.display ="none";
+        var cancelEditTeacherP3 = document.getElementById("cancelEditTeacherP3");
+        cancelEditTeacherP3.style.display ="none";
+    }
+    if(option =="delateP4"){
+        var editTeacher4p = document.getElementById("editTeacher4p");
+        editTeacher4p.style.display ="none";
+        var cancelEditTeacherP4 = document.getElementById("cancelEditTeacherP4");
+        cancelEditTeacherP4.style.display ="none";
+    }
+    if(option =="delateP5"){
+        var editTeacher5p = document.getElementById("editTeacher5p");
+        editTeacher5p.style.display ="none";
+        var cancelEditTeacherP4 = document.getElementById("cancelEditTeacherP5");
+        cancelEditTeacherP4.style.display ="none";
+    }
+}
+
 //My Students Change
 function myStudentsChangeGrade(option){
 
