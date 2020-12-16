@@ -812,9 +812,10 @@ function setCookie(){
     if(document.cookie == "" || emailTaken(email)==false){
             //actual cookie
             var cookieString= "user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
-            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None; Secure"+expires+ ";path=/";
+            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
             document.cookie = document.cookie + cookieString;
             loggedInUser(name);
+            changingRole(role)
             exitLogin();
     } else{
             alert("Sorry, this email is already associated to another account.")
@@ -838,13 +839,15 @@ function checkCookie() {
 function checkUserPass(inputUser, inputPass){
     var allcookies = document.cookie;
 
-    cookiearray = allcookies.split(' ');
+    cookiearray = allcookies.split('&');
     for(var i=0; i<cookiearray.length; i++) {
         var userSplit = cookiearray[i].split(',')[0];
-        var userValue = userSplit.split('=')[1];
-
         var passSplit = cookiearray[i].split(',')[1];
+        var roleSplit = cookiearray[i].split(',')[6];
+
+        var userValue = userSplit.split('=')[1];
         var passValue = passSplit.split('=')[1];
+        var roleValue = roleSplit.split('=')[1];
         
         //correct username & password
         console.log(userValue+" // "+ passValue);
@@ -852,10 +855,11 @@ function checkUserPass(inputUser, inputPass){
             var nameSplit = cookiearray[i].split(',')[2];
             var name = nameSplit.split('=')[1];
             loggedInUser(name);
+            changingRole(roleValue)
             return true;
         } 
         //correct username but wrong password
-        else if(userValue === inputUser && passValue != inputPass) {
+        else{
             return false;
         }
     }
@@ -899,8 +903,8 @@ function changingRole(role) {
 
 function roleOptions(role){
     if(role == 'student'){
-        document.getElementById("studentOptions").style.display  = "block";
-        document.getElementById("degree").style.display  = "block";
+        document.getElementById("studentOptions").style.display  = "inline-block";
+        document.getElementById("degree").style.display  = "inline-block";
     }else{
         document.getElementById("studentOptions").style.display  = "none";
         document.getElementById("degree").style.display  = "none";

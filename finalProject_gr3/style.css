@@ -197,6 +197,7 @@ body {
   width:50%;
   margin-right: 10px;
   color: gray;
+  display: inline-block;
 }
 .center {
   display: flex;
