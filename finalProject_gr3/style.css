@@ -9,10 +9,17 @@
 }
 
 
- #aboutUs, #helpCenter, #admissions , #studies , #research , #myCourses,#myGrades, #myStudents, #forum , #grades , 
-#metamor , #potionology , #selfDefence , #historyOfMagic , #openForum , #forum1 , #forum2 , 
-#forum3 , #forum4 , #forum5 , #forum6 , #gradesBloom , #gradesTecna , #gradesStella , 
-#gradesKimmy , #gradesLayla , #gradesFlora,#gradesMusa,#gradesRoxy, #gradesDaphne, #gradesAisha, #gradesFlora , #login , #register
+ #aboutUs, #helpCenter, #admissions , #studies , #research , 
+ #myCourses,#myGrades, #myStudents, #forum , #grades , 
+#metamor , #potionology , #selfDefence , #historyOfMagic , 
+#openForum , #forum1 , #forum2 , #forum3 , #forum4 , #forum5 , #forum6 , 
+#showingMessage1,#showingMessage2,#showingMessage3,
+#showingMessage4,#showingMessage5,#showingMessage6,
+#gradesBloom , #gradesTecna , #gradesStella , 
+#gradesKimmy , #gradesLayla , #gradesFlora,
+#gradesMusa,#gradesRoxy, #gradesDaphne, 
+#gradesAisha, #gradesFlora , 
+#login , #register
 {
   display: none;
 }

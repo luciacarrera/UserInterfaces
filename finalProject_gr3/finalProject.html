@@ -635,25 +635,25 @@
               <td><button class="buttonOpenClass" onclick="forumChange('forum2')">Open</button></td>
             </tr>
             <tr>
-              <td> <a onclick="hideAndShow()">I would like to know how the pandemic affects the school</a></td>
+              <td> <a>I would like to know how the pandemic affects the school</a></td>
               <td>3</td>
               <td>Thu, 23 Sep 2020, 12:33 AM</td>
               <td><button class="buttonOpenClass" onclick="forumChange('forum3')">Open</button></td>
             </tr>
             <tr>
-              <td> <a onclick="hideAndShow()">Is the school canteen still open? </a></td>
+              <td> <a >Is the school canteen still open? </a></td>
               <td>3</td>
               <td>Tue, 27 Sep 2020, 08:45 PM</td>
               <td><button class="buttonOpenClass" onclick="forumChange('forum4')">Open</button></td>
             </tr>
             <tr>
-              <td><a onclick="hideAndShow()">About online homework and classes</a></td>
+              <td><a>About online homework and classes</a></td>
               <td>3</td>
               <td>Mon, 1 Oct 2020, 2:15 PM</td>
               <td><button class="buttonOpenClass" onclick="forumChange('forum5')">Open</button></td>
             </tr>
             <tr>
-              <td><a onclick="hideAndShow()">Winter School trips!!</a></td>
+              <td><a>Winter School trips!!</a></td>
               <td>3</td>
               <td>Wed, 4 Oct 2020, 11:00 AM</td>
               <td><button class="buttonOpenClass" onclick="forumChange('forum6')">Open</button></td>
@@ -673,239 +673,222 @@
           <p class="mediumTitle">Doubts about the course schedule</p>
           <p class="smallTitle">Chat Messages</p>
             <div class="container">
-              <div style="background-color: white; padding: 5px;">
-                <img alt="" class="student" src="images/tecna.png">
-                <p>TECNA</p>
-              </div>
+              <img alt="" class="student" src="images/tecna.png">
+              <p>TECNA</p>
               <p>Hello. How are we suppose to know the time of the exams</p>
               <span class="time-right">11:00</span>
             </div>
             <div class="container">
-              <div style="background-color: white; padding: 5px;">
-                <img alt="" class="student" src="images/stella.png">
-                <p>STELLA</p>
-              </div>
+              <img alt="" class="student" src="images/stella.png">
+              <p>STELLA</p>
               <p>Hey! it isnt setteled yet!!</p>
               <span class="time-right">12:00</span>
             </div>
             <div class="container">
-              <div style="background-color: white; padding: 5px;">
-                <img alt="" class="student" src="images/tecna.png">
-                <p>TECNA</p>
-              </div>
+              <img alt="" class="student" src="images/tecna.png">
+              <p>TECNA</p>
               <p>Sweet! Thank you so much!</p>
               <span class="time-right">16:17</span>
             </div>
             <div class="container" id="showingMessage1" >
-              <div style="background-color: white; padding: 5px;">
-                <img alt="" class="student" src="images/defaultimage.png">
-                <p id="userSendMessage1"></p>
-              </div>
+              <img alt="" class="student" src="images/defaultimage.png">
+              <p id="userSendMessage1"></p>
               <p id="msg1"></p>
               <span id="time1" class="time-right">12:00</span>
             </div>
+            <form style="border:1px solid #ccc">
+              <div class="sendMessageContainer">
+                <input class="placeHolderText" id="msg1Send" type="text" style="display: block;"
+                  placeholder="Write Your Respone" required>
+                <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+                <a class="buttonOpenClass" onclick="sendMessage1()">Send</a>
+              </div>
+            </form>
           </div>
         <!--Forum 2-->
         <div id="forum2" >
           <p class="smallTitle">There are after school hours for our kids?</p>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/kimmy.png">
-              <p>KIMMY </p>
-            </div>
+            <img alt="" class="student" src="images/kimmy.png">
+            <p>KIMMY </p>
             <p>Hello. I think so ! you could look at the about us web page!</p>
             <span class="time-right">14:19</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/layla.png">
-              <p>LAYLA</p>
-            </div>
+            <img alt="" class="student" src="images/layla.png">
+            <p>LAYLA</p>
             <p>Hey! i have already looked there but there is no information about it :/</p>
             <span class="time-right">19:53</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/kimmy.png">
-              <p>KIMMY </p>
-            </div>
+            <img alt="" class="student" src="images/kimmy.png">
+            <p>KIMMY </p>
             <p>Oh! my bad, maybe you should call the school</p>
             <span class="time-right">22:21</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/flora.png">
-              <p>FLORA </p>
-            </div>
+            <img alt="" class="student" src="images/flora.png">
+            <p>FLORA </p>
             <p>Hey! it isnt setteled yet!!</p>
             <span class="time-right">12:21</span>
           </div>
           <div class="container" id="showingMessage2" >
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/defaultimage.png">
-              <p id="userSendMessage2"></p>
-            </div>
+            <img alt="" class="student" src="images/defaultimage.png">
+            <p id="userSendMessage2"></p>
             <p id="msg2"></p>
             <span id="time2" class="time-right">12:00</span>
           </div>
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg2Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a class="buttonOpenClass" onclick="sendMessage2()">Send</a>
+            </div>
+          </form>
         </div>
         <!--Forum 3-->
         <div id="forum3" >
-
           <p class="smallTitle">I would like to know how the pandemic affects the school</p>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/musa.png">
-              <p>MUSA </p>
+            <img alt="" class="student" src="images/musa.png">
+            <p>MUSA </p>
             </div>
             <p>Hello. How are we suppose to feel safe with everything going on? Whate are the
               measures the school has considered?</p>
             <span class="time-right">14:19</span>
-          </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/roxy.png">
-              <p>ROXY</p>
-            </div>
+            <img alt="" class="student" src="images/roxy.png">
+            <p>ROXY</p>
             <p>Hey! the school has already sent an email to inform us about it/</p>
             <span class="time-right">19:53</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/musa.png">
-              <p>MUSA</p>
-            </div>
+            <img alt="" class="student" src="images/musa.png">
+            <p>MUSA</p>
             <p>Sweet! Thank you so much!</p>
             <span class="time-right">22:21</span>
           </div>
           <div class="container" id="showingMessage3" >
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/defaultimage.png">
-              <p id="userSendMessage3"></p>
-            </div>
+            <img alt="" class="student" src="images/defaultimage.png">
+            <p id="userSendMessage3"></p>
             <p id="msg3"></p>
             <span id="time3" class="time-right">12:00</span>
           </div>
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg3Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage3()">Send</a>
+            </div>
+          </form>
         </div>
         <!--Forum 4-->
         <div id="forum4" >
-
           <p class="smallTitle">Is the school canteen still open?</p>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/daphne.png">
-              <p>DAPHNE </p>
-            </div>
+            <img alt="" class="student" src="images/daphne.png">
+            <p>DAPHNE </p>
             <p>Hello. I Dont think so, due to the pandemic</p>
             <span class="time-right">14:19</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/aisha.png">
-              <p>AISHA</p>
-            </div>
+            <img alt="" class="student" src="images/aisha.png">
+            <p>AISHA</p>
             <p>Hey! it isnt oppened yet!! and i dont believe they are going to open it</p>
             <span class="time-right">19:53</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/bloom.png">
-              <p>BLOOM</p>
-            </div>
+            <img alt="" class="student" src="images/bloom.png">
+            <p>BLOOM</p>
             <p>I dont think they will ever open it again :(</p>
             <span class="time-right">22:21</span>
           </div>
           <div class="container" id="showingMessage4" >
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/defaultimage.png">
-              <p id="userSendMessage4"></p>
-            </div>
+            <img alt="" class="student" src="images/defaultimage.png">
+            <p id="userSendMessage4"></p>
             <p id="msg4"></p>
             <span id="time4" class="time-right">12:00</span>
           </div>
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg4Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a  class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" onclick="sendMessage4()">Send</a>
+            </div>
+          </form>
         </div>
         <!--Forum 5-->
         <div id="forum5" >
-
           <p class="smallTitle">About online homework and classes</p>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/layla.png">
-              <p>LAYLA </p>
-            </div>
+            <img alt="" class="student" src="images/layla.png">
+            <p>LAYLA </p>
             <p>Hello. How are we suppose to create an account for the blackboard?</p>
             <span class="time-right">14:19</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/bloom.png">
-              <p>BLOOM</p>
-            </div>
+            <img alt="" class="student" src="images/bloom.png">
+            <p>BLOOM</p>
             <p>You just have to use the username of the school, hope it helped</p>
             <span class="time-right">19:53</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/layla.png">
-              <p>LAYLA</p>
-            </div>
+            <img alt="" class="student" src="images/layla.png">
+            <p>LAYLA</p>
             <p>YES! Thank you so much!!!</p>
             <span class="time-right">22:21</span>
           </div>
           <div class="container" id="showingMessage5" >
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/defaultimage.png">
-              <p id="userSendMessage5"></p>
-            </div>
+            <img alt="" class="student" src="images/defaultimage.png">
+            <p id="userSendMessage5"></p>
             <p id="msg5"></p>
-            <span id="time5" class="time-right">12:00</span>
+            <span class="time-right">12:00</span>
           </div>
-
+          <form style="border:1px solid #ccc">
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg5Send" type="text" style="display: block;"
+                placeholder="Write Your Respone" required>
+              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
+              <a class="buttonOpenClass" style="float: right " onclick="sendMessage5()">Send</a>
+            </div>
+          </form>
+        </div>
         <!--Forum 6-->
-        <div id="openForumMessages6" >
+        <div id="forum6" >
 
           <p class="smallTitle">Winter School trips!!</p>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/kimmy.png">
-              <p>KIMMY </p>
-            </div>
+            <img alt="" class="student" src="images/kimmy.png">
+            <p>KIMMY </p>
             <p>Hello. How are we suppose to know the time of the exams??</p>
             <span class="time-right">14:19</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/tecna.png">
-              <p>TECNA</p>
-            </div>
+            <img alt="" class="student" src="images/tecna.png">
+            <p>TECNA</p>
             <p>Hey! it isnt setteled yet!!</p>
             <span class="time-right">19:53</span>
           </div>
           <div class="container">
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/tecna.png">
-              <p>TECNA</p>
-            </div>
+            <img alt="" class="student" src="images/tecna.png">
+            <p>TECNA</p>
             <p>Sweet! Thank you so much!</p>
             <span class="time-right">22:21</span>
           </div>
           <div class="container" id="showingMessage6" >
-            <div style="background-color: white; padding: 5px;">
-              <img alt="" class="student" src="images/defaultimage.png">
-              <p id="userSendMessage6"></p>
-            </div>
+            <img alt="" class="student" src="images/defaultimage.png">
+            <p id="userSendMessage6"></p>
             <p id="msg6"></p>
-            <span id="time6" class="time-right">12:00</span>
+            <span class="time-right">12:00</span>
           </div>
           <form style="border:1px solid #ccc">
-            <div class="sendMessageContainer2">
-              <input class="placeHolderText" id="msg2Send" type="text" style="display: block;"
+            <div class="sendMessageContainer">
+              <input class="placeHolderText" id="msg6Send" type="text" style="display: block;"
                 placeholder="Write Your Respone" required>
-              <a style="float: left " class="buttonOpenClass" onclick="centralChange('forum')">Go back</a>
-              <a class="buttonOpenClass" style="float: right " onclick="sendMessage()">Send</a>
+              <a class="buttonOpenClass" onclick="sendMessage6()">Send</a>
             </div>
           </form>
-      </div>
         </div>
         
 

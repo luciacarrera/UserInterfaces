@@ -84,17 +84,6 @@ function centralChange(option) {
             arrayGradesStudents[i].style.display = "none";
         }
     }    
-
-    //If, we are inside grades of my students and click on any other site, the grades of the student that we are in must close
-    var arrayGradesStudentsOptions = ['gradesBloom', 'gradesTecna', 'gradesStella', 'gradesKimmy', 'gradesLayla', 'gradesFlora', 'gradesMusa', 'gradesRoxy', 'gradesDaphne', 'gradesAisha']
-    var arrayGradesStudents = [gradesBloom, gradesTecna, gradesStella, gradesKimmy,gradesLayla ,gradesFlora ,gradesMusa ,gradesRoxy ,gradesDaphne ,gradesAisha ]
-    
-    for (i=0; i<arrayGradesStudentsOptions.length;i++){
-        if (arrayGradesStudents[i].style.display = "block"){
-            arrayGradesStudents[i].style.display = "none";
-        }
-    } 
-
     var arrayForumOptions = ['forum1', 'forum2', 'forum3', 'forum4', 'forum5', 'forum6']
     var arrayForum = [forum1, forum2, forum3, forum4, forum5, forum6]
     for (i=0; i<arrayForumOptions.length;i++){
@@ -198,6 +187,7 @@ function myCoursesChange(option){
 function forumChange(option){
     var forum = document.getElementById("forum");
     var openForum = document.getElementById("openForum");
+
     var forum1 = document.getElementById("forum1");
     var forum2 = document.getElementById("forum2");
     var forum3 = document.getElementById("forum3");
@@ -209,13 +199,13 @@ function forumChange(option){
     var arrayVars = [forum1, forum2, forum3, forum4, forum5, forum6]
     
     if(option == 'forum'){
-        forum.style.display="block";
-        openForum.style.display="none";
-        for (i=0; i<arrayOptions.length;i++){
-            if(option==arrayOptions[i]){
-                arrayVars[i].style.display="none";
-            }
+      for (i=0; i<arrayOptions.length;i++){
+        if (arrayVars[i].style.display = "block"){
+            arrayVars[i].style.display = "none";
         }
+        forum.style.display = "block"
+        openForum.style.display = "none"
+    } 
     }else{
         forum.style.display="none";
         openForum.style.display="block";
