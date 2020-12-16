@@ -122,50 +122,50 @@
     <!--Voy a poner todas las posibilidades juntas (aunque no vaya a ser asi
         para la version final (por que todavia no tenemos las cookies)-->
     <div id="sideBarNotLogin" style="display: block;">
-      <section class="sideBar" onclick="centralChange('homePage')">
+      <div class="sideBar" onclick="centralChange('homePage')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>About</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('aboutUs')">
+      </div>
+      <div class="sideBar" onclick="centralChange('aboutUs')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>About Us</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('admissions')">
+      </div>
+      <div class="sideBar" onclick="centralChange('admissions')">
         <img class="sideBarIcon" src="Images/Icons/columns.png" alt="">
         <p>Admissions</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('studies')">
+      </div>
+      <div class="sideBar" onclick="centralChange('studies')">
         <img class="sideBarIcon" src="Images/Icons/notebook.png" alt="">
         <p>Studies</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('research')">
+      </div>
+      <div class="sideBar" onclick="centralChange('research')">
         <img class="sideBarIcon" src="Images/Icons/bookmark.png" alt="">
         <p>Research </p>
-      </section>
-      <section class="sideBar" onclick="centralChange('myCourses')">
+      </div>
+      <div class="sideBar" onclick="centralChange('myCourses')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>My Courses</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('myGrades')">
+      </div>
+      <div class="sideBar" onclick="centralChange('myGrades')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>My Grades</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('myStudents')">
+      </div>
+      <div class="sideBar" onclick="centralChange('myStudents')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>My Students</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('forum')">
+      </div>
+      <div class="sideBar" onclick="centralChange('forum')">
         <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
         <p>Forum</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('helpCenter')">
+      </div>
+      <div class="sideBar" onclick="centralChange('helpCenter')">
         <img class="sideBarIcon" src="Images/Icons/message.png" alt="">
         <p>Help Center</p>
-      </section>
-      <section class="sideBar" onclick="centralChange('sitemap')">
+      </div>
+      <div class="sideBar" onclick="centralChange('sitemap')">
         <img class="sideBarIcon" src="Images/Icons/map.png" alt="">
         <p>Site Map</p>
-      </section>
+      </div>
     </div>
     <div id="sideBarLoginStudent">
       <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
@@ -363,7 +363,7 @@
         </div>
       </div>
 
-      <!---->
+      <!--STUDIES-->
       <div id="studies" >
         <div class="topDiv">
           <p class="bigTitle">STUDIES</p>
@@ -519,8 +519,8 @@
             <tr>
               <td></td>
               <td></td>
+              <td></td>
               <td class="gradesDate">Details</td>
-
             </tr>
           </table>
         </div>
@@ -546,6 +546,7 @@
               <td class="buttonGradesFail">FAIL</td>
             </tr>
             <tr>
+              <td></td>
               <td></td>
               <td></td>
               <td class="gradesDate">Details</td>
@@ -575,6 +576,7 @@
             <tr>
               <td></td>
               <td></td>
+              <td></td>
               <td class="gradesDate">Details</td>
             </tr>
           </table>
@@ -600,6 +602,7 @@
               <td class="buttonGradesPass">PASS</td>
             </tr>
             <tr>
+              <td></td>
               <td></td>
               <td></td>
               <td class="gradesDate">Details</td>
@@ -661,14 +664,13 @@
           </table>
         </div>
       </div>
-
       <!--OPEN FORUM MESSAGES-->
       <div id="openForum" >
         <div class="topDiv">
           <p class="bigTitle">FORUM</p>
-          <h1 onclick="forumChange('forum')"> Back</h1>
+          <h1 onclick="forumChange('forum')" class="buttonOpenClass"> Back</h1>
         </div>
-
+      </div>
         <!--Forum 1-->
         <div id="forum1" >
           <p class="mediumTitle">Doubts about the course schedule</p>
@@ -706,10 +708,8 @@
               <span id="time1" class="time-right">12:00</span>
             </div>
           </div>
-
         <!--Forum 2-->
         <div id="forum2" >
-
           <p class="smallTitle">There are after school hours for our kids?</p>
           <div class="container">
             <div style="background-color: white; padding: 5px;">
@@ -751,9 +751,9 @@
             <p id="msg2"></p>
             <span id="time2" class="time-right">12:00</span>
           </div>
-        
+        </div>
         <!--Forum 3-->
-        <div id="openForumMessages3" >
+        <div id="forum3" >
 
           <p class="smallTitle">I would like to know how the pandemic affects the school</p>
           <div class="container">
@@ -790,9 +790,8 @@
             <span id="time3" class="time-right">12:00</span>
           </div>
         </div>
-
         <!--Forum 4-->
-        <div id="openForumMessages4" >
+        <div id="forum4" >
 
           <p class="smallTitle">Is the school canteen still open?</p>
           <div class="container">
@@ -829,7 +828,7 @@
           </div>
         </div>
         <!--Forum 5-->
-        <div id="openForumMessages5" >
+        <div id="forum5" >
 
           <p class="smallTitle">About online homework and classes</p>
           <div class="container">
@@ -910,9 +909,10 @@
             </div>
           </form>
       </div>
-      </div>
+        </div>
+        
 
-      <!--MY STUDENTS-->
+    <!--MY STUDENTS-->
       <div id="myStudents" >
         <div class="topDiv">
           <p class="bigTitle">MY STUDENTS</p>
@@ -924,7 +924,7 @@
             <tr>
               <td><img alt="" src="Images/bloom.png"></td>
               <td class="infoParagraph">bloom@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesBloom')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesBloom')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
@@ -936,7 +936,7 @@
             <tr>
               <td><img alt="" src="Images/tecna.png"></td>
               <td class="infoParagraph">tecna@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesTecna')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesTecna')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
               </tr>
           </table>
@@ -948,7 +948,7 @@
             <tr>
               <td><img alt="" src="Images/stella.png"></td>
               <td class="infoParagraph">stella@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesStella')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesStella')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
@@ -960,79 +960,84 @@
             <tr>
               <td><img alt="" src="Images/kimmy.png"></td>
               <td class="infoParagraph">kimmy@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesKimmy')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesKimmy')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
+        <!--LAYLA-->
         <div class="container">
           <p class="mediumTitle">LAYLA</p>
           <table>
             <tr>
               <td><img alt="" src="Images/layla.png"></td>
               <td class="infoParagraph">layla@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesLayla')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesLayla')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
+        <!--FLORA-->
         <div class="container">
           <p class="mediumTitle">FLORA</p>
           <table>
             <tr>
               <td><img alt="" src="Images/flora.png"></td>
               <td class="infoParagraph">flora@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesFlora')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesFlora')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
+        <!--MUSA-->
         <div class="container">
           <p class="mediumTitle">MUSA</p>
           <table>
             <tr>
               <td><img alt="" src="Images/musa.png"></td>
               <td class="infoParagraph">musa@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesMusa')">GRADES</button></td> 
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesMusa')">GRADES</button></td> 
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
+        <!--ROXY-->
         <div class="container">
           <p class="mediumTitle">ROXY</p>
           <table>
             <tr>
               <td><img alt="" src="Images/roxy.png"></td>
               <td class="infoParagraph">roxy@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesRoxy')">GRADES</button></td>           
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesRoxy')">GRADES</button></td>           
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
+        <!--DAPHNE-->
         <div class="container">
           <p class="mediumTitle">DAPHNE</p>
           <table>
             <tr>
               <td><img alt="" src="Images/daphne.png"></td>
               <td class="infoParagraph">daphne@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesDaphne')">GRADES</button></td>
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesDaphne')">GRADES</button></td>
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
               </tr>
           </table>
         </div>
+        <!--AISHA-->
         <div class="container">
           <p class="mediumTitle">AISHA</p>
           <table>
             <tr>
               <td><img alt="" src="Images/aisha.png"></td>
               <td class="infoParagraph">aisha@gmail.com</td>
-              <td><button class="buttonOpenClass" onclick="centralChange('gradesAisha')">GRADES</button></td>           
+              <td><button class="buttonOpenClass" onclick="myStudentsChangeGrade('gradesAisha')">GRADES</button></td>           
               <td><button class="buttonMessage" onclick="centralChange('messageBloom')">SEND MESSAGE <img class= "imageMessagesStudents" alt="" src="Images/message.png"></button></td>
             </tr>
           </table>
         </div>
       </div>
-
     <!--COURSES-->
       <div id="metamor" >
         <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
@@ -1042,17 +1047,17 @@
         </div>
         <p class="mediumTitle" > Teacher - Mr Mott </p>
         <div class="container">
-          <section class="infoParagraph" >
+          <div class="infoParagraph" >
             <img alt="" src="Images/portadaMetamor.png"
               style="float: left; width: 150px; height: 120px; padding-right: 8px;">
             Welcome to Metamorphosymbiosis.
             This is the first branch of Transfiguration that students will learn at Alfea School
             of Witchcraft and Wizardry, beginning with Match to needle in first year and progressing from there.
-          </p>
+          </div>
         </div>
         <p class="mediumTitle"> Chapter 1</p>
         <div class="container">
-          <section class="infoParagraph">
+          <div class="infoParagraph">
             <img alt="" src="Images/metamorCh1.png"
               style="float: right; width: 180px; height: 130px; padding-right: 8px;">
             <p>In this Chapter we will show you the darkest and difficult practices
@@ -1061,39 +1066,38 @@
               be turned into a carnivorous plant whereas a fairy animal can turn into a ferocious creature.
               It allows the user to take
               the appearance and powers of the fairy animal </p>
-          </p>
-          <section class="infoParagraph"> Wild Magic: </p>
+            </div>
+          <p class="infoParagraph"> Wild Magic: </p>
           <!--To download work from webPage-->
           <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
           
-          <section class="infoParagraph"> What to do: </p>
+          <p class="infoParagraph"> What to do: </p>
           <!--To download work from webPage-->
           <p class="extraInfoParagraph">Rules to follow(important)</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
 
-            <section class="infoParagraph"> Upload Pdf: </p>
-            <!--To upload Your work webPage-->
-            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
-              style="float: left;">
+          <p class="infoParagraph"> Upload Pdf: </p>
+          <!--To upload Your work webPage-->
+          <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+            style="float: left;">
               <input type="file" name="fileToUpload" class="fileToUpload">
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-            </form>
+          </form>
 
-            <p class="extraInfoParagraph"> Upload Until 12/03/2021
-            </p>
+          <p class="extraInfoParagraph"> Upload Until 12/03/2021</p>
 
         </div>
         <p class="mediumTitle"> Chapter 2</p>
         <div class="container">
-          <section class="infoParagraph">
+          <div class="infoParagraph">
             <img alt="" src="Images/metamorCh2.png"
               style="float: right; width: 130px; height: 110px; padding-right: 8px;">
             This is the first branch of Transfiguration that will show students how to control their powers !! You
             must be careful, because you could change your life forever if something goes wrong!
-          </p>
-          <section class="infoParagraph"> Control Your Power: </p>
+          </div>
+          <p class="infoParagraph"> Control Your Power: </p>
           <!--To download work from webPage-->
           <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
@@ -1101,22 +1105,23 @@
         </div>
         <p class="mediumTitle"> Chapter 3</p>
         <div class="container">
-          <section class="infoParagraph">
-            This is the first branch of Transfiguration that will show students how to transform themselves into plants
+          <div class="infoParagraph">
+            <p>This is the first branch of Transfiguration that will show students how to transform themselves into plants
             & Insects !! You
             must be careful, because you could change your life forever if something goes wrong!
-          </p>
-          <section class="infoParagraph"> Transformation into Insects & Plants: </p>
+            </p>
+          </div>
+          <p class="infoParagraph"> Transformation into Insects & Plants: </p>
           <!--To download work from webPage-->
           <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
-          <section class="infoParagraph"> What to do: </p>
+          <p class="infoParagraph"> What to do: </p>
           <!--To download work from webPage-->
           <p class="extraInfoParagraph">Rules to follow(important)</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
-          <section class="infoParagraph" > Upload Pdf: </p>
+          <p class="infoParagraph" > Upload Pdf: </p>
           <!--To upload Your work webPage-->
           <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
             style="float: left;">
@@ -1128,77 +1133,76 @@
         </div>
         <p class="mediumTitle"> Chapter 4</p>
         <div class="container">
-          <section class="infoParagraph"> Transformation into Mammals: </p>
+          <p class="infoParagraph"> Transformation into Mammals: </p>
           <!--To download work from webPage-->
           <p class="extraInfoParagraph">Basic information &tricks</p>
           <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-          <section class="infoParagraph">Examples in other schools. Transformation into wolf.</p>
+          <p class="infoParagraph">Examples in other schools. Transformation into wolf.</p>
           <img alt="" src="Images/metamorCh4.png">
-           <section class="infoParagraph"> What to do: </p>
+           <p class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <p class="extraInfoParagraph">Rules to follow(important)</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph" > Upload Pdf: </p>
+            <p class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
               <input type="file" name="fileToUpload" class="fileToUpload">
               <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
             </form>
-            <p class="extraInfoParagraph"> Upload Until 12/03/2021</section>
-          </div>
-
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021</p>
+        </div>
+      </div>
       <div id="potionology" >
         <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
-        <p></p>
         <div class="topDiv">
           <p class="bigTitle">MY COURSES - POTIONOLOGY</p>
         </div>
         <p class="mediumTitle" > Teacher - Mrs Griselda </p>
         <div class="container">
-          <section class="infoParagraph" >
+          <div class="infoParagraph" >
             <img alt="" src="Images/teacherPalladium.png"
               style="float: left; width: 150px; height: 120px; padding-right: 8px;">
             <p>Welcome to Potionology, I will be your teacher for this course! I will try to teach you
             as much as I can ! I love potions and I hope I help you understand & master them .
             </p>
-          </section>
+          </div>
         </div>
         <p class="mediumTitle"> Chapter 1</p>
         <div class="container">
-          <section class="infoParagraph">
+          <div class="infoParagraph">
             <img alt="" src="Images/portadaPotions.png"
               style="float: right; width: 180px; height: 130px; padding-right: 8px;">
             <p>In this Chapter we will show you the basic information about Self Defence.
             The kind of enchantments will help you survive in a magic world,
-            in which not all the people are ass good as you think.
-            </p>
-            <section class="infoParagraph"> Basic Information About Potions: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-          </section>
-        </div>
+            in which not all the people are ass good as you think.</p>
 
+            <p class="infoParagraph"> Basic Information About Potions: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information &tricks</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          </div>
+        </div>
         <p class="mediumTitle"> Chapter 2</p>
         <div class="container">
-          <section class="infoParagraph">
+          <div class="infoParagraph">
             <img alt="" src="Images/potionCh2.jpg"
               style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-            Amortentia is a love potion that does not create actual love, but gives the drinker a powerful obsession and
+            <p>Amortentia is a love potion that does not create actual love, but gives the drinker a powerful obsession and
             infatuation with the giver of
             the potion. It is usually either forced upon someone or covertly given. As a rule of thumb the longer a love
             potion awaits consumption, the stronger the effects will be
             </p>
-            <section class="infoParagraph"> Amortentia.: </p>
+          </div>
+            <p class="infoParagraph"> Amortentia.: </p>
             <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <p class="extraInfoParagraph">Basic information &tricks</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph"> What to do: </p>
+            <p class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <p class="extraInfoParagraph">Rules to follow(important)</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph" > Upload Pdf: </p>
+            <p class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1210,30 +1214,141 @@
               </p>
 
         </div>
-
         <p class="mediumTitle"> Chapter 3</p>
         <div class="container">
-          <section class="infoParagraph">
+          <div class="infoParagraph">
             <img alt="" src="Images/potionCh3.jpg"
               style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-            Skele-Gro is a medicinal potion that can regrow missing or removed bones,[7] though it tastes terrible and
+            <p>Skele-Gro is a medicinal potion that can regrow missing or removed bones, though it tastes terrible and
             the process is very slow and extremely painful.
             </p>
-
-            <section class="infoParagraph"> Skele-Gro: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph">
-              <img alt="" src="Images/metamorCh4.png"
-                >
-              Examples in other schools. Transformation into wolf.
-              </p>
-              <section class="infoParagraph"> What to do: </p>
+          </div>
+          <p class="infoParagraph"> Skele-Gro: </p>
+          <!--To download work from webPage-->
+          <p class="extraInfoParagraph">Basic information &tricks</p>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          <div class="infoParagraph">
+              <img alt="" src="Images/metamorCh4.png">
+              <p>Examples in other schools. Transformation into wolf.</p>
+              <p class="infoParagraph"> What to do: </p>
               <!--To download work from webPage-->
-              <p class="extraInfoParagraph">Rules to follow(important)</section>
+              <p class="extraInfoParagraph">Rules to follow(important)</p>
               <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-              <section class="infoParagraph" > Upload Pdf: </p>
+              <p class="infoParagraph" > Upload Pdf: </p>
+              <!--To upload Your work webPage-->
+              <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+                style="float: left;">
+                <input type="file" name="fileToUpload" class="fileToUpload">
+                <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+              </form>
+          </div>
+          <p class="extraInfoParagraph"> Upload Until 12/03/2021</p>
+        </div>
+        <p class="mediumTitle"> Chapter 4</p>
+        <div class="container">
+          <div class="infoParagraph">
+            <img alt="" src="Images/potionCh4.jpg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            <p>Felix Felicis, more commonly known as Liquid Luck, grants whoever drinks it unusually
+            good luck.The time span of this luck depends on the amount imbibed. Liquid Luck is one of the hardest
+            potions to make, as noted by Horace Slughorn; "It has to be cooked for 6 months on an extremely complicated
+            formula, and if you make a tiniest mistake, the consequences are severe"
+            </p>
+          </div>
+            <p class="infoParagraph"> Felix Felicis/Liquid Luck: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information &tricks</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <p class="infoParagraph"> What to do: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Rules to follow(important)</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+            <p class="infoParagraph" > Upload Pdf: </p>
+            <!--To upload Your work webPage-->
+            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+              style="float: left;">
+              <input type="file" name="fileToUpload" class="fileToUpload">
+              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+            </form>
+
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
+              </p>
+        </div>
+        <p class="mediumTitle"> Chapter 5</p>
+        <div class="container">
+          <div class="infoParagraph">
+            <img alt="" src="Images/potionCh5.jpg"
+              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+            <p>The Draught of Peace provides personal comfort, calms anxiety and soothes agitation.
+            </p>
+          </div>
+
+          <p class="infoParagraph"> Draught of Peace: </p>
+          <!--To download work from webPage-->
+          <p class="extraInfoParagraph">Basic information &tricks</p>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          <p class="infoParagraph"> What to do: </p>
+          <!--To download work from webPage-->
+          <p class="extraInfoParagraph">Rules to follow(important)</p>
+          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          <p class="infoParagraph" > Upload Pdf: </p>
+          <!--To upload Your work webPage-->
+          <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
+            style="float: left;">
+            <input type="file" name="fileToUpload" class="fileToUpload">
+            <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
+          </form>
+
+            <p class="extraInfoParagraph"> Upload Until 12/03/2021
+              </p>
+        </div>
+      </div>
+      <div id="selfDefence" >
+          <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
+          <p></p>
+          <div class="topDiv">
+            <p class="bigTitle">MY COURSES - SELF DEFENCE</p>
+          </div>
+          <p class="mediumTitle" > Teacher - Mrs Griselda </p>
+          <div class="container">
+            <div class="infoParagraph" >
+              <img alt="" src="Images/teacherGriselda.png"
+                style="float: left; width: 150px; height: 120px; padding-right: 8px;">
+              <p>Welcome to Self Defence, I will be your teacher for this course! I am theassistant headmistress
+              and head of discipline at Alfea; I will be very gruff and strict towards students.</p>
+            </div>
+          </div>
+          <p class="mediumTitle"> Chapter 1</p>
+          <div class="container">
+            <div class="infoParagraph">
+              <img alt="" src="Images/selfDefenceCh1.png"
+                style="float: right; width: 180px; height: 130px; padding-right: 8px;">
+              <p>In this Chapter we will show you the basic information about Self Defence.
+              We will show you what is it, and how to use it properly</p>
+            </div>
+              <p class="infoParagraph"> Basic Information About Self Defence: </p>
+              <!--To download work from webPage-->
+              <p class="extraInfoParagraph">Basic information &tricks</p>
+              <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+
+          </div>
+          <p class="mediumTitle"> Chapter 2</p>
+          <div class="container">
+            <div class="infoParagraph">
+              <img alt="" src="Images/selfDefenceCh2.jpeg"
+                style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+              <p>How to defend your own school from trolls and other fairys is one
+              of the most important aspects of self-defence!</p>
+              </div>
+              <p class="infoParagraph"> Protecting Our School.: </p>
+              <!--To download work from webPage-->
+              <p class="extraInfoParagraph">Basic information &tricks</p>
+              <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+              <p class="infoParagraph"> What to do: </p>
+              <!--To download work from webPage-->
+              <p class="extraInfoParagraph">Rules to follow(important)</p>
+              <a href="docs/WILDMAGIC.pdf" class="buttonOpenClass" download="WILD MAGIC">DOWNLOAD</a>
+              <p class="infoParagraph" > Upload Pdf: </p>
               <!--To upload Your work webPage-->
               <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
                 style="float: left;">
@@ -1241,28 +1356,27 @@
                 <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
               </form>
 
-              <p class="extraInfoParagraph"> Upload Until 12/03/2021
+              <p class="extraInfoParagraph"> Upload Until 12/03/2021</p>
+
+          </div>
+          <p class="mediumTitle"> Chapter 3</p>
+          <div class="container">
+            <div class="infoParagraph">
+              <img alt="" src="Images/portadaSelfDefence.png"
+                style="float: right; width: 130px; height: 110px; padding-right: 8px;">
+                <p>In this chapter you will learn how to protect yourself using different spells !! Stay tunned.
                 </p>
-        </div>
-        <p class="mediumTitle"> Chapter 4</p>
-        <div class="container">
-          <section class="infoParagraph">
-            <img alt="" src="Images/potionCh4.jpg"
-              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-            Felix Felicis, more commonly known as Liquid Luck, grants whoever drinks it unusually
-            good luck.The time span of this luck depends on the amount imbibed. Liquid Luck is one of the hardest
-            potions to make, as noted by Horace Slughorn; "It has to be cooked for 6 months on an extremely complicated
-            formula, and if you make a tiniest mistake, the consequences are severe"
-            </p>
-            <section class="infoParagraph"> Felix Felicis/Liquid Luck: </p>
+              </div>
+
+            <p class="infoParagraph"> How to: </p>
             <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
+            <p class="extraInfoParagraph">Basic information &tricks</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph"> What to do: </p>
+            <p class="infoParagraph"> What to do: </p>
             <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Rules to follow(important)</section>
+            <p class="extraInfoParagraph">Rules to follow(important)</p>
             <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph" > Upload Pdf: </p>
+            <p class="infoParagraph" > Upload Pdf: </p>
             <!--To upload Your work webPage-->
             <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
               style="float: left;">
@@ -1271,984 +1385,1072 @@
             </form>
 
             <p class="extraInfoParagraph"> Upload Until 12/03/2021
-              </p>
-        </div>
-        <p class="mediumTitle"> Chapter 5</p>
-        <div class="container">
-          <section class="infoParagraph">
-            <img alt="" src="Images/potionCh5.jpg"
-              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-            The Draught of Peace provides personal comfort, calms anxiety and soothes agitation.
             </p>
-
-            <section class="infoParagraph"> Draught of Peace: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph"> What to do: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph" > Upload Pdf: </p>
-            <!--To upload Your work webPage-->
-            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
-              style="float: left;">
-              <input type="file" name="fileToUpload" class="fileToUpload">
-              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-            </form>
-
-            <p class="extraInfoParagraph"> Upload Until 12/03/2021
-              </p>
-        </div>
-
-
-      </div>
-      <div id="selfDefence" >
-        <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
-        <p></p>
-        <div class="topDiv">
-          <p class="bigTitle">MY COURSES - SELF DEFENCE</p>
-        </div>
-         <p class="mediumTitle" > Teacher - Mrs Griselda </p>
-        <div class="container">
-          <section class="infoParagraph" >
-            <img alt="" src="Images/teacherGriselda.png"
-              style="float: left; width: 150px; height: 120px; padding-right: 8px;">
-            Welcome to Self Defence, I will be your teacher for this course! I am theassistant headmistress
-            and head of discipline at Alfea; I will be very gruff and strict towards students.</p>
-            </p>
-        </div>
-        <p class="mediumTitle"> Chapter 1</p>
-        <div class="container">
-          <section class="infoParagraph">
-            <img alt="" src="Images/selfDefenceCh1.png"
-              style="float: right; width: 180px; height: 130px; padding-right: 8px;">
-            In this Chapter we will show you the basic information about Self Defence.
-            We will show you what is it, and how to use it properly
-            </p>
-            <section class="infoParagraph"> Basic Information About Self Defence: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-
-        </div>
-        <p class="mediumTitle"> Chapter 2</p>
-        <div class="container">
-          <section class="infoParagraph">
-            <img alt="" src="Images/selfDefenceCh2.jpeg"
-              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-            How to defend your own school from trolls and other fairys is one
-            of the most important aspects of self-defence!
-            </p>
-            <section class="infoParagraph"> Protecting Our School.: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph"> What to do: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-            <section class="infoParagraph" > Upload Pdf: </p>
-            <!--To upload Your work webPage-->
-            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
-              style="float: left;">
-              <input type="file" name="fileToUpload" class="fileToUpload">
-              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-            </form>
-
-            <p class="extraInfoParagraph"> Upload Until 12/03/2021
-              </p>
-
-        </div>
-
-        <p class="mediumTitle"> Chapter 3</p>
-        <div class="container">
-          <section class="infoParagraph">
-            <img alt="" src="Images/portadaSelfDefence.png"
-              style="float: right; width: 130px; height: 110px; padding-right: 8px;">
-            In this chapter you will learn how to protect yourself using different spells !! Stay tunned.
-            </p>
-
-            <section class="infoParagraph"> How to: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Basic information &tricks</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph"> What to do: </p>
-            <!--To download work from webPage-->
-            <p class="extraInfoParagraph">Rules to follow(important)</section>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-            <section class="infoParagraph" > Upload Pdf: </p>
-            <!--To upload Your work webPage-->
-            <form class="extraContainer" action="upload.pdf" method="post" enctype="multipart/form-data"
-              style="float: left;">
-              <input type="file" name="fileToUpload" class="fileToUpload">
-              <input class="buttonOpenClass" type="submit" value="UPLOAD" name="submit">
-            </form>
-
-            <p class="extraInfoParagraph"> Upload Until 12/03/2021
-              </p>
-        </div>
+          </div>
       </div>
       <div id="historyOfMagic" >
-        <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
-        <div class="topDiv">
-          <p class="bigTitle">MY COURSES - HISTORY OF MAGIC</p>
-        </div>>
-        <p class="mediumTitle" > Teacher - Mrs Griselda </p>
-        <div class="container">
-          <img alt="" src="Images/teacherHistory.png">
-          <section class="infoParagraph">
-            Welcome to History of Magic, I will be your teacher for this course! I am headmistress
-            I will be teach you all you need to know about the history of magic!!.
-            </p>
-        </div>
-        <p class="mediumTitle"> Chapter 1</p>
-        <div class="container">
-          <section class="infoParagraph"> First Years: </p>
-          <!--To download work from webPage-->
-          <p class="extraInfoParagraph">Basic information</section>
-          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-        </div>
-        <p class="mediumTitle"> Chapter 2</p>
-        <div class="container">
-          <section class="infoParagraph"> Worst enemies: </p>
-          <!--To download work from webPage-->
-          <p class="extraInfoParagraph">Basic information</p>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-        </div>
-        <p class="mediumTitle"> Chapter 3</p>
-        <div class="container">
-          <section class="infoParagraph"> Most important Discoveries: </p>
-          <!--To download work from webPage-->
-          <p class="extraInfoParagraph">Basic information</p>
-          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          <button class="buttonOpenClass" style="display: block;" onclick="myCoursesChange('myCourses')">GO BACK</button>
+          <div class="topDiv">
+            <p class="bigTitle">MY COURSES - HISTORY OF MAGIC</p>
+          </div>>
+          <p class="mediumTitle" > Teacher - Mrs Griselda </p>
+          <div class="container">
+            <img alt="" src="Images/teacherHistory.png">
+            <div class="infoParagraph">
+              <p>Welcome to History of Magic, I will be your teacher for this course! I am headmistress
+              I will be teach you all you need to know about the history of magic!!.
+              </p>
+            </div>
+          </div>
+          <p class="mediumTitle"> Chapter 1</p>
+          <div class="container">
+            <p class="infoParagraph"> First Years: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          </div>
+          <p class="mediumTitle"> Chapter 2</p>
+          <div class="container">
+            <p class="infoParagraph"> Worst enemies: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILDMAGIC.pdf" class="buttonOpenClass" download="WILD MAGIC">DOWNLOAD</a>
+          </div>
+          <p class="mediumTitle"> Chapter 3</p>
+          <div class="container">
+            <p class="infoParagraph"> Most important Discoveries: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
-        </div>
-        <p class="mediumTitle"> Chapter 4</p>
-        <div class="container">
-          <section class="infoParagraph"> Magic Animals: </p>
-          <!--To download work from webPage-->
-          <p class="extraInfoParagraph">Basic information</p>
-          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
-        </div>
-        <p class="mediumTitle"> Chapter 5</p>
-        <div class="container">
-          <section class="infoParagraph"> Humans & Magic: </p>
-          <!--To download work from webPage-->
-          <p class="extraInfoParagraph">Basic information</p>
-          <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          </div>
+          <p class="mediumTitle"> Chapter 4</p>
+          <div class="container">
+            <p class="infoParagraph"> Magic Animals: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
+          </div>
+          <p class="mediumTitle"> Chapter 5</p>
+          <div class="container">
+            <p class="infoParagraph"> Humans & Magic: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC" class="buttonOpenClass">DOWNLOAD</a>
 
-        </div>
-        <p class="mediumTitle"> Chapter 6</p>
-        <div class="container">
-          <section class="infoParagraph"> Nowadays: </p>
-          <!--To download work from webPage-->
-          <p class="extraInfoParagraph">Basic information</p>
-            <a href="docs/WILDMAGIC.pdf" download="WILD MAGIC">
-              <button class="buttonOpenClass">DOWNLOAD</button>
-            </a>
-        </div>
+          </div>
+          <p class="mediumTitle"> Chapter 6</p>
+          <div class="container">
+            <p class="infoParagraph"> Nowadays: </p>
+            <!--To download work from webPage-->
+            <p class="extraInfoParagraph">Basic information</p>
+            <a href="docs/WILDMAGIC.pdf" class="buttonOpenClass" download="WILD MAGIC">DOWNLOAD</a>
+          </div>
       </div>
+    <!-- MY STUDENTS GRADES-->
+    <div id="myStudentsGrades">
       <!--BLOOM GRADES-->
-      <div id="gradesBloom" >
-        <div class = "topDiv">
-          <p class="bigTitle" >MY STUDENTS - BLOOM'S GRADES </p>
-        </div>
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 1</td>
-              <td></td>
-              <td class="gradesDate">Today 10:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct1Bloom" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct1Bloom" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct1Bloom" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Bloom')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act1Bloom')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 2</td>
-              <!--Here we will have relleno for them to be at same distance-->
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 17:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct2Bloom" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct2Bloom" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct2Bloom" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Bloom')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act2Bloom')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 3</td>
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 19:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct3Bloom" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct3Bloom" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct3Bloom" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Bloom')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act3Bloom')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 4</td>
-              <td style="color: white;"></td>
-              <td class="gradesDate">Today 17:00 </td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct4Bloom" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct4Bloom" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct4Bloom" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Bloom')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act4Bloom')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <!--TECNA GRADES-->
-      <div id="gradesTecna" >
-        <div class="topDiv">
-          <p class="bigTitle" >MY STUDENTS - TECNA'S GRADES </p>
-        </div>
-        <!--ACTIVITY 1-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 1</td>
-              <td></td>
-              <td class="gradesDate">Today 10:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct1Tecna" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct1Tecna" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct1Tecna" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Tecna')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act1Tecna')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 2-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 2</td>
-              <!--Here we will have relleno for them to be at same distance-->
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 17:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct2Tecna" class="numberGrade">4.2</p>
-                <div id="numberGradeChangesAct2Tecna" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct2Tecna" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Tecna')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act2Tecna')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesFail">FAIL</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 3-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 3</td>
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 19:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct3Tecna" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct3Tecna" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct3Tecna" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Tecna')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act3Tecna')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 4-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 4</td>
-              <td style="color: white;"></td>
-              <td class="gradesDate">Today 17:00 </td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct4Tecna" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct4Tecna" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct4Tecna" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Tecna')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act4Tecna')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-      <!--STELLA GRADES-->
-      <div id="gradesTecna" >
-        <div class="topDiv">
-          <p class="bigTitle" >MY STUDENTS - STELLA'S GRADES </p>
-        </div>
-        <!--ACTIVITY 1-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 1</td>
-              <td></td>
-              <td class="gradesDate">Today 10:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct1Stella" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct1Stella" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct1Stella" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Stella')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act1Stella')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 2-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 2</td>
-              <!--Here we will have relleno for them to be at same distance-->
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 17:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct2Stella" class="numberGrade">4.2</p>
-                <div id="numberGradeChangesAct2Stella" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct2Stella" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Stella')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act2Ttella')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesFail">FAIL</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 3-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 3</td>
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 19:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct3Stella" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct3Stella" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct3Stella" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Stella')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act3Stella')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 4-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 4</td>
-              <td style="color: white;"></td>
-              <td class="gradesDate">Today 17:00 </td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct4Stella" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct4Stella" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct4Stella" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Stella')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act4Stella')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-      </div>
+        <div id="gradesBloom" >
+            <div class = "topDiv">
+              <p class="bigTitle" >MY STUDENTS - BLOOM'S GRADES </p>
+              <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+            </div>
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 1</td>
+                  <td></td>
+                  <td class="gradesDate">Today 10:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct1Bloom" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct1Bloom" style="display: none;">
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct1Bloom" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
 
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Bloom')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Bloom')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act1Bloom')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 2</td>
+                  <!--Here we will have relleno for them to be at same distance-->
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 17:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct2Bloom" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct2Bloom" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct2Bloom" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Bloom')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Bloom')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act2Bloom')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 3</td>
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 19:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct3Bloom" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct3Bloom" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct3Bloom" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Bloom')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Bloom')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act3Bloom')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 4</td>
+                  <td style="color: white;"></td>
+                  <td class="gradesDate">Today 17:00 </td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct4Bloom" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct4Bloom" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct4Bloom" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Bloom')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Bloom')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act4Bloom')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+        </div>
+      <!--TECNA GRADES-->
+        <div id="gradesTecna" >
+            <div class="topDiv">
+              <p class="bigTitle" >MY STUDENTS - TECNA'S GRADES </p>
+              <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+            </div>
+            <!--ACTIVITY 1-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 1</td>
+                  <td></td>
+                  <td class="gradesDate">Today 10:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct1Tecna" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct1Tecna" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct1Tecna" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                          
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Tecna')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Tecna')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act1Tecna')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 2-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 2</td>
+                  <!--Here we will have relleno for them to be at same distance-->
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 17:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct2Tecna" class="numberGrade">4.2</p>
+                    <div id="numberGradeChangesAct2Tecna" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct2Tecna" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Tecna')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Tecna')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act2Tecna')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesFail">FAIL</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 3-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 3</td>
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 19:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct3Tecna" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct3Tecna" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct3Tecna" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Tecna')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Tecna')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act3Tecna')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 4-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 4</td>
+                  <td style="color: white;"></td>
+                  <td class="gradesDate">Today 17:00 </td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct4Tecna" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct4Tecna" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct4Tecna" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Tecna')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Tecna')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act4Tecna')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+        </div>
+      <!--STELLA GRADES-->
+        <div id="gradesStella" >
+            <div class="topDiv">
+              <p class="bigTitle" >MY STUDENTS - STELLA'S GRADES </p>
+              <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+            </div>
+            <!--ACTIVITY 1-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 1</td>
+                  <td></td>
+                  <td class="gradesDate">Today 10:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct1Stella" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct1Stella" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct1Stella" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Stella')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Stella')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act1Stella')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 2-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 2</td>
+                  <!--Here we will have relleno for them to be at same distance-->
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 17:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct2Stella" class="numberGrade">4.2</p>
+                    <div id="numberGradeChangesAct2Stella" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct2Stella" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Stella')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Stella')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act2Stella')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesFail">FAIL</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 3-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 3</td>
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 19:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct3Stella" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct3Stella" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct3Stella" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Stella')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Stella')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act3Stella')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 4-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 4</td>
+                  <td style="color: white;"></td>
+                  <td class="gradesDate">Today 17:00 </td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct4Stella" class="numberGrade">9.6</p>
+                    <div id="numberGradeChangesAct4Stella" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct4Stella" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act14tella')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Stella')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act4Stella')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+        </div>
       <!--KIMMY GRADES-->
-      <div id="gradesKimmy" >
-        <div class="topDiv">
-          <p class="bigTitle" >MY STUDENTS - KIMMY'S GRADES </p>
+        <div id="gradesKimmy" >
+            <div class="topDiv">
+              <p class="bigTitle" >MY STUDENTS - KIMMY'S GRADES </p>
+              <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+            </div>
+            <!--ACTIVITY 1-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 1</td>
+                  <td></td>
+                  <td class="gradesDate">Today 10:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct1Kimmy" class="numberGrade">5.6</p>
+                    <div id="numberGradeChangesAct1Kimmy" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct1Kimmy" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Kimmy')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Kimmy')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act1Kimmy')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 2-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 2</td>
+                  <!--Here we will have relleno for them to be at same distance-->
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 17:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct2Kimmy" class="numberGrade">4.3</p>
+                    <div id="numberGradeChangesAct2Kimmy" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct2Kimmy" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Kimmy')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Kimmy')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act2Kimmy')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesFail">FAIL</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 3-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 3</td>
+                  <td style="color: white;">RELLii</td>
+                  <td class="gradesDate">Today 19:45pm</td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct3Kimmy" class="numberGrade">7.1</p>
+                    <div id="numberGradeChangesAct3Kimmy" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct3Kimmy" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Kimmy')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Kimmy')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act3Kimmy')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
+            <!--ACTIVITY 4-->
+            <div class="container">
+              <table>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
+                  <td class="gradesTitle">ACTIVITY 4</td>
+                  <td style="color: white;"></td>
+                  <td class="gradesDate">Today 17:00 </td>
+                  <td class="gradesData">Grade</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>
+                    <p id="numberGradeNoChangesAct4Kimmy" class="numberGrade">5.6</p>
+                    <div id="numberGradeChangesAct4Kimmy" >
+                      <form style="border:1px solid #ccc">
+                          <input class="placeHolderText" id="gradesAct4Kimmy" type="text" style="display: block;"
+                            placeholder="Change Grade Here" required>
+                            <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Kimmy')">Exit</a>
+                            <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Kimmy')">Change</a>
+                      </form>
+                  </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="buttonEditGrades" onclick="changeGrade('Act4Kimmy')">CHANGE GRADE</td>
+                  <td></td>
+                  <td></td>
+                  <td class="buttonGradesPass">PASS</td>
+                </tr>
+              </table>
+            </div>
         </div>
-        <!--ACTIVITY 1-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 1</td>
-              <td></td>
-              <td class="gradesDate">Today 10:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct1Kimmy" class="numberGrade">5.6</p>
-                <div id="numberGradeChangesAct1Kimmy" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct1Kimmy" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Kimmy')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act1Kimmy')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 2-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 2</td>
-              <!--Here we will have relleno for them to be at same distance-->
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 17:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct2Kimmy" class="numberGrade">4.3</p>
-                <div id="numberGradeChangesAct2Kimmy" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct2Kimmy" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Kimmy')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act2Kimmy')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesFail">FAIL</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 3-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 3</td>
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 19:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct3Kimmy" class="numberGrade">7.1</p>
-                <div id="numberGradeChangesAct3Kimmy" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct3Kimmy" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Kimmy')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act3Kimmy')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 4-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 4</td>
-              <td style="color: white;"></td>
-              <td class="gradesDate">Today 17:00 </td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct4Kimmy" class="numberGrade">5.6</p>
-                <div id="numberGradeChangesAct4Kimmy" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct4Kimmy" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Kimmy')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act4Kimmy')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-      </div>
       <!--LAYLA GRADES-->
       <div id="gradesLayla" >
-        <div class="topDiv">
-          <p class="bigTitle" >MY STUDENTS - LAYLA'S GRADES </p>
-        </div>
-        <!--ACTIVITY 1-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 1</td>
-              <td></td>
-              <td class="gradesDate">Today 10:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct1Layla" class="numberGrade">6.6</p>
-                <div id="numberGradeChangesAct1Layla" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct1Layla" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Layla')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act1Layla')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 2-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 2</td>
-              <!--Here we will have relleno for them to be at same distance-->
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 17:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct2Layla" class="numberGrade">3.2</p>
-                <div id="numberGradeChangesAct2Layla" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct2Layla" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Layla')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act2Layla')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesFail">FAIL</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 3-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 3</td>
-              <td style="color: white;">RELLii</td>
-              <td class="gradesDate">Today 19:45pm</td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct3Layla" class="numberGrade">5.5</p>
-                <div id="numberGradeChangesAct3Layla" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct3Layla" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Layla')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act3Layla')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
-        <!--ACTIVITY 4-->
-        <div class="container">
-          <table>
-            <tr>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </tr>
-            <tr>
-              <td class="gradesTitle">ACTIVITY 4</td>
-              <td style="color: white;"></td>
-              <td class="gradesDate">Today 17:00 </td>
-              <td class="gradesData">Grade</td>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td>
-                <p id="numberGradeNoChangesAct4Layla" class="numberGrade">9.6</p>
-                <div id="numberGradeChangesAct4Layla" >
-                  <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct4Layla" type="text" style="display: block;"
-                        placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Layla')">Change</a>
-                  </form>
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act4Layla')">CHANGE GRADE</td>
-              <td></td>
-              <td></td>
-              <td class="buttonGradesPass">PASS</td>
-            </tr>
-          </table>
-        </div>
+          <div class="topDiv">
+            <p class="bigTitle" >MY STUDENTS - LAYLA'S GRADES </p>
+            <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+          </div>
+          <!--ACTIVITY 1-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 1</td>
+                <td></td>
+                <td class="gradesDate">Today 10:45pm</td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct1Layla" class="numberGrade">6.6</p>
+                  <div id="numberGradeChangesAct1Layla" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct1Layla" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Layla')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Layla')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act1Layla')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesPass">PASS</td>
+              </tr>
+            </table>
+          </div>
+          <!--ACTIVITY 2-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 2</td>
+                <!--Here we will have relleno for them to be at same distance-->
+                <td style="color: white;">RELLii</td>
+                <td class="gradesDate">Today 17:45pm</td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct2Layla" class="numberGrade">3.2</p>
+                  <div id="numberGradeChangesAct2Layla" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct2Layla" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Layla')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Layla')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act2Layla')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesFail">FAIL</td>
+              </tr>
+            </table>
+          </div>
+          <!--ACTIVITY 3-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 3</td>
+                <td style="color: white;">RELLii</td>
+                <td class="gradesDate">Today 19:45pm</td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct3Layla" class="numberGrade">5.5</p>
+                  <div id="numberGradeChangesAct3Layla" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct3Layla" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Layla')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Layla')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act3Layla')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesPass">PASS</td>
+              </tr>
+            </table>
+          </div>
+          <!--ACTIVITY 4-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 4</td>
+                <td style="color: white;"></td>
+                <td class="gradesDate">Today 17:00 </td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct4Layla" class="numberGrade">9.6</p>
+                  <div id="numberGradeChangesAct4Layla" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct4Layla" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Layla')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Layla')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act4Layla')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesPass">PASS</td>
+              </tr>
+            </table>
+          </div>
       </div>
       <!--FLORA GRADES-->
       <div id="gradesFlora" >
+          <div class="topDiv">
+            <p class="bigTitle" >MY STUDENTS - FLORA'S GRADES </p>
+            <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+          </div>
+          <!--ACTIVITY 1-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 1</td>
+                <td></td>
+                <td class="gradesDate">Today 10:45pm</td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct1Flora" class="numberGrade">7.0</p>
+                  <div id="numberGradeChangesAct1Flora" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct1Flora" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Flora')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Flora')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act1Flora')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesPass">PASS</td>
+              </tr>
+            </table>
+          </div>
+          <!--ACTIVITY 2-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 2</td>
+                <!--Here we will have relleno for them to be at same distance-->
+                <td style="color: white;">RELLii</td>
+                <td class="gradesDate">Today 17:45pm</td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct2Flora" class="numberGrade">3.2</p>
+                  <div id="numberGradeChangesAct2Flora" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct2Flora" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Flora')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Flora')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act2Flora')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesFail">FAIL</td>
+              </tr>
+            </table>
+          </div>
+          <!--ACTIVITY 3-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 3</td>
+                <td style="color: white;">RELLii</td>
+                <td class="gradesDate">Today 19:45pm</td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct3Flora" class="numberGrade">6.5</p>
+                  <div id="numberGradeChangesAct3Flora" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct3Flora" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Flora')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Flora')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act3Flora')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesPass">PASS</td>
+              </tr>
+            </table>
+          </div>
+          <!--ACTIVITY 4-->
+          <div class="container">
+            <table>
+              <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+              <tr>
+                <td class="gradesTitle">ACTIVITY 4</td>
+                <td style="color: white;"></td>
+                <td class="gradesDate">Today 17:00 </td>
+                <td class="gradesData">Grade</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                  <p id="numberGradeNoChangesAct4Flora" class="numberGrade">8.1</p>
+                  <div id="numberGradeChangesAct4Flora" >
+                    <form style="border:1px solid #ccc">
+                        <input class="placeHolderText" id="gradesAct4Flora" type="text" style="display: block;"
+                          placeholder="Change Grade Here" required>
+                          <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Flora')">Exit</a>
+                          <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Flora')">Change</a>
+                    </form>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="buttonEditGrades" onclick="changeGrade('Act4Flora')">CHANGE GRADE</td>
+                <td></td>
+                <td></td>
+                <td class="buttonGradesPass">PASS</td>
+              </tr>
+            </table>
+          </div>
+      </div>
+      <!--MUSA GRADES-->
+      <div id="gradesMusa" >
         <div class="topDiv">
-          <p class="bigTitle" >MY STUDENTS - FLORA'S GRADES </p>
+          <p class="bigTitle" >MY STUDENTS - MUSA'S GRADES </p>
+          <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
         </div>
         <!--ACTIVITY 1-->
         <div class="container">
@@ -2270,18 +2472,20 @@
               <td></td>
               <td></td>
               <td>
-                <p id="numberGradeNoChangesAct1Flora" class="numberGrade">7.0</p>
-                <div id="numberGradeChangesAct1Flora" >
+                <p id="numberGradeNoChangesAct1Musa" class="numberGrade">7.0</p>
+                <div id="numberGradeChangesAct1Musa" >
                   <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct1Flora" type="text" style="display: block;"
+                      <input class="placeHolderText" id="gradesAct1Musa" type="text" style="display: block;"
                         placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act1Flora')">Change</a>
+
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Musa')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Musa')">Change</a>
                   </form>
               </div>
               </td>
             </tr>
             <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act1Flora')">CHANGE GRADE</td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act1Musa')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
@@ -2309,18 +2513,20 @@
               <td></td>
               <td></td>
               <td>
-                <p id="numberGradeNoChangesAct2Flora" class="numberGrade">3.2</p>
-                <div id="numberGradeChangesAct2Flora" >
+                <p id="numberGradeNoChangesAct2Musa" class="numberGrade">3.2</p>
+                <div id="numberGradeChangesAct2Musa" >
                   <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct2Flora" type="text" style="display: block;"
+                      <input class="placeHolderText" id="gradesAct2Musa" type="text" style="display: block;"
                         placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act2Flora')">Change</a>
+
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Musa')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Musa')">Change</a>
                   </form>
               </div>
               </td>
             </tr>
             <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act2Flora')">CHANGE GRADE</td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act2Musa')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesFail">FAIL</td>
@@ -2347,18 +2553,20 @@
               <td></td>
               <td></td>
               <td>
-                <p id="numberGradeNoChangesAct3Flora" class="numberGrade">6.5</p>
-                <div id="numberGradeChangesAct3Flora" >
+                <p id="numberGradeNoChangesAct3Musa" class="numberGrade">6.5</p>
+                <div id="numberGradeChangesAct3Musa" >
                   <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct3Flora" type="text" style="display: block;"
+                      <input class="placeHolderText" id="gradesAct3Musa" type="text" style="display: block;"
                         placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act3Flora')">Change</a>
+
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Musa')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Musa')">Change</a>
                   </form>
               </div>
               </td>
             </tr>
             <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act3Flora')">CHANGE GRADE</td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act3Musa')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
@@ -2385,24 +2593,526 @@
               <td></td>
               <td></td>
               <td>
-                <p id="numberGradeNoChangesAct4Flora" class="numberGrade">8.1</p>
-                <div id="numberGradeChangesAct4Flora" >
+                <p id="numberGradeNoChangesAct4Musa" class="numberGrade">8.1</p>
+                <div id="numberGradeChangesAct4Musa" >
                   <form style="border:1px solid #ccc">
-                      <input class="placeHolderText" id="gradesAct4Flora" type="text" style="display: block;"
+                      <input class="placeHolderText" id="gradesAct4Musa" type="text" style="display: block;"
                         placeholder="Change Grade Here" required>
-                      <a class="buttonOpenClass" style="float: right " onclick="finishEditingGrade('Act4Flora')">Change</a>
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Musa')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Musa')">Change</a>
                   </form>
               </div>
               </td>
             </tr>
             <tr>
-              <td class="buttonEditGrades" onclick="changeGrade('Act4Flora')">CHANGE GRADE</td>
+              <td class="buttonEditGrades" onclick="changeGrade('Act4Musa')">CHANGE GRADE</td>
               <td></td>
               <td></td>
               <td class="buttonGradesPass">PASS</td>
             </tr>
           </table>
         </div>
+      </div>
+      <!--ROXY GRADES-->
+      <div id="gradesRoxy" >
+        <div class="topDiv">
+          <p class="bigTitle" >MY STUDENTS - ROXY'S GRADES </p>
+          <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+        </div>
+        <!--ACTIVITY 1-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 1</td>
+              <td></td>
+              <td class="gradesDate">Today 10:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct1Roxy" class="numberGrade">7.0</p>
+                <div id="numberGradeChangesAct1Roxy" >
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct1Roxy" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Roxy')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Roxy')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act1Roxy')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 2-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 2</td>
+              <!--Here we will have relleno for them to be at same distance-->
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 17:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct2Roxy" class="numberGrade">3.2</p>
+                <div id="numberGradeChangesAct2Roxy" >
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct2Roxy" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Roxy')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Roxy')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act2Roxy')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesFail">FAIL</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 3-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 3</td>
+              <td style="color: white;">RELLii</td>
+              <td class="gradesDate">Today 19:45pm</td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct3Roxy" class="numberGrade">6.5</p>
+                <div id="numberGradeChangesAct3Roxy" >
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct3Roxy" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Roxy')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Roxy')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act3Roxy')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+        <!--ACTIVITY 4-->
+        <div class="container">
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="gradesTitle">ACTIVITY 4</td>
+              <td style="color: white;"></td>
+              <td class="gradesDate">Today 17:00 </td>
+              <td class="gradesData">Grade</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <p id="numberGradeNoChangesAct4Roxy" class="numberGrade">8.1</p>
+                <div id="numberGradeChangesAct4Roxy" >
+                  <form style="border:1px solid #ccc">
+                      <input class="placeHolderText" id="gradesAct4Roxy" type="text" style="display: block;"
+                        placeholder="Change Grade Here" required>
+                        <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Roxy')">Exit</a>
+                        <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Roxy')">Change</a>
+                  </form>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="buttonEditGrades" onclick="changeGrade('Act4Roxy')">CHANGE GRADE</td>
+              <td></td>
+              <td></td>
+              <td class="buttonGradesPass">PASS</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!--DAPHNE GRADES-->
+      <div id="gradesDaphne" >
+              <div class="topDiv">
+                <p class="bigTitle" >MY STUDENTS - DAPHNE'S GRADES </p>
+                <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+              </div>
+              <!--ACTIVITY 1-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 1</td>
+                    <td></td>
+                    <td class="gradesDate">Today 10:45pm</td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct1Daphne" class="numberGrade">7.0</p>
+                      <div id="numberGradeChangesAct1Daphne" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct1Daphne" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+      
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Daphne')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Daphne')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act1Daphne')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesPass">PASS</td>
+                  </tr>
+                </table>
+              </div>
+              <!--ACTIVITY 2-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 2</td>
+                    <!--Here we will have relleno for them to be at same distance-->
+                    <td style="color: white;">RELLii</td>
+                    <td class="gradesDate">Today 17:45pm</td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct2Daphne" class="numberGrade">3.2</p>
+                      <div id="numberGradeChangesAct2Daphne" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct2Daphne" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+      
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Daphne')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Daphne')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act2Daphne')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesFail">FAIL</td>
+                  </tr>
+                </table>
+              </div>
+              <!--ACTIVITY 3-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 3</td>
+                    <td style="color: white;">RELLii</td>
+                    <td class="gradesDate">Today 19:45pm</td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct3Daphne" class="numberGrade">6.5</p>
+                      <div id="numberGradeChangesAct3Daphne" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct3Daphne" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+      
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Daphne')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Daphne')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act3Daphne')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesPass">PASS</td>
+                  </tr>
+                </table>
+              </div>
+              <!--ACTIVITY 4-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 4</td>
+                    <td style="color: white;"></td>
+                    <td class="gradesDate">Today 17:00 </td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct4Daphne" class="numberGrade">8.1</p>
+                      <div id="numberGradeChangesAct4Daphne" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct4Daphne" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Daphne')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Daphne')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act4Daphne')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesPass">PASS</td>
+                  </tr>
+                </table>
+              </div>
+      </div>
+      <!--AISHA GRADES-->
+      <div id="gradesAisha">
+              <div class="topDiv">
+                <p class="bigTitle" >MY STUDENTS - AISHA'S GRADES </p>
+                <button class="buttonOpenClass" onclick="myStudentsChangeGrade('myStudents')">GO BACK </button>
+              </div>
+              <!--ACTIVITY 1-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 1</td>
+                    <td></td>
+                    <td class="gradesDate">Today 10:45pm</td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct1Aisha" class="numberGrade">7.0</p>
+                      <div id="numberGradeChangesAct1Aisha" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct1Aisha" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+      
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act1Aisha')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act1Aisha')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act1Aisha')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesPass">PASS</td>
+                  </tr>
+                </table>
+              </div>
+              <!--ACTIVITY 2-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 2</td>
+                    <!--Here we will have relleno for them to be at same distance-->
+                    <td style="color: white;">RELLii</td>
+                    <td class="gradesDate">Today 17:45pm</td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct2Aisha" class="numberGrade">3.2</p>
+                      <div id="numberGradeChangesAct2Aisha" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct2Aisha" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+      
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act2Aisha')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act2Aisha')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act2Aisha')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesFail">FAIL</td>
+                  </tr>
+                </table>
+              </div>
+              <!--ACTIVITY 3-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 3</td>
+                    <td style="color: white;">RELLii</td>
+                    <td class="gradesDate">Today 19:45pm</td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct3Aisha" class="numberGrade">6.5</p>
+                      <div id="numberGradeChangesAct3Aisha" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct3Aisha" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+      
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act3Aisha')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act3Aisha')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act3Aisha')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesPass">PASS</td>
+                  </tr>
+                </table>
+              </div>
+              <!--ACTIVITY 4-->
+              <div class="container">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td class="gradesTitle">ACTIVITY 4</td>
+                    <td style="color: white;"></td>
+                    <td class="gradesDate">Today 17:00 </td>
+                    <td class="gradesData">Grade</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <p id="numberGradeNoChangesAct4Aisha" class="numberGrade">8.1</p>
+                      <div id="numberGradeChangesAct4Aisha" >
+                        <form style="border:1px solid #ccc">
+                            <input class="placeHolderText" id="gradesAct4Aisha" type="text" style="display: block;"
+                              placeholder="Change Grade Here" required>
+                              <a class="buttonNoChangeGrade" onclick="noChangeGrade('Act4Aisha')">Exit</a>
+                              <a class="buttonChangeGrade"  onclick="finishEditingGrade('Act4Aisha')">Change</a>
+                        </form>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="buttonEditGrades" onclick="changeGrade('Act4Aisha')">CHANGE GRADE</td>
+                    <td></td>
+                    <td></td>
+                    <td class="buttonGradesPass">PASS</td>
+                  </tr>
+                </table>
+              </div>
       </div>
       
 
