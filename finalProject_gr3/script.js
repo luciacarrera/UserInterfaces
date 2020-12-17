@@ -1066,15 +1066,12 @@ function changingRolePhone(role) {
     }
     //Admin has ALL the options
     if(role === "Student") {
-        alert("changingRoles");
         for(i=0;i<studentVars.length;i++){
             studentVars[i].style.display="block";
         }
     }
     if(role === "Teacher") {
-        alert("changingRolesTeacher");
         for(i=0;i<teacherVars.length;i++){
-            alert("changingRolesTeacher", i);
             teacherVars[i].style.display="block";
         }
     }
@@ -1106,8 +1103,6 @@ function deleteInfo(){
 function logout() {
     var confirmation = confirm("Are you sure you want to log out?");
     if (confirmation) {
-        var homePage = document.getElementById("homePage");
-        homePage.style.display ="block";
         //delete login info
         document.getElementById("login").reset();
         document.getElementById("loggedInUser").innerHTML="";
@@ -1116,16 +1111,9 @@ function logout() {
         document.getElementById("userphoto").style.display = "none";
 
 
-        var admissionsBtnPhone = document.getElementById("admissionsBtnPhone");
-        var studiesBtnPhone = document.getElementById("studiesBtnPhone");
-        var researchBtnPhone = document.getElementById("researchBtnPhone");
-        var myCoursesTeacherBtnPhone = document.getElementById("myCoursesTeacherBtnPhone");
-        var myCoursesBtnPhone = document.getElementById("myCoursesBtnPhone");
-        var myGradesBtnPhone = document.getElementById("myGradesBtnPhone");
-        var myStudentsBtnPhone = document.getElementById("myStudentsBtnPhone");
-        var gradesBtnPhone = document.getElementById("gradesBtnPhone");
-        var forumBtnPhone = document.getElementById("forumBtnPhone");
-        
+        var homePage = document.getElementById("homePage");
+        homePage.style.display ="block";
+
         var admissionsBtn = document.getElementById("admissionsBtn");
         var studiesBtn = document.getElementById("studiesBtn");
         var researchBtn = document.getElementById("researchBtn");
@@ -1138,11 +1126,8 @@ function logout() {
         
         var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
         
-        var nongeneralVarsPhone = [myCoursesBtnPhone,myGradesBtnPhone,myStudentsBtnPhone,gradesBtnPhone,myCoursesTeacherBtnPhone,admissionsBtnPhone,studiesBtnPhone,researchBtnPhone,forumBtnPhone];
-       
         for(i=0;i<nongeneralVars.length;i++){
             nongeneralVars[i].style.display="none";
-            nongeneralVarsPhone[i].style.display="none";
         }
 
     }  
