@@ -949,23 +949,21 @@ function checkCookie() {
     }
     
     else{
-        alert("HELLOOO");
         exitLogin();
         centralChange('homePage');
         document.getElementById("logoutBtn").style.display="inline-block";
         document.getElementById("loginBtn").style.display="none";  
         document.getElementById("userphoto").style.display = "inline-block";
-        
     }
 }
-
+var count = 0;
+var i=0;
 function checkUserPass(inputUser, inputPass){
   
     var allcookies = document.cookie;
 
     cookiearray = allcookies.split('&');
-    alert(cookiearray.length);
-    for(var i=0; i<=cookiearray.length; i++) {
+    while (count<=cookiearray.length) {
         var userSplit = cookiearray[i].split(',')[0];
         var passSplit = cookiearray[i].split(',')[1];
         var roleSplit = cookiearray[i].split(',')[6];
@@ -978,13 +976,14 @@ function checkUserPass(inputUser, inputPass){
         console.log(userValue+" // "+ passValue);
 
         if(userValue === inputUser && passValue === inputPass) {
-            alert('equal');
             var nameSplit = cookiearray[i].split(',')[2];
             var name = nameSplit.split('=')[1];
             loggedInUser(name);
             changingRole(roleValue);
             return true;
         }
+        count = count+1;
+        
     }
     //user not found
     return false;
@@ -1035,6 +1034,8 @@ function changingRole(role) {
     var myStudentsBtn = document.getElementById("myStudentsBtn");
     var forumBtn = document.getElementById("forumBtn");
 
+    
+    
     var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
     var studentVars = [myCoursesBtn,myGradesBtn,forumBtn];
     var teacherVars = [myStudentsBtn,myCoursesTeacherBtn,forumBtn];
@@ -1051,11 +1052,9 @@ function changingRole(role) {
             teacherVars[i].style.display="block";
         }
     }
-
     if(role === "Administrator"){
         alert(role);
         for(i=0;i<nongeneralVars.length;i++){
-            alert(i);
             nongeneralVars[i].style.display="block";
         }
 
@@ -1126,18 +1125,14 @@ function logout() {
         document.getElementById("logoutBtn").style.display  = "none";
         document.getElementById("userphoto").style.display = "none";
         
-        var admissionsBtn = document.getElementById("admissionsBtn");
-        var studiesBtn = document.getElementById("studiesBtn");
-        var researchBtn = document.getElementById("researchBtn");
         var myCoursesTeacherBtn = document.getElementById("myCoursesTeacherBtn");
         var myCoursesBtn = document.getElementById("myCoursesBtn");
         var myGradesBtn = document.getElementById("myGradesBtn");
         var myStudentsBtn = document.getElementById("myStudentsBtn");
-        var gradesBtn = document.getElementById("gradesBtn");
         var forumBtn = document.getElementById("forumBtn");
 
         
-        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
+        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,myCoursesTeacherBtn,forumBtn];
     
         for(i=0;i<nongeneralVars.length;i++){
             nongeneralVars[i].style.display="none";
