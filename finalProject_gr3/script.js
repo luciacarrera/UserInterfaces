@@ -972,13 +972,9 @@ function checkUserPass(inputUser, inputPass){
             var nameSplit = cookiearray[i].split(',')[2];
             var name = nameSplit.split('=')[1];
             loggedInUser(name);
-            changingRole(roleValue)
+            changingRole(roleValue);
             return true;
         } 
-        //correct username but wrong password
-        else{
-            return false;
-        }
     }
     //user not found
     return false;
@@ -1041,15 +1037,13 @@ function changingRole(role) {
     }
     //Admin has ALL the options
     if(role === "Student") {
-        alert("changingRoles");
         for(i=0;i<studentVars.length;i++){
             studentVars[i].style.display="block";
         }
     }
     if(role === "Teacher") {
-        alert("changingRolesTeacher");
         for(i=0;i<teacherVars.length;i++){
-            alert("changingRolesTeacher", i);
+            ;
             teacherVars[i].style.display="block";
         }
     }
@@ -1147,10 +1141,9 @@ function logout() {
         var myStudentsBtn = document.getElementById("myStudentsBtn");
         var gradesBtn = document.getElementById("gradesBtn");
         var forumBtn = document.getElementById("forumBtn");
-        var helpBtn = document.getElementById("helpBtn");
 
         
-        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn,helpBtn];
+        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
         
         for(i=0;i<nongeneralVars.length;i++){
             nongeneralVars[i].style.display="none";
