@@ -1,3 +1,4 @@
+
 //Synonym to $(document).ready(function() {:
 document.addEventListener('DOMContentLoaded', function() {
     //CENTRAL CONTAINER
@@ -917,7 +918,8 @@ function setCookie(){
         "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
         document.cookie = document.cookie + cookieString;
         loggedInUser(name);
-        changingRole(role)
+        changingRole(role);
+        changingRolePhone(role);
         exitLogin();
         document.getElementById("logoutBtn").style.display="inline-block";
         document.getElementById("loginBtn").style.display="none";  
@@ -1003,29 +1005,84 @@ function changingRole(role) {
     var myGradesBtn = document.getElementById("myGradesBtn");
     var myStudentsBtn = document.getElementById("myStudentsBtn");
     var gradesBtn = document.getElementById("gradesBtn");
+    var forumBtn = document.getElementById("forumBtn");
     
-    var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,admissionsBtn,studiesBtn,researchBtn];
-    var studentVars = [myCoursesBtn,myGradesBtn];
-    var teacherVars = [myStudentsBtn,gradesBtn,myCoursesTeacherBtn];
-    var otherVars = [admissionsBtn,studiesBtn,researchBtn]
+    var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
+    var studentVars = [myCoursesBtn,myGradesBtn,forumBtn];
+    var teacherVars = [myStudentsBtn,gradesBtn,myCoursesTeacherBtn,forumBtn];
+    var otherVars = [admissionsBtn,studiesBtn,researchBtn];
 
     for(i=0;i<nongeneralVars.length;i++){
         nongeneralVars[i].style.display="none";
     }
     //Admin has ALL the options
-    if(role === 'Student'|| role=== 'Administrator') {
+    if(role === "Student") {
+        alert("changingRoles");
         for(i=0;i<studentVars.length;i++){
             studentVars[i].style.display="block";
         }
     }
-    if(role === 'Teacher'|| role=== 'Administrator') {
-        for(i=0;i<studentVars.length;i++){
+    if(role === "Teacher") {
+        alert("changingRolesTeacher");
+        for(i=0;i<teacherVars.length;i++){
+            alert("changingRolesTeacher", i);
             teacherVars[i].style.display="block";
         }
     }
-    if(role=== 'Administrator'){
+    if(role=== "Administrator"){
         for(i=0;i<otherVars.length;i++){
-            otherVars[i].style.display="block";
+
+            if(i ==1){
+                nongeneralVars[i].style.display="none";
+            nongeneralVars[i].style.display="block";
+        }
+    }
+    if(role=== "logOut"){
+        for(i=0;i<nongeneralVars.length;i++){
+            nongeneralVars[i].style.display="none";
+        }
+    }
+}
+
+function changingRolePhone(role) {
+    //not all sidebar options are here because some are always present no matter the role.
+    var admissionsBtnPhone = document.getElementById("admissionsBtnPhone");
+    var studiesBtnPhone = document.getElementById("studiesBtnPhone");
+    var researchBtnPhone = document.getElementById("researchBtnPhone");
+    var myCoursesTeacherBtnPhone = document.getElementById("myCoursesTeacherBtnPhone");
+    var myCoursesBtnPhone = document.getElementById("myCoursesBtnPhone");
+    var myGradesBtnPhone = document.getElementById("myGradesBtnPhone");
+    var myStudentsBtnPhone = document.getElementById("myStudentsBtnPhone");
+    var gradesBtnPhone = document.getElementById("gradesBtnPhone");
+    var forumBtnPhone = document.getElementById("forumBtnPhone");
+    
+    var nongeneralVars = [myCoursesBtnPhone,myGradesBtnPhone,myStudentsBtnPhone,gradesBtnPhone,myCoursesTeacherBtnPhone,admissionsBtnPhone,studiesBtnPhone,researchBtnPhone,forumBtn];
+    var studentVars = [myCoursesBtnPhone,myGradesBtnPhone,forumBtnPhone];
+    var teacherVars = [myStudentsBtnPhone,gradesBtnPhone,myCoursesTeacherBtnPhone,forumBtnPhone];
+
+    for(i=0;i<nongeneralVars.length;i++){
+        nongeneralVars[i].style.display="none";
+    }
+    //Admin has ALL the options
+    if(role === "Student") {
+        alert("changingRoles");
+        for(i=0;i<studentVars.length;i++){
+            studentVars[i].style.display="block";
+        }
+    }
+    if(role === "Teacher") {
+        alert("changingRolesTeacher");
+        for(i=0;i<teacherVars.length;i++){
+            alert("changingRolesTeacher", i);
+            teacherVars[i].style.display="block";
+        }
+    }
+    if(role=== "Administrator"){
+        for(i=0;i<otherVars.length;i++){
+            if(i ==1){
+                nongeneralVars[i].style.display="none";
+            }
+            nongeneralVars[i].style.display="block";
         }
     }
 }
@@ -1048,12 +1105,44 @@ function deleteInfo(){
 function logout() {
     var confirmation = confirm("Are you sure you want to log out?");
     if (confirmation) {
+        var homePage = document.getElementById("homePage");
+        homePage.style.display ="block";
         //delete login info
         document.getElementById("login").reset();
         document.getElementById("loggedInUser").innerHTML="";
         document.getElementById("loginBtn").style.display  = "inline-block";
         document.getElementById("logoutBtn").style.display  = "none";
         document.getElementById("userphoto").style.display = "none";
+
+
+        var admissionsBtnPhone = document.getElementById("admissionsBtnPhone");
+        var studiesBtnPhone = document.getElementById("studiesBtnPhone");
+        var researchBtnPhone = document.getElementById("researchBtnPhone");
+        var myCoursesTeacherBtnPhone = document.getElementById("myCoursesTeacherBtnPhone");
+        var myCoursesBtnPhone = document.getElementById("myCoursesBtnPhone");
+        var myGradesBtnPhone = document.getElementById("myGradesBtnPhone");
+        var myStudentsBtnPhone = document.getElementById("myStudentsBtnPhone");
+        var gradesBtnPhone = document.getElementById("gradesBtnPhone");
+        var forumBtnPhone = document.getElementById("forumBtnPhone");
+        
+        var admissionsBtn = document.getElementById("admissionsBtn");
+        var studiesBtn = document.getElementById("studiesBtn");
+        var researchBtn = document.getElementById("researchBtn");
+        var myCoursesTeacherBtn = document.getElementById("myCoursesTeacherBtn");
+        var myCoursesBtn = document.getElementById("myCoursesBtn");
+        var myGradesBtn = document.getElementById("myGradesBtn");
+        var myStudentsBtn = document.getElementById("myStudentsBtn");
+        var gradesBtn = document.getElementById("gradesBtn");
+        var forumBtn = document.getElementById("forumBtn");
+        
+        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
+        
+        var nongeneralVarsPhone = [myCoursesBtnPhone,myGradesBtnPhone,myStudentsBtnPhone,gradesBtnPhone,myCoursesTeacherBtnPhone,admissionsBtnPhone,studiesBtnPhone,researchBtnPhone,forumBtnPhone];
+       
+        for(i=0;i<nongeneralVars.length;i++){
+            nongeneralVars[i].style.display="none";
+            nongeneralVarsPhone[i].style.display="none";
+        }
 
     }  
 }

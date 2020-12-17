@@ -34,17 +34,60 @@
   <div class="col-12 col-t-12">
     <nav class="topnav" id="myTopNav">
 
-      <a class="sideBar active" onclick="centralChange('homePage')">Home</a>
-      <a class="sideBar" onclick="centralChange('profile')">Profile</a>
-      <a class="sideBar" onclick="centralChange('aboutUs')">About Us</a>
-      <a class="sideBar" onclick="centralChange('admissions')">Admissions</a>
-      <a class="sideBar" onclick="centralChange('studies')">Studies</a>
-      <a class="sideBar" onclick="centralChange('research')">Research </a>
-      <a class="sideBar" onclick="centralChange('helpCenter')">Help Center</a>
-      <a class="sideBar" onclick="centralChange('sitemap')">Site Map</a>
-      <a class="sideBar" onclick="centralChange('teacherCourse')">Site Map</a>
-      <a href="javascript:void(0);" class="icon" onclick="openHamburger()"> <i class="fa fa-bars"></i> </a>
-      
+      <a id="homeBtnPhone" class="sideBar active" onclick="centralChange('homePage')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>Home</p>
+      </a>
+      <a id="logoutBtnPhone" class="sideBar" onclick="logout()">Log Out</a>
+      <a id="aboutUsBtnPhone" class="sideBar" onclick="centralChange('aboutUs')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>About Us</p>
+      </a>
+      <a id="admissionsBtnPhone" class="sideBar" onclick="centralChange('admissions')">
+        <img class="sideBarIcon" src="Images/Icons/columns.png" alt="">
+        <p>Admissions</p>
+      </a>
+      <a id="studiesBtnPhone" class="sideBar" onclick="centralChange('studies')">
+        <img class="sideBarIcon" src="Images/Icons/notebook.png" alt="">
+        <p>Studies</p>
+      </a>
+      <a id="researchBtnPhone" class="sideBar" onclick="centralChange('research')">
+        <img class="sideBarIcon" src="Images/Icons/research.png" alt="">
+        <p>Research</p>
+      </a>
+      <a id="myCoursesBtnPhone" class="sideBar" onclick="centralChange('myCourses')">
+        <img class="sideBarIcon" src="Images/Icons/book.png" alt="">
+        <p>My Courses</p>
+      </a>
+      <a id="myCoursesTeacherBtnPhone" class="sideBar" onclick="centralChange('teacherCourse')">
+        <img class="sideBarIcon" src="Images/Icons/book.png" alt="">
+        <p>My Class</p>
+      </a>
+      <a id="myGradesBtnPhone" class="sideBar" onclick="centralChange('myGrades')">
+        <img class="sideBarIcon" src="Images/Icons/grades.png" alt="">
+        <p>My Grades</p>
+      </a>
+      <a id="myStudentsBtnPhone" class="sideBar" onclick="centralChange('myStudents')">
+        <img class="sideBarIcon" src="Images/Icons/student.png" alt="">
+        <p>My Students</p>
+      </a>
+      <a id="gradesBtnPhone" class="sideBar" onclick="centralChange('grades')">
+        <img class="sideBarIcon" src="Images/Icons/map.png" alt="">
+        <p>All Grades</p>
+      </a>
+      <a id="forumBtnPhone" class="sideBar" onclick="centralChange('forum')">
+        <img class="sideBarIcon" src="Images/Icons/home.png" alt="">
+        <p>Forum</p>
+      </a>
+      <a id="helpCenterBtnPhone" class="sideBar" onclick="centralChange('helpCenter')">
+        <img class="sideBarIcon" src="Images/Icons/message.png" alt="">
+        <p>Help Center</p>
+      </a>
+      <a id="sitemapBtnPhone" class="sideBar" onclick="centralChange('siteMap')">
+        <img class="sideBarIcon" src="Images/Icons/map.png" alt="">
+        <p>Site Map</p>
+      </a>
+      <a href="javascript:void(0);" class="icon" onclick="openHamburger()"> <i class="fa fa-bars"></i> </a> 
     </nav>
   </div>
 
@@ -255,6 +298,25 @@
             her case, 19). Fairies here learn how to control their power, fight evil, learn new spells as well as be
             guardians of their planets, or in many cases, learn how to be their realms' queens.</p>
         </div>
+        <div class="container">
+          <p> 
+          Winx Club is an Italian-American[a] animated series co-produced by Rainbow SpA and Nickelodeon. It was created by Iginio Straffi. 
+          The show is set in a magical universe that is inhabited by fairies, witches, and other mythical creatures. The main character is a fairy 
+          warrior named Bloom, who enrolls at Alfea College to train and hone her skills. The series uses a serial format that has an ongoing storyline, 
+          with individual story arcs comprising each season. </p>
+        </div>
+        <div class="container">
+
+          <p>It premiered on 28 January 2004, becoming a ratings success in Italy and on Nickelodeon networks internationally.
+            Iginio Straffi initially outlined the show's plot to last three seasons. He chose to continue the story for a fourth season in 2009. 
+            Around this time, Winx Club's popularity attracted the attention of the American media company Viacom, owner of Nickelodeon. Viacom purchased 30% of the show's animation studio, Rainbow SpA, and Nickelodeon began producing a revival series. Production on the fifth, sixth, and seventh seasons was divided between Rainbow and Nickelodeon Animation Studio. To attract an American audience, Viacom assembled a voice cast of Nickelodeon actors (including Elizabeth Gillies and Ariana Grande), invested US$100 million in advertising for the series, and inducted Winx Club into Nickelodeon's franchise of Nicktoons.[5] 
+          </p>
+        </div>
+       <div class="container">
+          <p> WHERE ARE WE ?.
+            <a class="buttonOpenDetails" onclick="centralChange('siteMap')">OPEN SITE MAP</a>
+          </p>
+        </div>
       </div>
 
       <!--HOME PAGE-->
@@ -265,97 +327,82 @@
         <div class="container">
           <section class="firstSection">
             <img alt="" src="Images/Alfea.jpg">
-            <h3>School Life</h3>
+            <h3 class="mediumTitleHome">School Life</h3>
             <img class="bookmarkPic" alt="" src="Images/icons/etiqueta.png">
-            <p>As an extremely prestigious school for fairies, we pride ourselves in our excellent academia which shapes
+            <p class="smallTitleHome">As an extremely prestigious school for fairies, we pride ourselves in our excellent academia which shapes
               the future leaders of tomorrow. We have had the pleasure to teach some of the most renowned political
               leaders, philosophers, scientists and warriors.</p>
           </section>
+          <p class="relleno"></p>
           <section class="leftSection">
             <iframe src="https://www.youtube.com/embed/1IsDvZTjCWU?start=407&modestbranding=1&iv_load_policy=3"
               allowfullscreen></iframe>
-            <h3>Welcome to Alfea</h3>
-            <p>Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
+            <h3 class="mediumTitleHome">Welcome to Alfea</h3>
+            <p class="smallTitleHome"> Our principal, Ms. Faragonda welcomes you to Alfea and gives you her signature introductory speech.
             </p>
           </section>
           <section class="rightSection">
             <iframe src="https://www.youtube.com/embed/LHxJNXOfFkg?modestbranding=1&iv_load_policy=3"
               allowfullscreen></iframe>
-            <h3>The Dormitories</h3>
-            <p>
+            <h3 class="mediumTitleHome">The Dormitories</h3>
+            <p class="smallTitleHome">
               As a boarding school, we offer the best accomodation for our students. In the following video, we give you
               a fun little sneak peak of the rooms
             </p>
           </section>
-          <div class="detailsPop">
-            <ul class="detailsPart">
-              <li><p>Details  </p></li>
-            </ul>
-            <img class="details" alt="" src="Images/icons/flecha.png">
-          </div>
         </div>
         <div class="container">
             <section class="firstSection">
               <img alt="" src="Images/Party.jpg">
-              <h3>Work & Play</h3>
+              <h3 class="mediumTitleHome">Work & Play</h3>
               <img class="bookmarkPic" alt="" src="Images/icons/etiqueta.png">
-              <p>Here at Alfea, we are well aware that it is impossible to just study and we make sure that our students
+              <p class="smallTitleHome">Here at Alfea, we are well aware that it is impossible to just study and we make sure that our students
                 have healthy mix of academia and fun.
                 In the following videos we will show you
                 some of the many activities they can enjoy on campus.</p>
             </section>
+            <p class="relleno"></p>
             <section class="leftSection">
               <iframe src="https://www.youtube.com/embed/L3IIzxrS1tY?start=35&modestbranding=1&iv_load_policy=3"
                 allowfullscreen></iframe>
-              <h3>Talent Shows</h3>
-              <p>Our alums all have various types of skills which we love to showcase in our annual Talent Show. Here you
+              <h3 class="mediumTitleHome">Talent Shows</h3>
+              <p class="smallTitleHome">Our alums all have various types of skills which we love to showcase in our annual Talent Show. Here you
                 can see
                 last years winners, The Winx Club.</p>
             </section>
             <section class="rightSection">
               <iframe src="https://www.youtube.com/embed/uAujeQPtkjU?start=3&modestbranding=1&iv_load_policy=3"
                 allowfullscreen></iframe>
-              <h3>Fashion Shows</h3>
-              <p>Our school has various extracurricular clubs, one being
+              <h3 class="mediumTitleHome">Fashion Shows</h3>
+              <p class="smallTitleHome">Our school has various extracurricular clubs, one being
                 Fashion Design. Each term they host a fashion show to demonstrate their latest creations.</p>
             </section>
-          <div class="detailsPop">
-          <ul class="detailsPart">
-            <li><p>Details  </p></li>
-          </ul>
-          <img class="details" alt="" src="Images/icons/flecha.png">
-          </div>
         </div>
         <div class="container">
           <section class="firstSection">
             <img alt="" src="Images/Transformation.png">
-            <h3>Fairy Forms</h3>
+            <h3 class="mediumTitleHome">Fairy Forms</h3>
             <img class="bookmarkPic" alt="" src="Images/icons/etiqueta.png">
-            <p>Fairy forms or transformations are different levels of power that fairies can attain as an extention of
+            <p class="smallTitleHome">Fairy forms or transformations are different levels of power that fairies can attain as an extention of
               their magical abilities.
               In our school, we work with our students not only to help them become full-fledged fairies, but so that
               they reach higher fairy forms.</p>
           </section>
+          <p class="relleno"></p>
           <section class="leftSection">
             <iframe src="https://www.youtube.com/embed/beH3AZUS7f0?modestbranding=1&iv_load_policy=3"
               allowfullscreen></iframe>
-            <h3>Winx</h3>
-            <p>This is the basic fairy form, if you have yet to unlock it, we will make sure that you do by the end of
+            <h3 class="mediumTitleHome">Winx</h3>
+            <p class="smallTitleHome"> This is the basic fairy form, if you have yet to unlock it, we will make sure that you do by the end of
               your freshmen year.</p>
           </section>
           <section class="rightSection">
             <iframe src="https://www.youtube.com/embed/gms5Krs4Qpg?modestbranding=1&iv_load_policy=3"
               allowfullscreen></iframe>
-            <h3>Enchantix</h3>
-            <p>Enchantix is the "Final Fairy Form" in a fairy's formal education. In our curriculum, earning Enchantix
+            <h3 class="mediumTitleHome">Enchantix</h3>
+            <p class="smallTitleHome">Enchantix is the "Final Fairy Form" in a fairy's formal education. In our curriculum, earning Enchantix
               is the final exam.</p>
           </section>
-        <div class="detailsPop">
-          <ul class="detailsPart">
-            <li><p>Details  </p></li>
-          </ul>
-          <img class="details" alt="" src="Images/icons/flecha.png">
-        </div>
         </div>
       </div>
 
@@ -500,7 +547,7 @@
           <p class="bigTitle">MY GRADES</p>
         </div>
         <div class="container">
-          <table id="studentgrades">
+          <table>
             <tr>
               <th></th>
               <th></th>
@@ -552,7 +599,7 @@
           </table>
         </div>
         <div class="container">
-          <table id="studentgrades">
+          <table>
             <tr>
               <th></th>
               <th></th>
@@ -605,7 +652,7 @@
           </table>
         </div>
         <div class="container">
-          <table id="studentgrades">
+          <table>
             <tr>
               <th></th>
               <th></th>
@@ -657,7 +704,7 @@
           </table>
         </div>
         <div class="container">
-          <table id="studentgrades">
+          <table>
             <tr>
               <th></th>
               <th></th>
@@ -1023,7 +1070,7 @@
             </div>
             <button id="cancelEditTeacherP2" onclick="editTeacherCourse('delateP2')" class="buttonEditGrades" > Delate </button>
         </div>
-        <p class="mediumTitle" id ="editTeacher1h"> Chapter 2</p>
+        <p class="mediumTitle" id ="editTeacher2h"> Chapter 2</p>
         <div class="container">
           <div class="infoParagraph" id="editTeacher3p">
             <p>In this Chapter we will show you the darkest and difficult practices
@@ -1035,7 +1082,7 @@
             </div>
             <button id="cancelEditTeacherP3" onclick="editTeacherCourse('delateP3')" class="buttonEditGrades" > Delate </button>
         </div>
-        <p class="mediumTitle" id ="editTeacher1h"> Chapter 3</p>
+        <p class="mediumTitle" id ="editTeacher3h"> Chapter 3</p>
         <div class="container">
           <div class="infoParagraph" id="editTeacher4p">
             <p>In this Chapter we will show you the darkest and difficult practices
@@ -1047,7 +1094,7 @@
             </div>
             <button id="cancelEditTeacherP4" onclick="editTeacherCourse('delateP4')" class="buttonEditGrades" > Delate </button>
         </div>
-        <p class="mediumTitle" id ="editTeacher1h"> Chapter 4</p>
+        <p class="mediumTitle" id ="editTeacher4h"> Chapter 4</p>
         <div class="container">
           <div class="infoParagraph" id="editTeacher5p">
             <p>In this Chapter we will show you the darkest and difficult practices

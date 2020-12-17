@@ -14,7 +14,11 @@
 #showingMessage1,#showingMessage2,#showingMessage3,#showingMessage4,#showingMessage5,#showingMessage6,
 #gradesBloom , #gradesTecna , #gradesStella , #gradesKimmy , #gradesLayla , #gradesFlora,
 #gradesMusa,#gradesRoxy, #gradesDaphne, #gradesAisha, #gradesFlora , #studentActivitiesHistory,#studentActivitiesMeta,
-#studentActivitiesPotion, #studentActivitiesDefense,#login , #register,#cancelEditTeacher,#cancelEditTeacherP1,#cancelEditTeacherP2, #logoutBtn,
+#studentActivitiesPotion, #studentActivitiesDefense,#login , #register,#cancelEditTeacher,#cancelEditTeacherP1,#cancelEditTeacherP2, 
+#logoutBtn,#myCoursesBtn,#myGradesBtn,#myStudentsBtn,#gradesBtn,#myCoursesTeacherBtn,#admissionsBtn,#studiesBtn,#researchBtn,
+#forumBtn,
+#logoutBtnPhone,#myCoursesBtnPhone,#myGradesBtnPhone,#myStudentsBtnPhone,#gradesBtnPhone,#myCoursesTeacherBtnPhone,
+#admissionsBtnPhone,#studiesBtnPhone,#researchBtnPhone,#forumBtnPhone,
 #numberGradeChangesAct1Aisha, #numberGradeChangesAct2Aisha,#numberGradeChangesAct3Aisha, #numberGradeChangesAct4Aisha,
 #numberGradeChangesAct1Daphne,#numberGradeChangesAct2Daphne,#numberGradeChangesAct3Daphne,#numberGradeChangesAct4Daphne,
 #numberGradeChangesAct1Roxy,#numberGradeChangesAct2Roxy,#numberGradeChangesAct3Roxy,#numberGradeChangesAct4Roxy,
@@ -516,10 +520,18 @@ body {
   color: rgba(51, 50, 50, 0.808);
   font-size: 20px;
 }
+.mediumTitleHome {
+  color: rgba(43, 41, 41, 0.808);
+  font-size: 25px;
+}
+.smallTitleHome{
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 20px;
+}
 
 .extraInfoParagraph {
   color: rgba(51, 50, 50, 0.808);
-  font-size: 12px;
+  font-size: 17px;
 }
 
 .infoParagraph {
@@ -590,7 +602,11 @@ body {
   padding: 10px;
   border-radius: 10px;
 }
-
+.relleno{
+  background-color: white;
+  color: white;
+  padding: 10px;
+}
 
 
 
@@ -777,7 +793,9 @@ body {
     width: 80%; 
     float: right; 
   }
-
+  #loginBtnPhone{
+    display: block;
+  }
   #myTopNav.topnav {
     display: none;
   }
@@ -861,7 +879,6 @@ body {
   #myTopNav {
     display: none;
   }
-
 }
 
 /*
@@ -939,6 +956,8 @@ body {
     display: block;
   }
   .topnav a:not(:first-child) {
+
+    float: right;
     display: none;
   }
   .topnav a.icon {
