@@ -1109,11 +1109,13 @@ function logout() {
     var confirmation = confirm("Are you sure you want to log out?");
     if (confirmation) {
         //delete login info
+        centralChange('homePage');
         document.getElementById("login").reset();
         document.getElementById("loggedInUser").innerHTML="";
         document.getElementById("loginBtn").style.display  = "inline-block";
         document.getElementById("logoutBtn").style.display  = "none";
         document.getElementById("userphoto").style.display = "none";
+        
 
 
         var homePage = document.getElementById("homePage");
