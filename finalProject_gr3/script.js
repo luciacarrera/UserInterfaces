@@ -1116,11 +1116,6 @@ function logout() {
         document.getElementById("logoutBtn").style.display  = "none";
         document.getElementById("userphoto").style.display = "none";
         
-
-
-        var homePage = document.getElementById("homePage");
-        homePage.style.display ="block";
-
         var admissionsBtn = document.getElementById("admissionsBtn");
         var studiesBtn = document.getElementById("studiesBtn");
         var researchBtn = document.getElementById("researchBtn");
@@ -1133,7 +1128,7 @@ function logout() {
 
         
         var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
-        
+    
         for(i=0;i<nongeneralVars.length;i++){
             nongeneralVars[i].style.display="none";
         }
