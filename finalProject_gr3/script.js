@@ -956,14 +956,13 @@ function checkCookie() {
         document.getElementById("userphoto").style.display = "inline-block";
     }
 }
-var count = -1;
-var i=0;
+
 function checkUserPass(inputUser, inputPass){
   
     var allcookies = document.cookie;
 
     cookiearray = allcookies.split('&');
-    while (count<cookiearray.length) {
+    for(var i=0; i<=cookiearray.length; i++) {
         var userSplit = cookiearray[i].split(',')[0];
         var passSplit = cookiearray[i].split(',')[1];
         var roleSplit = cookiearray[i].split(',')[6];
@@ -982,7 +981,6 @@ function checkUserPass(inputUser, inputPass){
             changingRole(roleValue);
             return true;
         }
-        count = count+1;
     }
     //user not found
     return false;
@@ -1052,6 +1050,7 @@ function changingRole(role) {
         }
     }
     if(role === "Administrator"){
+        alert(role);
         for(i=0;i<nongeneralVars.length;i++){
             nongeneralVars[i].style.display="block";
         }
