@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("grades").style.display = "none";
     document.getElementById("forum").style.display = "none";
     document.getElementById("homeButton").style.display = "none";
+    document.getElementById("loginBtn").style.display = "inline-block";
+    document.getElementById("logoutBtn").style.display = "none";
+    document.getElementById("userphoto").style.display = "none";
+
+    
     deleteInfo();
     document.getElementById("login").reset();
     //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";

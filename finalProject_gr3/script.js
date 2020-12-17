@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleForm(event) { event.preventDefault(); } 
     formLogin.addEventListener('submit', handleForm);
     formRegister.addEventListener('submit', handleForm);
-
+    document.getElementById("logoutBtn").style.display="none";
+    document.getElementById("userphoto").style.display = "none";
     deleteInfo();
     document.getElementById("login").reset();
     //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
@@ -911,13 +912,16 @@ function setCookie(){
 
     // restrictions
     if(document.cookie == "" || emailTaken(email)==false){
-            //actual cookie
-            var cookieString= "user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
-            "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
-            document.cookie = document.cookie + cookieString;
-            loggedInUser(name);
-            changingRole(role)
-            exitLogin();
+        //actual cookie
+        var cookieString= "user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
+        "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
+        document.cookie = document.cookie + cookieString;
+        loggedInUser(name);
+        changingRole(role)
+        exitLogin();
+        document.getElementById("logoutBtn").style.display="inline-block";
+        document.getElementById("loginBtn").style.display="none";  
+        document.getElementById("userphoto").style.display = "inline-block";
     } else{
             alert("Sorry, this email is already associated to another account.")
         }
@@ -934,6 +938,10 @@ function checkCookie() {
         deleteInfo();
     }else{
         exitLogin();
+        document.getElementById("logoutBtn").style.display="inline-block";
+        document.getElementById("loginBtn").style.display="none";  
+        document.getElementById("userphoto").style.display = "inline-block";
+      
     }
 }
 
@@ -1035,6 +1043,19 @@ function roleOptions(role){
 function deleteInfo(){
     document.getElementById("register").reset();
     document.getElementById("login").reset();
+}
+// Function to confirm exit when logout
+function logout() {
+    var confirmation = confirm("Are you sure you want to log out?");
+    if (confirmation) {
+        //delete login info
+        document.getElementById("login").reset();
+        document.getElementById("loggedInUser").innerHTML="";
+        document.getElementById("loginBtn").style.display  = "inline-block";
+        document.getElementById("logoutBtn").style.display  = "none";
+        document.getElementById("userphoto").style.display = "none";
+
+    }  
 }
 //DELETE COOKIES
 //document.cookie = "user=,nia=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
