@@ -78,16 +78,16 @@ function centralChange(option) {
     }
 
     //If, we are inside grades of my students and click on any other site, the grades of the student that we are in must close
-    var arrayGradesStudentsOptions = ['gradesBloom', 'gradesTecna', 'gradesStella', 'gradesKimmy', 'gradesLayla', 'gradesFlora', 'gradesMusa', 'gradesRoxy', 'gradesDaphne', 'gradesAisha']
-    var arrayGradesStudents = [gradesBloom, gradesTecna, gradesStella, gradesKimmy,gradesLayla ,gradesFlora ,gradesMusa ,gradesRoxy ,gradesDaphne ,gradesAisha ]
+    var arrayGradesStudentsOptions = ['gradesBloom', 'gradesTecna', 'gradesStella', 'gradesKimmy', 'gradesLayla', 'gradesFlora', 'gradesMusa', 'gradesRoxy', 'gradesDaphne', 'gradesAisha'];
+    var arrayGradesStudents = [gradesBloom, gradesTecna, gradesStella, gradesKimmy,gradesLayla ,gradesFlora ,gradesMusa ,gradesRoxy ,gradesDaphne ,gradesAisha ];
     
     for (i=0; i<arrayGradesStudentsOptions.length;i++){
         if (arrayGradesStudents[i].style.display = "block"){
             arrayGradesStudents[i].style.display = "none";
         }
     }    
-    var arrayForumOptions = ['forum1', 'forum2', 'forum3', 'forum4', 'forum5', 'forum6']
-    var arrayForum = [forum1, forum2, forum3, forum4, forum5, forum6]
+    var arrayForumOptions = ['forum1', 'forum2', 'forum3', 'forum4', 'forum5', 'forum6'];
+    var arrayForum = [forum1, forum2, forum3, forum4, forum5, forum6];
     for (i=0; i<arrayForumOptions.length;i++){
         if (arrayForum[i].style.display = "block"){
             arrayForum[i].style.display = "none";
@@ -202,8 +202,8 @@ function myStudentsChangeGrade(option){
     var gradesDaphne = document.getElementById("gradesDaphne");
     var gradesAisha = document.getElementById("gradesAisha");
 
-    var arrayOptions = ['gradesBloom', 'gradesTecna', 'gradesStella', 'gradesKimmy', 'gradesLayla', 'gradesFlora', 'gradesMusa', 'gradesRoxy', 'gradesDaphne', 'gradesAisha']
-    var arrayVars = [gradesBloom, gradesTecna, gradesStella, gradesKimmy,gradesLayla ,gradesFlora ,gradesMusa ,gradesRoxy ,gradesDaphne ,gradesAisha ]
+    var arrayOptions = ['gradesBloom', 'gradesTecna', 'gradesStella', 'gradesKimmy', 'gradesLayla', 'gradesFlora', 'gradesMusa', 'gradesRoxy', 'gradesDaphne', 'gradesAisha'];
+    var arrayVars = [gradesBloom, gradesTecna, gradesStella, gradesKimmy,gradesLayla ,gradesFlora ,gradesMusa ,gradesRoxy ,gradesDaphne ,gradesAisha ];
     
     if(option == 'myStudents'){
         myStudents.style.display="block";
@@ -229,8 +229,8 @@ function myCoursesChange(option){
     var potionology = document.getElementById("potionology");
     var historyOfMagic = document.getElementById("historyOfMagic");
 
-    var arrayOptions = ['selfDefence', 'metamor', 'potionology', 'historyOfMagic']
-    var arrayVars = [selfDefence, metamor, potionology, historyOfMagic]
+    var arrayOptions = ['selfDefence', 'metamor', 'potionology', 'historyOfMagic'];
+    var arrayVars = [selfDefence, metamor, potionology, historyOfMagic];
     
     if(option == 'myCourses'){
         myCourses.style.display="block"
@@ -239,7 +239,7 @@ function myCoursesChange(option){
         }
         
     }else{
-        myCourses.style.display="none"
+        myCourses.style.display="none";
         for (i=0; i<arrayOptions.length;i++){
             if(option==arrayOptions[i]){
                 arrayVars[i].style.display="block";
@@ -259,16 +259,16 @@ function forumChange(option){
     var forum5 = document.getElementById("forum5");
     var forum6 = document.getElementById("forum6");
 
-    var arrayOptions = ['forum1', 'forum2', 'forum3', 'forum4', 'forum5', 'forum6']
-    var arrayVars = [forum1, forum2, forum3, forum4, forum5, forum6]
+    var arrayOptions = ['forum1', 'forum2', 'forum3', 'forum4', 'forum5', 'forum6'];
+    var arrayVars = [forum1, forum2, forum3, forum4, forum5, forum6];
     
     if(option == 'forum'){
       for (i=0; i<arrayOptions.length;i++){
         if (arrayVars[i].style.display = "block"){
             arrayVars[i].style.display = "none";
         }
-        forum.style.display = "block"
-        openForum.style.display = "none"
+        forum.style.display = "block";
+        openForum.style.display = "none";
     } 
     }else{
         forum.style.display="none";
@@ -924,17 +924,19 @@ function setCookie(){
         "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
         document.cookie = document.cookie + cookieString;
         loggedInUser(name);
-        changingRole(role);
-        changingRolePhone(role);
         exitLogin();
         document.getElementById("logoutBtn").style.display="inline-block";
         document.getElementById("loginBtn").style.display="none";  
         document.getElementById("userphoto").style.display = "inline-block";
+
+        changingRole(role);
+        changingRolePhone(role);
     } else{
             alert("Sorry, this email is already associated to another account.");
         }
  }
- function loggedInUser(name){
+
+function loggedInUser(name){
     document.getElementById("loggedInUser").innerHTML=name;
  }
 function checkCookie() {
@@ -949,7 +951,6 @@ function checkCookie() {
         document.getElementById("logoutBtn").style.display="inline-block";
         document.getElementById("loginBtn").style.display="none";  
         document.getElementById("userphoto").style.display = "inline-block";
-      
     }
 }
 
@@ -992,7 +993,7 @@ function emailTaken(email){
         var emailValue = cookieSplit.split('=')[1];
 
         if(emailValue===email){
-            alert("Email Taken!")
+            alert("Email Taken!");
             return true;
         }
     }
@@ -1007,9 +1008,8 @@ function userTaken(user){
         //splits cookie i into all of its attributes & saves the email attribute
         var cookieSplit = cookiearray[i].split(',')[0]; 
         var userValue = cookieSplit.split('=')[1];
-
         if(userValue===user){
-            alert("Username Taken!")
+            alert("Username Taken!");
             return true;
         }
     }
@@ -1030,11 +1030,7 @@ function changingRole(role) {
     var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
     var studentVars = [myCoursesBtn,myGradesBtn,forumBtn];
     var teacherVars = [myStudentsBtn,gradesBtn,myCoursesTeacherBtn,forumBtn];
-    var otherVars = [admissionsBtn,studiesBtn,researchBtn];
 
-    for(i=0;i<nongeneralVars.length;i++){
-        nongeneralVars[i].style.display="none";
-    }
     //Admin has ALL the options
     if(role === "Student") {
         for(i=0;i<studentVars.length;i++){
@@ -1043,22 +1039,14 @@ function changingRole(role) {
     }
     if(role === "Teacher") {
         for(i=0;i<teacherVars.length;i++){
-            ;
             teacherVars[i].style.display="block";
         }
     }
-    if(role=== "Administrator"){
+    if(role === "Administrator"){
         for(i=0;i<otherVars.length;i++){
-
             if(i ==1){
                 nongeneralVars[i].style.display="none";
             }
-            nongeneralVars[i].style.display="block";
-        }
-    }
-    if(role=== "logOut"){
-        for(i=0;i<nongeneralVars.length;i++){
-            nongeneralVars[i].style.display="none";
         }
     }
 }
@@ -1098,7 +1086,6 @@ function changingRolePhone(role) {
             if(i ==1){
                 nongeneralVars[i].style.display="none";
             }
-            nongeneralVars[i].style.display="block";
         }
     }
 }
