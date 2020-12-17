@@ -103,6 +103,30 @@ body {
   color: white;
   text-align: center;
 }
+#msg1{
+  background-color: white;
+  padding: 20px;
+}
+#msg2{
+  background-color: white;
+  padding: 20px;
+}
+#msg3{
+  background-color: white;
+  padding: 20px;
+}
+#msg4{
+  background-color: white;
+  padding: 20px;
+}
+#msg5{
+  background-color: white;
+  padding: 20px;
+}
+#msg6{
+  background-color: white;
+  padding: 20px;
+}
 
 #login h2, #register h2 {
   color: #FDABD4;
