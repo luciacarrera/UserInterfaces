@@ -33,7 +33,6 @@ function centralChange(option) {
     var historyOfMagic = document.getElementById("historyOfMagic");
     var siteMap= document.getElementById("siteMap");
     
-
     var gradesBloom = document.getElementById("gradesBloom");
     var gradesTecna = document.getElementById("gradesTecna");
     var gradesStella = document.getElementById("gradesStella");
@@ -53,7 +52,6 @@ function centralChange(option) {
     var forum5 = document.getElementById("forum5");
     var forum6 = document.getElementById("forum6");
 
-
     //Can disturb disturb
     var openForum = document.getElementById("openForum");
     openForum.style.display="none";
@@ -67,7 +65,6 @@ function centralChange(option) {
         }else{
             arrayVars[i].style.display="none";
         }
-
     }
 
     //If, we are inside a course and click on any other site, all the courses must close
@@ -913,9 +910,15 @@ function setCookie(){
     var bday= document.getElementById("regBday").value;
     var id= document.getElementById("regId").value;
     var role= document.getElementById("role").value;
+    var array = [user, pass, email, bday,id,role];
+    for(i=0;i<array.length;i++){
+        if(array[i]==""){
+            alert("Please fill in all the fields.");
+        }
+    }
 
     // restrictions
-    if(document.cookie == "" || emailTaken(email)==false){
+    if(userTaken(email)==false || emailTaken(email)==false){
         //actual cookie
         var cookieString= "user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
         "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
@@ -993,6 +996,24 @@ function emailTaken(email){
         var emailValue = cookieSplit.split('=')[1];
 
         if(emailValue===email){
+            alert("Email Taken!")
+            return true;
+        }
+    }
+    return false;
+}
+function userTaken(user){
+    var allcookies = document.cookie;   
+    // Get all the cookies pairs in an array
+    cookiearray = allcookies.split('&');
+    // Now take key value pair out of this array
+    for(var i=0; i<cookiearray.length; i++) {
+        //splits cookie i into all of its attributes & saves the email attribute
+        var cookieSplit = cookiearray[i].split(',')[0]; 
+        var userValue = cookieSplit.split('=')[1];
+
+        if(userValue===user){
+            alert("Username Taken!")
             return true;
         }
     }
@@ -1126,8 +1147,10 @@ function logout() {
         var myStudentsBtn = document.getElementById("myStudentsBtn");
         var gradesBtn = document.getElementById("gradesBtn");
         var forumBtn = document.getElementById("forumBtn");
+        var helpBtn = document.getElementById("helpBtn");
+
         
-        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
+        var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn,helpBtn];
         
         for(i=0;i<nongeneralVars.length;i++){
             nongeneralVars[i].style.display="none";

@@ -15,7 +15,7 @@
 #gradesBloom , #gradesTecna , #gradesStella , #gradesKimmy , #gradesLayla , #gradesFlora,
 #gradesMusa,#gradesRoxy, #gradesDaphne, #gradesAisha, #gradesFlora , #studentActivitiesHistory,#studentActivitiesMeta,
 #studentActivitiesPotion, #studentActivitiesDefense,#login , #register,#cancelEditTeacher,#cancelEditTeacherP1,#cancelEditTeacherP2, 
-#logoutBtn,#myCoursesBtn,#myGradesBtn,#myStudentsBtn,#gradesBtn,#myCoursesTeacherBtn,#admissionsBtn,#studiesBtn,#researchBtn,
+#logoutBtn,#myCoursesBtn,#myGradesBtn,#myStudentsBtn,#gradesBtn,#myCoursesTeacherBtn,
 #forumBtn,
 #logoutBtnPhone,#myCoursesBtnPhone,#myGradesBtnPhone,#myStudentsBtnPhone,#gradesBtnPhone,#myCoursesTeacherBtnPhone,
 #admissionsBtnPhone,#studiesBtnPhone,#researchBtnPhone,#forumBtnPhone,
@@ -330,20 +330,25 @@ body {
   margin-bottom: 20px;
   font-weight: 20px;
 }
-
+.infoParagraph td{
+  padding:10px;
+  text-align: center;
+}
 
 .firstSection {
   margin-bottom: 15px;
 }
 
 .leftSection {
-  width: 50%;
+  width: 49%;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .rightSection {
-  width: 50%;
+  width: 49%;
   display: inline-block;
+  vertical-align: middle;
 }
 .container .details {
   width: 10%;
@@ -544,6 +549,8 @@ body {
   border-radius: 10px;
   float: right;
   cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
 }
 .buttonEditGrades{
   background-color: rgb(224, 155, 155);
@@ -567,14 +574,14 @@ body {
   float: right;
 }
 .buttonOpenDetails{
-  background-color:  rgb(155, 209, 224);
   color: rgb(250, 248, 248);
   padding: 10px;
   border-radius: 10px;
-  float: left;
+  float: right;
+  background: #fdabd4;
 }
 .buttonCloseDetails{
-  background-color:  rgb(224, 155, 155);
+  background-color:  #fdabd4;
   color: rgb(250, 248, 248);
   padding: 10px;
   border-radius: 10px;
@@ -596,6 +603,8 @@ body {
 
 #aboutUs .container p {
   padding: 10px;
+  display: inline-block;
+  /*! font-size: 2; */
 }
 
 #admissions .container p {
@@ -647,6 +656,7 @@ body {
   color: rgba(51, 50, 50, 0.808);
   font-size: 17px;
   margin-right: 30px;
+  width: 50%;
 }
 
 .gradesDate {
@@ -662,7 +672,7 @@ body {
 
 .numberGrade {
   color: rgba(51, 50, 50, 0.808);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .buttonGradesPass {
@@ -670,6 +680,8 @@ body {
   color: rgb(250, 248, 248);
   border-radius: 10px;
   font-size: 30px;
+  text-align: center;
+  width: 20%;
 }
 
 .buttonGradesFail {
@@ -677,6 +689,8 @@ body {
   color: rgb(250, 248, 248);
   border-radius: 10px;
   font-size: 30px;
+  text-align: center;
+  width: 20%;
 }
 
 
