@@ -916,15 +916,15 @@ function setCookie(){
             alert("Please fill in all the fields.");
         }
     }
-
     // restrictions
     if(userTaken(email)==false || emailTaken(email)==false){
         //actual cookie
         var cookieString= "user"+"="+user+","+"pass"+"="+pass+","+"name"+"="+name+","+"email"+"="+email+","+
         "bday"+"="+bday+","+"id"+"="+id+","+"role"+"="+role+","+"SameSite=None&; Secure"+expires+ ";path=/";
         document.cookie = document.cookie + cookieString;
-        loggedInUser(name);
+     
         exitLogin();
+        loggedInUser(name);
         document.getElementById("logoutBtn").style.display="inline-block";
         document.getElementById("loginBtn").style.display="none";  
         document.getElementById("userphoto").style.display = "inline-block";
@@ -946,19 +946,26 @@ function checkCookie() {
     if(document.cookie === "" || checkUserPass(mail,word)===false || mail===""||word===""){
         alert("Sorry! Your username or password are incorrect.");
         deleteInfo();
-    }else{
+    }
+    
+    else{
+        alert("HELLOOO");
         exitLogin();
+        centralChange('homePage');
         document.getElementById("logoutBtn").style.display="inline-block";
         document.getElementById("loginBtn").style.display="none";  
         document.getElementById("userphoto").style.display = "inline-block";
+        
     }
 }
 
 function checkUserPass(inputUser, inputPass){
+  
     var allcookies = document.cookie;
 
     cookiearray = allcookies.split('&');
-    for(var i=0; i<cookiearray.length; i++) {
+    alert(cookiearray.length);
+    for(var i=0; i<=cookiearray.length; i++) {
         var userSplit = cookiearray[i].split(',')[0];
         var passSplit = cookiearray[i].split(',')[1];
         var roleSplit = cookiearray[i].split(',')[6];
@@ -966,16 +973,18 @@ function checkUserPass(inputUser, inputPass){
         var userValue = userSplit.split('=')[1];
         var passValue = passSplit.split('=')[1];
         var roleValue = roleSplit.split('=')[1];
-        
+
         //correct username & password
         console.log(userValue+" // "+ passValue);
+
         if(userValue === inputUser && passValue === inputPass) {
+            alert('equal');
             var nameSplit = cookiearray[i].split(',')[2];
             var name = nameSplit.split('=')[1];
             loggedInUser(name);
             changingRole(roleValue);
             return true;
-        } 
+        }
     }
     //user not found
     return false;
@@ -1024,12 +1033,11 @@ function changingRole(role) {
     var myCoursesBtn = document.getElementById("myCoursesBtn");
     var myGradesBtn = document.getElementById("myGradesBtn");
     var myStudentsBtn = document.getElementById("myStudentsBtn");
-    var gradesBtn = document.getElementById("gradesBtn");
     var forumBtn = document.getElementById("forumBtn");
-    
-    var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,gradesBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
+
+    var nongeneralVars = [myCoursesBtn,myGradesBtn,myStudentsBtn,myCoursesTeacherBtn,admissionsBtn,studiesBtn,researchBtn,forumBtn];
     var studentVars = [myCoursesBtn,myGradesBtn,forumBtn];
-    var teacherVars = [myStudentsBtn,gradesBtn,myCoursesTeacherBtn,forumBtn];
+    var teacherVars = [myStudentsBtn,myCoursesTeacherBtn,forumBtn];
 
     //Admin has ALL the options
     if(role === "Student") {
@@ -1037,17 +1045,20 @@ function changingRole(role) {
             studentVars[i].style.display="block";
         }
     }
+
     if(role === "Teacher") {
         for(i=0;i<teacherVars.length;i++){
             teacherVars[i].style.display="block";
         }
     }
+
     if(role === "Administrator"){
-        for(i=0;i<otherVars.length;i++){
-            if(i ==1){
-                nongeneralVars[i].style.display="none";
-            }
+        alert(role);
+        for(i=0;i<nongeneralVars.length;i++){
+            alert(i);
+            nongeneralVars[i].style.display="block";
         }
+
     }
 }
 
@@ -1060,12 +1071,11 @@ function changingRolePhone(role) {
     var myCoursesBtnPhone = document.getElementById("myCoursesBtnPhone");
     var myGradesBtnPhone = document.getElementById("myGradesBtnPhone");
     var myStudentsBtnPhone = document.getElementById("myStudentsBtnPhone");
-    var gradesBtnPhone = document.getElementById("gradesBtnPhone");
     var forumBtnPhone = document.getElementById("forumBtnPhone");
     
-    var nongeneralVars = [myCoursesBtnPhone,myGradesBtnPhone,myStudentsBtnPhone,gradesBtnPhone,myCoursesTeacherBtnPhone,admissionsBtnPhone,studiesBtnPhone,researchBtnPhone,forumBtn];
+    var nongeneralVars = [myCoursesBtnPhone,myGradesBtnPhone,myStudentsBtnPhone,myCoursesTeacherBtnPhone,admissionsBtnPhone,studiesBtnPhone,researchBtnPhone,forumBtn];
     var studentVars = [myCoursesBtnPhone,myGradesBtnPhone,forumBtnPhone];
-    var teacherVars = [myStudentsBtnPhone,gradesBtnPhone,myCoursesTeacherBtnPhone,forumBtnPhone];
+    var teacherVars = [myStudentsBtnPhone,myCoursesTeacherBtnPhone,forumBtnPhone];
 
     for(i=0;i<nongeneralVars.length;i++){
         nongeneralVars[i].style.display="none";
