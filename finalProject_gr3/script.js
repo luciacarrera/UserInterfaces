@@ -1034,6 +1034,7 @@ function changingRole(role) {
 
             if(i ==1){
                 nongeneralVars[i].style.display="none";
+            }
             nongeneralVars[i].style.display="block";
         }
     }
