@@ -291,6 +291,16 @@ body {
   width: 100%;
 }
 
+.smallContainer{
+  padding: 15px 15px 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+}
+.smallContainer.right{
+  margin-right:20px;
+}
 .container h3 {
   font-family: 'Sansita Swashed';
   display: inline-block;
