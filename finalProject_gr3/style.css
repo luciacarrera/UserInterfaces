@@ -306,7 +306,7 @@ body {
   font-family: 'Poppins', sans-serif;
   ;
   color: #2E4765;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -324,11 +324,9 @@ body {
 
 .infoParagraph {
   margin-bottom: 20px;
+  font-weight: 20px;
 }
 
-.extraInfoParagraph {
-  display: inline;
-}
 
 .bookmarkSection {
   margin-bottom: 15px;
