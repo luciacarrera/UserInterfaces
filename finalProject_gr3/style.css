@@ -170,10 +170,8 @@ body {
   outline: none;
   border-radius: 50px;
   font-family: "Sansita Swashed";
-  /*! color: white; */
-  /*! margin-top: 100px; */
-  float: right;
   color: gray;
+  float: right;
 }
 
 .input-field-cal{
@@ -206,10 +204,6 @@ body {
   background-color: #FDABD4;
   font-size: 20px;
   height: 700px;
-}
-
-#alfea {
-  /*! margin-top: 10px; */
 }
 
 #alfea img {
@@ -306,7 +300,7 @@ body {
   font-family: 'Poppins', sans-serif;
   ;
   color: #2E4765;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 300;
 }
 
@@ -328,20 +322,6 @@ body {
 }
 
 
-.bookmarkSection {
-  margin-bottom: 15px;
-  display: inline-block;
-  width: 20%;
-}
-
-.container .bookmarkPic {
-  width: 2%;
-  /*! height: 8%; */
-  border-radius: 0%;
-  float: right;
-  display: inline-block;
-}
-
 .firstSection {
   margin-bottom: 15px;
 }
@@ -349,21 +329,16 @@ body {
 .leftSection {
   width: 50%;
   display: inline-block;
-  float: left;
 }
-
-.leftSection iframe {}
 
 .rightSection {
   width: 50%;
   display: inline-block;
-  float: right;
 }
 .container .details {
   width: 10%;
   height: 10%;
 }
-.rightSection iframe {}
 
 .detailsPop{
 	width: 25%;
@@ -372,7 +347,6 @@ body {
 }
 .detailsPart{
 	display: inline-block;
-	float: right;
 	align-items: left;
 	text-align: left;
 }
@@ -427,10 +401,12 @@ body {
 #logoutBtn{
   font-size: 10px;
   float: right;
+  cursor: pointer;
 }
 #loginBtn{
   font-size:15px;
   text-align: center;
+  cursor: pointer;
   display: inline-block;
 }
 

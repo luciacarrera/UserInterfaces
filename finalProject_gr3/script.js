@@ -124,9 +124,9 @@ function exitLogin(){
     var formBox = document.getElementById("form-box");
     var login = document.getElementById("login");
     var register = document.getElementById("register");
-    login.style.display = "none"
-    register.style.display = "none"
-    formBox.style.display = "none"
+    login.style.display = "none";
+    register.style.display = "none";
+    formBox.style.display = "none";
 }
 
 //My Course Teacher
@@ -925,7 +925,7 @@ function setCookie(){
         document.getElementById("loginBtn").style.display="none";  
         document.getElementById("userphoto").style.display = "inline-block";
     } else{
-            alert("Sorry, this email is already associated to another account.")
+            alert("Sorry, this email is already associated to another account.");
         }
  }
  function loggedInUser(name){
