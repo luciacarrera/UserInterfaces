@@ -672,9 +672,6 @@ function sendMail(contact){
     
   }
  function finishEditingGrade(context){ 
-    for(i=0;i<contextArray;i++){
-
-    }
     if (context == "Act1Bloom"){
         txt = document.getElementById("gradesAct1Bloom").value;
         document.getElementById("numberGradeNoChangesAct1Bloom").innerHTML = txt;
