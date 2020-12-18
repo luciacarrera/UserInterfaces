@@ -309,7 +309,7 @@ body {
 
 .container {
   padding: 15px 15px 10px 15px;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   border-radius: 20px;
   background-color: white;
   display: inline-block;
@@ -327,7 +327,7 @@ body {
   margin-right:20px;
 }
 .container h3 {
-  font-family: 'Alex Brush';
+  font-family: 'Sansita Swashed';
   display: inline-block;
 }
 
@@ -436,7 +436,7 @@ body {
   background-color: white;
   display: block;
   width: 100%;
-  height: 55%;
+  height: 70%;
 }
 
 #logoutBtn{
@@ -533,7 +533,11 @@ body {
 .mediumTitle {
   color: rgba(43, 41, 41, 0.808);
   font-size: 35px;
-  font-family: "Alex Brush";
+  font-family: "Sansita Swashed";
+}
+
+.mediumTitle p {
+	font-family: "Sansita Swashed";
 }
 
 .smallTitle {
@@ -544,7 +548,7 @@ body {
 
 .mediumTitleHome {
   color: rgba(43, 41, 41, 0.808);
-  font-size: 35px;
+  font-size: 25px;
   font-family: "Alex Brush";
 }
 
@@ -562,6 +566,7 @@ body {
   color: rgba(51, 50, 50, 0.808);
   font-size: 17px;
   padding-top: 20px;
+  font-family: "Poppins";
 }
 
 .extraContainer {
