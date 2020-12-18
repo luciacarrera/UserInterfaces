@@ -1,0 +1,1024 @@
+/*QUE COÑO ES *??? */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style:none;
+  /*! vertical-align: middle; */
+}
+
+
+ #aboutUs, #helpCenter, #admissions , #studies , #research , #siteMap, #myCourses,#myGrades, #myStudents, #forum , #grades , #teacherCourse,
+#metamor , #potionology , #selfDefence , #historyOfMagic , #openForum , #forum1 , #forum2 , #forum3 , #forum4 , #forum5 , #forum6 , 
+#showingMessage1,#showingMessage2,#showingMessage3,#showingMessage4,#showingMessage5,#showingMessage6,
+#gradesBloom , #gradesTecna , #gradesStella , #gradesKimmy , #gradesLayla , #gradesFlora,
+#gradesMusa,#gradesRoxy, #gradesDaphne, #gradesAisha, #gradesFlora , #studentActivitiesHistory,#studentActivitiesMeta,
+#studentActivitiesPotion, #studentActivitiesDefense,#login , #register,#cancelEditTeacher,#cancelEditTeacherP1,#cancelEditTeacherP2, 
+#cancelEditTeacherP3,#cancelEditTeacherP4,#cancelEditTeacherP5,
+#logoutBtn,#myCoursesBtn,#myGradesBtn,#myStudentsBtn,#gradesBtn,#myCoursesTeacherBtn,
+#forumBtn,
+#logoutBtnPhone,#myCoursesBtnPhone,#myGradesBtnPhone,#myStudentsBtnPhone,#gradesBtnPhone,#myCoursesTeacherBtnPhone,
+#admissionsBtnPhone,#studiesBtnPhone,#researchBtnPhone,#forumBtnPhone,
+#numberGradeChangesAct1Aisha, #numberGradeChangesAct2Aisha,#numberGradeChangesAct3Aisha, #numberGradeChangesAct4Aisha,
+#numberGradeChangesAct1Daphne,#numberGradeChangesAct2Daphne,#numberGradeChangesAct3Daphne,#numberGradeChangesAct4Daphne,
+#numberGradeChangesAct1Roxy,#numberGradeChangesAct2Roxy,#numberGradeChangesAct3Roxy,#numberGradeChangesAct4Roxy,
+#numberGradeChangesAct1Musa,#numberGradeChangesAct2Musa,#numberGradeChangesAct3Musa,#numberGradeChangesAct4Musa,
+#numberGradeChangesAct1Flora,#numberGradeChangesAct2Flora,#numberGradeChangesAct3Flora,#numberGradeChangesAct4Flora,
+#numberGradeChangesAct1Layla,#numberGradeChangesAct2,#numberGradeChangesAct3Layla,#numberGradeChangesAct4Layla,
+#numberGradeChangesAct1Kimmy,#numberGradeChangesAct2Kimmy,#numberGradeChangesAct3Kimmy,#numberGradeChangesAct4Kimmy,
+#numberGradeChangesAct1Stella,#numberGradeChangesAct2Stella,#numberGradeChangesAct3Stella,#numberGradeChangesAct4Stella, 
+#numberGradeChangesAct1Tecna,#numberGradeChangesAct2Tecna,#numberGradeChangesAct3Tecna,#numberGradeChangesAct4Tecna,
+#numberGradeChangesAct1Bloom,#numberGradeChangesAct2Bloom,#numberGradeChangesAct3Bloom,#numberGradeChangesAct4Bloom{
+  display: none;
+}
+
+/*BACKGROUND & COMMON CSS*/
+body {
+  background-color: #FDABD4;
+  border-radius: 5%;
+  /*! overflow: hidden; */
+}
+
+.topDiv {
+  /*! margin-top: 8px; */
+  height: 90px;
+  display: table;
+  width: 100%;
+  /*! margin: 0 auto; */
+}
+
+/*STYLE FOR FORM-BOX*/
+#form-box {
+  width: 55%;
+  height: 70%;
+  position: fixed;
+  /*! margin: 6% auto; */
+  background: #fff;
+  /*! padding: 5px; */
+  overflow: hidden;
+  border-radius: 30px;
+  display: none;
+  right: 23%;
+  top: 15%;
+  border: 1px solid lightgray;
+}
+#rightinfo{
+  padding: 20px;
+  width: 50%;
+  float: right;
+  background: #FDABD4;
+  height: 100%;
+}
+#rightinfo #loginlogo {
+  height: 200px;
+  position: 50%;
+  margin: auto;
+  display: block;
+}
+
+#rightinfo h4 {
+  /*! margin-left: 400px; */
+  font-family: "Alex Brush";
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 15%;
+  /*! background: #FDABD4; */
+}
+#exitLogin{
+  float: right;
+  cursor: pointer
+}
+#loginHeader{
+  margin-top: 30%;
+}
+.input-group span{
+  margin-top: 20px;
+}
+#rightinfo p {
+  /*! margin-left: 475px; */
+  font-family: "Sansita Swashed";
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+#msg1{
+  background-color: white;
+  padding: 20px;
+}
+#msg2{
+  background-color: white;
+  padding: 20px;
+}
+#msg3{
+  background-color: white;
+  padding: 20px;
+}
+#msg4{
+  background-color: white;
+  padding: 20px;
+}
+#msg5{
+  background-color: white;
+  padding: 20px;
+}
+#msg6{
+  background-color: white;
+  padding: 20px;
+}
+
+#login h2, #register h2 {
+  color: #FDABD4;
+  font-family: "Sansita Swashed";
+  font-size: 35px;
+  margin-bottom: 20px;
+  /*! margin-top: 10px; */
+}
+
+#login p, #register p {
+  color: #D0D3D4;
+  font-family: "Sansita Swashed";
+  font-size: 15px;
+  display: inline-block;
+  /*! margin-right: 10px; */
+  margin-bottom: 10px;
+  width: 35%;
+  margin-right: 10px;
+}
+
+.input-group {
+  /*! top: 180px; */
+  /*! margin-top: 70px; */
+  position: absolute;
+  width: 300px;
+  transition: .5s;
+}
+
+.input-field {
+  width: 50%;
+  padding: 10 px 0;
+  /*! margin: 10px 0; */
+  border-left: 0;
+  border-right: 0;
+  border-top: #FBFCFC;
+  outline: none;
+  background: transparent;
+  top: 30%;
+}
+
+.submit-btn, .submit-btn-register {
+  width: 100%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-right: 5px;
+  background: #FDABD4;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Sansita Swashed";
+  color: white;
+  margin-top: 30px;
+}
+
+.btn-log, .btn-reg {
+  /*! width: 20%; */
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  /*! margin-left: 0%; */
+  background: #fff;
+  border: 0;
+  outline: none;
+  border-radius: 50px;
+  font-family: "Sansita Swashed";
+  color: gray;
+  float: right;
+}
+
+.input-field-cal{
+  width:50%;
+  margin-right: 10px;
+  color: gray;
+  display: inline-block;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#checkbox{
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+#login, #register {
+  padding: 20px 20px 20px 20px;
+  width: 50%;
+  float: left;
+  margin: auto;
+  /*! vertical-align: middle; */
+  /*! top: 10%; */
+}
+
+/*STYLE FOR LEFT CONTAINER*/
+#leftContainer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #FDABD4;
+  font-size: 20px;
+  height: 700px;
+}
+
+#alfea img {
+  height: 50px;
+  /*! height: 120px; */
+  /*! margin-left: 75px; */
+  /*! float: left; */
+  /*! align-items: center; */
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+#alfea p {
+  font-family: "Alex Brush";
+  font-size: 40px;
+  color: white;
+  /*! margin-left: 5px; */
+  /*! padding: 20px; */
+  /*! text-align: center; */
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.sideBarIcon {
+  width: 16px;
+  float: left;
+  /*! vertical-align: middle; */
+  margin-right: 10px;
+  /*! margin-left: 10px; */
+}
+
+/*Sidebar*/
+#sideBarNotLogin {
+  display: block;
+  padding: 0 10px 20px 10px;
+}
+
+#sideBarLoginStudent,
+#sideBarLoginTeacher {
+  display: none;
+}
+
+.sideBar {
+  font-size: 16px;
+  padding: 8px;
+  color: white;
+  display: block;
+  margin-top: 1px;
+  font-family: "Sansita Swashed";
+}
+
+/*The color of the link when we pass the mouse over it*/
+.sideBar:hover {
+  background-color: #f796c6;
+  cursor: pointer;
+}
+
+#title p {
+  font-family: "Sansita Swashed";
+  font-size: 15px;
+  color: black;
+  /*! vertical-align: middle; */
+  /*! display: inline-block; */
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+
+/*STYLE FOR MAIN CONTAINER*/
+#mainContainer {
+  /*! margin-top: 1px; */
+  /*! font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  background-color: #EAEBF0;
+  height: 825px;
+  border-radius: 2.5% 0 0 2.5%;
+}
+
+.container {
+  padding: 15px 15px 10px 15px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+}
+
+.smallContainer{
+  padding: 15px 15px 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: white;
+  display: inline-block;
+}
+.smallContainer.right{
+  margin-right:20px;
+}
+.container h3 {
+  font-family: 'Sansita Swashed';
+  display: inline-block;
+}
+
+.container p {
+  font-family: 'Poppins';
+  ;
+  color: #2E4765;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.container table {
+  width: 100%;
+}
+
+.container iframe {
+  float: left;
+  width: 160px;
+  height: 100px;
+  margin-right: 20px;
+  /*! padding: 8px; */
+}
+
+.infoParagraph {
+  margin-bottom: 20px;
+  font-weight: 20px;
+}
+.infoParagraph td{
+  padding:10px;
+  text-align: center;
+}
+
+.firstSection {
+  margin-bottom: 15px;
+}
+
+.leftSection {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rightSection {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.container .details {
+  width: 10%;
+  height: 10%;
+}
+
+.detailsPop{
+	width: 25%;
+	padding-right: 24px;
+	display: flex;
+}
+.detailsPart{
+	display: inline-block;
+	align-items: left;
+	text-align: left;
+}
+
+.imageMessagesStudents{
+  width: 5px;
+  background-color: white;
+}
+/*STYLE FOR RIGHT CONTAINER*/
+#rightAside {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgb(116, 114, 114);
+  font-size: 15px;
+  height: 700px;
+}
+
+#userphoto {
+  border-radius: 100%;
+  /*! float: left; */
+  /*! height: 4vw; */
+  width: 17%;
+  /*! height: 1%; */
+  display: inline-block;
+}
+
+#useraspects {
+  /*! display: inline-block; */
+  float: right;
+  align-items: left;
+  /*! vertical-align: middle; */
+  /*! margin-left: 70px; */
+  /*! margin-top: 45px; */
+}
+
+#loggedInUser {
+  font-size: 20px;
+  font-family: 'Alex Brush';
+  color: black;
+  /*! margin-left: 10px; */
+  color: #B3B3B3;
+  display: inline-block;
+}
+#profile{
+  padding: 15px 15px 15px 15px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 70%;
+}
+
+#logoutBtn{
+  font-size: 10px;
+  font-family: "Sansita Swashed";
+  float: right;
+  cursor: pointer;
+
+}
+#loginBtn{
+  font-size:15px;
+  font-family: "Sansita Swashed";
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#profile p {
+  color: gray;
+  font-family: "Sansita Swashed";
+}
+
+#nextEvents p{
+  color: #2E4765;
+  font-family: "Poppins";
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+#latestNews p {
+  color: #2E4765;
+  font-family: "Poppins";
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+
+#nextEvents h1 {
+  color: #6965F7;
+  font-family: "Sansita Swashed";
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#latestNews h1 {
+  color: #6965F7;
+  font-family: "Sansita Swashed";
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+#moreEvents{
+	width: 20%;
+	padding-right: 24px;
+	display: flex;
+}
+
+/* STYLE FOR THE CENTRAL CONTAINER*/
+
+#centralContainer {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px 25px 25px 25px;
+  overflow-y: scroll;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.container img {
+  float: left;
+  width: 70px;
+  /*! padding: 5px; */
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.container iframe {
+  float: left;
+  width: 100px;
+  height: 70px;
+  /*! padding: 5px; */
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.bigTitle {
+  /*! margin-top: 15px; */
+  /*! padding: 7px; */
+  color: rgba(36, 34, 34, 0.808);
+  font-size: 50px;
+  vertical-align: middle;
+  display: table-cell;
+  font-family: "Alex Brush";
+}
+
+.mediumTitle {
+  color: rgba(43, 41, 41, 0.808);
+  font-size: 35px;
+  font-family: "Sansita Swashed";
+}
+
+.mediumTitle p {
+	font-family: "Sansita Swashed";
+}
+
+.smallTitle {
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 25px;
+  font-family: "Alex Brush";
+}
+
+.mediumTitleHome {
+  color: rgba(43, 41, 41, 0.808);
+  font-size: 25px;
+  font-family: "Alex Brush";
+}
+
+.smallTitleHome{
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 20px;
+}
+
+.extraInfoParagraph {
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 17px;
+}
+
+.infoParagraph {
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 17px;
+  padding-top: 20px;
+  font-family: "Poppins";
+}
+
+.extraContainer {
+  background-color: rgb(172, 238, 172);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+}
+.buttonMessage{
+  background-color: rgb(240, 210, 156);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+}
+.buttonOpenClass {
+  background-color: rgb(155, 209, 224);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+}
+.buttonEditGrades{
+  background-color: rgb(224, 155, 155);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+}
+.buttonNoChangeGrade{
+  background-color: rgb(245, 98, 98);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+}
+.buttonChangeGrade{
+  background-color: rgb(186, 224, 155);
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+}
+.buttonOpenDetails{
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: right;
+  background: #fdabd4;
+}
+.buttonCloseDetails{
+  background-color:  #fdabd4;
+  color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+  float: left;
+}
+
+.placeHolderText {
+  background-color: rgb(250, 248, 248);
+  padding: 10px;
+  border-radius: 10px;
+}
+.relleno{
+  background-color: white;
+  color: white;
+  padding: 3px;
+  font: white;
+}
+
+
+
+#aboutUs .container p {
+  padding: 10px;
+  display: inline-block;
+  /*! font-size: 2; */
+}
+
+#admissions .container p {
+  padding: 10px;
+}
+
+#studies .container p {
+  padding: 10px;
+}
+
+#studiesoptions ul {
+  list-style: none;
+}
+
+#studiesoptions {
+  list-style: none;
+}
+
+#studiesoptions h1 {
+  font-size: 15px;
+  font-family: "Sansita Swashed";
+}
+
+#research .container p {
+  padding: 10px;
+}
+
+#researchoptions ul {
+  list-style: none;
+}
+
+#researchoptions {
+  list-style: none;
+}
+
+#researchoptions h1 {
+  font-size: 15px;
+  font-family: "Sansita Swashed";
+}
+
+#helpCenter .container p {
+  padding: 10px;
+}
+
+/* STYLE FOR THE MYGRADES PAGE CONTAINER*/
+
+.gradesTitle {
+  margin-left: -4px;
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 17px;
+  margin-right: 30px;
+  width: 50%;
+}
+
+.gradesDate {
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 12px;
+  padding: 5px;
+}
+
+.gradesData {
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 15px;
+}
+
+.numberGrade {
+  color: rgba(51, 50, 50, 0.808);
+  font-size: 20px;
+}
+
+.buttonGradesPass {
+  background-color: rgb(135, 214, 135);
+  color: rgb(250, 248, 248);
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 20%;
+}
+
+.buttonGradesFail {
+  background-color: rgb(214, 135, 152);
+  color: rgb(250, 248, 248);
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 20%;
+}
+
+
+/*FOR THE PHONE / CLICK UNCLIK*/
+.topnav {
+  overflow: hidden;
+  background-color: #FDABD4;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(179, 176, 176);
+}
+
+.topnav a.active {
+  background-color: #FDABD4;
+  color: white;
+}
+
+.topnav .icon {
+  display: relative;
+}
+
+
+/*RESPONSIVE WEBPAGE*/
+
+@media screen and (min-width: 600px) {
+
+  /*FOR BIG SCREENS */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  #leftContainer {
+    width: 20%;
+    float: left;
+  }
+
+  #rightAside {
+    display: none;
+  }
+
+  #mainContainer {
+    width: 80%; 
+    float: right; 
+  }
+  #loginBtnPhone{
+    display: block;
+  }
+  #myTopNav.topnav {
+    display: none;
+  }
+  #myTopNav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 987px) {
+
+  /*FOR BIG SCREENS */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  #leftContainer {
+    width: 20%;
+    float: left;
+    padding: 0px 15px 15px 15px;
+  }
+
+  #mainContainer {
+    float: left;
+    width: 80%;
+  }
+
+  #rightAside {
+    display: block;
+    width: 25%;
+    float: right;
+    padding: 0px 25px 25px 0;
+  }
+
+  #myTopNav.topnav {
+    display: none;
+  }
+  #myTopNav {
+    display: none;
+  }
+}
+
+/*
+   When the screen is less than 600 pixels wide, hide all links, 
+    except for the first one ("Home").
+   Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+
+  /*FOR PHONE*/
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+
+  #leftContainer {
+    display: none;
+  }
+
+  #rightAside {
+    display: none;
+  }
+
+  #mainContainer {
+    width: 100%;
+  }
+
+  #phoneHeader {
+    display: block;
+  }
+
+  #myTopNav {
+    display: block;
+  }
+  .topnav a:not(:first-child) {
+
+    float: right;
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+ /* The "responsive" class is added to the topnav with JavaScript 
+  when the user clicks on the icon. This class makes the topnav 
+  look good on small screens (display the links vertically instead of 
+  horizontally) */
+  .topnav.responsive {
+    display: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
